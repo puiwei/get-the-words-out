@@ -98,25 +98,42 @@ class twGraph():
     def barGraphMedLogRetweet(self, keywordValues, title, ax):
         # Retrieve the top keywords list
         ulist = sorted(keywordValues, key=lambda twKeyword: twKeyword.medianLogRetweet, reverse=True)
-        topKeys = itertools.islice(ulist, 10)
+        topKeys = itertools.islice(ulist, 15)
 
         # Retrieve keyword list
         nameList = []
         avgRtw = []
+        polarList = []
+        #colorList = []
         maxAvg = 0
         for key in topKeys:
             nameList.append(key.name)
+            polarList.append(key.avgPolarSenti)
             avgRtw.append(key.medianLogRetweet)
             if (maxAvg < key.medianLogRetweet):
                 maxAvg = key.medianLogRetweet
 
+        ''' # Set bar colors according to sentiment polarity
+        for n in range(int(len(polarList))):
+            if (polarList[n] > 0.1):
+                colorList.append((polarList[n]*255,0,0)) # Red range for positive sentiment
+            elif (polarList[n] < -0.1):
+                colorList.append((0,0,abs(polarList[n])*255))  # Blue range for negative sentiment
+            elif (polarList[n] == 0):
+                colorList.append((255,255,0))  # Yellow for neutral sentiment
+            elif (polarList[n] >= -0.1 and polarList[n] < 0):
+                colorList.append((255,255*abs(polarList[n]),0))
+            elif (polarList[n] <= 0.1 and polarList[n] > 0):
+                colorList.append((255*polarList[n], 255, 0))
+        '''
+
         y_pos = np.arange(len(nameList))
-        ax.bar(y_pos, avgRtw, align='center', alpha=0.5)
+        ax.bar(y_pos, avgRtw, align='center', alpha=0.5)  #color=colorList
         ax.set_xticks(y_pos)
-        ax.set_xticklabels(nameList, size=10)
+        ax.set_xticklabels(nameList, size=8)
         ax.set_ylim([0, maxAvg * 1.1])
         ax.set_ylabel('Retweet Score', fontsize=12)  # Median(Log(RetweetCt))
-        ax.set_xlabel('Top 10 Keywords', fontsize=12)
+        ax.set_xlabel('Top 15 Keywords', fontsize=12)
         ax.set_title('Top Retweet Keywords for ' + title, fontsize=14)
 
     def barGraph(self, keywordValues, title):
@@ -132,6 +149,7 @@ class twGraph():
         fig = plt.gcf()
         DPI = fig.get_dpi()
         fig.set_size_inches(1427.0 / float(DPI), 836.0 / float(DPI))
+        fig.tight_layout()
 
         plt.show()
 
@@ -312,9 +330,9 @@ class twGraph():
         for key in allKeys:
             if (key.avgPolarSenti >= -0.1 and key.avgPolarSenti <= 0.1):
                 neutralKeys.append(key)
-            elif (key.avgPolarSenti >= 0.2):
+            elif (key.avgPolarSenti > 0.1):
                 positiveKeys.append(key)
-            elif (key.avgPolarSenti <= -0.2):
+            elif (key.avgPolarSenti < -0.1):
                 negativeKeys.append(key)
 
         fig, ax = plt.subplots(nrows=1, ncols=1)
@@ -543,14 +561,14 @@ class twGraph():
 
     def wordCloudGraph(self, text, stopWords):
         # read the mask image
-        #text = open('alice.txt').read()
+        # text = open('alice.txt').read()
         mask = np.array(Image.open("twitter_mask.png"))
 
         wc = WordCloud(background_color="black", max_words=200000, mask=mask, collocations=False, normalize_plurals=False)
         wc.generate(text)
 
         # store to file
-        #wc.to_file("twWordCloud.png")
+        # wc.to_file("twWordCloud.png")
 
         # show
         plt.imshow(wc, interpolation='bilinear')

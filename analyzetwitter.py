@@ -16,6 +16,7 @@ import string
 import re
 import csv
 from textblob import TextBlob
+from difflib import SequenceMatcher
 
 # Variables that contains the user credentials to access Twitter API 
 ACCESS_TOKEN = '857833880157429760-RlbPRm15HjQnILgswmSxfFfjBd3u5vx'
@@ -44,8 +45,8 @@ t = Twitter(auth=OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRE
 # Define variables for search
 scope = 1
 user = "BarackObama"  # scope = 1 search user timeline, max 3200 total tweets
-searchPhrase = '"AHCA" OR "American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
-#searchPhrase = '"ACA" OR "Affordable Care Act" OR "Obamacare"' # scope = 2 search Twitter for popular results in the past 7 days
+#searchPhrase = '"Affordable Care Act" OR "Obamacare"' # scope = 2 search Twitter for popular results in the past 7 days
+searchPhrase = '"American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
 
 totalTweetsToExtract = 3200
 if (scope == 1):
@@ -78,7 +79,8 @@ for x in range(int(totalTweetsToExtract / tweetsPerCall)):
             # print('Requesting ' + str(tweetsPerCall) + ' tweets')
             tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false")
         else:
-            tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false", max_id=lastMaxID)
+            tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false",
+                                                    max_id=lastMaxID)
     elif (scope == 2):
         if (lastMaxID == 0):
             # print('Requesting ' + str(tweetsPerCall) + ' tweets')
@@ -174,12 +176,12 @@ for x in range(int(totalTweetsToExtract / tweetsPerCall)):
 
 # Print the tweets and their attributes to CSV
 if (scope == 1):
-    csvfile1 = "tweetsInfo" + user + ".csv"
-    csvfile2 = "keywordInfo" + user + ".csv"
+    csvfile1 = "tweetsInfo" + user + "T.csv"
+    csvfile2 = "keywordInfo" + user + "T.csv"
 elif (scope == 2):
     searchPhraseName = searchPhrase.replace('"','')
-    csvfile1 = "tweetsInfo" + searchPhraseName + ".csv"
-    csvfile2 = "keywordInfo" + searchPhraseName + ".csv"
+    csvfile1 = "tweetsInfo" + searchPhraseName + "T.csv"
+    csvfile2 = "keywordInfo" + searchPhraseName + "T.csv"
 
 
 with open(csvfile1, "w", newline='') as fp1:
@@ -208,24 +210,8 @@ if (scope == 1):
 elif (scope == 2):
     label = "\"" + searchPhrase + "\""
 
-# Display graph 1 - Top Retweet Keywords by Retweet scores
-graph.barGraph(keywordLib.values(), label)
 
-# Display graph 2 - Top Retweet Keywords for each Sentiment category by Avg # of Retweets
-#graph.stackedBarGraphPolarity(keywordLib.values(), label)
-
-# Display graph 3 - Top Retweet Keywords for each Sentiment category by Avg # of Retweets
-#graph.stackedBarGraphSubjectivity(keywordLib.values(), label)
-
-#elif (scope == 2):
-    # Display graph 1 - Top Retweet Keywords by Avg # of Retweets
- #   graph.barGraph(keywordLib.values(), "\"" + searchPhrase + "\"")
-
-    # Display graph 2 - Top Retweet Keywords for each Sentiment category by Avg # of Retweets
-  #  graph.stackedBarGraphPolarity(keywordLib.values(), "\"" + searchPhrase + "\"")
-   # graph.stackedBarGraphSubjectivity(keywordLib.values(), "\"" + searchPhrase + "\"")
-
-# Display graph 4 - Histogram of Retweet Count
+# Histogram of Retweet Count
 graph.histogram(csvfile1, label)
 
 # Create text for word cloud
@@ -233,3 +219,14 @@ for wordCloudKey in keywordLib.values():
     wordCloudText += wordCloudKey.name + ":" + str(wordCloudKey.medianLogRetweet) + ":" + str(wordCloudKey.avgPolarSenti) + " "
 
 graph.wordCloudGraph(wordCloudText, stopWords)
+
+# Display graph 1 - Top Retweet Keywords by Retweet scores
+graph.barGraph(keywordLib.values(), label)
+
+# Display graph 2 - Top Retweet Keywords for each Sentiment category by Avg # of Retweets
+graph.stackedBarGraphPolarity(keywordLib.values(), label)
+
+# Display graph 3 - Top Retweet Keywords for each Sentiment category by Avg # of Retweets
+graph.stackedBarGraphSubjectivity(keywordLib.values(), label)
+
+
