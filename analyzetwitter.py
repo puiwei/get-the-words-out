@@ -42,7 +42,7 @@ t = Twitter(auth=OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRE
 
 
 # Define variables for search
-scope = 2
+scope = 1
 user = "BarackObama"  # scope = 1 search user timeline, max 3200 total tweets
 searchPhrase = '"AHCA" OR "American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
 #searchPhrase = '"ACA" OR "Affordable Care Act" OR "Obamacare"' # scope = 2 search Twitter for popular results in the past 7 days
