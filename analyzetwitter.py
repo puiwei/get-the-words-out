@@ -176,12 +176,12 @@ for x in range(int(totalTweetsToExtract / tweetsPerCall)):
 
 # Print the tweets and their attributes to CSV
 if (scope == 1):
-    csvfile1 = "tweetsInfo" + user + "T.csv"
-    csvfile2 = "keywordInfo" + user + "T.csv"
+    csvfile1 = "outputs/" + "tweetsInfo" + user + "T.csv"
+    csvfile2 = "outputs/" + "keywordInfo" + user + "T.csv"
 elif (scope == 2):
     searchPhraseName = searchPhrase.replace('"','')
-    csvfile1 = "tweetsInfo" + searchPhraseName + "T.csv"
-    csvfile2 = "keywordInfo" + searchPhraseName + "T.csv"
+    csvfile1 = "outputs/" + "tweetsInfo" + searchPhraseName + "T.csv"
+    csvfile2 = "outputs/" + "keywordInfo" + searchPhraseName + "T.csv"
 
 
 with open(csvfile1, "w", newline='') as fp1:
