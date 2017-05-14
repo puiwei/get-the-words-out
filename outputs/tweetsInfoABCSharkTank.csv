@@ -1,0 +1,1143 @@
+ID,RetweetCt,Polarity,Subjectivity,CreatedTime,CreatedDay,TextLength,WordCt,AccountAgeMo,UserFollowersCt,Keywords,HasLinks
+"""862993281071763459""",13,0.0,0.0,05:30,Fri,62,11,64,459779,"['will', 'sharks', 'say', 'yes', 'bridal', 'business', '#sharktank']",True
+"""862630869596598272""",13,0.0,0.0,05:30,Thu,48,6,64,459779,"['business', 'minds', 'investors', 'artists', '#sharktank']",True
+"""862276036691668992""",16,0.4375,0.3,06:00,Wed,74,13,64,459779,"['love', 'see', 'success', 'popularity', 'company', '#sharktank']",True
+"""862088662581993472""",18,-1.0,1.0,17:35,Tue,63,11,64,459779,"['shocking', '#sharktank', 'finale', 'headed', 'way', 'friday']",True
+"""861702527531622401""",22,-0.3575,0.6699999999999999,16:01,Mon,96,16,64,459779,"['another', 'high', 'valuation', 'sharks', 'shocked', 'buckle', 'come', 'along', 'ride', '#sharktank']",True
+"""860841586514636801""",27,0.25,0.1,07:00,Sat,72,9,64,459779,"['entrepreneur', 'wants', 'simplify', 'cooking', 'experience', '#sharktank']",True
+"""860676188985053184""",17,0.0,0.0,20:02,Fri,48,4,64,459779,"['indeed', 'congratulations', '@scoopingbowl', '#sharktank']",True
+"""860675607671320577""",4,0.0,0.0,20:00,Fri,26,5,64,459779,"['yes', 'now', '#sharktank']",True
+"""860674082861350912""",6,0.0,0.0,19:54,Fri,64,9,64,459779,"['say', 'yes', 'now', '@lorigreiner', 'queen', '#sharktank', '@scoopingbowl']",False
+"""860673477480730624""",10,0.625,1.0,19:52,Fri,41,4,64,459779,"['inspiring', 'story', '@scoopingbowl', '#sharktank']",True
+"""860673005361524738""",5,0.5000000000000001,0.9,19:50,Fri,51,8,64,459779,"['huge', 'tyler', '@scoopingbowl']",False
+"""860671265132216320""",20,0.875,0.6000000000000001,19:43,Fri,54,8,64,459779,"['mark', 'offer', 'good', '#sharktank', '@mcuban', '@rumi_spice']",True
+"""860670205277618176""",15,0.0,0.0,19:39,Fri,83,10,64,459779,"['believe', 'entrepreneurship', 'helping', 'people', '@thesharkdaymond', '#sharktank']",False
+"""860669179338395648""",2,0.625,0.5,19:34,Fri,50,5,64,459779,"['definitely', 'interesting', '@rumi_spice', '#sharktank']",False
+"""860667487620390912""",7,0.0,0.0,19:28,Fri,35,3,64,459779,"['adios', '#sharktank', '@thesharkdaymond']",True
+"""860666210014416896""",8,0.515625,0.8,19:23,Fri,84,12,64,459779,"['wow', '@walletbuckle', 'liking', 'presentation', 'good', 'energy', 'guys', '#sharktank']",False
+"""860664887344861188""",11,0.7750000000000001,0.825,19:17,Fri,91,11,64,459779,"['amazing', 'journey', 'congrats', 'great', 'experience', '@lovepop', '#sharktank', '@kevinolearytv']",True
+"""860664192998793216""",8,0.0,0.0,19:15,Fri,40,5,64,459779,"['done', '@thompson_tee', '#sharktank']",False
+"""860663657071562754""",164,0.46875,1.0,19:13,Fri,63,7,64,459779,"['powerful', '#sharktank', '@lorigreiner', 'retweet', 'watching']",True
+"""860662668159483904""",6,0.7,0.6000000000000001,19:09,Fri,64,9,64,459779,"['yes', '@robertherjavec', 'likes', 'sounds', 'good', 'huh', '@thompson_tee']",False
+"""860661771643887616""",2,0.0,0.125,19:05,Fri,91,15,64,459779,"['just', 'basic', 'undershirt', 'padding', 'kevin', 'guys', 'think', '@thompson_tee']",False
+"""860660448621977601""",11,0.5625,0.825,19:00,Fri,89,15,64,459779,"['#sharktank', 'starts', 'now', 'excited', 'amazing', 'show', 'tonight']",False
+"""860524529453592577""",33,-0.75,0.9,10:00,Fri,106,16,64,459779,"['all', 'afraid', 'perspiration', 'showing', 'shirts', 'business', 'sweat', '#sharktank']",True
+"""860494342372380672""",13,1.0,1.0,08:00,Fri,79,15,64,459779,"['wonderful', 'day', 'watch', '#sharktank', 'miss', 'tonight', 'abc']",True
+"""860094153492975616""",20,0.1,0.6,05:30,Thu,87,13,64,459779,"['learn', 'much', 'sharks', 'especially', 'peek', 'behindthescenes', '#sharktank']",True
+"""859447905748488192""",25,0.25,0.2,10:42,Tue,52,9,64,459779,"['much', 'shark', 'silliness', '@mcuban', '#sharktank']",True
+"""858063278043533315""",40,0.0,0.0,15:00,Fri,77,12,64,459779,"['detroit', 'headed', 'way', '#sharktank', 'auditions', 'week', 'details']",True
+"""857565001263046657""",22,0.0,0.0,06:00,Thu,70,13,64,459779,"['american', 'dream', 'know', '#sharktank']",True
+"""856550139229421568""",20,0.0,0.0,10:47,Mon,78,12,64,459779,"['entrepreneurs', 'bag', 'practical', 'product', '#sharktank']",True
+"""856115448861143040""",20,0.5,0.8888888888888888,06:00,Sun,92,16,64,459779,"['entrepreneurs', 'want', 'make', 'sure', 'wine', 'knock', 'over', 'drink', '#sharktank']",True
+"""855771924504473600""",19,0.0,0.0,07:15,Sat,83,13,64,459779,"['charlotte', 'headed', 'way', '#sharktank', 'auditions', 'week', 'details']",True
+"""855602369257713668""",19,1.0,0.9,20:01,Fri,95,14,64,459779,"['incredible', 'see', 'coming', 'all', '@robertherjavec', '@loctote', '#sharktank']",False
+"""855601279846027264""",47,0.0,0.0,19:56,Fri,95,14,64,459779,"['please', 'retweet', 'wait', 'hear', '@kevinolearytv', 'offering', '@loctote', '#sharktank']",False
+"""855599663021518849""",17,0.5,0.9,19:50,Fri,40,5,64,459779,"['@loctote', 'sounds', 'fantastic', '#sharktank']",True
+"""855597574262321152""",14,0.3125,0.3,19:42,Fri,81,12,64,459779,"['american', 'dream', 'love', 'guys', '@prxperformance', '@kevinolearytv']",True
+"""855596866444165120""",42,1.0,0.75,19:39,Fri,61,9,64,459779,"['celebrate', '@bq_apparel', 'great', 'deal', '#sharktank']",True
+"""855593820620247041""",9,0.0,0.0,19:27,Fri,44,6,64,459779,"['@bq_apparel', '#sharktank']",False
+"""855593131865235456""",11,0.7500000000000001,0.9,19:24,Fri,107,18,64,459779,"['tonight', '@seerescue', 'get', 'deal', 'amazing', 'feedback', 'sharks', 'gold', '#sharktank', 'agree']",False
+"""855591483205984256""",9,1.0,1.0,19:18,Fri,102,16,64,459779,"['think', '@seerescue', 'fans', 'sounds', 'wonderful', 'also', 'sharks', 'like', '#sharktank']",True
+"""855589790980427777""",7,0.0,0.0,19:11,Fri,70,11,64,459779,"['said', 'yes', 'lori', 'robert', 'mark', 'wooho', '@goverregirls', 'congrats']",False
+"""855589191736066048""",4,0.0,0.0,19:08,Fri,30,4,64,459779,"['yes', 'michelle', '#sharktank']",True
+"""855588989331542017""",5,0.0,0.0,19:08,Fri,48,7,64,459779,"['just', 'made', 'offer', '@kevinolearytv', '#sharktank']",True
+"""855587884514119680""",6,0.5416666666666666,0.75,19:03,Fri,92,13,64,459779,"['believe', 'everything', 'better', 'wine', '@goverregirls', '#sharktank', 'great', 'start', 'wow']",False
+"""855586759811489793""",30,0.275,0.5,18:59,Fri,125,22,64,459779,"['get', 'ready', 'amazing', 'allnew', 'episode', 'retweet', 'watching', '#sharktank', 'starting', 'minute']",False
+"""855526595880263683""",32,0.0,0.0,15:00,Fri,56,10,64,459779,"['take', 'note', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""855490187555688452""",39,0.625,0.8888888888888888,12:35,Fri,68,10,64,459779,"['entrepreneurs', 'want', 'make', 'sure', 'feel', 'bootyful', '#sharktank']",True
+"""855113250240950272""",28,0.0,0.0,11:37,Thu,55,8,64,459779,"['sharks', 'throw', 'shade', '#sharktank', 'allnew', 'tomorrow']",True
+"""855106821606047744""",13,0.5,0.5,11:12,Thu,83,11,64,459779,"['sharks', 'take', 'highfiives', 'next', 'level', 'happy', '#nationalhighfiveday', '#sharktank']",True
+"""854303508400623616""",31,0.0,0.0,06:00,Tue,86,15,64,459779,"['check', 'out', 'update', 'daymond', 'john', 'believes', 'biggest', 'deal', 'ever', '#sharktank']",True
+"""854022977712644099""",11,0.2,0.15000000000000002,11:25,Mon,98,18,64,459779,"['business', 'wants', 'much', 'protection', 'guard', 'llama', 'think', '#sharktank']",True
+"""853578733437026304""",13,0.0,0.0,06:00,Sun,102,17,64,459779,"['time', 'all', 'dread', 'spring', 'cleaning', 'let', '#sharktank', 'products', 'help', 'out']",True
+"""853231448584843264""",21,0.25,0.1,07:00,Sat,110,20,64,459779,"['taking', 'kids', 'out', 'bike', 'ride', 'weekend', 'company', 'wants', 'make', 'journey', 'safer', '#sharktank']",True
+"""853065605875990531""",41,0.8,0.75,20:01,Fri,35,6,64,459779,"['think', '#sharktank', 'great']",True
+"""853064930681131009""",6,1.0,1.0,19:58,Fri,72,9,64,459779,"['wonderful', 'disrespect', 'get', 'along', '@kevinolearytv', '#sharktank']",False
+"""853064577222934528""",7,0.0,0.0,19:56,Fri,42,5,64,459779,"['@mcuban', 'amused', 'think', '#sharktank']",True
+"""853062943868694529""",9,-0.2,0.05,19:50,Fri,59,7,64,459779,"['missing', 'salesman', '@barbaracorcoran', '#sharktank']",False
+"""853062359350423553""",9,1.0,1.0,19:48,Fri,72,10,64,459779,"['wonderful', 'child', 'like', 'moment', '@kevinolearytv', '#sharktank']",False
+"""853061232148066304""",5,0.0,0.0,19:43,Fri,127,24,64,459779,"['next', '#sharktank', '@guardianbikes', 'try', 'get', 'deal', 'sharks', 'say', 'safest', 'bikes', 'around']",False
+"""853059882920153088""",7,0.0,0.0,19:38,Fri,102,18,64,459779,"['said', 'pivoted', 'nightmare', 'say', 'pivot', 'beep', 'out', '@kevinolearytv', '#sharktank']",True
+"""853058429593759745""",7,0.0,0.0,19:32,Fri,61,8,64,459779,"['will', '@get_validated', 'find', 'validation', 'tank', '#sharktank']",False
+"""853055329315282944""",3,0.5,0.45,19:20,Fri,115,21,64,459779,"['next', '#sharktank', 'entrepreneurs', 'sam', 'savannah', 'want', 'see', 'photo', 'app', 'flag', 'will', 'fly', 'sharks']",False
+"""853055243940225024""",4,0.125,0.35,19:19,Fri,133,21,64,459779,"['learned', 'quite', 'capacity', '@kevinolearytv', 'thing', 'much', 'llama', 'knowledge', '#sharktank']",False
+"""853054661871509504""",30,0.0,1.0,19:17,Fri,94,12,64,459779,"['@thesharkdaymond', 'thinks', 'deal', '@bubbasq', 'potentially', 'biggest', 'ever', '#sharktank']",True
+"""853054283994062848""",4,0.0,0.0,19:16,Fri,24,3,64,459779,"['@sacca', 'out', '#sharktank']",True
+"""853053946792996864""",8,0.0,0.0,19:14,Fri,102,15,64,459779,"['product', 'update', '@bubbasq', 'million', 'sales', 'since', 'making', 'deal', '@thesharkdaymond']",False
+"""853053848377864197""",7,0.0,0.39,19:14,Fri,70,7,64,459779,"['very', 'personal', '@barbaracorcoran', '#guardllama', '#sharktank']",False
+"""853051440276922370""",13,0.125,0.31666666666666665,19:04,Fri,138,23,64,459779,"['first', '#sharktank', '#guardllama', 'trying', 'sell', 'sharks', 'personal', 'security', 'platform', 'brought', 'llama']",False
+"""853050354241605633""",39,1.0,0.9,19:00,Fri,78,12,64,459779,"['welcome', 'allnew', 'episode', '#sharktank', 'please', 'retweet', 'watching']",False
+"""852941173270298624""",21,0.0,0.0,11:46,Fri,78,13,64,459779,"['will', 'sharks', 'validate', 'business', 'model', 'give', 'deal', '#sharktank']",True
+"""852698266286211072""",57,0.0,0.0,19:41,Thu,99,20,64,459779,"['llama', 'tank', 'sharks', 'field', 'day', 'business', '#sharktank']",True
+"""852144283775782914""",24,0.0,0.0,07:00,Wed,85,13,64,459779,"['sharks', 'just', 'invest', 'businesses', 'also', 'break', 'world', 'records', '#sharktank']",True
+"""851902683606855682""",39,0.17045454545454544,0.45454545454545453,15:00,Tue,78,13,64,459779,"['new', 'york', 'headed', 'way', '#sharktank', 'auditions', 'week', 'details']",True
+"""851774332070240256""",46,0.375,0.0,06:30,Tue,92,14,64,459779,"['million', 'sales', '@dudewipes', 'become', 'national', 'success', '#sharktank']",True
+"""851504756539498501""",20,0.25,0.1,12:38,Mon,112,18,64,459779,"['entrepreneur', 'wants', 'change', 'world', 'uses', 'disposable', 'chopsticks', 'think', 'pitch']",True
+"""850679626036781056""",30,0.0,0.0,06:00,Sat,115,20,64,459779,"['know', 'committed', 'watching', 'kids', 'play', 'outdoor', 'sports', 'rain', 'shine', 'business', 'makes', 'little']",True
+"""850528729826807813""",72,0.0,1.0,20:00,Fri,115,15,64,459779,"['retweet', 'agree', 'episode', 'terrific', '#sharktank', '@lorigreiner', '@thesharkdaymond', '@undertweather']",True
+"""850528330269028352""",14,0.625,1.0,19:58,Fri,40,4,64,459779,"['inspiring', '@undertweather', '#sharktank']",True
+"""850526926477434880""",7,0.7500000000000001,0.9,19:53,Fri,61,8,64,459779,"['believe', 'amazing', 'product', '@undertweather', '#sharktank']",False
+"""850526207653421056""",17,0.25,0.43333333333333335,19:50,Fri,102,14,64,459779,"['blast', 'love', 'much', '@thesharkdaymond', '@lorigreiner', '#sharktank', '@undertweather']",True
+"""850524304894824448""",16,0.465625,0.64375,19:42,Fri,105,15,64,459779,"['nice', 'wish', 'exciting', 'future', '@cropsticksco', 'very', 'interesting', 'presentation', '#sharktank']",True
+"""850522465818353664""",12,0.125,1.0,19:35,Fri,61,9,64,459779,"['liking', '@cropsticksco', 'far', '#sharktank']",True
+"""850521501833068544""",7,0.6875,0.775,19:31,Fri,63,8,64,459779,"['sweet', '@dudeproducts', 'amazing', 'hear', 'congratulations']",False
+"""850520284050358274""",11,0.46875,0.75,19:26,Fri,77,12,64,459779,"['excited', 'see', 'outcome', 'negotiation', '#sharktank', '@seedsheets']",True
+"""850517970539479041""",10,0.1875,0.35,19:17,Fri,55,7,64,459779,"['fun', 'presentation', '@mcuban', '#sharktank', '@seedsheets']",True
+"""850516479745421313""",12,0.5625,0.8,19:11,Fri,91,10,64,459779,"['wow', 'good', 'energy', '@kevinolearytv', '@apollopeakwine', 'congratulations', '#sharktank']",False
+"""850514532355190785""",17,0.875,0.6000000000000001,19:04,Fri,32,5,64,459779,"['cheers', 'good', '#sharktank']",True
+"""850514031916044288""",182,1.0,1.0,19:02,Fri,54,9,64,459779,"['retweet', 'happy', '#sharktank', 'tonight', 'retweet', 'happy', '#sharktank', 'tonight']",False
+"""850512860409102336""",6,0.02473958333333337,0.43333333333333335,18:57,Fri,74,12,64,459779,"['exciting', 'night', '#sharktank', 'starts', 'less', 'minutes', 'yes']",True
+"""850393950326214657""",28,0.0,0.0,11:04,Fri,78,13,64,459779,"['calling', 'all', 'cat', 'lovers', 'never', 'drink', 'wine', 'alone', 'again', '#sharktank']",True
+"""850332354019074048""",25,-0.29296875,0.5,07:00,Fri,116,18,64,459779,"['judges', 'little', 'sharks', 'making', 'check', 'out', '@thetoyboxabc', 'tonight', 'before', 'brandnew', '#sharktank']",True
+"""849954854504157184""",21,1.0,0.9,06:00,Thu,88,11,64,459779,"['welcome', 'chopsticks', 'professor', '@kevinolearytv', '#sharktank', 'allnew', 'tomorrow']",True
+"""849637780145676289""",14,0.75,0.875,09:00,Wed,116,20,64,459779,"['tank', '@thetoyboxabc', 'great', 'ideas', 'everywhere', 'join', 'adorable', 'panel', 'judges', 'friday']",True
+"""848279117409656832""",4,0.0,0.0,15:01,Sat,75,11,64,459779,"['cracking', '#aprilfoolsday', 'video', 'entrepreneurs', 'tipsy', 'elves']",True
+"""847952529597972480""",0,0.06818181818181818,0.22727272727272727,17:23,Fri,83,15,64,459779,"['@ahthakur', 'encore', 'tonight', 'new', 'episode', '#sharktank', 'next', 'week']",True
+"""847952026835144704""",2,0.04545454545454545,0.15151515151515152,17:21,Fri,69,11,64,459779,"['@amynoelle', 'back', 'new', 'episode', 'next', 'week', '#sharktank']",True
+"""847780530401705985""",34,0.8125,0.7,06:00,Fri,79,13,64,459779,"['business', 'simply', 'perfect', 'fit', '#sharktank', 'catch', 'encore', 'tonight']",True
+"""846700906938859521""",37,0.3333333333333333,0.5333333333333333,06:30,Tue,76,11,64,459779,"['many', 'sharks', 'different', 'personalities', '@lorigreiner', '#sharktank']",True
+"""845243814252101635""",32,0.625,1.0,06:00,Fri,104,17,64,459779,"['pitch', 'pawsitively', 'pawawesome', 'catch', 'adorable', 'encore', '#sharktank', 'tonight', 'abc']",True
+"""845017347572338688""",43,0.4125,0.4,15:00,Thu,92,14,64,459779,"['celebrate', '#nationalpuppyday', 'showing', 'pup', 'just', 'much', 'love', '#sharktank']",True
+"""844988399576645632""",36,0.675,0.775,13:05,Thu,97,20,64,459779,"['all', 'want', 'wagon', 'full', 'puppies', 'times', 'happy', '#nationalpuppyday']",True
+"""843099681433575425""",22,0.71875,0.725,08:00,Sat,80,13,64,459779,"['many', 'successful', 'food', 'products', 'started', '#sharktank', 'tried']",True
+"""842374916544598019""",31,0.0,0.0,08:00,Thu,111,19,64,459779,"['calling', 'all', 'socal', 'entrepreneurs', 'want', '#sharktank', 'coming', 'way', 'weeks', 'details']",True
+"""841687881198534657""",28,0.0,0.0,10:30,Tue,58,11,64,459779,"['case', 'missed', '#sharktank', 'clue', '@jeopardy']",True
+"""840902695221354496""",34,0.0,0.5,06:30,Sun,70,12,64,459779,"['sharks', 'open', 'deals', 'regret', 'making', '#sharktank']",True
+"""840291186116087811""",42,0.5,0.65,13:00,Fri,69,10,64,459779,"['best', 'birthday', 'wishes', 'only', '@barbaracorcoran', '#sharktank']",True
+"""840228708883542016""",37,0.5416666666666666,0.7333333333333333,08:51,Fri,81,11,64,459779,"['sharks', 'strong', 'opinions', 'miss', 'encore', 'episode', '#sharktank', 'tonight']",True
+"""839191676547649537""",64,0.5,1.0,12:11,Tue,116,14,64,459779,"['thank', 'sharing', 'story', 'inspiring', 'entrepreneurs', 'immigrants', 'everywhere', '@robertherjavec', '#sharktank']",True
+"""838825012270288899""",23,0.85,1.0,11:54,Mon,116,21,64,459779,"['ever', 'looked', 'beautiful', 'billboard', 'wanted', 'elf', 'company', 'making', 'reality']",True
+"""838388645560270848""",63,0.25,1.0,07:00,Sun,83,8,64,459779,"['ultimate', 'hilarious', 'faceoff', '@barbaracorcoran', '@kevinolearytv', '#sharktank']",True
+"""838011152999284736""",44,0.0,0.0,06:00,Sat,86,13,64,459779,"['believes', 'something', '@lorigreiner', 'take', 'answer', '#sharktank']",True
+"""837845535205752832""",17,0.25,0.2,19:01,Fri,32,5,64,459779,"['thanks', 'tuning', '#sharktank']",True
+"""837845144405692416""",9,0.3125,0.25,19:00,Fri,21,3,64,459779,"['exactly', '#sharktank']",True
+"""837843485315198976""",18,0.5,1.0,18:53,Fri,114,22,64,459779,"['only', 'deal', 'moment', '@rareform', 'offered', 'wonderful', 'say', 'yes', 'company']",True
+"""837842707548614656""",9,0.0,0.0,18:50,Fri,73,12,64,459779,"['@rareform', 'product', 'winner', 'think', 'fans', '#sharktank']",True
+"""837841339576377345""",11,0.625,0.6,18:45,Fri,56,7,64,459779,"['awe', 'love', 'around', '@barbaracorcoran', '#sharktank']",True
+"""837840725081489410""",15,0.5,1.0,18:42,Fri,60,9,64,459779,"['glad', 'see', 'blast', '@kevinolearytv', '#sharktank']",True
+"""837838543888187392""",5,0.0,0.0,18:34,Fri,99,16,64,459779,"['@mealenders', 'product', 'like', 'try', 'always', 'appreciate', 'comments', '#sharktank']",False
+"""837837288373637121""",41,1.0,1.0,18:29,Fri,44,6,64,459779,"['proud', '@robertherjavec', '#sharktank']",True
+"""837836680673513473""",62,0.8125,0.8,18:26,Fri,100,15,64,459779,"['happy', 'watching', 'tonight', 'episode', 'fans', 'retweet', 'enjoying', '#sharktank']",True
+"""837834143551619072""",10,0.5803571428571429,0.7428571428571429,18:16,Fri,85,14,64,459779,"['told', 'episode', 'going', 'very', 'special', '@barbaracorcoran', '#sharktank']",True
+"""837833395614928897""",14,0.375,0.0,18:13,Fri,45,4,64,459779,"['success', '@sleepstyler', '@lorigreiner', '#sharktank']",True
+"""837832257159184385""",6,0.3571428571428571,0.5357142857142857,18:09,Fri,63,11,64,459779,"['just', 'want', 'say', 'yes', 'right', 'now', '#sharktank', '@lorigreiner']",True
+"""837831240074080257""",15,1.0,0.75,18:05,Fri,65,9,64,459779,"['seeing', 'great', 'presentation', '#thesleepstyler', '#sharktank']",True
+"""837830004822130688""",43,0.26011904761904764,0.44761904761904764,18:00,Fri,104,18,64,459779,"['ready', 'very', 'special', 'night', '#sharktank', 'please', 'retweet', 'watching', 'starting', 'now']",False
+"""837827457285779456""",17,0.0,0.5,17:50,Fri,64,11,64,459779,"['forget', '#sharktank', 'hour', 'earlier', 'tonight']",True
+"""837784674638282753""",18,0.875,0.6000000000000001,15:00,Fri,115,21,64,459779,"['company', 'strives', 'help', 'get', 'everything', 'done', 'look', 'good', 'doing', 'tell', 'think', 'pitch']",True
+"""837735898494173185""",49,0.0,0.0,11:46,Fri,120,22,64,459779,"['tonight', '#sharktank', '@robertherjavec', 'lets', 'world', '&amp', 'shares', 'story', 'got', 'watch']",True
+"""837715572976603137""",31,0.0,0.0,10:25,Fri,90,9,64,459779,"['sharks', 'work', 'out', '@robertherjavec', 'suggests', '@dancingabc', '#sharktank', '#dancingwiththestars']",True
+"""837397101906624512""",15,0.375,0.2,13:20,Thu,46,8,64,459779,"['much', 'fun', 'tank', 'tomorrow', '#sharktank']",True
+"""836969290104369155""",20,-0.15625,0.375,09:00,Wed,70,10,64,459779,"['sharks', 'competing', 'entrepreneurs', 'other', '#sharktank']",True
+"""836646991216025600""",28,-0.15555555555555559,0.2888888888888889,11:39,Tue,111,15,64,459779,"['entrepreneurs', 'broke', 'down', 'used', 'make', 'nutritional', 'supplements', 'provided', 'organic', 'alternatives']",True
+"""836297291644358658""",50,0.16666666666666666,0.03333333333333333,12:29,Mon,119,20,64,459779,"['every', 'pair', 'socks', 'bought', 'company', 'donates', 'veterans', 'congrats', 'success', '&amp', 'social', 'impact']",True
+"""835867030658101250""",25,0.17045454545454544,0.45454545454545453,08:00,Sun,59,11,64,459779,"['sharks', 'found', 'new', 'toy', 'play', 'drones', '#sharktank']",True
+"""835571370331275264""",28,0.0,0.0,12:25,Sat,113,18,64,459779,"['entrepreneurs', 'joined', 'herd', '#sharktank', 'businesses', '&amp', 'made', 'deal', 'brought', 'million']",True
+"""835324137581260805""",15,0.625,0.8888888888888888,20:02,Fri,52,8,64,459779,"['watching', 'sure', '@abc', '#sharkson']",False
+"""835323709753806848""",17,0.875,0.6000000000000001,20:01,Fri,61,7,64,459779,"['yes', 'good', '@thesharkdaymond', '@theelephantpant', '#sharktank']",True
+"""835321724191277057""",17,0.3125,0.5,19:53,Fri,67,8,64,459779,"['sharks', 'definitely', 'interested', '#sharktank', '@theelephantpant']",True
+"""835321264529080320""",9,0.7500000000000001,0.9,19:51,Fri,44,5,64,459779,"['amazing', 'story', '#sharktank', '@theelephantpant']",True
+"""835320838878539776""",12,0.0,0.0,19:49,Fri,58,8,64,459779,"['join', 'tribe', '@theelephantpant', '#sharktank']",True
+"""835319826151268353""",29,0.0,0.0,19:45,Fri,44,7,64,459779,"['abby', 'gets', 'deal', '#sharktank', '@dartdrones']",True
+"""835318997243539456""",8,0.5790178571428573,0.7357142857142858,19:42,Fri,123,20,64,459779,"['hey', 'fans', '@abc', 'amazing', 'special', 'prepared', 'tonight', 'after', 'show', 'miss', '#sharkson', '#sharktank']",False
+"""835317552066793473""",14,0.875,0.8500000000000001,19:36,Fri,41,4,64,459779,"['looks', 'fascinating', '#sharktank', '@dartdrones']",True
+"""835316347148066816""",13,0.625,0.875,19:31,Fri,52,5,64,459779,"['outstanding', '@bombas', '@thesharkdaymond', '#sharktank']",True
+"""835315952388620292""",30,0.7,0.4,19:30,Fri,97,19,64,459779,"['staying', 'home', 'friday', 'night', 'enjoy', 'episode', '#sharktank', 'think', 'best']",True
+"""835314310050168833""",5,1.0,0.9,19:23,Fri,86,14,64,459779,"['thoughts', 'product', 'fans', 'welcome', 'share', '#sharktank']",True
+"""835313645634596864""",15,0.7500000000000001,0.9,19:21,Fri,53,7,64,459779,"['listen', 'amazing', 'woman', '@lorigreiner', '#sharktank']",True
+"""835312883458138112""",7,1.0,0.75,19:18,Fri,89,13,64,459779,"['great', 'presentation', 'guys', 'wait', 'see', 'will', 'happen', '#sharktank', '@ora_organic']",True
+"""835311605806215173""",11,0.0,0.0,19:13,Fri,42,7,64,459779,"['woot', 'episode', '#sharktank']",True
+"""835309727127126016""",11,1.0,1.0,19:05,Fri,25,4,64,459779,"['awesome', '#sharktank']",True
+"""835309414450139136""",6,0.0,0.0,19:04,Fri,39,7,64,459779,"['liking', 'lot', 'already', '#sharktank']",True
+"""835309057879703552""",5,0.0,0.0,19:02,Fri,36,5,64,459779,"['risked', 'everything', '#sandcloud']",True
+"""835308348081852417""",20,0.35714285714285715,0.6214285714285714,19:00,Fri,72,13,64,459779,"['very', 'special', 'episode', 'ready', '#sharktank', 'starts', 'now']",True
+"""835270585580204032""",45,0.0,0.0,16:30,Fri,64,10,64,459779,"['join', 'tonight', 'approach', 'deals', '#sharktank']",True
+"""835247943196160000""",10,0.11904761904761905,0.5238095238095238,15:00,Fri,116,20,64,459779,"['event', 'years', 'making', 'finally', 'watch', 'historic', 'episode', 'followed', 'special', '@abc', 'celebrat']",True
+"""835217755578085376""",23,0.2833333333333333,0.5499999999999999,13:00,Fri,116,20,64,459779,"['after', 'seasons', 'inspiring', 'millions', 'making', 'dreams', 'come', 'true', 'approaching', 'milestone', 'million']",True
+"""835112070391582721""",11,0.13333333333333333,0.65,06:00,Fri,116,20,64,459779,"['great', 'commentary', 'sharks', 'behind', 'scenes', 'see', 'cameras', 'caught', 'deleted', 'scene']",True
+"""834878005214314496""",47,0.0,0.0,14:30,Thu,57,7,64,459779,"['happiest', 'birthdays', '@thesharkdaymond', '#sharktank']",True
+"""834822641009651715""",54,0.0,0.0,10:50,Thu,65,13,64,459779,"['hope', '#sharktank', 'inspires', 'out', 'take', 'chance']",True
+"""834402393097981954""",36,0.0,0.0,07:00,Wed,46,6,64,459779,"['entrepreneurs', 'fire', '#sharktank']",True
+"""834153225943187456""",16,0.0,0.0,14:30,Tue,35,5,64,459779,['#sharktank'],True
+"""834070181710282754""",51,0.0,0.0,09:00,Tue,94,14,64,459779,"['#sharktank', 'created', 'over', 'jobs', 'ignited', 'spark', 'entrepreneurism', 'across', 'america']",True
+"""833692705515589632""",25,0.0,0.0,08:00,Mon,84,13,64,459779,"['happens', '@lorigreiner', 'asks', 'entrepreneur', 'make', 'offer', '#sharktank']",True
+"""833315207053189121""",46,-0.3125,0.4,07:00,Sun,75,12,64,459779,"['small', 'businesses', 'trying', 'teach', 'children', 'code', '#sharktank']",True
+"""833058510602657792""",15,0.0,0.1,14:00,Sat,90,16,64,459779,"['big', 'guys', 'crush', 'like', 'cockroaches', 'kevin', 'leary', '#sharktank']",True
+"""832983024169934848""",55,0.1,0.19999999999999998,09:00,Sat,115,19,64,459779,"['tap', 'people', 'desire', 'better', 'lives', 'really', 'american', 'dream', 'human', 'condition']",True
+"""832787141906231296""",14,0.5625,0.5,20:01,Fri,67,10,64,459779,"['night', 'saw', 'interesting', 'presentations', 'more', '#sharktank']",True
+"""832786262729883650""",110,-0.375,0.4,19:58,Fri,91,14,64,459779,"['retweet', '#sharktank', 'inspired', 'creativity', 'life', 'least', 'once', '@bitsboxkids']",True
+"""832784932745285633""",6,0.0,0.0,19:52,Fri,69,11,64,459779,"['think', 'offer', '@bitsboxkids', '@sacca', '#sharktank']",True
+"""832784242618753024""",12,0.3125,0.875,19:50,Fri,109,19,64,459779,"['@robertherjavec', 'only', 'amazed', 'lovely', 'girl', 'can', 'code', 'like', 'pro', '@bitsboxkids']",True
+"""832783646792691714""",8,0.25,0.5,19:47,Fri,54,6,64,459779,"['chris', 'looks', 'interested', '@bitsboxkids', '#sharktank', '@sacca']",True
+"""832782565476012032""",8,0.0,0.0,19:43,Fri,52,10,64,459779,"['nope', 'sugar', 'coat', 'words', '#sharktank']",True
+"""832781477901455360""",6,0.0,0.0,19:39,Fri,33,4,64,459779,"['ouch', '@kevinolearytv', '#sharktank']",True
+"""832780904959467520""",7,0.1,0.75,19:36,Fri,116,22,64,459779,"['think', 'experts', 'liking', '#hotelsbyday', 'promising', 'believe', 'potential', 'will']",True
+"""832778403161923586""",6,0.3125,0.5,19:26,Fri,116,19,64,459779,"['@kevinolearytv', 'definitely', 'interested', 'product', 'want', 'hear', 'fans', 'like', '#sharktank']",True
+"""832777455228162048""",12,0.46875,0.2,19:23,Fri,77,11,64,459779,"['every', 'friday', 'night', 'fun', 'believe', '@robertherjavec', '#sharktank']",True
+"""832776978398838784""",9,0.0,0.0,19:21,Fri,8,2,64,459779,['salty'],True
+"""832776362909978628""",3,1.0,0.3,19:18,Fri,53,6,64,459779,"['learning', 'best', 'congratulations', '@lorigreiner']",True
+"""832775918334644228""",14,0.6875,0.975,19:17,Fri,90,17,64,459779,"['guy', 'favorite', 'sharks', 'loving', 'around', 'tonight', '@sacca']",True
+"""832774383663853568""",12,0.0,0.0,19:10,Fri,50,7,64,459779,"['cuteness', 'always', 'winner', '#sharktank', '@toymailco']",True
+"""832773675023757312""",9,0.875,0.6000000000000001,19:08,Fri,47,8,64,459779,"['good', 'way', 'start', '#sharktank', '@toymailco']",True
+"""832772910960037888""",8,1.0,0.75,19:05,Fri,86,14,64,459779,"['great', 'episode', '#sharktank', 'just', 'started', 'allnew', 'watching', 'est/cst']",True
+"""832726356551168000""",31,0.0,0.0,16:00,Fri,77,12,64,459779,"['watch', '#sharktank', 'tonight', 'blast', 'just', 'ask', '@robertherjavec', 'watch', '#sharktank', 'tonight', 'blast', 'just', 'ask', '@robertherjavec']",True
+"""832661092702629889""",38,0.225,0.21666666666666667,11:40,Fri,120,19,64,459779,"['entrepreneur', 'wants', 'connect', 'parents', '&amp', 'children', 'toys', 'think', 'first', 'pitch']",True
+"""832635744669757440""",29,0.0,0.0,10:00,Fri,112,20,64,459779,"['door', 'opens', 'tank', 'sharks', 'never', 'know', 'surprises', 'store', '#sharktank', 'allnew', 'tonight']",True
+"""832309228136230915""",6,-0.9375,0.75,12:22,Thu,112,16,64,459779,"['something', '@kevinolearytv', 'really', 'disappointed', 'find', 'out', 'tomorrow', 'allnew', '#sharktank']",True
+"""832228055968051200""",13,0.625,1.0,07:00,Thu,110,17,64,459779,"['product', 'made', 'kevin', 'disappear', 'bring', 'hilarious', 'deleted', 'scene', 'friday', 'episode', '#sharktank']",True
+"""831971367490768896""",13,0.03333333333333333,0.06666666666666667,14:00,Wed,116,22,64,459779,"['social', 'enterprise', 'come', 'product', 'want', 'buy', 'opposed', 'reason', 'product']",True
+"""831945257025560576""",38,0.25,0.3,12:16,Wed,62,9,64,459779,"['people', 'love', '#sharktank', 'embodies', 'american', 'dream']",True
+"""831576128397656066""",22,0.3125,0.25,11:49,Tue,117,17,64,459779,"['sales', 'months', '@rriveterbags', 'succeeding', '&amp', 'supporting', 'service', 'members', '#sharktank']",True
+"""831298384216494080""",8,-0.25,0.75,17:25,Mon,70,11,64,459779,"['product', 'nothing', 'authentic', 'watch', '#sharktank', 'now']",True
+"""830793595770789888""",21,0.16666666666666666,0.3,08:00,Sun,86,15,64,459779,"['like', 'short', 'shorts', 'love', 'freedom', 'believe', 'american', 'dream', '#sharktank']",True
+"""830416113641074688""",19,0.0,0.0,07:00,Sat,93,13,64,459779,"['entrepreneurs', 'brought', 'heat', 'business', 'supports', 'firefighters', '#sharktank']",True
+"""830250115348754432""",4,0.375,0.25,20:00,Fri,68,11,64,459779,"['#fftob', 'offers', 'now', 'interesting', '#sharktank']",True
+"""830249511129927685""",4,0.625,0.6,19:58,Fri,51,7,64,459779,"['nikki', 'actually', 'love', 'offering', '#sharktank']",False
+"""830248698881912832""",8,-0.19305555555555554,0.5666666666666667,19:54,Fri,62,9,64,459779,"['tough', 'decisions', 'happens', 'quite', 'frequently', '#sharktank']",True
+"""830248110408474624""",21,0.0,0.0,19:52,Fri,60,9,64,459779,"['bank', 'investor', '#sharktank', '@kevinolearytv']",True
+"""830246697456566273""",27,1.0,0.75,19:46,Fri,108,19,64,459779,"['great', 'opportunity', 'say', 'thank', 'all', 'firefighters', 'across', 'country', '#sharktank']",True
+"""830245844192460800""",3,0.9,0.9,19:43,Fri,74,12,64,459779,"['happening', 'tonight', '#sharktank', 'truly', 'incredible', 'episode']",True
+"""830244320460500992""",17,0.90625,0.875,19:37,Fri,84,12,64,459779,"['great', 'story', 'very', 'inspiring', 'work', 'friends', '@peacefulfruits', '#sharktank']",False
+"""830242657045733376""",80,0.30000000000000004,0.5125,19:30,Fri,80,12,64,459779,"['yes', 'thank', 'heroes', 'amazing', 'future', '@thedocspartan', '#sharktank']",True
+"""830240990082560000""",10,0.30000000000000004,0.45,19:24,Fri,69,10,64,459779,"['believe', 'amazing', 'american', 'dream', '#docspartan', '#sharktank']",True
+"""830239654737825794""",26,0.4916666666666667,0.6333333333333333,19:18,Fri,84,13,64,459779,"['favorite', 'things', '#sharktank', 'amazing', 'success', 'stories', '@mcuban']",True
+"""830239099382558720""",59,0.41666666666666663,1.0,19:16,Fri,83,12,64,459779,"['@thesharkdaymond', 'follower', 'extraordinary', 'ideas', '#sharktank']",True
+"""830237998080020481""",21,0.0,0.0,19:12,Fri,55,9,64,459779,"['all', 'agree', 'nurses', 'heroes', '#sharktank']",True
+"""830236442056126464""",14,0.40625,0.4666666666666667,19:06,Fri,84,12,64,459779,"['safety', 'first', 'promise', 'love', '#sharktank', '@tranquilomat']",True
+"""830235837057101824""",4,0.5625,0.8,19:03,Fri,85,12,64,459779,"['sounds', 'pretty', 'good', '@tranquilomat', 'think', 'fans', '#sharktank', '@lorigreiner']",True
+"""830234899533721601""",9,0.9375,0.675,18:59,Fri,65,12,64,459779,"['good', 'vibes', 'all', 'around', 'great', 'show', 'tonight', '#sharktank']",True
+"""830166963301265408""",25,0.0,0.0,14:30,Fri,103,18,64,459779,"['entrepreneur', 'all', 'will', 'find', 'partnership', 'shark', 'left', 'nothing', '#sharktank']",True
+"""830038619062665217""",42,0.0,0.0,06:00,Fri,59,8,64,459779,"['tonight', '#sharktank', 'celebrating', 'america', 'heroes']",True
+"""829809213886996480""",26,-0.07083333333333333,0.26666666666666666,14:48,Thu,116,20,64,459779,"['entrepreneurs', 'want', 'show', 'american', 'dream', 'alive', 'small', 'town', 'will', 'accomplish', 'missi']",True
+"""829485342839431172""",18,0.4,0.5,17:21,Wed,78,14,64,459779,"['sharks', 'happy', 'american', 'heroes', 'tank', 'week', '#sharktank']",True
+"""829328953747849217""",17,0.375,0.1,07:00,Wed,114,19,64,459779,"['all', 'business', 'tank', 'laugh', 'like', 'sharks', 'deleted', 'scene', 'friday', 'episode', '#sharktank']",True
+"""828966565357953026""",14,0.0,0.0,07:00,Tue,50,9,64,459779,"['shark', 'eat', 'world', 'out', '#sharktank']",True
+"""828677614181036032""",14,0.0,0.0,11:51,Mon,116,17,64,459779,"['#sharktank', 'can', 'help', 'flipping', 'burgers', 'running', 'empire', 'congrats', '@tomandchee', 'watch', 'now']",True
+"""828226676924567552""",18,-0.25,0.25,06:00,Sun,48,9,64,459779,"['join', 'big', 'game', 'business', '#sharktank']",True
+"""827879388666613762""",20,0.625,0.5,07:00,Sat,42,7,64,459779,"['sharks', 'better', '#sharktank']",True
+"""827713049918337024""",9,0.0,0.0,19:59,Fri,57,6,64,459779,"['richard', 'take', 'offer', '#dbestproducts', '#sharktank']",False
+"""827710785090703361""",14,0.0,0.0,19:50,Fri,82,10,64,459779,"['need', 'money', 'richard', '@dbestproducts', '@kevinolearytv', 'amused', '#sharktank']",True
+"""827708250527244288""",8,0.0,0.03333333333333333,19:39,Fri,111,17,64,459779,"['@thesharkdaymond', 'think', 'take', 'bath', '#rinsekit', 'last', 'second', 'deal', 'winner', '#sharktank']",True
+"""827706749142581248""",8,0.1,0.0,19:34,Fri,94,15,64,459779,"['got', 'offers', 'table', 'make', 'decision', '@kevinolearytv', '#rinsekit']",False
+"""827704170463506432""",12,0.0,0.0,19:23,Fri,57,8,64,459779,"['@thesharkdaymond', 'reaction', 'gif', 'ages', '#sharktank']",True
+"""827702274688434176""",7,0.0,0.0,19:16,Fri,51,7,64,459779,"['thoughts', '#littlenomad', '#sharktank']",True
+"""827701998053126144""",16,1.0,1.0,19:15,Fri,86,13,64,459779,"['uncle', 'wonderful', 'knows', 'cash', 'flow', 'sees', '@kevinolearytv', '#sharktank']",True
+"""827700535096668160""",17,0.0,0.0,19:09,Fri,115,13,64,459779,"['someone', 'turned', 'startups', 'multimillion', 'companies', 'got', '@robertherjavec', 'attention', '#sharktank']",True
+"""827699426613411841""",9,0.0,0.0,19:04,Fri,61,10,64,459779,"['cooler', 'within', '@thekoolercom']",True
+"""827699384829747200""",11,0.0,0.0,19:04,Fri,62,7,64,459779,"['together', 'can', 'crush', 'competition', '#thekooler', '#sharktank']",True
+"""827698463949352961""",37,0.2130681818181818,0.45454545454545453,19:01,Fri,71,12,64,459779,"['all', 'new', '#sharktank', 'starts', 'now', 'please', 'retweet', 'watching']",False
+"""827630274490068993""",14,0.0,0.0,14:30,Fri,71,11,64,459779,"['something', 'sharks', 'jumping', 'out', 'seats', 'tonight', '#sharktank']",True
+"""827501909695135744""",27,0.3125,0.3333333333333333,06:00,Fri,104,15,64,459779,"['will', 'entrepreneur', 'crush', 'competition', 'tell', 'thoughts', 'tonight', 'first', 'pitch', '#sharktank']",True
+"""827220676645883906""",14,0.7083333333333334,0.8333333333333334,11:22,Thu,111,16,64,459779,"['uncle', 'wonderful', 'babysits', 'entrepreneurs', 'show', 'sharks', 'make', 'parents', 'more', 'stylish', '#sharktank']",True
+"""826921322978611204""",21,0.0,0.0,15:33,Wed,91,13,64,459779,"['@thesharkdaymond', '@robertherjavec', 'getting', 'shape', '#sharktank', 'week']",True
+"""826569203507359745""",29,0.4,0.5,16:13,Tue,120,20,64,459779,"['before', 'making', 'offer', 'test', 'legitimacy', 'entrepreneur', '&amp', 'props', 'enjoy', 'deleted', 'scene']",True
+"""826501580698611713""",20,0.0,0.0,11:45,Tue,71,11,64,459779,"['someone', 'says', 'company', 'million', 'valuation', '#sharktank']",True
+"""826188300973137922""",11,0.0,0.0,15:00,Mon,79,13,64,459779,"['feel', 'tune', 'conversation', 'ignoring', '#sharktank']",True
+"""826152645689692160""",5,0.625,1.0,12:38,Mon,116,19,64,459779,"['@chloebennet', '@etnow', 'watched', 'interview', 'honored', 'hear', 'favorite', 'date', 'night', 'activity']",False
+"""826129179171119104""",78,0.0,0.0,11:05,Mon,106,17,64,459779,"['proved', 'world', 'women', 'can', 'anything', 'thank', 'inspiration', '@barbaracorcoran']",True
+"""825697507908976642""",19,0.46875,0.75,06:30,Sun,93,14,64,459779,"['entrepreneurs', 'want', 'get', 'people', 'excited', 'eating', 'bugs', 'bugappetite', '#sharktank']",True
+"""825342680884531202""",39,0.0,0.0,07:00,Sat,65,10,64,459779,"['happens', 'sharks', 'unwilling', 'negotiate', '#sharktank']",True
+"""825176916386791424""",7,0.25,0.2,20:01,Fri,46,8,64,459779,"['boss', '#sharktank', 'thanks', 'tuning', 'fans']",True
+"""825175583692902400""",13,0.0,0.0,19:56,Fri,32,5,64,459779,"['episode', '#sharktank']",True
+"""825174617195151360""",9,0.0,1.0,19:52,Fri,53,7,64,459779,"['only', 'offer', '@kevinolearytv', '#getawayhouse']",True
+"""825173797741481984""",4,0.2671875,0.6375,19:48,Fri,97,17,64,459779,"['get', 'away', 'own', 'personal', 'tiny', 'house', 'woods', 'yes', 'excited', '#getaway', '#sharktank']",False
+"""825172068039790592""",5,0.0,0.0,19:42,Fri,60,9,64,459779,"['congrats', 'guys', 'rooting', '@popupplaytoy', '@sacca']",False
+"""825169661914386438""",27,0.25,0.9,19:32,Fri,13,2,64,459779,['absolutely'],True
+"""825169308129062912""",8,0.625,0.8888888888888888,19:31,Fri,71,12,64,459779,"['sure', 'going', 'like', '@popupplaytoy', '#sharktank']",True
+"""825167370528366592""",12,1.0,0.9,19:23,Fri,72,12,64,459779,"['got', 'listen', 'incredible', 'feedback', 'gold', '#sharktank']",True
+"""825166607383142400""",16,0.0,0.0,19:20,Fri,28,4,64,459779,"['fancy', '#sharktank', '@mcuban']",True
+"""825166105819934720""",7,0.70625,0.8,19:18,Fri,73,9,64,459779,"['very', 'interesting', 'loving', 'presentation', '#vibes', '#sharktank']",True
+"""825164430203842560""",31,0.51875,0.775,19:11,Fri,66,9,64,459779,"['dreams', 'come', 'true', 'amazing', 'story', '@barbaracorcoran', '#sharktank']",True
+"""825163988312928257""",9,0.0,0.0,19:10,Fri,45,4,64,459779,"['congratulations', '#sharktank', '@chirpschips']",True
+"""825162946749796354""",17,0.0,0.0,19:05,Fri,44,7,64,459779,"['eat', 'bugs', '@chirpschips', '#sharktank']",True
+"""825162366878887936""",10,0.46875,0.75,19:03,Fri,37,5,64,459779,"['getting', 'excited', '#sharktank', '#chirps']",True
+"""825161830016356353""",12,0.0,0.0,19:01,Fri,65,12,64,459779,"['know', 'build', 'empires', '#sharktank', 'starts', 'now']",True
+"""825123729667670016""",10,0.0,0.0,16:30,Fri,55,9,64,459779,"['pulling', 'out', 'all', 'stops', '#sharktank', 'tonight']",True
+"""825109260300382208""",19,0.0,0.0,15:32,Fri,105,17,64,459779,"['sharks', 'leave', 'tank', 'pitch', 'get', 'away', 'entrepreneurs', 'watch', '#sharktank', 'tonight']",True
+"""825070899145498624""",8,0.0,0.0,13:00,Fri,112,19,64,459779,"['business', 'world', 'canvas', 'child', 'imagination', 'miss', 'allnew', '#sharktank', 'tonight']",True
+"""824995420589924352""",9,-0.875,0.8,08:00,Fri,108,18,64,459779,"['@barbaracorcoran', 'shocked', '#sharktank', 'find', 'out', 'tonight', 'allnew', 'episode', 'abc']",True
+"""824723621608386562""",8,0.0,0.0,14:00,Thu,88,17,64,459779,"['guest', 'shark', '@sacca', 'back', 'amused', 'entrepreneurs', 'say']",True
+"""824633021873717252""",10,-0.1,0.55,08:00,Thu,116,19,64,459779,"['entrepreneurs', 'want', 'help', 'people', 'get', 'away', 'chaos', 'everyday', 'lives', 'tiny', 'houses', '#sharktank']",True
+"""824255526225805312""",31,0.0,0.0,07:00,Wed,37,6,64,459779,"['everyone', 'bugging', 'out', '#sharktank']",True
+"""824048774028857346""",20,0.0,0.0,17:18,Tue,79,9,64,459779,"['whatever', 'challenge', 'comes', 'way', 'crush', '#sharktank', '#beercanappreciationday']",True
+"""824000101895049216""",11,1.0,0.3,14:05,Tue,41,6,64,459779,"['laughter', 'best', 'medicine', '#sharktank']",True
+"""823576061074096130""",18,0.0,0.0,10:00,Mon,45,6,64,459779,"['all', 'hail', 'queen', '@barbaracorcoran', '#sharktank']",True
+"""823198547701075968""",18,0.625,1.0,09:00,Sun,77,12,64,459779,"['just', 'think', 'all', 'over', 'something', 'magical', 'can', 'happen', '#sharktank']",True
+"""822488872999383040""",28,0.0,0.0,10:00,Fri,116,20,64,459779,"['storytime', 'wonderful', 'call', 'maple', 'man', 'watch', 'encore', '#sharktank', 'tonight', 'abc']",True
+"""822139526747455488""",39,0.25,0.5333333333333333,10:51,Thu,120,18,64,459779,"['dedicating', '#tbt', '@thesharkdaymond', '&amp', 'inspirational', 'story', 'shared', 'last', 'week', '#sharktank', 'watch', 'now']",True
+"""822096302464974849""",32,0.0,0.0,08:00,Thu,68,10,64,459779,"['entrepreneurs', 'making', 'profit', 'difference', '#sharktank']",True
+"""821854695950061568""",21,1.0,1.0,16:00,Wed,35,5,64,459779,"['wonderful', 'selfie', '#sharktank']",True
+"""821499007415427073""",46,0.0,0.0,16:26,Tue,90,16,64,459779,"['just', 'agree', 'friends', 'even', 'though', 'want', '#sharktank']",True
+"""821424557873446913""",14,0.0,0.0,11:30,Tue,57,9,64,459779,"['know', 'think', 'watch', '#sharktank', 'now']",True
+"""820790923454021633""",24,0.0,0.0,17:33,Sun,81,12,64,459779,"['dallas', 'heading', 'way', 'wednesday', '#sharktank', 'auditions', 'details']",True
+"""820707134467756032""",24,0.0,0.0,12:00,Sun,39,6,64,459779,"['business', 'core', 'competency']",True
+"""820314557302407168""",10,1.0,1.0,10:00,Sat,24,4,64,459779,"['wonderful', 'selfie']",True
+"""820102124428296192""",4,0.0,0.0,19:55,Fri,86,14,64,459779,"['@nicepipestweets', 'take', '@barbaracorcoran', 'offer', 'company']",False
+"""820101671493763072""",27,0.0,0.0,19:54,Fri,64,10,64,459779,"['@mcuban', 'fan', 'generic', 'answers', '#nicepipes', '#sharktank']",True
+"""820100797409140737""",10,0.05,0.0625,19:50,Fri,110,18,64,459779,"['@nicepipestweets', 'offers', 'leg', 'arm', 'warmers', 'made', 'out', 'same', 'material', 'yoga', 'pants', '#sharktank']",True
+"""820099564694867969""",22,5.551115123125783e-17,0.6333333333333333,19:45,Fri,55,10,64,459779,"['good', 'wows', 'bad', '#sharktank']",True
+"""820098607621742592""",1,-0.4,0.4,19:41,Fri,68,10,64,459779,"['model', 'broken', 'work', '@kevinolearytv', '#sharktank']",False
+"""820098272631078912""",11,0.0,0.0,19:40,Fri,68,11,64,459779,"['probably', 'tell', 'shark', '#sharktank']",True
+"""820097773060128768""",5,0.0,0.0,19:38,Fri,81,12,64,459779,"['sharks', 'take', 'peek', 'examples', '@mamasmilkbox', 'stylized', 'apparel', '#sharktank']",True
+"""820096892503805952""",6,0.0,0.0,19:35,Fri,81,9,64,459779,"['specialized', 'clothing', 'breastfeeding', 'women', '@mamasmilkbox', '#sharktank', 'specialized', 'clothing', 'breastfeeding', 'women', '@mamasmilkbox', '#sharktank']",True
+"""820095416930811904""",18,0.3125,0.3333333333333333,19:29,Fri,91,11,64,459779,"['@thesharkdaymond', 'mentor', 'first', 'business', 'partner', 'hero', '#momsrule', '#sharktank']",True
+"""820094698048094209""",10,0.0,0.0,19:26,Fri,58,7,64,459779,"['@kevinolearytv', 'takes', 'selfie', 'himself', '#sharktank']",True
+"""820093029029736450""",1,0.0,0.0,19:19,Fri,82,11,64,459779,"['@pinblocks', 'team', 'another', 'toy', 'manufacturer', '@kevinolearytv', 'suggests']",False
+"""820092488811769856""",15,0.0,0.0,19:17,Fri,69,8,64,459779,"['@barbaracorcoran', 'queen', 'nature', 'crown', '@pinblocks', '#sharktank']",True
+"""820091477384634371""",13,0.0,0.0,19:13,Fri,115,18,64,459779,"['next', '@pinblocks', 'building', 'toy', 'children', 'all', 'pieces', 'identical', 'size', '#pinblocks', '#sharktank']",True
+"""820090343932698625""",17,0.2,0.30000000000000004,19:09,Fri,100,14,64,459779,"['spare', 'time', 'gonna', 'sell', 'real', 'estate', '@barbaracorcoran', '#greasebags', '#sharktank']",False
+"""820090034556727296""",7,0.0,0.0,19:07,Fri,77,11,64,459779,"['sharks', 'all', 'presentation', 'monsterpeneur', '#sharktank']",False
+"""820088777053966336""",4,0.3125,0.3333333333333333,19:02,Fri,52,9,64,459779,"['first', '#sharktank', '#greasebags', 'word']",False
+"""820088406323630080""",85,0.2130681818181818,0.45454545454545453,19:01,Fri,105,16,64,459779,"['countdown', 'million', 'continues', 'all', 'new', '#sharktank', 'starts', 'now', 'please', 'retweet', 'watching']",False
+"""820068537293213697""",15,0.0,0.0,17:42,Fri,62,10,64,459779,"['toys', 'everyone', 'watch', 'allnew', '#sharktank', 'tonight', 'abc']",True
+"""820044284481204225""",12,0.0,0.0,16:06,Fri,51,8,64,459779,"['tonight', 'episode', 'will', 'saying', 'wait']",True
+"""820007156598456321""",32,0.0,0.0,13:38,Fri,102,18,64,459779,"['will', 'entrepreneur', 'throw', 'away', 'shot', 'shark', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""819973740532408320""",40,0.0,0.0,11:25,Fri,65,10,64,459779,"['bring', 'entrepreneurs', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""819712821860696064""",75,0.0,0.0,18:09,Thu,102,16,64,459779,"['@thesharkdaymond', 'takes', 'world', 'watch', 'profile', 'tomorrow', 'allnew', '#sharktank', 'abc']",True
+"""819373587442401281""",14,0.0,0.0,19:41,Wed,62,10,64,459779,"['get', 'shark', 'investment', 'without', 'fight', '#sharktank']",True
+"""818910409235267587""",8,0.0,0.0,13:00,Tue,52,9,64,459779,"['never', 'know', 'going', 'happen', '#sharktank']",True
+"""818834794691825665""",45,0.02083333333333333,0.5104166666666666,08:00,Tue,114,16,64,459779,"['work', 'hard', 'enough', 'anything', 'possible', 'congratulations', '@thedrainstrain', 'all', 'success', '#sharktank']",True
+"""818590761943826432""",20,0.0,0.0,15:50,Mon,101,19,64,459779,"['shark', 'tank', 'never', 'know', 'someone', 'gonna', 'lick', 'cat', '@kevinolearytv']",True
+"""818200638601523200""",21,0.0035156249999999944,0.3,14:00,Sun,46,6,64,459779,"['laugh', 'little', '#sundayfunday', '#sharktank']",True
+"""818125119574908930""",72,0.55,0.7,09:00,Sun,104,16,64,459779,"['entrepreneurs', 'fighting', 'ensure', 'young', 'girls', 'know', 'all', 'beautiful', '#sharktank']",True
+"""817823156295630849""",10,0.0,0.0,13:00,Sat,24,4,64,459779,"['cut', 'out', '#sharktank']",True
+"""817747640070926337""",29,0.0,0.0,08:00,Sat,73,10,64,459779,"['business', 'sharks', 'wondering', 'furrreal', '#sharktank']",True
+"""817566971780800512""",11,0.3125,0.2,20:02,Fri,96,18,64,459779,"['tonight', 'show', 'over', 'much', 'fun', 'thanks', 'tuning', 'friends', '#sharktank']",True
+"""817566595564322816""",17,0.9375,0.95,20:00,Fri,76,10,64,459779,"['congratulations', '@npdolls', 'proud', 'work', 'talented', '#sharktank']",False
+"""817564531123769346""",20,0.5083333333333333,0.975,19:52,Fri,104,16,64,459779,"['loving', 'message', 'sharks', 'giving', 'extraordinary', 'advice', '#sharktank', '@npdolls']",True
+"""817563141731127300""",39,0.75,0.875,19:46,Fri,60,9,64,459779,"['lovely', 'meet', 'wonderful', 'couple', '#sharktank', '@npdolls']",True
+"""817561361400168449""",8,1.0,0.3,19:39,Fri,52,7,64,459779,"['wishing', 'best', '@victory_coffees', '#sharktank']",True
+"""817559796849188864""",6,0.5750000000000001,0.6833333333333332,19:33,Fri,107,16,64,459779,"['hey', 'fans', 'loving', '@victory_coffees', 'sounds', 'like', 'interesting', 'product', 'love', 'coffee']",True
+"""817558632808255488""",13,0.86875,0.85,19:29,Fri,83,10,64,459779,"['feels', 'great', 'watch', 'successful', 'story', '#sharktank', '#drainstrain', '@robertherjavec']",True
+"""817557563763998722""",2,0.0,0.0,19:24,Fri,47,6,64,459779,"['invest', '#sharktank', '#basicoutfitters']",True
+"""817556509609644034""",11,1.0,1.0,19:20,Fri,48,7,64,459779,"['deal', 'priceless', '#sharktank']",True
+"""817554871016681472""",3,0.78125,0.5,19:14,Fri,62,8,64,459779,"['guys', 'listening', '#sharktank', '#basicoutfitters']",True
+"""817553801657942016""",6,0.6875,0.6,19:09,Fri,67,11,64,459779,"['wonderful', 'start', 'tonight', 'episode', 'fun', '#sharktank']",True
+"""817553074109771777""",11,-0.75,0.9,19:06,Fri,39,4,64,459779,"['simply', 'crazy', '#sharktank', '@kevinolearytv']",True
+"""817552338785366016""",15,0.0,0.0,19:04,Fri,45,8,64,459779,"['woah', 'see', 'coming', '#sharktank']",True
+"""817551882222759937""",20,0.5,0.425,19:02,Fri,87,14,64,459779,"['expecting', 'great', 'episode', 'tonight', 'watching', '#sharktank', 'starting', 'now']",False
+"""817506034206044160""",33,0.625,1.0,16:00,Fri,98,17,64,459779,"['snuggle', 'favorite', 'furry', 'friend', 'watch', 'allnew', 'episode', '#sharktank', 'tonight']",True
+"""817475862043983873""",18,0.0,0.0,14:00,Fri,69,10,64,459779,"['tonight', 'present', '#sharktank', 'update', '@thedrainstrain']",True
+"""817449827399299073""",19,0.25,0.1,12:16,Fri,87,17,64,459779,"['company', 'wants', 'help', 'get', 'close', 'purrsonal', 'cat', '#sharktank']",True
+"""817415453161230337""",44,0.625,0.5,10:00,Fri,114,19,64,459779,"['shark', 'tank', 'changed', 'lives', 'helped', 'many', 'people', 'realize', 'dreams', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""817170093121605633""",37,0.0,0.0,17:45,Thu,89,13,64,459779,"['@kevinolearytv', 'face', 'says', 'all', 'want', 'miss', 'tomorrow', 'allnew', '#sharktank']",True
+"""817136969268477952""",31,1.0,1.0,15:33,Thu,56,9,64,459779,"['pitch', 'naturally', 'perfect', 'every', 'way', '#sharktank']",True
+"""816753070050775040""",113,0.0,0.0,14:08,Wed,104,17,64,459779,"['over', 'deals', '&amp', 'jobs', 'created', 'sharks', 'circling', 'million', '#sharktank']",True
+"""816468910287585280""",41,0.13636363636363635,0.45454545454545453,19:18,Tue,47,7,64,459779,"['new', 'year', 'businesses', 'deals', '#sharktank']",True
+"""815965911844786176""",48,0.5,0.5,10:00,Mon,81,14,64,459779,"['someone', 'says', '#newyears', 'resolution', 'gym', 'more', '#sharktank']",True
+"""815573303276556288""",53,1.0,1.0,08:00,Sun,51,8,64,459779,"['wishing', 'happy', 'prosperous', '#sharktank']",True
+"""815226014477516800""",20,0.0,0.0,09:00,Sat,46,8,64,459779,"['hope', 'get', '#newyears', 'kiss', '#sharktank']",True
+"""814924025742888960""",24,0.125,0.0,13:00,Fri,95,17,64,459779,"['offers', 'can', 'disappear', 'blink', 'eye', 'see', 'moment', 'unfolds', 'tonight', '#sharktank']",True
+"""814531441270943745""",19,0.17045454545454544,0.45454545454545453,11:00,Thu,35,6,64,459779,"['glide', 'new', 'year', 'gracefully']",True
+"""814138869465620480""",62,-0.05,0.4,09:00,Wed,64,12,64,459779,"['people', 'often', 'pay', 'price', 'waiting', 'long', 'act', '#sharktank']",True
+"""813021495236640770""",12,0.0,0.0,07:00,Sun,32,6,64,459779,"['santa', 'know', '#sharktank']",True
+"""812659110810447877""",20,1.0,1.0,07:00,Sat,41,6,64,459779,"['santa', 'just', 'wonderful', '#sharktank']",True
+"""812311826876796928""",38,0.875,0.2,08:00,Fri,115,18,64,459779,"['always', 'just', 'selling', 'product', 'happiness', 'catch', 'encore', 'episode', '#sharktank', 'tonight']",True
+"""811988577483505664""",22,0.4375,0.55,10:35,Thu,63,12,64,459779,"['give', 'gift', 'watching', 'full', 'episodes', '#sharktank']",True
+"""811282279989440512""",13,-0.3125,0.4,11:49,Tue,75,12,64,459779,"['holidays', 'pawpular', 'time', 'support', 'small', 'businesses', '#sharktank']",True
+"""810667621452369920""",25,0.375,0.2,19:06,Sun,56,9,64,459779,"['fun', 'pitch', 'honor', '#sundayfunday', '#sharktank']",True
+"""809855001052921856""",48,0.5,0.6666666666666666,13:17,Fri,102,17,64,459779,"['wonderful', 'open', 'business', 'enjoy', 'encore', 'presentation', '#sharktank', 'tonight', 'abc']",True
+"""809397614651142144""",23,0.6,0.95,07:00,Thu,52,8,64,459779,"['just', 'really', 'loving', 'food', '#sharktank']",True
+"""809075130752114688""",411,-0.5,0.9,09:38,Wed,119,22,64,459779,"['growing', 'believed', '@mcuban', 'hustled', '&amp', 'proved', 'wrong', 'shark', 'gives', 'others', 'someone']",True
+"""808433817904037888""",17,0.0,0.0,15:10,Mon,98,21,64,459779,"['business', 'hopes', 'lend', 'hand', 'people', 'wear', 'gloves', 'sharks', 'find', 'fit']",True
+"""808132641031495680""",52,1.0,0.3,19:13,Sun,117,17,64,459779,"['congratulations', '#sharktank', 'cast', 'crew', '#criticschoice', 'award', 'best', 'structured', 'reality', 'series']",False
+"""808038682091524096""",26,0.46875,0.75,13:00,Sun,95,17,64,459779,"['excited', 'christmas', 'start', 'see', 'santa', 'pop', 'everywhere', '#sharktank']",True
+"""807578114150830080""",56,0.14285714285714285,0.4178571428571428,06:30,Sat,110,19,64,459779,"['entrepreneur', 'work', 'find', 'right', 'balance', 'personal', 'life', '#sharktank']",True
+"""807421095200468994""",26,0.17045454545454544,0.45454545454545453,20:06,Fri,80,15,64,459779,"['new', 'year', 'sharks', 'circling', 'million', 'deals', 'made', 'tank']",True
+"""807420239529070594""",25,0.7666666666666666,0.9666666666666667,20:02,Fri,116,17,64,459779,"['sharks', 'always', 'look', 'incredible', 'tonight', '@lorigreiner', 'shining', 'like', 'star', 'happy', 'birthday', 'inspiring', 'woman']",True
+"""807418546162663424""",7,0.0,0.0,19:55,Fri,138,23,64,459779,"['next', '@handoutgloves', 'team', 'going', 'try', 'convince', '@lorigreiner', '@kevinolearytv', 'join', 'deal', 'think', 'will', 'happen']",False
+"""807417431853592577""",9,1.0,0.75,19:51,Fri,59,7,64,459779,"['getting', 'great', 'feedback', '#sharktank', '@handoutgloves']",False
+"""807417020232925184""",12,0.75,0.95,19:49,Fri,60,8,64,459779,"['sharks', 'loving', 'presentation', '#sharktank', '#handout']",True
+"""807416538718498816""",13,0.48522727272727273,0.6022727272727273,19:47,Fri,38,5,64,459779,"['great', 'new', 'product', '#sharktank', '#handout']",True
+"""807415293421174784""",7,0.75,1.0,19:43,Fri,50,5,64,459779,"['congrats', '@kevinolearytv', 'nice', 'bags', '@digiwrapit']",False
+"""807414486739152896""",9,0.5,0.9444444444444444,19:39,Fri,62,8,64,459779,"['customized', 'tissue', 'paper', 'unique', 'sure', '#sharktank', '#digiwrap']",True
+"""807413761325862912""",10,0.609375,0.9750000000000001,19:36,Fri,35,4,64,459779,"['very', 'original', '#sharktank', '#digiwrap']",True
+"""807413129307099137""",5,0.0,0.0,19:34,Fri,19,3,64,459779,"['agreed', '#sharktank']",True
+"""807412033801093120""",8,0.20833333333333331,0.8333333333333334,19:30,Fri,36,4,64,459779,"['clever', 'indeed', '#sharktank', '#polyglide']",True
+"""807411112555712512""",20,0.0,0.0,19:26,Fri,34,3,64,459779,"['yassss', '#sharktank', '@robertherjavec']",True
+"""807410869059600385""",5,0.0,1.0,19:25,Fri,52,6,64,459779,"['can', 'see', 'potential', '#sharktank', '@barbaracorcoran']",True
+"""807410340296294402""",4,0.0,0.0,19:23,Fri,41,4,64,459779,"['#sharktank', '@lorigreiner', '@robertherjavec']",True
+"""807409527188492289""",11,0.35416666666666663,0.3333333333333333,19:20,Fri,76,11,64,459779,"['mind', 'blowing', '@mcuban', 'super', 'fans', 'story', 'success', '#sharktank']",True
+"""807408628131106816""",17,0.0,0.0,19:16,Fri,58,9,64,459779,"['dear', '@lorigreiner', 'just', 'made', 'killer', 'offer', '#sharktank']",True
+"""807406691264397312""",11,0.125,0.15000000000000002,19:08,Fri,61,8,64,459779,"['actually', 'liking', 'much', '#sealedbysanta', '#sharktank']",True
+"""807406164828979202""",5,0.25,0.5,19:06,Fri,36,3,64,459779,"['promising', '#sharktank', '#sealedbysanta']",True
+"""807405728436781056""",7,1.0,1.0,19:05,Fri,42,7,64,459779,"['happy', 'meet', 'santa', 'tonight', '#sharktank']",True
+"""807405218342338560""",3,1.0,0.75,19:02,Fri,59,9,64,459779,"['work', 'santa', 'claus', 'woooaaahh', 'great', 'start', '#sharktank']",False
+"""807405035751608320""",11,0.8125,0.8125,19:02,Fri,99,14,64,459779,"['miss', 'tonight', 'outstanding', 'episode', 'lots', 'great', 'stories', '#sharktank', 'starts', 'now', 'est/cst']",False
+"""807396920285130752""",19,0.0,0.0,18:30,Fri,49,8,64,459779,"['turning', 'heat', 'tonight', '#sharktank']",True
+"""807385598789058561""",13,0.25,0.5,17:45,Fri,51,7,64,459779,"['@robertherjavec', 'ready', 'tonight', '#sharktank']",True
+"""807330481683517441""",10,0.3125,0.3333333333333333,14:06,Fri,65,11,64,459779,"['venture', 'north', 'pole', 'week', 'first', 'pitch', '#sharktank']",True
+"""807223296169312258""",44,0.7416666666666667,0.8833333333333333,07:00,Fri,69,9,64,459779,"['happy', 'birthday', 'intelligent', 'lovely', '@lorigreiner', '#sharktank']",True
+"""807042092501442560""",14,0.0,0.0,19:00,Thu,58,9,64,459779,"['gifts', 'everyone', '#sharktank', 'allnew', 'tomorrow', 'abc']",True
+"""807025352140853248""",46,-0.25,0.25,17:53,Thu,76,15,64,459779,"['@mcuban', 'opens', 'past', 'path', 'now', '#sharktank']",True
+"""806625334540062729""",10,0.0,0.0,15:24,Wed,57,9,64,459779,"['sharks', 'celebrate', 'holidays', 'tank', '#sharktank']",True
+"""806270750361583616""",14,0.0,0.0,15:55,Tue,33,5,64,459779,"['sharks', 'get', 'scared', '#sharktank']",True
+"""805952130565582848""",16,0.0,0.0,18:48,Mon,111,18,64,459779,"['silicon', 'valley', 'entrepreneurs', 'trying', 'change', 'way', 'people', 'consume', 'coffee', 'sharks', 'bite']",True
+"""805456651490906112""",29,0.0,0.0,10:00,Sun,71,10,64,459779,"['entrepreneurs', 'learned', 'lesson', 'leaving', 'tank', '#sharktank']",True
+"""805094261683326977""",18,0.75,0.7,10:00,Sat,68,9,64,459779,"['@lorigreiner', 'entrepreneurs', 'perfect', 'fit', '#sharktank']",True
+"""804883153924005889""",33,0.0,0.0,20:01,Fri,47,9,64,459779,"['made', 'deal', 'night', '#sharktank']",True
+"""804881858580348928""",24,0.0,0.0,19:56,Fri,51,9,64,459779,"['just', 'thought', 'seen', 'all', '#sharktank']",True
+"""804881317666164736""",5,0.0,0.0,19:53,Fri,43,8,64,459779,"['stand', '@nomiku', '#sharktank', 'stand', '@nomiku', '#sharktank']",True
+"""804880600410755072""",11,1.0,1.0,19:51,Fri,43,7,64,459779,"['samples', 'make', 'sharks', 'happy', '#sharktank']",True
+"""804878215168851968""",6,0.16,0.5399999999999999,19:41,Fri,93,19,64,459779,"['highest', 'valuation', 'ever', 'high', 'kiss', 'death', '#sharktank']",False
+"""804877812691779584""",12,0.0,0.0,19:39,Fri,72,10,64,459779,"['think', 'coffee', 'cubes', '@nootrobox', '#sharktank', '#nootrobox']",True
+"""804877341562441728""",7,0.0,0.0,19:38,Fri,59,12,64,459779,"['hand', 'gestures', 'power', 'pitch', '#sharktank']",True
+"""804876566232711168""",5,-0.2916666666666667,0.5416666666666666,19:35,Fri,58,11,64,459779,"['sharks', 'proof', 'hard', 'work', 'pays', 'off', '#sharktank']",True
+"""804875402959273985""",4,0.0,0.4,19:30,Fri,58,8,64,459779,"['deeply', 'conflicted', 'deal', '@sacca', '#sharktank']",True
+"""804874426655395841""",8,0.25,0.2,19:26,Fri,54,10,64,459779,"['mark', 'likes', 'much', 'winston', '@mcuban', '#sharktank']",True
+"""804874068101054464""",17,0.0,0.0,19:25,Fri,67,9,64,459779,"['cutest', 'chief', 'tasting', 'officer', 'ever', '#sharktank', '#petplate', '@petplate']",True
+"""804872597632647169""",9,0.25,0.9,19:19,Fri,70,11,64,459779,"['support', 'shark', 'provides', 'can', 'absolutely', 'change', 'lives', '#sharktank']",True
+"""804872320925962240""",5,0.225,0.35,19:18,Fri,100,14,64,459779,"['checking', '#simplyfitboard', 'ladies', 'accomplished', 'much', 'together', '#sharktank']",True
+"""804871776090128389""",3,0.0,0.0,19:15,Fri,55,9,64,459779,"['like', 'see', 'entrepreneurs', 'squirm', '#sharktank']",True
+"""804869623980113920""",7,0.0,0.0,19:07,Fri,78,11,64,459779,"['want', 'kevin', 'shoes', '@kevinolearytv', '@inboardskate', '#sharktank']",True
+"""804868878979465216""",11,0.0,0.0,19:04,Fri,74,11,64,459779,"['wonderful', 'going', 'ride', '@inboardskate', '#sharktank', '#inboardskate']",True
+"""804868348077080577""",24,0.2,0.5,19:02,Fri,75,15,64,459779,"['sharks', 'ready', 'bite', 'tonight', 'tuning', '#sharktank']",True
+"""804837558702239744""",17,0.0,0.0,17:00,Fri,70,13,64,459779,"['see', 'believe', 'tension', 'tank', 'tonight', '#sharktank']",True
+"""804807372350902273""",11,-0.3333333333333333,0.6666666666666666,15:00,Fri,72,12,64,459779,"['things', 'get', 'serious', 'guest', 'shark', 'chris', '@sacca', 'tank', '#sharktank']",True
+"""804777189149446145""",65,0.18522727272727274,0.4772727272727273,13:00,Fri,74,14,64,459779,"['raise', 'hand', 'ready', 'new', 'episode', '#sharktank', 'tonight']",True
+"""804767484117217281""",6,0.0,0.0,12:21,Fri,28,4,64,459779,"['invest', '#sharktank']",True
+"""804755014879248384""",86,0.0,0.0,11:32,Fri,91,16,64,459779,"['will', 'sharks', 'get', 'board', 'business', 'find', 'out', 'allnew', '#sharktank', 'tonight']",True
+"""804716787128500224""",16,0.6666666666666666,0.7916666666666667,09:00,Fri,102,16,64,459779,"['seeing', 'progress', 'businesses', 'like', '@simplyfitboard', '@lorigreiner', 'loyal', 'great', 'shark']",True
+"""804505383846969344""",14,0.0,0.0,19:00,Thu,56,7,64,459779,"['miss', 'fintastic', '#sharknado', 'moment', '#sharktank']",True
+"""804480451293351936""",64,-0.5,0.7,17:21,Thu,101,16,64,459779,"['entrepreneurs', 'want', 'make', 'product', 'secret', 'weapon', 'people', 'cooking', 'home', '#sharktank']",True
+"""804135429658255360""",58,0.125,1.0,18:30,Wed,80,12,64,459779,"['something', 'unexpected', 'makes', '#sharktank', 'history', 'miss', 'friday', 'abc']",True
+"""804113539048886272""",10,0.125,0.4,17:03,Wed,46,8,64,459779,"['@kevinolearytv', 'takes', 'ride', 'wild', 'side']",True
+"""803293055683989505""",59,0.6,1.0,10:42,Mon,88,13,64,459779,"['sometimes', 'sharks', 'share', 'own', 'stories', 'help', 'guide', 'entrepreneurs', '#sharktank']",True
+"""802557542442278912""",18,0.25,0.4,10:00,Sat,66,8,64,459779,"['@kevinolearytv', 'always', 'goes', 'straight', 'valuation', '#sharktank']",True
+"""802270650685603840""",29,0.625,0.625,15:00,Fri,78,15,64,459779,"['able', 'watch', 'episode', '#sharktank', 'tonight', 'abc']",True
+"""802225358196117505""",24,0.0,0.0,12:00,Fri,52,10,64,459779,"['see', '#blackfriday', 'deal', 'must']",True
+"""801893181923135488""",223,0.0,0.0,14:00,Thu,88,14,64,459779,"['find', 'out', 'whipped', 'cream', 'thanksgiving', 'pumpkin', 'pie', '#sharktank']",True
+"""801485412552364032""",9,0.45535714285714285,0.7178571428571429,10:59,Wed,83,13,64,459779,"['start', 'thanksgiving', 'week', 'off', 'right', 'watch', 'latest', '#sharktank', 'episode', 'now']",True
+"""801115537489141760""",67,0.5208333333333334,0.5,10:30,Tue,42,8,64,459779,"['come', 'water', 'fine', '#sharktank']",True
+"""800390758629076997""",59,0.0,0.0,10:30,Sun,81,15,64,459779,"['tank', '#amas', 'miss', '@mcuban', 'presenting', 'tonight', 'abc']",True
+"""800066131734237188""",23,0.2,0.2,13:00,Sat,67,13,64,459779,"['spend', 'saturday', 'smiling', 'much', '@mcuban', 'puppy']",True
+"""800020843900321793""",36,0.0,0.0,10:00,Sat,81,12,64,459779,"['million', 'sales', '@bantambagels', 'soared', 'after', '#sharktank']",True
+"""799810191919316992""",18,0.5,0.5,20:03,Fri,78,13,64,459779,"['happy', 'watched', 'episode', 'looking', 'forward', 'next', 'week', '#sharktank']",True
+"""799809746148741120""",5,0.125,1.0,20:01,Fri,30,4,64,459779,"['wow', 'congrats', '#linecutterz']",True
+"""799808206306426880""",5,0.0,0.0,19:55,Fri,12,2,64,459779,['#sharktank'],True
+"""799807245097771008""",9,0.5,1.0,19:51,Fri,38,6,64,459779,"['important', 'listen', '#sharktank']",True
+"""799806462960791552""",14,0.0,0.0,19:48,Fri,49,9,64,459779,"['knew', 'million', 'dollar', 'idea', '#sharktank']",True
+"""799804590350880768""",5,0.0,0.0,19:40,Fri,69,12,64,459779,"['thank', 'experts', 'sugar', 'coating', '#sharktank']",True
+"""799803546661191680""",7,0.0,0.0,19:36,Fri,19,2,64,459779,['#sharktank'],True
+"""799803260148318209""",4,0.0,0.0,19:35,Fri,85,14,64,459779,"['stop', 'second', 'sharks', 'supposed', 'chew', '@energybits', '#sharktank']",True
+"""799802833646350337""",1,1.0,1.0,19:33,Fri,61,8,64,459779,"['sounds', 'like', 'very', 'impressive', 'product', '#sharktank', '@energybits']",True
+"""799800290899857408""",2,0.5416666666666667,0.8333333333333334,19:23,Fri,74,14,64,459779,"['nobody', 'said', 'going', 'always', 'easy', 'charm', 'sharks', '#sharktank']",True
+"""799798460899856384""",8,0.5375,0.4,19:16,Fri,57,8,64,459779,"['loved', 'seeing', 'success', '@bantambagels', '@lorigreiner']",True
+"""799797960422912000""",5,0.0,0.0,19:14,Fri,24,4,64,459779,"['bye', 'pups', '#thesharktank']",True
+"""799795772560654336""",16,0.6,0.95,19:05,Fri,83,15,64,459779,"['know', 'loving', 'puppies', 'think', '#pupbox', '#sharktank']",True
+"""799795245160468481""",9,0.0,0.0,19:03,Fri,22,3,64,459779,"['beauties', '#sharktank']",True
+"""799794745207902209""",11,0.0,0.0,19:01,Fri,64,11,64,459779,"['art', 'doing', 'business', '#sharktank', 'starts', 'now', 'est/cst']",True
+"""799764134975963136""",8,0.375,0.3333333333333333,17:00,Fri,67,10,64,459779,"['smile', '@bantambagels', 'back', 'amazing', 'update', '#sharktank']",True
+"""799733948012265472""",32,0.0,0.0,15:00,Fri,59,10,64,459779,"['puppy', 'cuteness', 'overload', 'tank', 'tonight', '#sharktank']",True
+"""799719834640650240""",28,0.0,0.0,14:04,Fri,69,8,64,459779,"['entrepreneur', '@thesharkdaymond', 'distress', 'tonight', '#sharktank']",True
+"""799697561879801857""",25,-0.07692307692307693,0.2692307692307692,12:35,Fri,49,9,64,459779,"['will', 'sharks', 'bite', 'cut', 'loose', '#sharktank']",True
+"""799418095727210496""",255,0.0,0.0,18:05,Thu,57,12,64,459779,"['bound', 'pawpular', 'pitch', '#sharktank']",True
+"""799015559803392004""",68,-0.19583333333333336,0.7708333333333333,15:25,Wed,92,15,64,459779,"['entrepreneur', 'learns', 'shark', 'lesson', 'hard', 'way', 'tread', 'carefully', 'tank', '#sharktank']",True
+"""798596577073844226""",194,1.0,1.0,11:40,Tue,109,18,64,459779,"['way', '@sacca', 'let', 'brilliant', 'yearold', 'entrepreneur', 'leave', 'tank', 'without', 'deal']",True
+"""798229528455716864""",26,0.0,0.0,11:22,Mon,74,13,64,459779,"['lot', 'happened', 'tank', 'guest', 'shark', '@sacca', 'watch', '#sharktank', 'now']",True
+"""797846502349611008""",67,0.5,0.5,10:00,Sun,74,11,64,459779,"['entrepreneur', 'perfect', 'example', 'american', 'dream', '#sharktank']",True
+"""797544505297764352""",21,0.65,0.2,14:00,Sat,50,10,64,459779,"['smile', 'best', 'thing', 'can', 'wear', '#sharktank']",True
+"""797476562610307073""",35,0.0,0.0,09:30,Sat,87,11,64,459779,"['entrepreneurs', 'used', 'shark', 'partnerships', 'succeed', 'like', 'champions', '#sharktank']",True
+"""797272865187958784""",9,0.0,0.0,20:00,Fri,52,9,64,459779,"['#sharktank', 'explode', 'tonight']",False
+"""797272567463706624""",4,0.4166666666666667,0.4916666666666667,19:59,Fri,64,10,64,459779,"['good', 'job', '@toortoday', 'excited', 'future', '#sharktank']",False
+"""797271378554683392""",6,0.171875,0.4375,19:54,Fri,87,14,64,459779,"['chris', 'feeling', 'other', 'sharks', 'showing', 'support', '#sharktanks']",True
+"""797270606282706944""",8,0.0,0.0,19:51,Fri,25,3,64,459779,"['ouch', 'barbara', '#sharktank']",True
+"""797269925366788096""",10,0.46875,0.75,19:48,Fri,57,7,64,459779,"['excited', 'presentation', '#sharktank', '@toortoday']",True
+"""797267660782321664""",15,0.75,0.95,19:39,Fri,59,6,64,459779,"['loving', 'deal', '@chilantrobbq', '#sharktank', '@barbaracorcoran', 'loving', 'deal', '@chilantrobbq', '#sharktank', '@barbaracorcoran']",True
+"""797265902190362624""",19,1.0,0.75,19:32,Fri,58,10,64,459779,"['great', 'shark', '@sacca', '#sharktank', '@chilantrobbq']",True
+"""797265478582472704""",6,0.0,0.1,19:31,Fri,54,7,64,459779,"['big', 'opportunity', '@chilantrobbq', '#sharktank']",True
+"""797263822268616704""",71,0.0,0.0,19:24,Fri,39,7,64,459779,"['inspired', 'jack', '#sharktank']",True
+"""797263457817100289""",6,0.0,0.0,19:23,Fri,40,3,64,459779,"['inspiration', '@barbaracorcoran', '#sharktank']",True
+"""797263091926962176""",17,0.0,0.0,19:21,Fri,68,10,64,459779,"['jack', 'stands', 'colorado', 'already', 'favorites', '#sharktank']",True
+"""797261110915301376""",25,0.625,1.0,19:13,Fri,70,10,64,459779,"['glad', 'made', 'deal', '#sharktank', '@sacca', '@mcuban', '@rentlikeachamp']",True
+"""797260627781808128""",4,-0.41666666666666663,0.6666666666666666,19:12,Fri,109,18,64,459779,"['#milksnob', 'creator', 'getting', 'nervous', 'now', 'things', 'serious', 'sharks', 'bite', '#sharktank']",False
+"""797259386876030977""",8,-0.08229166666666668,0.5208333333333333,19:07,Fri,55,8,64,459779,"['yes', '@lorigreiner', 'always', 'ready', 'work', 'hard', '#sharktank']",True
+"""797258977667121153""",6,0.1,0.25,19:05,Fri,88,16,64,459779,"['ready', 'take', 'next', 'level', 'sharks', 'already', 'like', '#sharktank', '#milksnob']",True
+"""797258430104932352""",6,0.35000000000000003,0.55,19:03,Fri,68,10,64,459779,"['incredible', 'intense', 'fun', 'episode', 'starting', 'now', '#sharktank']",True
+"""797219865140559872""",26,-0.03977272727272728,0.42727272727272725,16:30,Fri,69,12,64,459779,"['round', 'applause', 'new', 'episode', '#sharktank', 'tonight']",True
+"""797210475146526720""",24,0.35714285714285715,0.5714285714285714,15:52,Fri,120,20,64,459779,"['dave', 'enters', 'tank', 'allnew', 'episode', '@drkenabc', 'watch', 'special', '#drken', '&amp', '#sharktank', 'crossover', 'tonight']",True
+"""797197220223320064""",8,0.625,0.5,15:00,Fri,63,12,64,459779,"['shark', 'chef', '@sacca', 'man', 'many', 'talents', '#sharktank']",True
+"""797159461018288129""",32,0.0,0.0,12:30,Fri,66,12,64,459779,"['@sacca', 'back', 'tank', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""797129273442189312""",32,0.25,0.5,10:30,Fri,109,18,64,459779,"['@drkenabc', 'shark', 'tank', 'ready', 'watch', 'sharks', 'guest', 'star', 'tonight', 'episode', '#drken', 'before', 'allnew']",True
+"""797099066987515905""",66,0.0,0.0,08:30,Fri,69,11,64,459779,"['billionaires', '@mcuban', '@sacca', 'battle', 'out', 'tank', '#sharktank']",True
+"""796880136415092736""",5,0.0,0.0,18:00,Thu,57,8,64,459779,"['@lorigreiner', 'wait', 'try', 'samples', '#sharktank']",True
+"""796858981339852801""",213,0.1359375,0.64375,16:36,Thu,107,20,64,459779,"['only', 'year', 'old', 'own', 'business', 'hopes', 'help', 'other', 'kids', 'become', 'entrepreneurs']",True
+"""796516191464554498""",56,0.0,0.0,17:53,Wed,43,7,64,459779,"['pitch', 'everyone', 'fired', '#sharktank']",True
+"""796121357033603072""",24,0.3125,0.5,15:44,Tue,119,19,64,459779,"['dave', 'ready', 'tank', 'watch', '@drkenabc', '&amp', '#sharktank', 'crossover', 'friday', 'before', 'abc']",True
+"""795808725445513216""",29,0.0,0.0,19:02,Mon,84,12,64,459779,"['without', '#sharktank', 'entrepreneur', 'found', 'idea', 'business']",True
+"""795745541032394753""",13,0.0,0.0,14:51,Mon,59,8,64,459779,"['just', 'feeling', 'music', '#musicmonday', '#sharktank']",True
+"""795309790822105088""",18,0.0,0.0,10:00,Sun,40,7,64,459779,"['all', 'cash', 'flow', '#sharktank']",True
+"""794962507685306368""",7,0.0,0.5,12:00,Sat,58,8,64,459779,"['@lorigreiner', 'definitely', 'boss', 'business', '#sharktank']",True
+"""794932314363097088""",23,0.0,0.0,10:00,Sat,60,7,64,459779,"['@wkdgoodcupcakes', 'sold', 'millionth', 'cupcake', '#sharktank']",True
+"""794722943343493120""",26,0.0,0.1,20:08,Fri,104,16,64,459779,"['never', 'regret', 'watching', '#sharktank', 'sharks', 'killed', 'tonight', 'thanks', 'tuning', '@kevinolearytv']",True
+"""794719298078052352""",12,0.5,0.32857142857142857,19:53,Fri,86,13,64,459779,"['swag', 'play', 'games', 'simply', 'best', '#sharktank', '@thesharkdaymond']",True
+"""794718065204326400""",24,1.0,1.0,19:48,Fri,70,9,64,459779,"['presentation', 'going', 'unforgettable', '#besomebody', '#sharktank']",True
+"""794717503515742208""",19,0.22916666666666669,0.2833333333333333,19:46,Fri,63,12,64,459779,"['experts', 'talk', 'less', 'listen', 'more', '#sharktank']",True
+"""794716142384402432""",16,0.0,0.0,19:41,Fri,39,5,64,459779,"['just', 'care', '#sharktank', '@mcuban']",True
+"""794715094395604992""",13,0.7000000000000001,0.8833333333333333,19:36,Fri,60,7,64,459779,"['wow', '@safecatch', 'incredible', 'product', 'great', 'seafood', '#sharktank']",True
+"""794713828957286400""",11,0.3285714285714285,0.3678571428571429,19:31,Fri,79,13,64,459779,"['guys', 'thinking', 'tonight', 'show', 'much', 'fun', 'right', '#sharktank']",True
+"""794712206705356800""",16,0.5,1.0,19:25,Fri,49,5,64,459779,"['just', 'fabulous', '@lorigreiner', '#sharktank', '#styleclub']",True
+"""794710799206019073""",6,0.6875,0.8875,19:19,Fri,65,7,64,459779,"['hmmm', 'looks', 'amazing', 'outstanding', 'job', '@wkdgoodcupcakes', '#sharktank']",True
+"""794710246698655745""",9,0.0,0.0,19:17,Fri,39,4,64,459779,"['congrats', '@thesharkdaymond', '#sharktank']",True
+"""794706828496109568""",6,1.0,1.0,19:04,Fri,80,11,64,459779,"['#ecoflower', 'timeless', 'gifts', 'sounds', 'wonderful', 'think', 'fans', '#sharktank']",True
+"""794701019477381120""",25,0.0,0.0,18:41,Fri,60,11,64,459779,"['all', 'sharks', 'back', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""794675606629842944""",22,0.875,0.6000000000000001,17:00,Fri,54,10,64,459779,"['episode', '#sharktank', 'going', 'wicked', 'good']",True
+"""794649171194183680""",30,0.0,0.0,15:15,Fri,67,13,64,459779,"['season', '#sharktank', 'all', 'watch', 'tonight', 'abc']",True
+"""794626543419006976""",21,0.0,0.0,13:45,Fri,69,9,64,459779,"['tonight', 'entrepreneurs', 'tricks', 'sleeves', '#sharktank']",True
+"""794609554638143489""",47,0.0,0.0,12:37,Fri,105,16,64,459779,"['will', 'sharks', 'help', 'entrepreneur', '#besomebody', 'business', 'world', 'find', 'out', 'tonight', '#sharktank']",True
+"""794331832523378688""",11,0.25,0.1,18:14,Thu,79,11,64,459779,"['@barbaracorcoran', 'wants', 'know', 'invest', '@myecoflower', '#sharktank']",True
+"""793923039360614400""",58,0.25,0.5,15:09,Wed,89,16,64,459779,"['all', 'sharks', 'enter', 'tank', 'again', 'get', 'ready', 'roller', 'coaster', 'emotions', '#sharktank']",True
+"""793611094745120768""",24,1.0,0.4,18:30,Tue,74,13,64,459779,"['support', 'sharks', 'vote', '#sharktank', 'win', 'people', 'choice', 'award']",True
+"""793599766634565632""",32,0.2,0.2,17:45,Tue,71,14,64,459779,"['really', 'want', 'say', 'lot', 'people', 'around', '#sharktank']",True
+"""793587051304194048""",46,0.0,0.0,16:54,Tue,92,12,64,459779,"['@mcuban', 'thinks', 'entrepreneur', 'delivery', 'spitting', 'image', '@jimmykimmel', '#sharktank']",True
+"""793195603702394881""",81,0.0,0.0,14:59,Mon,114,17,64,459779,"['deal', 'sharks', 'always', 'something', 'offer', 'entrepreneurs', '@mcuban', 'reinvents', 'business', 'watch', 'now']",True
+"""792803275548524545""",97,0.0,0.0,13:00,Sun,113,14,64,459779,"['@graceandlaceco', 'entrepreneurs', 'growing', 'business', 'global', 'impact', 'family', '#sharktank']",True
+"""792752931468615680""",9,0.0,0.0,09:40,Sun,48,6,64,459779,"['@mcuban', 'pumped', '#sundayfunday', '#sharktank']",True
+"""792471080447385600""",24,1.0,1.0,15:00,Sat,48,7,64,459779,"['picture', 'perfect', 'potato', 'ending', '#sharktank']",True
+"""792440885338378241""",21,1.0,0.875,13:00,Sat,62,10,64,459779,"['wonderful', 'potatoes', 'make', 'great', 'team', '#sharktank']",True
+"""792380492591013888""",26,0.275,0.15000000000000002,09:00,Sat,66,11,64,459779,"['hope', 'today', 'something', 'makes', 'laugh', 'much', '#sharktank']",True
+"""792182296933650432""",47,0.0,0.0,19:52,Fri,73,11,64,459779,"['moment', 'realize', 'daymond', 'thought', 'costumes', '#sharktank']",True
+"""792181982989918216""",17,0.6,0.9,19:51,Fri,55,9,64,459779,"['realize', 'idea', 'catching', '#sharktank']",True
+"""792181332365283328""",16,0.5,1.0,19:48,Fri,41,6,64,459779,"['potato', 'favorite', '#sharktank']",True
+"""792181014030188544""",11,0.25,0.8500000000000001,19:47,Fri,84,15,64,459779,"['will', 'deal', 'picked', 'dropped', 'like', 'hot', 'potato', '@potatoparcel', '#sharktank']",True
+"""792180003047813120""",8,0.18666666666666668,0.48,19:43,Fri,49,10,64,459779,"['high', 'valuation', 'huge', 'red', 'flag', '#sharktank']",True
+"""792178061835841536""",11,0.0,0.125,19:35,Fri,71,11,64,459779,"['future', 'skin', 'protection', '@sunscreenrtm', '#sharktank']",True
+"""792176321342210048""",15,0.3125,0.3333333333333333,19:28,Fri,50,6,64,459779,"['@graceandlaceco', 'first', 'intern', '#sharktank']",True
+"""792176052894216192""",19,-0.875,1.0,19:27,Fri,56,9,64,459779,"['moment', 'realize', 'pitch', 'brutal', '#sharktank']",True
+"""792175684152066048""",4,0.0,0.0,19:26,Fri,29,5,64,459779,"['order', 'tank', '#sharktank']",True
+"""792175017047928832""",9,-0.2,0.4,19:23,Fri,69,12,64,459779,"['lori', 'thinks', 'wearing', 'clothes', 'fit', '#sharktank']",True
+"""792174649979219969""",6,0.0,0.0,19:22,Fri,46,7,64,459779,"['think', '@theunpack', '#sharktank']",True
+"""792172172047286278""",12,0.0,0.0,19:12,Fri,69,14,64,459779,"['sauce', 'bring', 'tear', 'glass', 'eye', 'daymond', '#sharktank']",True
+"""792170821343031296""",12,0.8,0.75,19:06,Fri,46,7,64,459779,"['numbers', 'looking', 'great', '#sharktank']",True
+"""792170199533301762""",6,0.0,0.0,19:04,Fri,69,10,64,459779,"['bang', 'everyone', 'loves', 'play', 'words', '@joycescuisine', '#lulubangnation']",True
+"""792108697464008704""",28,0.25,0.5,15:00,Fri,48,8,64,459779,"['get', 'ready', 'shark', 'attack', 'tonight', '#sharktank']",True
+"""792067159342153728""",55,-0.41666666666666663,0.5,12:15,Fri,84,13,64,459779,"['after', 'entrepreneurs', 'leave', 'tank', 'things', 'get', 'tense', 'sharks', '#sharktank']",True
+"""792046786747785216""",26,0.0,0.0,10:54,Fri,106,15,64,459779,"['@graceandlaceco', 'made', 'deal', '@barbaracorcoran', 'watch', 'tonight', 'see', 'things', 'turned', 'out', '#sharktank']",True
+"""791799145401114625""",55,0.25,0.5,18:30,Thu,76,14,64,459779,"['get', 'ready', 'shark', 'fight', 'leads', 'walking', 'away', '#sharktank']",True
+"""791784070162313221""",21,0.0,0.0,17:30,Thu,55,8,64,459779,"['something', 'tank', 'sharks', 'going', '#sharktank']",True
+"""791768061523230721""",6,0.0,0.0,16:26,Thu,97,14,64,459779,"['will', 'entrepreneur', 'sunscreen', 'detection', 'business', 'shine', 'fade', 'sharks', '#sharktank']",True
+"""791363774578057216""",51,1.0,1.0,13:40,Wed,68,11,64,459779,"['potato', 'pitch', 'priceless', '#sharktank', 'allnew', 'friday', 'abc']",True
+"""790979742249910272""",10,0.625,0.6,12:14,Tue,40,7,64,459779,"['love', '#sharktank']",True
+"""790595155212599296""",23,0.0,0.0,10:45,Mon,79,14,64,459779,"['sharks', 'time', 'money', 'entrepreneur', 'just', 'ran', 'out', '#sharktank']",True
+"""790296751131463680""",16,0.0,0.0,15:00,Sun,28,4,64,459779,"['playing', 'emotions']",True
+"""790213696974970880""",92,0.5,1.0,09:30,Sun,96,14,64,459779,"['thank', 'sharing', 'story', '@kevinolearytv', 'truly', 'inspirational', '#sharktank']",True
+"""789926808657522688""",10,0.0,0.0,14:30,Sat,69,11,64,459779,"['entrepreneur', 'got', 'sticky', 'situation', 'tank', '#sharktank']",True
+"""789858908278026241""",28,-0.1,1.0,10:00,Sat,86,14,64,459779,"['tread', 'carefully', 'sharks', 'need', 'know', 'stop', 'negotiating', '#sharktank']",True
+"""789647819879526400""",22,0.125,0.1,20:01,Fri,69,13,64,459779,"['thanks', 'watching', 'wait', 'see', 'next', 'week', '#sharktank']",True
+"""789647483932520448""",8,0.2,0.2,20:00,Fri,87,16,64,459779,"['things', 'really', 'heating', 'keeping', 'track', 'all', 'numbers', '#sharktank']",True
+"""789647227719327744""",14,0.2857142857142857,0.5357142857142857,19:59,Fri,57,9,64,459779,"['anywhere', '@abc', 'right', 'after', '#sharktank', 'anywhere', '@abc', 'right', 'after', '#sharktank']",True
+"""789644614302961664""",6,0.0,0.1,19:48,Fri,73,13,64,459779,"['buy', '@silidog', 'tags', 'avoid', 'extra', 'noise', 'fading', '#sharktank']",False
+"""789642803257102336""",11,-0.125,0.45,19:41,Fri,59,13,64,459779,"['little', 'side', 'hair', 'flip', 'goes', 'long', 'way', '#sharktank']",True
+"""789642199101243392""",10,-0.15555555555555559,0.2888888888888889,19:39,Fri,40,7,64,459779,"['turn', 'down', '#sharktank']",True
+"""789641012914167808""",6,0.0,0.0,19:34,Fri,61,11,64,459779,"['next', '#safegrabs', 'will', 'shark', 'take', 'bait', '#sharktank']",True
+"""789640327774732290""",14,0.0,1.0,19:31,Fri,48,8,64,459779,"['finally', 'taste', 'samples', '#sharktank']",True
+"""789639403912073216""",14,0.37500000000000006,0.95,19:27,Fri,38,5,64,459779,"['only', 'calories', 'amazing', '#sharktank']",False
+"""789638663265062912""",8,0.0,0.0,19:25,Fri,55,8,64,459779,"['@kevinolearytv', 'known', 'maple', 'man', '#sharktank']",True
+"""789638260586713088""",13,0.0,0.0,19:23,Fri,94,16,64,459779,"['@parkersmaple', 'pitch', 'sharks', 'going', 'expecting', 'samples', '#sharktank']",True
+"""789636551491788800""",16,0.25,0.9,19:16,Fri,54,6,64,459779,"['@kevinolearytv', 'absolute', 'inspiration', '#sharktank']",True
+"""789636024464838656""",8,0.0,0.0,19:14,Fri,81,12,64,459779,"['whoa', 'think', 'hesitation', 'caused', '@sandilaketees', 'lose', 'deal', '#sharktank']",False
+"""789634695709417473""",5,0.0,0.0,19:09,Fri,62,11,64,459779,"['minute', 'gives', 'offer', 'out', 'barbara', '#sharktank']",True
+"""789633839786106881""",7,0.625,1.0,19:05,Fri,33,6,64,459779,"['adorable', '#sharktank']",True
+"""789633416400482304""",5,0.0,0.0,19:04,Fri,47,7,64,459779,"['think', '@sandilaketees', '#sharktank']",True
+"""789633019933962240""",9,0.2,0.5,19:02,Fri,73,14,64,459779,"['sharks', 'circling', 'tank', 'ready', 'see', 'deal', '#sharktank']",False
+"""789624814751322112""",15,0.0,0.0,18:30,Fri,107,18,64,459779,"['everyone', 'out', 'wait', 'going', 'watch', '#sharktank', 'hear', 'end', '@mcuban', 'sentence']",True
+"""789609755513917440""",9,0.5,0.5,17:30,Fri,86,13,64,459779,"['tonight', 'join', 'wonderful', 'journey', 'back', 'time', '@kevinolearytv', '#sharktank']",True
+"""789593161295421440""",4,0.5,1.0,16:24,Fri,50,8,64,459779,"['pitch', 'words', 'stylish', 'kids', '#sharktank']",True
+"""789556882172174340""",45,-0.03333333333333333,0.3634920634920635,14:00,Fri,105,16,64,459779,"['tonight', 'entrepreneur', 'tries', 'give', 'simple', 'solution', 'constant', 'kitchen', 'problem', '#sharktank']",True
+"""789542529968529408""",15,0.25,0.5399999999999999,13:03,Fri,62,10,64,459779,"['high', 'allnew', 'episode', '#sharktank', 'tonight']",True
+"""789228451781873665""",38,0.0,0.0,16:15,Thu,86,15,64,459779,"['after', 'all', 'sharks', 'out', 'something', 'pitch', 'lures', 'back', '#sharktank']",True
+"""789208073877454849""",29,0.375,0.6666666666666666,14:54,Thu,111,21,64,459779,"['time', 'shark', 'tell', 'invest', 'after', 'seeing', 'adorable', 'first', 'pitch', '#sharktank']",True
+"""788881226497191937""",145,1.0,1.0,17:15,Wed,116,22,64,459779,"['@kevinolearytv', 'overcome', 'lot', 'get', 'friday', 'glimpse', 'makes', 'wonderful']",True
+"""788533875098128385""",34,0.0,0.0,18:15,Tue,64,11,64,459779,"['let', 'song', 'dance', 'pitch', '#tuesdaymotivation']",True
+"""788489583344386048""",13,0.0,0.0,15:19,Tue,59,7,64,459779,"['even', 'sharks', 'struggle', 'making', 'decisions', 'sometimes', '#sharktank']",True
+"""788454353355083776""",13,0.6,1.0,12:59,Tue,44,8,64,459779,"['own', '#sharktank', 'products']",True
+"""788122430250291200""",13,0.0,0.0,15:00,Mon,88,17,64,459779,"['sharks', 'stepped', 'out', 'comfort', 'zones', 'going', 'want', 'see']",True
+"""788058861374758917""",18,0.35,0.65,10:47,Mon,36,6,64,459779,"['every', '#sharktank', 'pitch', 'sweet']",True
+"""787812876895551488""",10,0.3,0.2,18:30,Sun,40,9,64,459779,"['said', 'fun', 'tank']",True
+"""787781568429432832""",37,0.21666666666666665,0.36666666666666664,16:25,Sun,115,14,64,459779,"['@robertherjavec', 'helped', 'entrepreneur', 'get', 'strong', 'grip', 'american', 'dream', 'congratulations', '@thenaturalgrip']",True
+"""787382548691320832""",20,0.0,0.0,14:00,Sat,45,6,64,459779,"['sometimes', 'eyebrows', 'speak', 'louder', 'words']",True
+"""787322163992854528""",17,0.0,0.0,10:00,Sat,65,11,64,459779,"['tick', 'tock', 'never', 'keep', 'sharks', 'waiting', '#sharktank']",True
+"""787111143714140160""",31,0.8,0.75,20:01,Fri,49,11,64,459779,"['deal', 'great', 'way', 'end', 'show', '#sharktank']",True
+"""787110781858963456""",12,0.5,0.6,20:00,Fri,83,13,64,459779,"['love', 'product', 'head', 'toes', '#angelsandtomboys', '#sharktank']",True
+"""787109323415486464""",25,0.625,1.0,19:54,Fri,70,12,64,459779,"['pitch', 'cute', 'dance', '@angels_tomboys', '#sharktank']",True
+"""787108895651233793""",12,0.1,0.2833333333333333,19:52,Fri,61,11,64,459779,"['ready', 'last', 'pitch', 'night', '#sharktank']",True
+"""787106216883331072""",7,0.09999999999999999,0.31666666666666665,19:42,Fri,83,13,64,459779,"['@robertherjavec', 'total', 'gentlemen', 'wins', 'white', 'knight', 'award', '#sharktank']",False
+"""787105397513433092""",13,0.0,0.0,19:38,Fri,61,12,64,459779,"['face', 'get', 'word', 'edgewise', '#sharktank']",True
+"""787104817692876800""",7,0.0,0.0,19:36,Fri,85,14,64,459779,"['like', 'make', 'world', 'butter', 'place', '@biembutterspray', '#sharktank']",True
+"""787103140982075392""",13,0.5,0.5,19:29,Fri,115,21,64,459779,"['find', 'out', 'patent', 'running', 'sharks', 'can', 'conquer', 'many', 'things', 'time', '#sharktank']",True
+"""787101319483928577""",8,0.0,0.0,19:22,Fri,74,11,64,459779,"['feel', 'chocolate', 'deal', '#sharktank', '#atlanticcandycompany', 'feel', 'chocolate', 'deal', '#sharktank', '#atlanticcandycompany']",True
+"""787099858649829376""",5,0.7500000000000001,0.9,19:16,Fri,77,11,64,459779,"['remembers', '@thenaturalgrip', 'increase', 'sales', 'amazing', '#sharktank']",False
+"""787099393069506560""",7,0.0,0.0,19:14,Fri,79,13,64,459779,"['silence', 'bring', 'out', 'genius', 'offer', '@kevinolearytv', '#sharktank']",False
+"""787099064097656832""",11,0.5249999999999999,0.625,19:13,Fri,56,13,64,459779,"['face', 'good', 'true', '#sharktank']",True
+"""787096765308690432""",10,0.375,0.1,19:04,Fri,58,14,64,459779,"['try', 'see', 'worth', '#sharktank']",False
+"""787096104022061056""",8,0.25,0.3333333333333333,19:01,Fri,87,17,64,459779,"['time', '@thesolemates', 'step', 'first', 'pitch', 'night', '#sharktank']",True
+"""787095934559657988""",6,0.25,0.5,19:01,Fri,68,13,64,459779,"['ready', 'sink', 'teeth', 'deal', '#sharktank', 'starts', 'now']",False
+"""787050537166462977""",24,0.5,0.5,16:00,Fri,53,8,64,459779,"['enjoy', 'sneak', 'peek', 'tonight', 'allnew', '#sharktank']",True
+"""787035260534005760""",48,0.18,0.5399999999999999,15:00,Fri,64,11,64,459779,"['high', 'heels', '&amp', 'prices', 'tonight', '#sharktank']",True
+"""787003671422836736""",21,0.4375,0.65,12:54,Fri,86,11,64,459779,"['satisfy', '#nationaldessertday', 'craving', 'sweet', 'pitch', 'tonight', '#sharktank']",True
+"""786997508224458756""",14,0.0,0.0,12:30,Fri,66,10,64,459779,"['will', 'entrepreneurs', 'get', 'shark', 'solemate', '#sharktank']",True
+"""786969290234859520""",33,0.25,0.5,10:37,Fri,58,9,64,459779,"['get', 'popcorn', 'ready', 'tonight', 'allnew', '#sharktank']",True
+"""786701429348106241""",23,0.875,0.6000000000000001,16:53,Thu,84,17,64,459779,"['song', 'dance', 'pitch', 'know', 'going', 'good', '#sharktank']",True
+"""786343577907527680""",67,1.0,0.75,17:11,Wed,85,15,64,459779,"['sharks', 'look', 'great', 'anything', 'even', 'heels', 'shark', 'tank', 'allnew', 'friday', 'abc']",True
+"""785872652460253184""",8,0.8750000000000001,0.7999999999999999,10:00,Tue,85,13,64,459779,"['sharks', 'fighting', 'over', 'entrepreneurs', '&amp', 'bright', 'business', 'idea']",True
+"""785600812844249088""",10,-0.2916666666666667,0.5416666666666666,16:00,Mon,82,13,64,459779,"['entrepreneur', 'committed', 'working', 'hard', 'business', 'life', '#sharktank']",True
+"""785570997692952576""",9,0.2857142857142857,0.5357142857142857,14:01,Mon,73,13,64,459779,"['know', 'can', 'watch', 'friday', 'episode', '#sharktank', 'right', 'now']",True
+"""785162930346156033""",117,0.0,0.5,11:00,Sun,54,7,64,459779,"['@thesharkdaymond', 'inspiration', 'everyone']",True
+"""784785446752641024""",29,0.0,0.0,10:00,Sat,97,17,64,459779,"['sharks', 'discuss', 'wally', 'amos', 'story', 'after', 'pitch', 'think', '#sharktank']",True
+"""784573231973986305""",8,0.0,0.0,19:56,Fri,41,7,64,459779,"['shark', '#sharktank']",True
+"""784572482263060484""",11,0.0,0.0,19:53,Fri,63,11,64,459779,"['reaction', 'know', 'shark', 'fight', 'coming', '#sharktank']",True
+"""784571505183035392""",8,0.0,0.0,19:49,Fri,72,11,64,459779,"['think', 'safety', 'aspect', '@nightrunner', '#sharktank']",True
+"""784570563440287744""",12,0.0,0.0,19:46,Fri,84,13,64,459779,"['@nightrunner', 'get', 'running', 'start', 'pitch', 'will', 'sharks', 'bite', '#sharktank']",True
+"""784569814270484480""",12,0.08,0.77,19:43,Fri,92,16,64,459779,"['sharks', 'smell', 'blood', 'water', 'high', 'valuation', 'ultimate', 'downfall', '#sharktank']",True
+"""784568804185665536""",15,0.10833333333333334,0.375,19:39,Fri,74,13,64,459779,"['takes', 'confidence', 'willing', 'drop', 'phone', 'toilet', '#sharktank']",True
+"""784568022572892162""",9,0.0,0.0,19:36,Fri,87,15,64,459779,"['@tekdry', 'might', 'just', 'looking', 'time', 'tank', '#sharktank']",True
+"""784566455308288000""",27,0.4,0.9,19:29,Fri,51,7,64,459779,"['universe', 'filled', 'surprises', '#sharktank']",False
+"""784566010070331392""",10,0.0,0.0,19:28,Fri,61,8,64,459779,"['deny', '@thecookiekahuna', 'loves', 'cookies', '#sharktank']",True
+"""784565618968301574""",13,0.0,0.0,19:26,Fri,39,7,64,459779,"['say', 'samples', '#sharktank']",True
+"""784565360276242433""",13,0.0,0.0,19:25,Fri,53,10,64,459779,"['presence', 'legend', '#sharktank']",True
+"""784564968033255425""",27,0.0,0.0,19:23,Fri,78,10,64,459779,"['cookie', 'kahuna', 'tank', '@thecookiekahuna', '#thecookiekahuna', '#sharktank']",True
+"""784563711893733377""",9,0.6000000000000001,0.9,19:19,Fri,50,8,64,459779,"['amazing', 'update', '@ges', '#sharktank']",True
+"""784563238843408384""",6,0.0,0.0,19:17,Fri,25,4,64,459779,"['barbara', '#sharktank']",True
+"""784562291513626624""",10,0.0,0.0,19:13,Fri,94,15,64,459779,"['think', '#raisingwildswim', 'niche', 'just', 'market', 'needs', '#sharktank']",False
+"""784559404863614978""",28,0.25,0.5,19:01,Fri,50,9,64,459779,"['ready', 'tank', '#sharktank', 'starts', 'now']",False
+"""784533275050184708""",16,0.25,0.5,17:18,Fri,74,14,64,459779,"['sharks', 'ready', 'make', 'deal', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""784519534761742336""",33,-0.03125,0.45,16:23,Fri,47,8,64,459779,"['things', 'get', 'little', 'wild', '#sharktank', 'tonight']",True
+"""784491993170907137""",49,0.875,0.2,14:34,Fri,107,15,64,459779,"['entrepreneur', 'just', 'selling', 'cookies', 'happiness', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""784460791466438656""",24,0.0,0.0,12:30,Fri,72,12,64,459779,"['feeding', 'frenzy', 'tonight', 'want', 'miss', '#sharktank']",True
+"""784440914953506816""",27,-0.1,0.4,11:11,Fri,116,21,64,459779,"['ever', 'dropped', 'phone', 'water', '&amp', 'fear', 'lose', 'forever', 'tonight', 'pitch', 'tries', 'come', 'rescue']",True
+"""784160810675437568""",51,0.0,0.0,16:38,Thu,102,15,64,459779,"['believe', 'sharks', 'reaction', 'entrepreneur', 'pitch', 'watch', '#sharktank', 'tomorrow']",True
+"""784128850120802304""",65,0.3352272727272727,0.7272727272727273,14:31,Thu,116,20,64,459779,"['famous', 'amos', 'founder', 'steps', 'tank', 'new', 'cookie', 'business', 'miss', 'tomorrow', 'allnew', '#sharktank']",True
+"""784104912078733317""",14,0.0,0.0,12:55,Thu,75,10,64,459779,"['honor', '#nationalpoetryday', 'present', 'shark', 'poems', '#sharktank']",True
+"""784088344947023872""",12,-0.41666666666666663,0.6666666666666666,11:50,Thu,77,12,64,459779,"['cookie', 'business', 'serious', '#sharktank', 'allnew', 'tomorrow', 'abc']",True
+"""783853535184183296""",12,-0.25,0.75,20:17,Wed,91,17,64,459779,"['sharks', 'inside', 'scoop', 'most', 'shocking', 'season', '#sharktank', 'yet']",True
+"""783401191954841601""",14,0.0,0.0,14:19,Tue,48,8,64,459779,"['sharks', 'people', 'just', 'like', '#sharktank']",True
+"""783378562476892160""",16,0.0,0.0,12:49,Tue,59,11,64,459779,"['sharks', 'poets', 'even', 'know', '#sharktank']",True
+"""783100432906326016""",16,1.0,1.0,18:24,Mon,73,9,64,459779,"['entrepreneurs', 'graced', 'wonderful', 'presence', '#sharktank']",True
+"""783081742982864896""",10,0.0,0.0,17:10,Mon,88,18,64,459779,"['watch', '#sharktank', 'now', 'can', 'figure', 'out', 'all']",True
+"""782633748969955356""",13,0.0,0.0,11:30,Sun,42,6,64,459779,"['entrepreneur', 'felt', 'shark', 'pressure']",True
+"""782351822073626625""",18,0.25,0.2,16:49,Sat,51,7,64,459779,"['@illumibowl', 'really', 'flushed', 'away', 'competition']",True
+"""782037729064341508""",12,0.5,1.0,20:01,Fri,80,14,64,459779,"['feeding', 'frenzy', 'come', 'end', 'favorite', 'moment', '#sharktank']",True
+"""782036984260722688""",6,0.3,0.25,19:58,Fri,99,15,64,459779,"['@mcuban', 'out', 'still', 'more', 'offers', 'heard', '@teamfishcall', '#thefishcall', '#sharktank']",True
+"""782035411849781252""",13,0.5,0.75,19:52,Fri,48,7,64,459779,"['wonderful', 'open', 'business', '#sharktank']",True
+"""782034402037473282""",9,0.0,0.0,19:48,Fri,78,11,64,459779,"['will', 'fish', 'call', 'attract', 'sharks', '@teamfishcall', '#thefishcall', '#sharktank']",True
+"""782032958949515264""",20,0.16,0.5399999999999999,19:42,Fri,47,9,64,459779,"['hear', 'high', 'valuation', '#sharktank']",True
+"""782031543929741313""",8,0.0,0.0,19:37,Fri,35,5,64,459779,"['keep', 'samples', 'coming', '#sharktank']",True
+"""782031172859596801""",7,0.0,0.0,19:35,Fri,93,15,64,459779,"['@iceagemeals', 'opens', 'poem', 'think', 'strategy', '#sharktank', '#iceagemeals']",True
+"""782029463160696832""",10,0.0,0.0,19:28,Fri,63,10,64,459779,"['going', 'flush', 'away', 'competition', 'kevin', '#sharktank']",False
+"""782029197296316416""",14,0.0,0.0,19:27,Fri,51,8,64,459779,"['let', 'see', '@illumibowl', 'doing', 'now', '#sharktank']",True
+"""782027618228985856""",4,0.2,0.1,19:21,Fri,95,14,64,459779,"['@lorigreiner', 'wants', 'answer', 'now', 'pressure', '#goodhangups', '@goodhangups', '#sharktank']",False
+"""782026197710413824""",9,0.0,0.125,19:15,Fri,114,16,64,459779,"['commitment', 'issues', 'decorating', 'will', 'sharks', 'feel', 'same', '#sharktank', '#goodhangups', '@goodhangups']",True
+"""782024987897008128""",16,0.625,0.75,19:11,Fri,55,9,64,459779,"['winning', 'look', '#thelapelproject', '#sharktank', 'winning', 'look', '#thelapelproject', '#sharktank']",True
+"""782024300509274112""",11,0.0,0.0,19:08,Fri,57,7,64,459777,"['thoughts', '#thelapelproject', '#sharktank']",True
+"""782023891510136832""",38,0.0,0.0,19:06,Fri,46,8,64,459777,"['daymond', 'knows', 'work', 'runway', '#sharktank']",True
+"""782023553541517314""",14,0.13636363636363635,0.45454545454545453,19:05,Fri,66,8,64,459777,"['taking', 'men', 'fashion', 'new', 'places', '#sharktank', '#thelapelproject']",True
+"""782023342270222336""",13,0.25,0.5,19:04,Fri,69,14,64,459777,"['ready', 'tank', 'sharks', 'water', '#sharktank']",True
+"""781984225545318400""",57,0.0,0.0,16:29,Fri,68,9,64,459777,"['@thesharkdaymond', 'struts', 'stuff', 'tonight', 'allnew', '#sharktank']",True
+"""781970334857695232""",38,0.25,0.5,15:33,Fri,76,14,64,459777,"['sharks', 'ready', 'allnew', 'pitches', 'tonight', 'want', 'miss']",True
+"""781954286154637312""",51,-0.15625,0.75,14:30,Fri,94,15,64,459777,"['sharks', 'looking', 'sharp', 'customized', 'lapels', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""781939173989253121""",27,0.46875,0.75,13:30,Fri,66,11,64,459777,"['sharks', 'get', 'poetic', 'tonight', 'allnew', 'episode', '#sharktank']",True
+"""781923820101918721""",25,0.0,0.0,12:29,Fri,111,17,64,459777,"['shark', 'investor', 'poet', '@kevinolearytv', 'can', 'all', 'emmywinning', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""781630258021883904""",75,0.0,0.5,17:02,Thu,109,19,64,459777,"['pitch', 'got', 'standing', 'ovation', '@kevinolearytv', 'will', 'enough', 'get', 'deal', '#sharktank']",True
+"""781582075661062144""",21,0.0,0.0,13:51,Thu,103,17,64,459777,"['moment', 'every', 'person', 'pitching', 'sharks', 'waits', 'handshake', 'seals', 'deal', '#sharktank']",True
+"""781558166664384512""",14,0.8125,0.75,12:16,Thu,73,13,64,459777,"['life', 'better', 'custom', 'cup', 'coffee', 'happy', '#nationalcoffeeday']",True
+"""781176679481868288""",10,1.0,1.0,11:00,Wed,74,9,64,459777,"['beer', 'brings', 'sharks', 'businesses', 'together', 'happy', '#nationaldrinkbeerday']",True
+"""781154002033577984""",8,0.0,1.0,09:30,Wed,88,15,64,459777,"['look', 'out', 'world', '#sharktank', 'only', 'just', 'begun', '&amp', 'already', 'blood', 'water']",True
+"""780949906848620544""",18,0.0708333333333333,0.5666666666666667,19:59,Tue,33,6,64,459777,"['sharks', 'slide', 'game', 'strong']",True
+"""780581989242040320""",20,0.0,0.0,19:37,Mon,13,3,64,459777,['pinkies'],True
+"""780463837116035072""",27,0.3,0.0,11:47,Mon,87,15,64,459777,"['after', 'months', '@prep_expert', 'done', 'million', 'sales', 'congrats', 'all', 'success']",True
+"""780154864022061057""",18,-0.19444444444444445,0.9166666666666667,15:19,Sun,81,9,64,459777,"['@thesharkdaymond', 'always', 'asking', 'tough', 'necessary', 'questions', '@antoniobrown']",True
+"""779735861764038656""",60,0.0,0.2833333333333333,11:34,Sat,116,17,64,459777,"['entrepreneur', 'definitely', 'rethinking', 'decision', 'pitch', 'tank', 'watch', 'last', 'night', 'season', 'premiere']",True
+"""779500878633938944""",39,0.0,0.0,20:01,Fri,45,6,64,459777,"['@mcuban', '@lorigreiner', '#sharktank']",True
+"""779500526161375233""",19,0.5,1.0,19:59,Fri,84,12,64,459777,"['fabulous', 'idea', 'will', 'sharks', 'make', 'deal', '#rethinkapp', '@rethinkwords', '#sharktank']",True
+"""779498460558921728""",14,0.7,0.6000000000000001,19:51,Fri,83,12,64,459777,"['think', 'technology', 'good', '@rethinkwords', '#sharktank', '#rethinkapp']",False
+"""779497141651640320""",27,0.0,0.0,19:46,Fri,45,8,64,459777,"['make', 'take', 'deal', '#sharktank']",True
+"""779496604352950272""",10,-0.16999999999999998,0.77,19:44,Fri,61,9,64,459777,"['sharks', 'think', 'high', 'valuation', 'laughable', '#sharktank']",True
+"""779495937446023168""",89,0.0,0.0,19:41,Fri,64,11,64,459777,"['time', 'get', 'deal', 'boomin', '@antoniobrown', '#sharktank']",True
+"""779494370772779008""",11,0.0,0.0,19:35,Fri,44,7,64,459777,"['slides', 'look', 'like', '#sharktank']",True
+"""779494110667218944""",10,0.0,0.0,19:34,Fri,62,10,64,459777,"['slide', 'deal', '#sharktank', '#islide', '@islideusa']",False
+"""779493504875495424""",16,0.0,0.0,19:31,Fri,53,9,64,459777,"['know', 'going', 'samples', '#sharktank']",True
+"""779492445885116416""",8,0.0,0.0,19:27,Fri,48,7,64,459777,"['@comfortsoupdeal', '#sharktank']",False
+"""779491034380267520""",6,0.0,0.0,19:21,Fri,91,12,64,459777,"['feeding', 'frenzy', 'just', 'beginning', '@comfortsoup', 'now', '#sharktank', '#spoonfulofcomfort']",False
+"""779489871412891648""",13,1.0,0.75,19:17,Fri,90,13,64,459777,"['great', 'see', '@prep_expert', 'helping', 'kids', 'acheive', 'dreams', '#prepexpert', '#sharktank']",False
+"""779487864040009728""",9,1.0,1.0,19:09,Fri,61,9,64,459777,"['sharks', 'wonderful', '#sharktank']",False
+"""779487762814599168""",9,0.2,0.2,19:08,Fri,39,5,64,459777,"['tasting', 'really', 'believing', '#sharktank']",True
+"""779487088651624449""",7,0.0,0.0,19:06,Fri,47,10,64,459777,"['got', 'try', 'before', 'buy', '#sharktank']",True
+"""779486613004881922""",9,0.0,0.0,19:04,Fri,66,9,64,459777,"['shark', 'will', 'take', 'bait', '#sharktank', '#fizzics', '@fizzicsgroup']",True
+"""779486198586679296""",28,0.625,0.5,19:02,Fri,95,18,64,459777,"['all', 'sharks', 'tank', 'tonight', 'many', 'will', 'bite', '#sharktank', 'watching']",True
+"""779447758843441152""",33,0.244140625,0.16666666666666666,16:30,Fri,100,19,64,459777,"['#sharktank', 'back', 'first', 'pitch', 'season', 'watch', 'premiere', 'tonight', 'abc']",True
+"""779440273973587968""",20,0.0,0.0,16:00,Fri,70,11,64,459777,"['snapping', 'sharks', '#sharktank', 'premieres', 'tonight', 'abc']",True
+"""779425127947730944""",43,0.3125,0.3333333333333333,15:00,Fri,67,12,64,459777,"['sharks', 'enter', 'tank', 'tonight', 'first', 'time', 'ever', '#sharktank']",True
+"""779410016671559680""",78,0.0,0.125,14:00,Fri,110,23,64,459777,"['all', 'sharks', 'will', 'tank', 'same', 'time', 'tonight', 'season', 'premiere', '#sharktank', 'abc']",True
+"""779379924398280704""",6,0.17045454545454544,0.5,12:00,Fri,114,18,64,459777,"['sharks', 'live', 'facebook', 'answering', 'questions', 'before', 'tonight', 'premiere', '#sharktank', 'check', 'out']",True
+"""779334617073451009""",353,0.3125,0.3333333333333333,09:00,Fri,116,22,64,459777,"['first', 'time', '#sharktank', 'history', 'all', 'sharks', 'will', 'tank', 'want', 'miss', 'tonight', 'season']",True
+"""779117078540390400""",71,0.35625,0.41666666666666663,18:36,Thu,74,11,64,459777,"['enjoy', 'first', 'minutes', 'tomorrow', 'season', 'premiere', '#sharktank']",True
+"""779074951672373248""",38,-0.625,0.7,15:48,Thu,106,14,64,459777,"['@barbaracorcoran', 'secret', 'message', '#sharktank', 'returns', 'tomorrow', 'allnew', 'episodes']",True
+"""779049562707202048""",25,0.4125,0.6,14:07,Thu,123,14,64,459777,"['thanks', '@lorigreiner', '&amp', '@barbaracorcoran', 'inspiring', 'women', 'business', 'every', 'day', '#americanbusinesswomensday']",True
+"""778739595076771840""",52,0.17045454545454544,0.5,17:36,Wed,118,19,64,459777,"['sharks', 'will', 'talking', 'premiere', '&amp', 'answering', 'questions', 'facebook', 'live', 'friday', 'submit', 'below']",True
+"""778703048789069824""",45,0.39999999999999997,0.5,15:10,Wed,116,19,64,459777,"['week', 'tank', 'young', 'entrepreneur', 'hopes', 'use', 'technology', 'good', '#sharktank', 'returns', 'allnew', 'episo']",True
+"""778641947531632640""",23,0.0,0.0,11:08,Wed,94,15,64,459777,"['#sharktank', 'goddess', 'like', 'watch', 'season', 'premiere', 'friday']",True
+"""778276537720303620""",19,0.0,0.0,10:56,Tue,70,13,64,459777,"['getting', 'pumped', '#sharktank', 'season', 'premiere', 'days']",True
+"""777983619339956226""",57,0.40625,0.42500000000000004,15:32,Mon,112,16,64,459777,"['@kevinolearytv', 'loves', 'love', 'wonderful', 'back', 'life', 'allnew', '#sharktank', 'episodes', 'starting', 'friday']",True
+"""777915219062296576""",308,0.3125,0.3333333333333333,11:00,Mon,111,20,64,459777,"['first', 'time', '#sharktank', 'history', 'all', 'sharks', 'will', 'tank', 'miss', 'friday', 'season', 'premiere']",True
+"""777629249888919552""",183,0.0,0.0,16:03,Sun,116,17,64,459777,"['business', 'boomin', '@steelers', '@antoniobrown', 'stops', 'tank', 'friday', 'season', 'premiere', '#sharktank']",True
+"""777530136002428928""",40,0.2729166666666667,0.5916666666666666,09:30,Sun,109,18,64,459777,"['everything', 'happens', 'tank', 'serious', '#sundayfunday', 'even', 'more', 'fun', 'favorite', 'sharks']",True
+"""777278325337288705""",73,0.1477272727272727,0.45454545454545453,16:49,Sat,96,15,64,459777,"['new', 'season', 'pitches', 'deals', '#sharktank', 'returns', 'allnew', 'episodes', 'friday', 'abc', 'new', 'season', 'pitches', 'deals', '#sharktank', 'returns', 'allnew', 'episodes', 'friday', 'abc']",True
+"""776936822693855233""",169,0.1875,0.3666666666666667,18:12,Fri,114,21,64,459779,"['week', 'epic', 'premiere', '#sharktank', 'all', 'sharks', 'will', 'enter', 'tank', 'together', 'first', 'time', 'ever']",True
+"""776840252644290560""",72,0.3125,0.25,11:48,Fri,115,22,64,459779,"['sometimes', 'sharks', 'get', 'sit', 'back', 'relax', 'enjoy', 'show', 'join', 'tonight', '#sharktank', 'abc']",True
+"""776496929215614976""",59,0.0,0.0,13:04,Thu,95,15,64,459779,"['wagging', 'tails', 'excitement', '#sharktank', 'returns', 'days', 'allnew', 'episodes']",True
+"""776119951027494912""",40,1.0,0.3,12:06,Wed,57,9,64,459779,"['wishing', 'best', 'birthday', '@robertherjavec']",True
+"""775174258901123072""",172,1.0,0.4,21:28,Sun,50,8,64,459779,"['congratulations', '#sharktank', '#emmys', 'win']",True
+"""774997420232937472""",48,0.0,0.0,09:45,Sun,56,8,64,459779,"['@mcuban', 'takes', 'shark', 'skills', '#missamerica', 'tonight']",True
+"""774421629296271360""",17,0.0,0.0,19:37,Fri,95,16,64,459779,"['don', 'miss', '#sharktank', 'sharks', '&amp', 'executive', 'producer', '#paleylive', 'buy', 'tix']",True
+"""771739488779374593""",22,0.75,0.75,10:00,Fri,84,16,64,459779,"['many', 'wonderful', 'things', 'see', '#sharktank', 'find', 'out', 'elf', 'abc']",True
+"""771063569379106816""",32,-0.03333333333333333,0.0,13:14,Wed,46,10,64,459779,"['time', 'explain', 'toilet', 'room']",True
+"""769332102663995392""",31,0.5,1.0,18:34,Fri,116,21,64,459779,"['promise', 'regret', 'taking', 'chance', '#sharktank', 'hang', 'out', 'favorite', 'sharks', 'tonight', 'abc']",True
+"""769204409993719808""",42,0.75,0.8,10:06,Fri,72,11,64,459779,"['love', 'leggedword', 'happy', '#nationaldogday', '@robertherjavec']",True
+"""768140635899588608""",25,5.551115123125783e-17,0.6333333333333333,11:39,Tue,79,13,64,459779,"['sharks', 'always', 'along', 'ride', 'good', 'times', 'bad', '#tuesdaymotivation']",True
+"""766804765279780864""",39,0.1875,0.4944444444444444,19:11,Fri,114,19,64,459779,"['entrepreneur', 'hopes', 'make', 'sure', 'longer', 'struggle', 'slipping', 'spectacles', 'watch', 'tonight']",True
+"""764876749104619520""",18,0.0,0.0,11:30,Sun,9,2,64,459779,['ballin'],True
+"""764142626987794432""",24,0.0,0.0,10:52,Fri,103,19,64,459779,"['@mcuban', 'gets', 'all', 'dolled', '#sharktank', 'tonight', 'watch', 'glitz', '&amp', 'glam', 'abc']",True
+"""763407755831115777""",25,0.0,0.0,10:12,Wed,63,10,64,459779,"['women', '#sharktank', 'beauty', 'brains', '@lorigreiner']",True
+"""762678678664912900""",14,0.5,0.8888888888888888,09:55,Mon,43,8,64,459779,"['really', 'sure', 'feel']",True
+"""761687101754707968""",16,0.0,0.0,16:15,Fri,75,14,64,459779,"['cruise', 'night', 'episode', '#sharktank', 'tonight', 'abc']",True
+"""760588234686623744""",16,0.13636363636363635,0.45454545454545453,15:29,Tue,92,20,64,459779,"['uncover', 'fortune', 'home', '@abcd', 'can', 'find', 'new', 'abc', 'app']",True
+"""760158174771118080""",15,0.0,0.0,11:00,Mon,84,10,64,459779,"['#teamsharkaroo', 'tied', 'knot', 'congratulations', '@robertherjavec', '@kym_johnson']",True
+"""759856167392796673""",16,0.0,0.0,15:00,Sun,58,7,64,459779,"['shark', 'tonight', '@pyramidabc', '#sundayfunandgames']",True
+"""759841067437002753""",11,0.75,1.0,14:00,Sun,115,13,64,459779,"['play', 'nice', 'sharks', '@barbaracorcoran', '@thesharkdaymond', 'compete', '@pyramidabc', 'tonight', '#sundayfunandgames']",True
+"""759765584271867904""",74,0.0,0.0,09:00,Sun,48,8,64,459779,"['wishing', 'happiest', 'birthdays', '@mcuban']",True
+"""759433409999605761""",17,0.2875,0.35,11:00,Sat,93,13,64,459779,"['@barbaracorcoran', '@thesharkdaymond', 'ready', 'fun', 'sunday', '@pyramidabc']",True
+"""759085192640335872""",37,0.3611111111111111,0.41111111111111115,11:56,Fri,113,20,64,459779,"['entrepreneur', 'hopes', 'make', 'world', 'lot', 'more', 'vibrant', 'watch', 'colorful', '#sharktank', 'tonight', 'abc']",True
+"""757019519642574848""",30,0.6770833333333333,0.7333333333333333,19:08,Sat,66,10,64,459779,"['sharks', 'still', 'going', 'strong', '@comic_con', '#sdcc', '#sharktank']",True
+"""756946737047019520""",68,0.01428571428571429,0.12142857142857143,14:19,Sat,92,13,64,459779,"['sharks', 'taking', 'over', '@comic_con', 'order', 'limited', 'edition', '#sharktank', 'action', 'figures']",True
+"""756579607709642752""",48,0.0,0.0,14:00,Fri,85,16,64,459779,"['entrepreneur', 'will', 'learn', 'business', 'take', 'step']",True
+"""755839697985806340""",31,0.625,0.5,13:00,Wed,31,6,64,459779,"['sharks', 'better']",True
+"""754722344837509120""",47,-0.3333333333333333,0.6666666666666666,11:00,Sun,52,7,64,459779,"['ice', 'cream', 'serious', 'business', '#nationalicecreamday']",True
+"""754012684031516672""",14,0.25,0.2,12:00,Fri,54,8,64,459779,"['@robertherjavec', 'really', 'knows', 'make', 'entrance']",True
+"""753635495310131200""",76,0.0,0.0,11:01,Thu,60,8,64,459779,"['congratulations', '#sharktank', '#emmys', 'nominations']",True
+"""752975198329143296""",16,0.0,0.0,15:17,Tue,96,13,64,459779,"['sharks', 'always', 'uncover', 'truth', '@thesharkdaymond', 'joins', '#totellthetruth', 'tonight', 'abc']",True
+"""752564914011734016""",46,0.3625,0.55,12:07,Mon,92,15,64,459779,"['now', 'can', 'take', 'favorite', 'sharks', 'wherever', 'preorder', '#sharktank', 'action', 'figure']",True
+"""751808889276997633""",31,1.0,1.0,10:03,Sat,42,5,64,459779,"['wonderful', 'birthday', '@kevinolearytv']",True
+"""751581651063476224""",9,0.0,0.0,19:00,Fri,40,7,64,459779,"['can', 'entrepreneurs', 'ignite', 'deal']",True
+"""748965904935821313""",31,0.625,1.0,13:46,Fri,46,9,64,459779,"['watch', 'magic', 'happen', 'tonight', 'tank']",True
+"""748648425441345536""",19,0.875,0.95,16:44,Thu,85,14,64,459779,"['bring', 'mouthwatering', 'food', 'drinks', '#sharktank', 'july', 'party']",True
+"""747854334705213444""",153,0.0,0.0,12:09,Tue,61,12,64,459779,"['sharks', 'swimming', 'back', 'tank', 'september']",True
+"""746446560007979008""",27,0.0,0.0,14:55,Fri,51,8,64,459779,"['pitches', '#sharktank', 'tonight', 'surprise']",True
+"""745338269999697920""",30,1.0,0.3,13:31,Tue,54,7,64,459779,"['shark', 'selfies', 'best', '#nationalselfieday']",True
+"""743913376292704256""",39,0.0,0.0,15:09,Fri,46,7,64,459779,"['race', 'weekend', '#sharktank', 'tonight']",True
+"""743152759092842496""",180,0.17045454545454544,0.45454545454545453,12:46,Wed,90,12,64,459779,"['meet', 'destiny', 'new', 'whale', 'shark', 'friend', '@findingdory', 'splashes', 'theatres', 'friday']",True
+"""742431354202300416""",38,0.0,0.0,13:00,Mon,92,16,64,459779,"['father', 'day', 'around', 'corner', 'forbes', 'covered', '#sharktank', 'gifts', 'dad']",True
+"""740588204512948224""",81,0.65,0.625,10:56,Wed,84,10,64,459779,"['sharks', 'make', 'great', 'business', 'partners', 'even', 'better', 'friends', '#nationalbestfriendsday']",True
+"""738866108162248704""",18,0.0,0.0,16:53,Fri,67,12,64,459779,"['lot', 'think', 'pitches', 'tonight', 'episode']",True
+"""738533887371005952""",45,0.0,0.0,18:52,Thu,113,14,64,459779,"['#sharktank', 'automatically', 'make', 'millionaire', 'witness', 'happens', '@beyondthetanktv', 'tomorrow']",True
+"""736957780888801280""",50,-0.023809523809523808,0.6011904761904762,10:30,Sun,77,10,64,459779,"['sharks', 'always', 'serious', 'right', '@robertherjavec', '#sundayfunday']",True
+"""736270779302748164""",26,0.0,0.0,13:00,Fri,41,9,64,459779,"['queen', 'lori', 'makes', 'reign', 'tonight']",True
+"""735923469280522240""",17,0.2,0.30000000000000004,14:00,Thu,36,7,64,459779,"['#sharktank', 'deal', 'feels', 'real']",True
+"""735168503670575104""",60,0.8,0.75,12:00,Tue,72,16,64,459779,"['season', 'great', 'thank', 'coming', 'along', 'ride']",True
+"""734807883200634881""",24,0.0,0.0,12:07,Mon,32,3,64,459779,"['#mywordaddiction', 'shark', 'tank']",False
+"""734473917696462848""",43,0.17045454545454544,0.5,14:00,Sun,91,18,64,459779,"['mark', 'cuban', 'takes', 'vegas', 'join', 'tonight', 'presents', '#bbmas', 'live', 'e|p', 'abc']",True
+"""734111531902902272""",137,0.41666666666666663,0.5,14:00,Sat,23,3,64,459779,"['escalated', 'quickly']",True
+"""733840370665062400""",138,0.0,0.0,20:02,Fri,86,16,64,459779,"['thank', 'all', 'joining', '#sharktank', 'retweet', 'see', 'next', 'season']",False
+"""733840254222934016""",44,0.1,1.0,20:02,Fri,34,6,64,459779,"['says', 'all', 'wow', '#sharktank']",True
+"""733838169121132548""",81,0.0,0.0,19:53,Fri,58,10,64,459779,"['point', 'execute', '@mcuban', '#sharktank']",True
+"""733837717486768129""",15,0.0,0.0,19:52,Fri,10,1,64,459779,['#sharktank'],True
+"""733837666261819392""",28,0.0,0.0,19:51,Fri,29,4,64,459779,"['bring', '#sharktank', '@mcuban']",True
+"""733837351831674881""",20,0.0,0.0,19:50,Fri,20,2,64,459779,"['yikes', '#sharktank']",True
+"""733837124068315137""",10,0.0,0.0,19:49,Fri,22,3,64,459779,"['#sharktank', '#pavlok']",True
+"""733836893067051008""",11,0.7,0.6000000000000001,19:48,Fri,46,8,64,459779,"['good', 'way', 'break', 'habits', '#pavlok', '#sharktank']",True
+"""733835050064740352""",17,0.0,0.0,19:41,Fri,55,7,64,459779,"['king', 'marriage', '@kevinolearytv', '#felt', '#sharktank']",False
+"""733834309807820801""",41,0.6,1.0,19:38,Fri,104,19,64,459779,"['now', '#sharktank', '#felt', 'app', 'les', 'create', 'design', 'mail', 'own', 'handwritten', 'cards']",True
+"""733832841696583680""",10,0.0,0.0,19:32,Fri,52,9,64,459779,"['singing', 'can', 'bringing', '#sharktank']",True
+"""733832633050927105""",9,0.5,0.5,19:31,Fri,118,22,64,459779,"['more', 'investment', 'tuition', 'feels', 'like', '@mcuban', '#sharktank']",False
+"""733832052601163776""",6,0.0,0.0,19:29,Fri,35,4,64,459779,"['samples', 'yes', '#pmsbites', '#sharktank']",True
+"""733831743761829888""",17,-0.25,0.05,19:28,Fri,69,11,64,459779,"['realize', 'missing', 'season', 'finale', '#sharktank']",True
+"""733831135696814080""",10,-0.25,0.4,19:25,Fri,65,9,64,459779,"['queen', 'small', 'numbers', '@kevinolearytv', '#sharktank']",False
+"""733830841030352897""",11,0.0,0.0,19:24,Fri,59,10,64,459779,"['#pmsbites', 'next', 'will', 'sharks', 'bite', '#sharktank']",False
+"""733828519973793792""",7,0.0,0.0,19:15,Fri,73,11,64,459779,"['feel', 'bring', 'value', 'yikes', '#peteandpedro', '#sharktank']",False
+"""733827961082785792""",91,-0.6999999999999998,0.6666666666666666,19:13,Fri,85,15,64,459779,"['bad', 'product', 'selling', '@mcuban', '#sharktank']",True
+"""733827575613693953""",22,0.0,0.0,19:11,Fri,52,8,64,459779,"['#peteandpedro', 'take', 'second', 'swing', '#sharktank', '#peteandpedro', 'take', 'second', 'swing', '#sharktank']",True
+"""733827092832354306""",14,0.17857142857142855,0.33285714285714285,19:09,Fri,72,10,64,459779,"['sharks', 'very', 'big', 'fish', 'usually', 'right', '#sharktank']",True
+"""733825385616551937""",13,0.2102272727272727,0.3939393939393939,19:03,Fri,88,14,64,459779,"['first', '#sharktank', 'returning', 'entrepreneur', 'new', 'product', '#peteandpedro']",False
+"""733821662857072640""",8,0.0,0.0,18:48,Fri,50,5,64,459779,"['mmmmmh', '#beyondthetank', '@porkbarrelbbq', '#sharktank']",True
+"""733820699492515840""",6,0.25,0.55,18:44,Fri,108,15,64,459779,"['obvious', 'love', 'everything', 'bbq', '@barbaracorcoran', '@porkbarrelbbq', '#beyondthetank']",False
+"""733818678819487746""",7,1.0,0.3,18:36,Fri,31,5,64,459779,"['best', 'ever', '#beyondthetank']",True
+"""733817627710083072""",7,0.5,0.9,18:32,Fri,51,6,64,459779,"['@lorigreiner', 'fantastic', 'mentor', '#beyondthetank']",False
+"""733817171244027905""",6,0.3645833333333333,0.6833333333333332,18:30,Fri,107,17,64,459779,"['friends', '@cordaroys', 'excited', 'see', 'progress', 'glad', 'busy', '#beyondthetank']",False
+"""733815373045194752""",6,0.609375,0.825,18:23,Fri,90,12,64,459779,"['@honeyfund', 'excited', 'getting', 'amazing', 'advice', 'tonight', '#beyondthetank']",False
+"""733813478754897924""",13,-0.41666666666666663,0.6666666666666666,18:15,Fri,83,11,64,459779,"['stop', 'watching', '#beyondthetank', 'things', 'getting', 'serious', '@kevinolearytv']",True
+"""733802989694144512""",29,0.0,0.0,17:34,Fri,98,15,64,459779,"['tonight', 'entrepreneur', 'gets', 'second', 'chance', 'watch', '#sharktank', 'season', 'finale', 'abc']",True
+"""733764284522582017""",19,-0.875,0.8,15:00,Fri,46,7,64,459779,"['sharks', 'will', 'shocked', 'tonight', 'literally']",True
+"""733749841893949440""",10,-0.875,0.8,14:02,Fri,88,14,64,459779,"['@tvinsider', 'inside', 'scoop', 'sharks', 'shocked', 'tonight', 'season', 'finale']",True
+"""733718382701334529""",18,0.625,0.6,11:57,Fri,47,8,64,459779,"['much', 'love', '#sharktank', 'tonight']",True
+"""733459610871332864""",21,0.0,0.0,18:49,Thu,45,8,64,459779,"['pitch', 'get', 'stamp', 'approval']",True
+"""733052943478427650""",49,-0.875,0.8,15:53,Wed,57,9,64,459779,"['will', 'shocked', 'friday', '#sharktank', 'season', 'finale']",True
+"""732645126649094144""",33,0.0,0.0,12:53,Tue,52,9,64,459779,"['something', '@mcuban', 'smiling', 'tank', 'week']",True
+"""732365332875120642""",48,0.0,0.0,18:21,Mon,47,7,64,459779,"['take', 'advice', '@barbaracorcoran', 'day']",True
+"""731884357955297280""",57,0.0,0.0,10:30,Sun,28,4,64,459779,"['honor', '#sundayfunday']",True
+"""731606399692754945""",17,0.0,0.0,16:05,Sat,60,12,64,459779,"['can', 'run', 'latte', 'problems', 'owning', 'business']",True
+"""731302403958558721""",13,0.25,0.2,19:57,Fri,48,7,64,459779,"['thanks', 'tweeting', 'everyone', '#sharktank']",False
+"""731302342306480129""",14,0.0,0.0,19:57,Fri,58,5,64,459779,"['congrats', '@thesharkdaymond', '@virtualpinball', '#sharktank']",False
+"""731300660159913984""",2,-0.4,0.4,19:50,Fri,67,8,64,459779,"['favourite', 'childhood', 'game', '@virtualpinball', '#sharktank']",False
+"""731299060234235904""",8,0.0,0.06666666666666667,19:44,Fri,83,14,64,459779,"['last', 'pitch', 'night', 'let', 'see', '@virtualpinball', 'can', 'score', 'deal', '#sharktank']",False
+"""731298536030109697""",20,1.0,0.75,19:42,Fri,37,4,64,459779,"['great', 'pitch', '@gladiatorlax', '#sharktank']",False
+"""731297994654535680""",67,0.0,0.0,19:40,Fri,31,3,64,459779,"['preach', '@lorigreiner', '#sharktank']",True
+"""731297538255540224""",21,0.25,0.2,19:38,Fri,89,13,64,459779,"['deny', '@gladiatorlax', 'really', 'knows', 'talking', '#sharktank']",False
+"""731296310708539392""",5,0.0,0.0,19:33,Fri,69,12,64,459779,"['@gladiatorlax', 'going', 'get', 'deal', 'let', 'watch', 'see', '#sharktank']",False
+"""731295035954765825""",7,0.0,0.0,19:28,Fri,56,9,64,459779,"['think', '@evp', 'partner', '#sharktank']",False
+"""731294353302405120""",10,-0.2916666666666667,0.5416666666666666,19:25,Fri,110,18,64,459779,"['agree', '@robertherjavec', 'hard', 'sell', 'solution', 'mightbe', 'problem', '#sharktank', '@evp']",False
+"""731293241124003840""",8,0.0,0.0,19:21,Fri,46,9,64,459779,"['let', 'see', '@evp', 'can', 'get', 'deal', '#sharktank']",False
+"""731292237422841856""",6,0.5,0.8,19:17,Fri,54,7,64,459779,"['wow', 'good', 'job', 'guys', '@mistoboxcoffee', '#sharktank', '@mcuban']",False
+"""731291978693021696""",25,0.5,0.6,19:16,Fri,65,12,64,459779,"['love', 'camp', '@kevinolearytv', '#sharktank']",True
+"""731291529847967744""",10,-0.125,1.0,19:14,Fri,53,7,64,459779,"['careful', 'numbers', '@lorigreiner', '#sharktank']",True
+"""731290009437929472""",8,0.2333333333333333,0.48571428571428577,19:08,Fri,98,16,64,459779,"['simply', 'creating', 'demand', 'good', 'enough', 'generate', 'profit', 'get', 'sharks', 'involved', '#sharktank']",False
+"""731289283697496065""",5,0.7500000000000001,0.9,19:05,Fri,69,10,64,459779,"['else', 'thinks', 'amazing', 'idea', '@campnocounselor', '#sharktank']",False
+"""731288554366717953""",7,0.0,0.0,19:02,Fri,87,13,64,459779,"['camp', 'let', 'see', '@campnocounselor', 'offer', 'sharks', 'tonight', '#sharktank']",False
+"""731287888315469824""",9,0.25,0.2,18:59,Fri,101,15,64,459779,"['thanks', 'tweeting', '@beyondthetanktv', 'everyone', 'now', 'time', 'allnew', '#sharktank']",False
+"""731287584299749383""",3,0.0,0.0,18:58,Fri,58,6,64,459779,"['@barbaracorcoran', 'rescue', '#beyondthetank', '@hoppypaws']",False
+"""731285964530847745""",6,1.0,0.75,18:52,Fri,45,6,64,459779,"['great', 'idea', '@hoppypaws', '#beyondthetank']",False
+"""731281415384530944""",2,1.0,0.75,18:34,Fri,76,7,64,459779,"['congratulations', '@bombas', 'doing', 'great', '@thesharkdaymond', '#beyondthetank']",False
+"""731279158102380544""",2,0.175,0.6000000000000001,18:25,Fri,80,14,64,459779,"['love', 'seeing', 'product', 'good', 'idea', 'behind', '@bombas', '#beyondthetank']",False
+"""731275418007932928""",6,0.3571428571428571,0.5357142857142857,18:10,Fri,68,11,64,459779,"['leave', '@kevinolearytv', 'get', 'right', 'point', '#beyondthetank']",False
+"""731274632200867840""",8,0.3571428571428571,0.5357142857142857,18:07,Fri,47,7,64,459779,"['watching', '#beyondthetank', 'right', 'now']",False
+"""731257760818577408""",13,-0.234375,0.5,17:00,Fri,53,11,64,459779,"['things', 'get', 'little', 'out', 'whack', 'tank', 'tonight']",True
+"""730887156701528064""",27,0.0,0.0,16:27,Thu,45,10,64,459779,"['sharks', 'can', 'dish', 'take']",True
+"""730858333092122625""",10,0.0,0.0,14:32,Thu,43,7,64,459779,"['@thesharkdaymond', 'calls', 'like', 'sees']",True
+"""730536519702843392""",51,-0.125,0.375,17:14,Wed,109,20,64,459779,"['fight', 'tank', 'change', 'respect', 'other', '@lorigreiner']",True
+"""730124408141041666""",17,0.0,0.0,13:56,Tue,54,9,64,459779,"['keeping', 'world', 'sanitized', '@phonesoap', 'time']",True
+"""729720729617485824""",28,0.01785714285714285,0.26785714285714285,11:12,Mon,98,17,64,459779,"['@spoonerboards', 'doesn', 'waste', 'time', 'think', 'jumped', 'board', 'right', 'sharks']",True
+"""729377848478334977""",15,1.0,1.0,12:30,Sun,52,9,64,459779,"['happy', 'mother', 'day', 'all', 'mompreneurs', 'out']",True
+"""728949513805770752""",15,0.0,0.0,08:08,Sat,91,16,64,459779,"['use', '#sharktank', 'products', '#mothersday', 'gift', 'bought', 'yet']",True
+"""728765837205770240""",7,0.25,0.2,19:58,Fri,48,7,64,459779,"['thanks', 'tweeting', 'everyone', '#sharktank']",False
+"""728764885140684801""",5,0.0,0.0,19:54,Fri,60,9,64,459779,"['think', '#thespooner', 'partner', '#sharktank']",False
+"""728763208371179521""",7,0.0,0.0,19:47,Fri,64,8,64,459779,"['can', 'sense', 'enthusiasm', 'immediately', '#sharktank', '#thespooner']",False
+"""728762474393120768""",15,0.0,0.0,19:44,Fri,68,9,64,459779,"['wait', 'hear', 'all', '#thespooner', '@robertherjavec', '#sharktank']",True
+"""728761076440039424""",5,0.0,0.0,19:39,Fri,79,8,64,459779,"['agree', '@barbaracorcoran', '#sharktank', '#elfexpression', '@yexpression']",True
+"""728760618694676481""",19,0.5,0.6,19:37,Fri,87,9,64,459779,"['holy', 'inspiration', 'love', 'kidpreneurs', '#sharktank', '#elfexpression', '@yexpression']",False
+"""728759873706569728""",19,0.0,0.0,19:34,Fri,92,12,64,459779,"['let', 'see', 'kids', 'offer', 'tonight', '#sharktank', '#elfexpression', '@yexpression']",True
+"""728758547845091330""",11,0.0,0.0,19:29,Fri,71,7,64,459779,"['congrats', '@creaclip', '@lorigreiner', '#sharktank', '#creaproducts', '#creaclip', 'congrats', '@creaclip', '@lorigreiner', '#sharktank', '#creaproducts', '#creaclip']",False
+"""728757456675966976""",7,0.0,0.0,19:24,Fri,83,10,64,459779,"['now', 'commitment', 'product', '#sharktank', '#creaproducts', '#creaclip', '@creaclip']",False
+"""728756608126353409""",10,0.0,0.0,19:21,Fri,78,12,64,459779,"['time', 'see', '@creaclip', '#sharktank', '#creaproducts', '#creaclip']",True
+"""728756073444823040""",3,1.0,0.75,19:19,Fri,69,9,64,459779,"['great', 'product', 'congrats', '@phonesoap', '@lorigreiner', '#sharktank']",False
+"""728755010645929984""",13,0.0,0.0,19:15,Fri,129,16,64,459779,"['congrats', '@dollopgourmet', '@barbaracorcoran', 'need', 'tastetesters', 'hestitate', 'ask', '#sharktank', '#dollopgourmet']",False
+"""728753177126907904""",25,1.0,1.0,19:07,Fri,85,10,64,459779,"['perfect', 'recipe', 'entrepreneur', '#sharktank', '#dollopgourmet', '@dollopgourmet']",True
+"""728752877875941378""",20,0.0,0.0,19:06,Fri,110,16,64,459779,"['attending', 'school', 'google', 'youtube', 'once', 'twice', '#sharktank', '#dollopgourmet', '@dollopgourmet']",False
+"""728752169013399553""",5,0.0,0.0,19:03,Fri,68,8,64,459779,"['@dollopgourmet', 'making', 'mouths', 'water', '#sharktank', '#dollopgourmet']",False
+"""728751905531412480""",7,0.3125,0.3333333333333333,19:02,Fri,53,6,64,459779,"['first', '@dollopgourmet', '#sharktank', '#dollopgourmet']",True
+"""728751239933079552""",9,0.25,0.2,19:00,Fri,107,16,64,459779,"['alright', 'sharkies', 'thanks', 'tuning', '@beyondthetanktv', 'now', 'time', 'allnew', '#sharktank']",False
+"""728750858150776833""",7,0.4,1.0,18:58,Fri,55,9,64,459779,"['important', 'trust', 'shark', '#beyondthetank']",False
+"""728747474509271042""",5,0.5,0.5,18:45,Fri,80,10,64,459779,"['interesting', 'product', 'use', '@aquavault', '#beyondthetank', '#aquavault']",False
+"""728746157808205824""",15,0.5,1.0,18:39,Fri,51,5,64,459779,"['important', 'lessons', '@mcuban', '#beyondthetank', '#toygaroo']",True
+"""728743618266202112""",4,1.0,1.0,18:29,Fri,76,10,64,459779,"['proud', 'ladies', '#mangomango', 'congratulations', '#beyondthetank']",False
+"""728738759529877504""",6,0.6,1.0,18:10,Fri,64,8,64,459779,"['can', 'entrepreneur', 'oversell', 'own', 'product', '#beyondthetank']",False
+"""728737042046328833""",2,0.0,0.0,18:03,Fri,74,9,64,459779,"['remembers', '@menschonabench', 'tank', '#beyondthetank', '#menschonabench']",False
+"""728735329038049280""",16,0.0,0.0,17:56,Fri,98,15,64,459779,"['time', 'allnew', '@beyondthetanktv', 'watching', '#beyondthetank']",False
+"""728724788244582401""",9,0.0,0.0,17:15,Fri,43,6,64,459779,"['tonight', '#sharktank', 'will', 'going']",True
+"""728702147127283714""",29,0.0,0.0,15:45,Fri,48,7,64,459779,"['nothing', 'compares', 'passion', 'fueled', 'sacrifice']",True
+"""728672962291892225""",26,-0.19444444444444448,0.2888888888888889,13:49,Fri,83,13,64,459779,"['turned', '@mcuban', 'frown', 'upside', 'down', 'find', 'out', 'tonight', 'allnew', '#sharktank']",True
+"""728640964672151552""",22,0.125,0.06666666666666667,11:41,Fri,95,14,64,459779,"['double', 'sharks', 'fun', '@beyondthetanktv', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""728335613938827264""",59,0.15000000000000002,0.30000000000000004,15:28,Thu,86,14,64,459779,"['entrepreneurs', 'really', 'know', 'express', 'passion', 'even', 'young', 'age']",True
+"""728012703785209856""",19,0.0,1.0,18:05,Wed,110,15,64,459779,"['@kevinolearytv', 'deals', 'always', 'come', 'strings', 'attached', 'only', 'leads', 'treble', '@thegoldbergsabc']",True
+"""727684565519716352""",29,0.6124999999999999,0.6166666666666667,20:21,Tue,88,12,64,459779,"['get', 'helpful', 'tips', '#sharktank', 'most', 'successful', 'entrepreneurs', 'available', 'now']",True
+"""727668441944084480""",17,0.2,0.2,19:17,Tue,66,10,64,459779,"['@thesharkdaymond', 'knew', '@sacca', 'really', 'trying', 'say']",True
+"""727631318343819265""",24,0.0,0.0,16:49,Tue,116,16,64,459779,"['#sharktank', 'can', 'lifechanging', 'watch', 'changes', 'lives', 'entrepreneurs', 'tonight', '@beyondthetanktv']",True
+"""727180868511477760""",39,0.0,0.0,11:00,Mon,66,11,64,459779,"['listening', 'music', 'jam', 'comes', '#musicmonday']",True
+"""726878868863332353""",32,0.2,0.5,15:00,Sun,55,8,64,459779,"['sharks', 'always', 'camera', 'ready', '@barbaracorcoran']",True
+"""726501404710428677""",129,0.0,0.06666666666666667,14:00,Sat,75,13,64,459779,"['battle', 'billionaires', 'think', 'last', 'night', 'shark', 'fight']",True
+"""726230433491374080""",32,0.6,0.55,20:03,Fri,82,12,64,459779,"['incredible', 'just', 'like', 'explosive', 'energy', 'thanks', 'watching', '#sharktank']",True
+"""726229564490289152""",11,1.0,0.3,19:59,Fri,60,10,64,459779,"['team', 'chris', 'mark', 'best', 'option', '#sharktank']",False
+"""726228893447782400""",11,0.0,0.0,19:57,Fri,57,8,64,459779,"['shark', 'fight', '@thesharkdaymond', '#sharktank']",False
+"""726227732942610432""",18,0.625,0.5,19:52,Fri,73,13,64,459779,"['guys', 'keep', 'watching', 'going', 'get', 'interesting', '#sharktank']",True
+"""726225958080901120""",20,0.3125,0.3125,19:45,Fri,75,10,64,459779,"['kids', 'future', 'sharks', '@brightwheel', 'sounds', 'interesting', '#sharktank']",True
+"""726224902286544898""",16,0.0,0.0,19:41,Fri,92,15,64,459779,"['fans', 'feelings', 'product', 'agree', 'sharks', '#sharktank']",True
+"""726222853075390464""",18,0.0,0.0,19:33,Fri,50,6,64,459779,"['hey', 'kiddos', '@sacca', '#sharktank', '#myfruityfaces']",True
+"""726222522950148100""",14,0.0,0.0,19:31,Fri,75,11,64,459779,"['ever', 'expect', '@kevinolearytv', 'sugarcoat', 'feelings', '#sharktank']",True
+"""726221651700908032""",9,0.2857142857142857,0.5357142857142857,19:28,Fri,63,10,64,459779,"['think', '@brellabox', 'kevin', 'right', '#sharktank']",False
+"""726220962576760832""",15,0.0,0.0,19:25,Fri,75,14,64,459779,"['kevin', 'just', 'said', 'stop', 'madness', 'now', '#sharktank', '@kevinolearytv']",True
+"""726220074806173696""",11,0.0,0.0,19:22,Fri,57,9,64,459779,"['never', 'get', 'caught', 'rain', 'again', '#sharktank', '@brellabox']",True
+"""726219109352935424""",4,0.6952380952380953,0.7619047619047619,19:18,Fri,77,11,64,459779,"['@keenhome', 'doing', 'great', 'proud', 'right', '@robertherjavec', '#sharktank']",False
+"""726218434707496960""",13,0.0,0.0,19:15,Fri,34,5,64,459779,"['barbara', 'house', '#sharktank']",True
+"""726216209637593088""",8,0.0,0.0,19:06,Fri,48,7,64,459779,"['eat', 'excitement', '@kevinolearytv']",False
+"""726215958365270016""",26,0.6375,0.5,19:05,Fri,84,11,64,459779,"['product', 'brilliant', 'fashion', 'style', 'success', '#sharktank', '@fashiontapapp']",True
+"""726215163808878592""",33,0.1872727272727273,0.510909090909091,19:02,Fri,109,22,64,459779,"['ready', 'enjoy', 'all', 'new', 'episode', '#sharktank', 'going', 'intense', 'starting', 'now']",True
+"""726184290233503744""",33,0.0,0.0,17:00,Fri,60,13,64,459779,"['@sacca', 'back', 'tank', 'will', 'shark', 'fight']",True
+"""726154103827615745""",26,0.0,0.0,15:00,Fri,23,5,64,459779,"['smell', 'shark', 'fight']",True
+"""726123956546244608""",25,0.1477272727272727,0.45454545454545453,13:00,Fri,69,12,64,459779,"['new', 'pitches', 'deals', '#sharktank', 'all', 'starts', 'tonight', 'abc']",True
+"""726093747855982592""",13,0.41666666666666663,0.6666666666666666,11:00,Fri,55,8,64,459779,"['bold', 'statement', '#sharktank', 'allnew', 'tonight']",True
+"""725777649138724864""",13,0.0,0.0,14:04,Thu,20,5,64,459779,['deal'],True
+"""725725175262629888""",39,0.0,0.5,10:35,Thu,76,12,64,459779,"['feeding', 'time', 'sharks', 'definitely', 'showing', 'teeth']",True
+"""725449202143256576""",25,0.6,1.0,16:19,Wed,119,17,64,459779,"['talk', 'taking', 'ball', '&amp', 'running', 'embrace', '@barbaracorcoran', 'strides', 'own', 'life', '#wednesdaywisdom']",True
+"""725421791158652931""",31,0.0,0.0,14:30,Wed,104,18,64,459779,"['entrepreneurs', 'present', 'solution', 'rainy', 'day', 'will', 'sharks', 'invest', 'take', 'rain', 'check']",True
+"""725019000875294721""",26,-0.020833333333333343,0.37083333333333335,11:49,Tue,114,21,64,459779,"['getting', 'deal', 'hard', 'work', 'also', 'much', 'done', '@beyondthetanktv', 'watch', 'tonight', 'abc']",True
+"""724643767152562178""",20,0.0,0.0,10:58,Mon,36,6,64,459779,"['@gamedaycouture', 'slam', 'dunk']",True
+"""724357258155536384""",32,0.0,0.0,16:00,Sun,50,11,64,459779,"['life', 'party', 'know']",True
+"""724311992777990144""",28,0.75,1.0,13:00,Sun,59,10,64,459779,"['magic', 'show', 'impressed', 'sharks', 'impress']",True
+"""723691704293949441""",8,0.0,0.0,19:55,Fri,78,10,64,459779,"['think', '@inchbug', 'partner', '@kevinolearytv', '#sharktank', '#mydrinky']",False
+"""723691163706884096""",7,0.7,0.6000000000000001,19:53,Fri,92,15,64,459779,"['think', 'taking', '#mydrinky', 'retail', 'good', 'idea', '#sharktank', '@inchbug']",False
+"""723690029487370243""",11,0.25,0.30000000000000004,19:48,Fri,89,12,64,459779,"['real', 'deal', '@kevinolearytv', 'compliment', '#sharktank', '#mydrinky', '@inchbug']",False
+"""723689546140012544""",12,-0.21875,0.175,19:46,Fri,83,13,64,459779,"['@barbaracorcoran', 'making', 'mess', 'tank', '#sharktank', '#mydrinky', '@inchbug']",True
+"""723689370830688256""",10,0.0,0.0,19:46,Fri,73,12,64,459779,"['alright', 'time', 'see', '@inchbug', 'offer', '#sharktank', '#mydrinky']",True
+"""723688264742363138""",30,0.0,0.0,19:41,Fri,57,8,64,459779,"['agreed', '@barbaracorcoran', '#sharktank']",True
+"""723687900475437056""",67,0.0,0.0,19:40,Fri,65,9,64,459779,"['truer', 'words', 'never', 'spoken', '@mcuban', '#sharktank', '@kidrunners']",True
+"""723686955393933313""",8,0.0,0.0,19:36,Fri,86,10,64,459779,"['think', 'found', 'biggest', 'supporter', '@robertherjavec', '@kevinolearytv', '#sharktank', 'think', 'found', 'biggest', 'supporter', '@robertherjavec', '@kevinolearytv', '#sharktank']",True
+"""723686423140925440""",26,1.0,0.75,19:34,Fri,58,7,64,459779,"['looks', 'great', '@robertherjavec', '#sharktank', '@kidrunners']",True
+"""723686246678188033""",5,0.0,0.0,19:33,Fri,34,5,64,459779,"['next', '@kidrunners', '#sharktank']",False
+"""723684980442980353""",10,0.25,0.1,19:28,Fri,72,9,64,459779,"['@lorigreiner', 'wants', 'spread', 'wings', '#sharktank', '@jarrettandraja']",True
+"""723684541181906945""",10,0.2333333333333333,0.8333333333333334,19:26,Fri,69,10,64,459779,"['can', 'anyone', 'hate', 'magic', 'good', 'job', 'guys', '#sharktank', '@jarrettandraja']",False
+"""723683449563951104""",10,0.0,0.0,19:22,Fri,56,8,64,459779,"['let', 'see', '@jarrettandraja', 'offer', '#sharktank']",False
+"""723682418113306624""",18,0.9375000000000001,0.9,19:18,Fri,47,5,64,459779,"['amazing', 'congrats', '@gamedaycouture', '@mcuban']",True
+"""723680554948931584""",29,1.0,0.75,19:11,Fri,83,13,64,459779,"['think', '@barbaracorcoran', 'great', 'partner', '#dripdrop', '#sharktank']",False
+"""723679795930882048""",10,0.0,0.0,19:08,Fri,45,6,64,459779,"['entrepreneur', 'age', 'matter', '#sharktank']",False
+"""723679138381488128""",51,0.5833333333333334,0.8333333333333334,19:05,Fri,53,8,64,459779,"['patent', 'more', 'impressive', '#sharktank', '#dripdrop']",True
+"""723678925654777856""",16,0.0,0.0,19:04,Fri,77,13,64,459779,"['edible', 'solves', 'cleanup', 'sign', '#sharktank', '#dripdrop']",True
+"""723678373453664256""",10,0.3125,0.3333333333333333,19:02,Fri,42,7,64,459779,"['first', 'tank', '#dripdrop', '#sharktank']",False
+"""723678096440856576""",46,0.0,0.0,19:01,Fri,74,14,64,459779,"['alright', 'tank', 'tonight', '#sharktank']",False
+"""723604376900640768""",19,0.5,1.0,14:08,Fri,38,7,64,459779,"['believe', '#sharktank', 'magic']",True
+"""723561901246930945""",104,0.175,0.825,11:19,Fri,81,13,64,459779,"['tonight', '#sharktank', 'product', 'sweet', 'only', 'kids', 'invented']",True
+"""723288967592968192""",16,-0.3333333333333333,0.6666666666666666,17:15,Thu,65,11,64,459779,"['even', 'ice', 'cream', 'distract', 'sharks', 'serious', 'business']",True
+"""723276581804859392""",26,0.625,1.0,16:25,Thu,58,7,64,459779,"['even', 'highfives', 'innovative', '#nationalhighfiveday']",True
+"""723256501859569664""",14,0.0,0.0,15:06,Thu,56,10,64,459779,"['find', 'out', 'tomorrow', 'allnew', '#sharktank']",True
+"""722861559094108164""",14,0.375,0.1,12:56,Wed,57,11,64,459779,"['much', 'smile', '#sharktank', 'week']",True
+"""722484920468131844""",27,0.0,0.0,12:00,Tue,59,8,64,459779,"['eavesdropping', 'overhear', 'something', 'juicy']",True
+"""722107443724075008""",34,0.0,0.0,11:00,Mon,38,7,64,459779,"['feel', '#taxday', 'rolls', 'around']",True
+"""721427961665232896""",24,0.0,0.0,14:00,Sat,87,16,64,459779,"['turn', 'phone', 'find', 'out', 'someone', 'made', 'themselves', 'background']",True
+"""721155641176403969""",9,0.25,0.2,19:57,Fri,39,6,64,459779,"['thanks', 'watching', '#sharktank']",False
+"""721155521928175618""",33,1.0,1.0,19:57,Fri,44,7,64,459779,"['now', 'happy', 'dance', '@aplusk', '#sharktank']",True
+"""721154409124769792""",38,0.0,0.0,19:53,Fri,83,13,64,459779,"['think', '@mcuban', '@aplusk', 'dream', 'team', '@slydehandboards', '#sharktank']",False
+"""721153429666689024""",8,0.0,0.0,19:49,Fri,71,10,64,459779,"['think', '@slydehandboards', 'partner', '#sharktank']",False
+"""721152586489966597""",174,0.3925,0.57,19:45,Fri,49,8,64,459779,"['high', 'love', '#sharktank', '@mcuban', '@aplusk']",True
+"""721151893280538624""",7,0.0,0.06666666666666667,19:43,Fri,81,13,64,459779,"['last', 'pitch', 'night', 'let', 'hear', '@slydehandboards', 'all', '#sharktank']",False
+"""721150391103176704""",4,0.0,0.0,19:37,Fri,35,5,64,459779,"['use', '@popslate', '#sharktank']",False
+"""721149489940205568""",15,0.625,0.5,19:33,Fri,62,9,64,459779,"['woah', 'think', '@popslate', 'sounds', 'interesting', '#sharktank']",False
+"""721148267820683264""",6,0.0,0.0,19:28,Fri,112,19,64,459779,"['agree', '@aplusk', 'felt', 'like', 'entrepreneur', 'hiding', 'something', 'back', 'out', '#sharktank']",False
+"""721147361486053376""",5,0.3125,1.0,19:25,Fri,92,16,64,459779,"['think', '@wearefrends', 'taking', 'heat', 'pretty', 'tank', 'tonight', '#sharktank']",False
+"""721147083412140035""",64,0.0,0.0,19:23,Fri,41,5,64,459779,"['rock', '@mcuban', '@wearefrends', '#sharktank']",True
+"""721146762761748480""",8,0.0,0.0,19:22,Fri,75,13,64,459779,"['next', '@wearefrends', 'let', 'see', 'offer', '#sharktank']",False
+"""721145728802942976""",10,0.0,0.0,19:18,Fri,96,14,64,459779,"['soccer', 'beach', '@barbaracorcoran', 'sign', 'congrats', 'everyone', '#sharktank']",True
+"""721144545665228800""",13,0.15,0.1,19:13,Fri,57,9,64,459779,"['worth', 'extra', '@lorigreiner', '#sharktank']",True
+"""721144287296139264""",10,0.0,0.0,19:12,Fri,60,8,64,459779,"['@mcuban', 'learns', '@kevinolearytv', '#sharktank']",True
+"""721143723820781568""",12,0.0,1.0,19:10,Fri,84,14,64,459779,"['believe', 'timing', 'key', 'entrepreneur', 'product', 'idea', '#sharktank']",False
+"""721142446659354624""",30,0.0,0.625,19:05,Fri,106,18,64,459779,"['like', '@robertherjavec', 'playing', 'dog', 'entire', 'time', '@petnostics', '#sharktank']",False
+"""721142107868696576""",4,0.5,0.6944444444444444,19:04,Fri,85,15,64,459779,"['lengths', 'make', 'sure', 'pet', 'healthy', '@petnostics', '#sharktank']",False
+"""721141673510748160""",8,0.3125,0.3333333333333333,19:02,Fri,33,4,64,459779,"['first', '@petnostics', '#sharktank']",False
+"""721141342156533760""",38,0.17045454545454544,0.45454545454545453,19:01,Fri,103,17,64,459779,"['alright', 'sharkies', 'watching', 'all', 'new', 'shark', 'tank', '@aplusk', 'starts', 'now', '#sharktank']",False
+"""721091231015702532""",73,0.175,0.275,15:42,Fri,71,11,64,459779,"['honorary', 'shark', '@aplusk', 'back', 'full', 'force', 'tonight', '#sharktank']",True
+"""720673959885180928""",48,0.0,0.0,12:03,Thu,95,16,64,459779,"['feeding', 'frenzy', 'shark', 'infested', 'waters', '@aplusk', 'returns', 'tank', 'tomorrow']",True
+"""720363590654386176""",9,0.0,0.0,15:30,Wed,84,15,64,459779,"['@slydehandboards', 'lot', 'riding', 'pitch', 'will', 'catch', 'wave', 'crash']",True
+"""719921660359544834""",24,0.0,0.0,10:14,Tue,43,7,64,459779,"['sharks', 'take', 'over', '@theview', 'morning']",True
+"""719648586372399104""",40,0.0,0.0,16:09,Mon,13,3,64,459779,['passion'],True
+"""719223429082320896""",11,0.625,1.0,12:00,Sun,40,5,64,459779,"['#sundayfunday', 'favorite', 'sharks']",True
+"""718928986080952320""",90,-0.4,0.7,16:30,Sat,61,13,64,459779,"['tired', 'someone', 'asks', 'want', 'out']",True
+"""718618745875341312""",10,0.0,0.0,19:57,Fri,54,5,64,459779,"['congrats', '@lorigreiner', '@officialcoolbox', '#sharktank']",False
+"""718617455829065728""",7,1.0,0.3,19:52,Fri,77,12,64,459779,"['think', 'make', 'best', 'partner', '@officialcoolbox', '#sharktank']",False
+"""718616988344578052""",13,0.0,0.0,19:50,Fri,69,8,64,459779,"['believe', 'highrisk', 'highreward', '#sharktank', '@officialcoolbox']",False
+"""718616071385825280""",12,0.0,0.0,19:46,Fri,69,9,64,459779,"['energy', 'guys', 'contagious', '@officialcoolbox', '#sharktank']",False
+"""718615724428812289""",8,-0.4375,1.0,19:45,Fri,75,11,64,459779,"['wow', 'numbers', 'insane', 'agree', '@officialcoolbox', '#sharktank']",False
+"""718614252207128577""",9,-0.09285714285714287,0.6214285714285714,19:39,Fri,60,9,64,459779,"['addicted', 'smart', 'phone', '@thenophone', '#sharktank']",False
+"""718613844030013440""",156,0.25,0.2,19:37,Fri,59,9,64,459779,"['tell', 'really', 'feel', '@mcuban', '@thenophone', '#sharktank']",True
+"""718613477091373056""",54,0.375,0.1,19:36,Fri,58,5,64,459779,"['smile', '@lorigreiner', '@robertherjavec', '@thenophone', '#sharktank']",True
+"""718613151747584000""",18,0.0,0.0,19:35,Fri,51,5,64,459779,"['caught', '@thesharkdaymond', '@thenophone', '#sharktank', 'caught', '@thesharkdaymond', '@thenophone', '#sharktank']",True
+"""718611658608939008""",16,0.0,0.0,19:29,Fri,49,5,64,459779,"['congrats', '@robertherjavec', '@mytrobo', '#sharktank']",False
+"""718610107358134272""",12,0.78125,0.6,19:22,Fri,46,8,64,459779,"['love', 'idea', '@mytrobo', '#sharktank']",False
+"""718608632150126592""",20,0.0,0.0,19:17,Fri,29,3,64,459779,"['team', '@lorigreiner', '#sharktank']",True
+"""718608317170458624""",8,1.0,0.3,19:15,Fri,52,7,64,459779,"['best', 'teacher', 'ever', '@lorigreiner', '#sharktank']",True
+"""718607938550689792""",14,0.0,0.0,19:14,Fri,96,11,64,459779,"['congrats', '@lorigreiner', '@robertherjavec', '@pridebites', 'sounds', 'like', 'purrrfect', 'deal', '#sharktank']",False
+"""718606477951373312""",14,0.0,0.0,19:08,Fri,81,10,64,459779,"['make', 'decisions', 'before', 'hearing', '@lorigreiner', '@pridebites', '#sharktank']",True
+"""718606342555099137""",8,0.325,0.6666666666666666,19:07,Fri,103,18,64,459779,"['important', 'impress', 'sharks', 'numbers', 'first', 'sell', 'product', '#sharktank']",False
+"""718605638532788225""",7,1.0,1.0,19:05,Fri,74,9,64,459779,"['numbers', 'definitely', 'impressed', 'sharks', '@pridebites', '#sharktank']",False
+"""718605246335987712""",17,0.29,0.51,19:03,Fri,62,9,64,459779,"['most', 'adorable', 'high', 'ever', 'seen', '@pridebites', '#sharktank']",True
+"""718605017024962561""",39,0.0,0.5,19:02,Fri,75,13,64,459779,"['pet', 'definitely', 'member', 'family', '@pridebites', '#sharktank']",False
+"""718604633640448000""",41,0.0,0.0,19:01,Fri,58,11,64,459779,"['#sharktank', 'fans', 'watching']",False
+"""718593015883960321""",25,-0.03598484848484848,0.2606060606060606,18:15,Fri,84,17,64,459779,"['grow', 'trap', 'new', 'episode', '#sharktank', 'starts', 'less', 'hour']",True
+"""718551495063576579""",21,-0.025,0.675,15:30,Fri,94,14,64,459779,"['will', 'passionate', 'plea', 'enough', '@robertherjavec', 'reconsider', 'tonight', '#sharktank']",True
+"""718513774735585280""",30,0.3,0.2,13:00,Fri,57,11,64,459779,"['all', 'fun', 'games', 'sharks', 'show', 'teeth']",True
+"""718218928720388097""",53,0.0,0.0,17:28,Thu,40,6,64,459779,"['look', '#sharktank', 'allnew', 'tomorrow']",True
+"""717859724004311044""",27,0.3984375,0.825,17:41,Wed,91,13,64,459779,"['@robertherjavec', 'seems', 'think', 'product', 'pretty', 'cool', '#sharktank', 'allnew', 'friday']",True
+"""717502087173644288""",22,0.0,0.0,18:00,Tue,116,19,64,459779,"['getting', 'deal', 'cause', 'celebration', 'happens', 'next', 'find', 'out', 'tonight', 'abc', '@beyondthetanktv']",True
+"""717470506723753985""",38,0.0,0.0,15:54,Tue,106,19,64,459779,"['just', 'think', 'deal', 'done', 'sharks', 'throw', 'curveball', '#sharktank', 'allnew', 'friday', 'abc']",True
+"""717138344799559681""",28,-0.275,0.65,17:54,Mon,100,18,64,459779,"['entreprenurs', 'ready', 'get', 'paws', 'dirty', 'allnew', '#sharktank', 'friday', 'abc']",True
+"""716679161121796096""",28,-0.5,1.0,11:30,Sun,26,4,64,459779,"['@mcuban', 'impressed']",True
+"""716294130113101824""",27,0.0,0.0,10:00,Sat,90,16,64,459779,"['watched', '#sharktank', 'yet', 'something', 'got', 'change', 'catch', 'now']",True
+"""715954389077336065""",55,0.0,0.0,11:30,Fri,48,9,64,459779,"['woohoo', '#sharktank', 'tonight', 'abc']",True
+"""715222068896382977""",28,0.0,0.0,11:00,Wed,57,6,64,459779,"['sharks', 'onscreen', 'friends', 'offscreen', '@barbaracorcoran']",True
+"""714867218861985792""",49,0.0,0.10000000000000002,11:30,Tue,85,14,64,459779,"['big', 'ideas', 'deals', 'money', '@beyondthetanktv', 'allnew', 'tonight', 'abc']",True
+"""714436891815317505""",77,-0.1,0.2,07:00,Mon,46,6,64,459779,"['mentally', 'preparing', 'elf', 'monday', 'like']",True
+"""713772527672238080""",41,0.5,0.5,11:00,Sat,47,9,64,459779,"['many', 'phases', 'making', 'deal', '#sharktank']",True
+"""713379935272964096""",22,-0.15625,0.84375,09:00,Fri,95,16,64,459779,"['@kevinolearytv', 'deal', 'face', 'can', 'only', 'mean', 'thing', '#sharktank', 'tonight', 'abc']",True
+"""713077944084729857""",12,0.8,0.9,13:00,Thu,46,6,64,459779,"['cheers', '#sharktank', 'welcome', 'america']",True
+"""712063426340720642""",21,0.625,0.5,17:48,Mon,73,11,64,459779,"['@lorigreiner', 'will', 'always', 'woman', 'crush', '#sharktank']",True
+"""711537808171769860""",34,0.0,0.0,07:00,Sun,5,1,64,459779,['amen'],True
+"""711198045057187841""",35,1.0,1.0,08:30,Sat,82,14,64,459779,"['@lovepop', 'done', 'over', 'million', 'dollars', 'sales', 'just', 'months', 'impressive']",True
+"""711009393760989184""",18,0.0,0.0,20:00,Fri,62,6,64,459779,"['congrats', '@lorigreiner', '@wondercide', '#sharktank', '#wondercide']",False
+"""711009136159363072""",4,0.0,0.0,19:59,Fri,51,6,64,459779,"['@wondercide', '#sharktank', '#wondercide']",False
+"""711007190748893184""",17,0.2,0.5625,19:51,Fri,81,14,64,459779,"['important', 'specific', 'target', 'market', 'product', '#sharktank']",False
+"""711006335693950976""",17,0.0,0.0,19:48,Fri,85,11,64,459779,"['let', 'see', 'entrepreneur', 'offer', '#sharktank', '#wondercide', '@wondercide']",True
+"""711005009450831872""",38,-0.01339285714285715,0.46785714285714286,19:42,Fri,85,14,64,459779,"['think', '@mcuban', 'right', 'start', 'small', '#sharktank', '#thegoodpromise']",True
+"""711004567778021377""",19,0.5,0.6,19:41,Fri,55,8,64,459779,"['love', 'product', '#sharktank', '#thegoodpromise']",True
+"""711003711326318592""",8,0.0,0.0,19:37,Fri,88,14,64,459779,"['intrigued', 'find', 'out', 'product', 'all', '#sharktank', '#thegoodpromise']",True
+"""711002436870283264""",13,0.55,0.875,19:32,Fri,73,9,64,459779,"['wow', 'great', 'job', 'guys', 'congrats', '@kevinolearytv', '#lovepop', '@lovepop', '#sharktank']",True
+"""710999797004640256""",15,0.0,0.0,19:22,Fri,41,5,64,459779,"['pressure', '#sharktank', '#vengo', '@vengolabs']",True
+"""710998775607726081""",8,-0.08333333333333333,0.2833333333333333,19:18,Fri,85,11,64,459779,"['entrepreneur', 'previous', 'career', 'matter', 'current', 'project', '#sharktank']",False
+"""710998373042679810""",11,0.0,0.0,19:16,Fri,71,12,64,459779,"['next', '@vengolabs', 'let', 'see', 'all', '#sharktank', '#vengo']",True
+"""710997846561050625""",17,0.625,0.5,19:14,Fri,91,13,64,459779,"['@lorigreiner', 'girl', 'crush', '#sharktank', '#beerblizzard', '@beerblizzard']",True
+"""710997151157985280""",36,0.0,0.0,19:11,Fri,53,5,64,459779,"['congrats', 'guys', '#sharktank', '#beerblizzard', '@beerblizzard']",True
+"""710996330831855616""",32,0.4375,0.65,19:08,Fri,70,11,64,459779,"['think', '@beerblizzard', 'cool', 'idea', '#sharktank', '#beerblizzard']",False
+"""710995500259000320""",11,0.0,0.0,19:05,Fri,67,9,64,459779,"['let', 'see', '@beerblizzard', 'all', '#sharktank', '#beerblizzard']",True
+"""710994479961022464""",21,0.625,0.8888888888888888,19:01,Fri,62,11,64,459779,"['watching', 'make', 'sure', 'tweet', 'along', '#sharktank']",False
+"""710964008719949828""",37,0.0,0.0,17:00,Fri,105,16,64,459779,"['entrepreneurs', 'giving', 'vending', 'machines', 'makeover', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""710929022377713669""",18,0.0,0.0,14:41,Fri,108,17,64,459779,"['will', 'vegetable', 'smoothies', 'agree', 'sharks', 'taste', 'buds', 'find', 'out', 'tonight', 'allnew', '#sharktank']",True
+"""710869024712695809""",64,-0.025000000000000022,0.75,10:42,Fri,75,13,64,459779,"['hate', 'warm', 'beer', 'click', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""710641459087745024""",15,0.0,0.0,19:38,Thu,85,13,64,459779,"['@forbes', 'exclusive', 'look', 'tomorrow', 'allnew', '#sharktank', 'hint', 'involves']",True
+"""710585367066443778""",30,1.0,1.0,15:55,Thu,34,6,64,459779,"['cheers', 'happy', 'patrick', 'day']",True
+"""709890855218323456""",29,0.625,0.9,17:55,Tue,56,10,64,459779,"['catch', 'latest', 'episode', '#sharktank', 'watch', 'now']",True
+"""709529294540767232""",22,0.0,0.0,17:59,Mon,23,4,64,459779,"['all', 'pizza', 'everything']",True
+"""709160217427189761""",36,0.4375,0.725,17:32,Sun,74,10,64,459779,"['@kevinolearytv', 'excited', 'light', 'america', 'toilets', '@illumibowl']",True
+"""708741878343032833""",31,1.0,1.0,12:50,Sat,83,13,64,459779,"['customized', 'items', 'awesome', 'piece', 'want', 'rock', '#sharktank']",True
+"""708487112102957056""",11,0.25,0.2,19:57,Fri,39,6,64,459779,"['thanks', 'watching', '#sharktank']",False
+"""708485056537485312""",68,0.3125,0.475,19:49,Fri,84,9,64,459779,"['love', 'seeing', '@robertherjavec', 'soft', 'side', '#sharktank', '#innovationpet', '@innovationpet']",True
+"""708483128373985280""",15,0.3125,0.3333333333333333,19:41,Fri,99,14,64,459779,"['first', 'deal', 'night', 'congrats', '@kevinolearytv', '@illumibowl', '#sharktank', '#ilummibowl']",False
+"""708482829362008064""",8,0.35,0.65,19:40,Fri,111,20,64,459779,"['think', '@mcuban', 'point', 'true', 'invest', 'solely', 'product', 'opposed', 'company', '#sharktank']",False
+"""708482391971635201""",21,-0.22083333333333335,0.3,19:38,Fri,112,14,64,459779,"['poor', '@kevinolearytv', 'want', 'illuminate', 'toilet', 'bowl', '#sharktank', '#ilummibowl', '@illumibowl']",True
+"""708482106092068865""",15,0.0,0.0,19:37,Fri,67,9,64,459779,"['anything', 'can', 'happen', 'tank', '#sharktank', '#ilummibowl', '@illumibowl']",True
+"""708481942891708416""",3,0.41000000000000003,0.6,19:37,Fri,52,8,64,459779,"['fun', 'product', 'very', 'important', '#sharktank']",False
+"""708481525935947776""",31,0.46875,0.75,19:35,Fri,82,14,64,459779,"['excited', 'see', '#ilummibowl', 'all', '#sharktank', '@illumibowl']",True
+"""708479561898573825""",7,0.41666666666666663,0.8333333333333334,19:27,Fri,48,5,64,459779,"['@robertherjavec', 'definitely', 'loyal', '#sharktank']",True
+"""708479147518107649""",38,0.4375,0.5,19:26,Fri,83,11,64,459779,"['holy', 'colorful', 'love', 'product', '#sharktank', '#belovedshirts', '@belovedshirts']",True
+"""708478420368400385""",33,0.25,0.3,19:23,Fri,80,12,64,459779,"['love', 'present', '#sharktank', '#belovedshirts', '@belovedshirts']",True
+"""708477089540907008""",13,1.0,0.75,19:17,Fri,74,8,64,459779,"['congrats', '@thesharkdaymond', '@cowboyryan_', 'doing', 'great', '#sharktank']",True
+"""708475307242692608""",37,0.0,0.0,19:10,Fri,109,14,64,459779,"['comes', 'beverage', 'company', 'taste', 'everything', '#sharktank', '#mobcraftbeer', '@mobcraftbeer', '@lorigreiner']",True
+"""708474604352884736""",2,0.0,0.0,19:08,Fri,88,13,64,459779,"['think', 'idea', 'interactive', 'votebased', 'company', 'can', 'successful', '#sharktank', 'think', 'idea', 'interactive', 'votebased', 'company', 'can', 'successful', '#sharktank']",False
+"""708473887609200641""",12,0.35,0.55,19:05,Fri,107,15,64,459779,"['good', 'enough', '@lorigreiner', '#sharktank', '#mobcraftbeer', '@mobcraftbeer']",True
+"""708473545073041408""",21,1.0,1.0,19:03,Fri,76,10,64,459779,"['looks', 'delicious', 'try', '#mobcraftbeer', '#sharktank', '@mobcraftbeer']",False
+"""708472684854833152""",18,0.0,0.0,19:00,Fri,33,6,64,459779,"['#sharktank', 'time']",False
+"""708456753365700608""",83,0.0,0.0,17:57,Fri,85,16,64,459779,"['purrrfect', 'night', 'allnew', '#sharktank', 'catch', 'tonight', 'abc']",True
+"""708365345409490944""",146,0.22222222222222224,0.39999999999999997,11:53,Fri,105,16,64,459779,"['ready', 'whenever', 'mother', 'nature', 'calls', '@illumibowl', 'toilet', 'bowl', 'night', 'light', 'watch', 'pitch', 'now']",True
+"""708082261791543296""",36,0.25,0.4,17:09,Thu,71,13,64,459779,"['whole', 'lot', 'robert', 'allnew', '#sharktank', 'tomorrow', 'abc']",True
+"""707985006895960064""",79,0.8875000000000001,1.0,10:42,Thu,48,7,64,459779,"['happy', 'birthday', 'very', 'own', '@barbaracorcoran']",True
+"""707327535835693058""",37,0.0,0.0,15:10,Tue,17,3,64,459779,"['crawl', 'walk', 'run']",True
+"""706585154173673472""",67,0.375,0.9,14:00,Sun,28,6,64,459779,"['aww', 'look', 'baby', 'sharks']",True
+"""706290709733773312""",42,0.0,0.0,18:30,Sat,41,7,64,459779,"['realize', 'work', 'tomorrow']",True
+"""705920415563124737""",36,0.0,0.0,17:58,Fri,105,17,64,459779,"['taking', 'selfies', 'another', 'level', 'catch', 'encore', 'presentation', '#sharktank', 'tonight', 'abc']",True
+"""705538380424224768""",148,0.5,0.5,16:40,Thu,81,13,64,459779,"['woohoo', '#sharktank', 'will', 'back', 'another', 'season', 'awesome', 'pitches', 'deals']",True
+"""705105492712927232""",16,0.30000000000000004,0.6,12:00,Wed,53,9,64,459779,"['@piperwai', 'amazing', 'update', 'after', 'short', 'weeks']",True
+"""704748256044064768""",31,0.5,0.5,12:20,Tue,93,17,64,459779,"['entrepreneurs', 'might', 'get', 'deal', 'can', 'sometimes', 'walk', 'away', 'much', 'more']",True
+"""704028296103776256""",97,0.0,0.0,12:40,Sun,16,3,64,459779,"['never', 'give']",True
+"""703666645454041088""",18,0.5,1.0,12:42,Sat,31,6,64,459779,"['deal', 'time', 'favorite']",True
+"""703413975132798976""",48,0.625,0.6,19:58,Fri,49,6,64,459779,"['love', 'motivation', '@lorigreiner', '#sharktank']",True
+"""703412255698903040""",11,0.0,0.0,19:52,Fri,64,13,64,459779,"['think', 'nerves', 'can', 'harm', 'pitch', 'tank', '#sharktank']",False
+"""703411130182606849""",21,0.0,0.0,19:47,Fri,66,10,64,459779,"['tea', 'coffee', 'person', '#sharktank', '#teaspressa', '@teaspressa']",True
+"""703409691142070272""",5,0.08333333333333333,0.6666666666666667,19:41,Fri,46,9,64,459779,"['clever', 'idea', 'enough', 'deal', '#sharktank']",False
+"""703409455644483584""",24,1.0,1.0,19:40,Fri,86,14,64,459779,"['think', 'wearable', 'technology', 'bike', 'awesome', '#sharktank', '#linka']",False
+"""703408069120753665""",22,0.0,0.0,19:35,Fri,46,8,64,459779,"['let', 'see', '#linka', 'all', '#sharktank']",True
+"""703407135791648768""",9,0.0,0.0,19:31,Fri,70,6,64,459779,"['congrats', '@barbaracorcoran', '@glacecryo', '#sharktank', '#glacecryotherapy']",False
+"""703406457262358533""",15,0.0,0.0,19:29,Fri,97,13,64,459779,"['sometimes', 'product', 'idea', 'execution', '#sharktank', '#glacecryotherapy', '@glacecryo']",False
+"""703405657928638464""",45,0.15625,0.75,19:25,Fri,109,13,64,459779,"['looks', 'thrilling', '@robertherjavec', 'definitely', 'try', '#sharktank', '#glacecryotherapy', '@glacecryo']",True
+"""703405019576582144""",26,0.46875,0.75,19:23,Fri,91,14,64,459779,"['excited', 'see', 'all', '#sharktank', '#glacecryotherapy', '@glacecryo']",True
+"""703403901861675013""",11,0.5625,0.875,19:18,Fri,60,8,64,459779,"['wow', 'great', 'job', '@piperwai', '#sharktank', '@barbaracorcoran']",False
+"""703403130197778432""",23,0.0,0.0,19:15,Fri,109,16,64,459779,"['looks', 'like', 'sharks', 'fighting', 'over', '@getbetterback', 'think', 'will', 'happen', '#sharktank', '#betterback']",True
+"""703402242779586560""",6,-0.125,1.0,19:12,Fri,80,14,64,459779,"['think', 'extreme', 'evaluation', 'can', 'harm', 'chances', 'tank', '#sharktank']",False
+"""703401890730668032""",13,1.0,0.3,19:10,Fri,72,8,64,459779,"['best', 'words', '@lorigreiner', 'say', '#sharktank', '#betterback', '@getbetterback']",True
+"""703401474248806400""",27,0.7,0.9,19:09,Fri,69,7,64,459779,"['wise', 'words', '@robertherjavec', '#sharktank', '#betterback', '@getbetterback']",True
+"""703401229960028164""",8,0.0,0.0,19:08,Fri,64,8,64,459779,"['agree', '@mcuban', '#sharktank', '#betterback', '@getbetterback']",True
+"""703400899226501120""",8,0.9375000000000001,0.9,19:06,Fri,77,9,64,459779,"['times', 'funding', 'goal', 'amazing', '@getbetterback', '#sharktank', '#betterback']",False
+"""703400265467224065""",6,0.4,1.0,19:04,Fri,52,8,64,459779,"['important', 'testing', 'out', 'product', '#sharktank']",False
+"""703399888671920129""",11,0.625,0.5,19:02,Fri,91,11,64,459779,"['looks', 'interesting', 'let', 'see', '@getbetterback', 'pitching', 'tonight', '#sharktank', '#betterback']",True
+"""703399457447124993""",75,0.3125,0.5,19:01,Fri,70,13,64,459779,"['ready', 'allnew', '#sharktank', 'watching']",False
+"""703376757546749956""",63,0.0,0.0,17:31,Fri,55,8,64,459779,"['realize', 'allnew', '#sharktank', 'tonight']",True
+"""703330196741623808""",45,0.0,0.0,14:26,Fri,59,10,64,459779,"['@mcuban', 'tells', '#sharktank', 'allnew', 'tonight']",True
+"""703303422502514689""",48,0.0,0.0,12:39,Fri,96,18,64,459779,"['robert', 'takes', 'moment', 'chill', 'out', 'tank', 'tonight', '#sharktank', 'allnew', 'abc']",True
+"""703040530469392384""",21,0.625,1.0,19:14,Thu,89,14,64,459779,"['favorite', 'time', 'deal', 'watch', 'allnew', '#sharktank', 'tomorrow', 'abc']",True
+"""702608068543193089""",21,0.0,0.0,14:36,Wed,47,8,64,459779,"['@kevinolearytv', 'work', 'workout']",True
+"""702210318953553920""",13,0.0,0.0,12:16,Tue,41,8,64,459779,"['mind', 'made', '#sharktank']",True
+"""702182639869018114""",48,0.4,1.0,10:26,Tue,52,8,64,459779,"['happy', 'birthday', 'only', '@thesharkdaymond']",True
+"""701915945728487424""",22,0.0,0.0,16:46,Mon,69,12,64,459779,"['pays', 'jerk', 'get', '#sharktank', 'update', '@threejerksjerky']",True
+"""701624968325402624""",4,0.17045454545454544,0.5,21:30,Sun,114,16,64,459779,"['@thesharkdaymond', 'live', 'talking', 'tonight', 'allnew', 'episode', '#sharktank', 'join', 'watch', 'questions', 'now']",True
+"""701618042325889024""",91,0.0,0.0,21:02,Sun,109,16,64,459779,"['please', 'retweet', 'join', 'applauding', 'made', 'entrepreneurs', 'tonight', '#sharktank']",False
+"""701617647407001600""",12,0.0,0.0,21:00,Sun,56,8,64,459779,"['@ragstoraches', 'looks', 'like', 'likes', 'deal', '#sharktank']",True
+"""701615722812809220""",16,0.0,0.0,20:53,Sun,55,10,64,459779,"['result', '@mcuban', 'made', '*his*', 'mind', '#sharktank']",True
+"""701615412623052800""",5,0.0,0.0,20:52,Sun,90,16,64,459779,"['try', 'separate', 'product', 'online', 'sell', 'retail', 'stores', '#sharktank']",False
+"""701614361165611010""",7,0.21875,0.325,20:47,Sun,60,11,64,459779,"['next', 'tank', 'true', 'tale', '@ragstoraches', '#sharktank']",True
+"""701613931996049408""",14,0.4,1.0,20:46,Sun,54,6,64,459779,"['important', 'reminder', '@robertherjavec', '#sharktank']",True
+"""701613225423544320""",16,1.0,1.0,20:43,Sun,70,11,64,459779,"['wonderful', 'wish', 'embarrass', 'fellow', 'shark', '#sharktank']",True
+"""701611595357618176""",5,0.0,0.0,20:36,Sun,68,12,64,459779,"['assembly', 'play', 'role', 'decide', 'purchase', '#sharktank']",False
+"""701610649223360512""",11,-0.1,0.25,20:33,Sun,75,12,64,459779,"['@prxperformance', 'doing', 'heavy', 'lifting', 'next', 'tank', '#sharktank']",True
+"""701609578287538176""",110,0.0,1.0,20:28,Sun,73,9,64,459779,"['ultimate', 'compliment', '#custardstandchili', '@mcuban', '#sharktank']",True
+"""701609077336629248""",21,0.0,0.0,20:26,Sun,72,11,64,459779,"['matter', 'going', 'regional', 'national', '#sharktank']",True
+"""701607876079525888""",6,0.0,0.0,20:22,Sun,54,9,64,459779,"['next', 'tank', '@custardstand', 'chili', '#sharktank']",True
+"""701606670334631937""",8,0.0,0.0,20:17,Sun,69,10,64,459779,"['product', 'update', 'sky', 'limit', '@threejerksjerky', '#sharktank']",False
+"""701603467371159552""",11,0.0,0.0,20:04,Sun,65,10,64,459779,"['invent', 'fire', 'perfected', '#instafire', '#sharktank']",False
+"""701603013811634178""",12,0.3125,0.3333333333333333,20:02,Sun,51,8,64,459779,"['first', 'tank', '@instafire', '#sharktank']",True
+"""701602439552696320""",50,0.0,0.0,20:00,Sun,96,14,64,459779,"['allnew', 'allamerican', 'episode', '#sharktank', 'starts', 'now', 'please', 'retweet', 'watching']",False
+"""701579663714480128""",54,0.0,0.0,18:30,Sun,89,11,64,459779,"['tonight', 'allnew', '#sharktank', 'features', 'entrepreneurs', 'pitching', 'products', 'made', 'america']",True
+"""701549467959435265""",46,-0.25,0.2,16:30,Sun,63,11,64,459779,"['hear', 'trouble', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""701501585428316160""",36,1.0,1.0,13:19,Sun,103,18,64,459779,"['hope', 'sharks', 'hungry', 'delicious', 'chili', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""701210990252134400""",21,0.0,0.0,18:05,Sat,92,16,64,459779,"['say', 'adorableness', '#sharktank', 'allnew', 'tomorrow', 'abc']",True
+"""701177227447136257""",35,0.0,0.0,15:50,Sat,70,12,64,459779,"['#sharktank', 'allnew', 'allamerican', 'tomorrow', 'abc']",True
+"""701156927535845377""",21,0.75,1.0,14:30,Sat,41,5,64,459779,"['wonderful', 'favorite', 'word', 'royalties']",True
+"""700877865114423296""",14,0.4166666666666667,0.3833333333333333,20:01,Fri,102,16,64,459779,"['like', 'winning', 'lottery', 'benjamin', 'yes', 'fun', 'episode', 'thanks', 'watching', '#sharktank']",False
+"""700875803345596416""",41,0.56875,0.8450000000000001,19:53,Fri,28,3,64,459779,"['very', 'true', '@thesharkdaymond']",True
+"""700874770229829632""",39,0.625,0.5,19:49,Fri,116,18,64,459779,"['nohbo', 'ladies', 'gentleman', 'definitely', 'interesting', 'going', 'valuable', 'sharks', '#nohbo', '#sharktank']",True
+"""700873083561742337""",23,0.0,0.0,19:42,Fri,35,5,64,459779,"['episode', '#sharktank', '@mcuban', 'episode', '#sharktank', '@mcuban']",True
+"""700871560136003584""",6,0.0,0.0,19:36,Fri,78,14,64,459779,"['want', 'hear', 'fans', 'like', 'designs', '#tutublue', '#sharktank']",True
+"""700871008803115008""",13,0.25,0.2,19:34,Fri,59,7,64,459779,"['thanks', 'contribution', '@robertherjavec', '#sharktank']",True
+"""700870190972547073""",5,0.0,0.9,19:30,Fri,100,16,64,459779,"['according', 'sharks', 'michael', 'idea', 'kind', 'crazy', 'think', '#cleensleep', '#sharktank']",False
+"""700868305045757952""",21,1.0,1.0,19:23,Fri,95,13,64,459779,"['brilliant', 'entrepreneur', 'dallas', 'like', 'try', 'product', '#sharktank', '#cleansleep']",True
+"""700866814708813824""",14,0.9375,0.95,19:17,Fri,70,8,64,459779,"['congratulations', '@signalvault', 'successful', 'experiences', '#sharktank']",False
+"""700866090096656384""",15,0.625,0.6,19:14,Fri,40,5,64,459779,"['love', '@barbaracorcoran', '#sharktank']",True
+"""700864882271350784""",8,0.0,0.0,19:09,Fri,37,4,64,459779,"['agrees', '#sharktank', '@kevinolearytv']",True
+"""700864690264485894""",9,0.125,1.0,19:08,Fri,32,4,64,459779,"['wow', '@lorigreiner', '#sharktank']",True
+"""700863263026728960""",13,0.0,0.0,19:03,Fri,55,9,64,459779,"['sworkit', 'think', '#sharktank', '#sworkit']",True
+"""700862805218500608""",19,0.30000000000000004,0.5,19:01,Fri,71,12,64,459779,"['say', 'sharks', 'amazing', 'episode', 'starting', 'now', '#sharktank']",False
+"""700795953897312256""",45,0.0,0.0,14:35,Fri,71,12,64,459779,"['say', 'goodnight', 'bed', 'bugs', '#sharktank', 'allnew', 'tonight', 'abc']",True
+"""700453216417284096""",13,0.0,0.125,15:53,Thu,87,17,64,459779,"['saving', 'environment', 'cleaning', 'hair', 'all', 'same', 'time', 'out']",True
+"""700058639705501697""",45,0.17045454545454544,0.5,13:46,Wed,59,12,64,459779,"['sharks', 'share', 'keys', 'live', 'worryfree', 'life']",True
+"""699746963877728256""",37,0.384375,0.375,17:07,Tue,81,13,64,459779,"['get', 'excited', '#sharktank', 'secrets', 'success', 'book', 'comes', 'out', 'preorder', 'now']",True
+"""699699862703460353""",21,0.04999999999999999,0.55,14:00,Tue,102,15,64,459779,"['@mcuban', '@ilumisolutions', 'changing', 'game', 'light', 'bulbs', 'watch', '#sharktank', 'update', 'now']",True
+"""699665299243737089""",76,0.0,0.0,11:43,Tue,22,3,64,459779,"['never', 'stop', 'grinding']",True
+"""698912840288227328""",17,0.625,0.6,09:53,Sun,52,9,64,459779,"['all', 'fishing', 'love', 'valentine', 'day']",True
+"""698347095707688960""",16,0.19318181818181818,0.5,20:24,Fri,84,12,64,459779,"['@thesharkdaymond', 'live', 'facebook', 'ready', 'answer', '#sharktank', 'questions']",True
+"""698341554860265472""",18,0.475,0.35,20:02,Fri,86,14,64,459779,"['thanks', 'joining', 'tonight', 'west', 'coast', 'surprising', 'edition', '#sharktank']",True
+"""698338744504619008""",13,0.0,0.0,19:51,Fri,80,14,64,459779,"['trying', 'take', 'advantage', 'sharks', '@sacca', '#sharktank']",False
+"""698337550814027777""",9,0.0,0.0,19:47,Fri,32,5,64,459779,"['@mtailor', 'next', '#sharktank']",True
+"""698336602003804160""",20,0.0,0.0,19:43,Fri,102,15,64,459779,"['@kevinolearytv', 'know', 'entrepreneur', 'will', 'take', 'advice', 'sharks', '#sharktank']",True
+"""698336023760265216""",145,0.0,0.0,19:40,Fri,49,6,64,459779,"['words', 'wisdom', '@thesharkdaymond', '#sharktank']",True
+"""698335619370643457""",54,0.0,0.0,19:39,Fri,31,5,64,459779,"['art', 'grinding', '#sharktank']",True
+"""698335137516359680""",39,0.0,0.0,19:37,Fri,29,4,64,459779,"['grind', '#sharktank']",True
+"""698334429316513792""",30,0.0,0.0,19:34,Fri,44,6,64,459779,"['float', 'babies', '#floatbaby', '#sharktank']",True
+"""698334152404443136""",5,0.0,0.0,19:33,Fri,45,7,64,459779,"['will', '#floatbaby', 'float', 'tank', '#sharktank']",True
+"""698333473111740416""",20,0.375,0.0,19:30,Fri,118,16,64,459779,"['congratulations', '@ilumisolutions', '@mcuban', 'continued', 'success', 'lighting', 'tech', 'industry', '#sharktank']",False
+"""698332807387598848""",15,0.0,0.4,19:28,Fri,92,13,64,459779,"['went', 'deep', 'sea', 'fishing', 'caught', 'sharks', '@beefreehonee', '#sharktank', '#beefreehonee']",False
+"""698332377530114048""",7,0.0,0.0,19:26,Fri,42,5,64,459779,"['chris', 'coolness', 'factor', '@sacca', '#sharktank']",False
+"""698330771946393600""",8,0.25,0.75,19:20,Fri,73,13,64,459779,"['more', 'likely', 'buy', 'product', 'promoting', 'cause', '#sharktank']",False
+"""698330173444325376""",65,0.45,0.75,19:17,Fri,88,11,64,459779,"['perhaps', 'most', 'important', 'question', 'every', 'entrepreneur', 'ask', 'themselves', '#sharktank']",True
+"""698329902353924096""",15,0.0,0.0,19:16,Fri,97,15,64,459779,"['next', '@beefreehonee', 'will', 'sharks', 'like', 'buzz', '#beefreehonee', '#sharktank']",True
+"""698328636982718464""",10,0.0,0.0,19:11,Fri,30,5,64,459779,"['else', 'hungry', '#sharktank']",True
+"""698328490639298563""",5,0.16666666666666666,0.13333333333333333,19:11,Fri,66,13,64,459779,"['bet', 'whole', 'business', 'success', 'third', 'party']",False
+"""698326828109406208""",5,0.0,0.0,19:04,Fri,58,10,64,459779,"['will', 'sharks', 'take', 'bite', 'out', '#smartplate', '#sharktank']",False
+"""698326592637038593""",11,0.3125,0.3333333333333333,19:03,Fri,60,8,64,459779,"['first', 'tank', '@getsmartplate', '#smartplate', '#sharktank']",True
+"""698325900539097088""",53,0.0,0.0,19:00,Fri,61,9,64,459779,"['allnew', '#sharktank', 'starts', 'now', 'retweet', 'watching']",False
+"""698314559971528704""",20,0.17045454545454544,0.5,18:15,Fri,70,11,64,459779,"['join', '@thesharkdaymond', 'facebook', 'live', 'session', 'tonight', 'est']",True
+"""698295619304103936""",43,0.625,0.5,17:00,Fri,64,11,64,459779,"['laughs', 'deals', 'more', 'allnew', '#sharktank', 'tonight', 'abc']",True
+"""698260332221853697""",12,0.0,0.0,14:40,Fri,53,10,64,459779,"['alternative', 'honey', 'see', 'all', 'buzz']",True
+"""697940024893927424""",58,0.0,0.0,17:27,Thu,70,13,64,459779,"['kick', 'calorie', 'counting', 'curb', 'smartplate', 'out']",True
+"""697861416120881152""",11,0.0,0.0,12:15,Thu,58,9,64,459779,"['need', 'valentine', 'day', 'gift', 'ideas', 'let', '#sharktank', 'help']",True
+"""697623596005457922""",34,0.5,0.5,20:30,Wed,34,5,64,459779,"['wonderful', 'hold', 'back']",True
+"""697588869244526596""",55,-0.3125,0.6875,18:12,Wed,80,13,64,459779,"['sharks', 'mean', 'business', 'miss', 'allnew', '#sharktank', 'friday', 'abc']",True
+"""697178173247598592""",35,-0.2,0.4,15:00,Tue,65,10,64,459779,"['entrepreneurs', 'brought', 'dead', 'another', 'level']",True
+"""696803693333766144""",7,0.2857142857142857,0.5357142857142857,14:12,Mon,35,6,64,459779,"['robert', 'make', 'right', 'decision']",True
+"""696487359404228613""",49,0.0,0.0,17:15,Sun,35,6,64,459779,"['teams', 'scores', 'touchdown']",True
+"""696136329030045697""",34,0.0,0.5,18:00,Sat,64,11,64,459779,"['ladies', '&amp', 'gents', 'present', 'ultimate', 'dream', 'team']",True
+"""696075942666510336""",7,-0.3,0.6,14:00,Sat,81,12,64,459779,"['got', '#sharktank', 'pupdate', 'see', 'happening', 'lately', '@turbopups']",True
+"""695805467352821760""",70,0.4,1.0,20:05,Fri,114,17,64,459779,"['@robertherjavec', 'lets', 'know', 'important', 'qualities', 'veterans', 'bring', 'business', 'world', '#sharktank']",True
+"""695802538499710977""",34,0.0,0.0,19:53,Fri,66,10,64,459779,"['enlist', 'unarmed', 'forces', '#combatflipflops']",True
+"""695801356301561858""",25,-0.1,0.1,19:49,Fri,76,9,64,459779,"['@lorigreiner', 'applauds', 'service', 'military', 'families', '#sharktank']",True
+"""695800681245057024""",4,-0.15,0.2,19:46,Fri,98,14,64,459779,"['@mcuban', 'reaction', '#majormom', 'just', 'fun', 'growing', 'business', 'herself', '#sharktank']",True
+"""695799562695475201""",51,0.0,0.0,19:41,Fri,112,20,64,459779,"['president', 'trusted', 'keys', 'nukes', 'can', 'trust', 'money', '#majormom', '#sharktank']",True
+"""695796417420517376""",6,0.0,0.0,19:29,Fri,59,5,64,459779,"['@robertherjavec', 'concerns', '@beartekgloves', '#sharktank']",True
+"""695795825176346624""",7,0.0,0.0,19:27,Fri,55,8,64,459779,"['opinion', 'wearable', 'technology', '#sharktank']",False
+"""695794623629934593""",17,-0.15625,0.2,19:22,Fri,84,10,64,459779,"['remote', 'control', 'gloves', '@beartekgloves', 'make', 'pitch', '#beartekgloves', '#sharktank']",True
+"""695793435530366978""",16,0.0,0.0,19:17,Fri,110,17,64,459779,"['product', 'update', '@turbopups', 'gets', 'store', 'commitment', 'will', 'lift', 'sales', '#turbopup', '#sharktank']",True
+"""695792735819796481""",5,0.25,0.75,19:14,Fri,113,14,64,459779,"['@kevinolearytv', 'willing', 'offer', '@rriveterbags', 'asking', 'caveat', '#rriveterbags', '#sharktank']",True
+"""695790920592199680""",17,0.06666666666666667,0.08333333333333334,19:07,Fri,93,13,64,459779,"['social', 'network', 'action', '@mcuban', '@rriveterbags', '#rriveterbags', '#sharktank']",True
+"""695790861196648449""",8,0.4,1.0,19:07,Fri,64,11,64,459779,"['important', 'brick', 'mortar', 'presence', '#sharktank']",False
+"""695790211717033984""",138,-0.125,0.1,19:04,Fri,93,12,64,459779,"['amen', 'retweet', 'show', 'support', 'military', 'spouses', '#rrriveterbags', '#sharktank']",True
+"""695789759680086018""",28,0.625,0.5,19:03,Fri,77,13,64,459779,"['can', 'better', 'believe', '#rriveterbags', '#sharktank']",True
+"""695789046572982272""",34,0.041666666666666664,0.19999999999999998,19:00,Fri,134,21,64,459779,"['veteran', 'military', 'spouses', 'try', 'enlist', 'sharks', 'will', 'mission', 'accomplished', 'retweet', 'watching', '#sharktank']",False

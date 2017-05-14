@@ -1,0 +1,228 @@
+ID,RetweetCt,Polarity,Subjectivity,CreatedTime,CreatedDay,TextLength,WordCt,AccountAgeMo,UserFollowersCt,Keywords,HasLinks
+"""862875708166553600""",11,0.5,0.5,21:42,Thu,65,10,35,120661,"['@spurs', 'many', 'retweets', 'spurs', 'warriors', 'tickets', '#gospursgo']",False
+"""862256471282655232""",8,-0.22499999999999992,0.8333333333333333,04:42,Wed,116,16,35,120661,"['@nickrmckenzie', '@addmattcon', '@usatodayhss', '@bishopmanogue', '@hurdleprodigy', 'know', 'pretty', 'bad', 'just', 'run']",True
+"""862030648319463424""",2499,0.25,0.75,13:44,Tue,72,14,35,120661,"['only', 'wanted', 'nuggets', 'now', 'most', 'retweeted', 'tweet', 'ever']",True
+"""861939498896171008""",18,0.4,1.0,07:42,Tue,48,6,35,120661,"['@dolandark', '@wendys', '@dtfa', 'important', 'questions']",False
+"""861938816247975937""",3421,0.490625,0.4125,07:40,Tue,139,26,35,120661,"['guys', 'thanks', 'help', 'support', 'able', 'raise', '@dtfa', 'beat', '@theellenshow', 'record', 'now', 'let', 'get', 'mil']",False
+"""861938426081198080""",1101,-0.5,1.0,07:38,Tue,76,13,35,120661,"['hey', '@theellenshow', 'sorry', 'can', 'still', 'keep', 'underwear']",False
+"""861934631301533697""",5,-0.4,0.4,07:23,Tue,51,8,35,120661,"['@gwr', '@theellenshow', 'record', 'soon', 'broken']",False
+"""861626611472506881""",92,0.0,0.0,10:59,Mon,76,13,35,120661,"['@wendys', '@drpepper', 'guys', 'making', 'hungry', 'record', 'nuggs']",False
+"""861626017835884544""",58,0.0,0.0,10:57,Mon,19,4,35,120661,"['@wendys', 'hey', 'guys']",False
+"""861406732035043328""",6,0.5,0.5,20:25,Sun,55,10,35,120661,"['@shaq', 'eat', 'many', 'nuggs', 'shaq', 'hurting', 'throat', 'smh']",False
+"""861006015688351744""",1065,-0.5086263020833333,0.06666666666666667,17:53,Sat,140,26,35,120661,"['less', 'away', 'record', 'let', 'get', 'spot', '@theellenshow', 'donation', '@dtfa', '#nuggsforcarter']",False
+"""860362225856389120""",775,0.0,0.0,23:15,Thu,122,21,35,120661,"['close', 'record', 'guys', 'keep', 'spreading', 'word', 'tag', 'anyone', 'everyone', 'can', 'let', 'get', '#nuggsforcarter']",False
+"""860352372656099328""",117,0.0,0.0,22:36,Thu,10,1,35,120661,['#everybody'],False
+"""859987474315071489""",1,0.7,0.6000000000000001,22:26,Wed,80,12,35,120661,"['@blakei', '@sarahcolleenc', '@godaddy', 'looking', 'good', 'blake', 'like', 'style']",False
+"""858676833125933056""",381,0.6000000000000001,0.9,07:38,Sun,111,22,35,120661,"['gotten', 'million', 'retweets', 'made', 'exception', '@wendys', 'prom', 'amazing']",True
+"""858573974636158977""",1,0.0,0.0,00:49,Sun,36,5,35,120661,"['@skrawlins', '@kyliewornardt', 'bless']",False
+"""858430013741215744""",68,0.0,0.0,15:17,Sat,36,6,35,120661,"['@billratchet', 'saut', 'xan', 'man']",False
+"""858426296648388608""",22,0.5,0.5,15:02,Sat,43,7,35,120661,"['@ayyjqce', '@wendys', 'better']",False
+"""858319545894805504""",15,0.0,0.0,07:58,Sat,16,3,35,120661,"['@ijustine', 'wish']",False
+"""858086286325719040""",174,0.5,1.0,16:31,Fri,63,9,35,120661,"['favorite', 'dipping', 'sauce', 'out', 'favorites', '#nuggsforcarter']",False
+"""858082071322832897""",2,0.0,0.0,16:14,Fri,67,9,35,120661,"['@marne', '@samantha_krnv', '@theellenshow', 'omg', 'notice']",False
+"""857987732890542080""",27,0.0,0.0,09:59,Fri,74,11,35,120661,"['remember', 'come', 'out', 'peppermill', 'tonight', '#nuggsforcarter']",False
+"""857985466515181570""",4,0.0,0.0,09:50,Fri,15,3,35,120661,"['@ayyjqce', 'omg']",False
+"""857787923311206400""",3,0.0,0.0,20:45,Thu,20,3,35,120661,"['@billratchet', 'yee']",False
+"""857427245547143168""",51,0.25,0.2,20:52,Wed,139,24,35,120661,"['much', 'thanks', '@gooddaysac', '@tvcody', 'show', 'morning', 'need', 'get', 'hat', 'patented', 'produced', '#nuggsforcarter']",False
+"""857096382536179712""",78,0.78125,0.8888888888888888,22:57,Tue,113,19,35,120661,"['make', 'sure', 'come', 'visit', 'get', 'picture', '@renopeppermill', 'friday', '#nuggsforcarter']",False
+"""857094086360268800""",1803,0.48828125,0.2,22:48,Tue,134,26,35,120661,"['hit', 'mil', 'guys', 'thanks', 'all', 'support', 'close', 'ellen', 'getting', '@dtfa', 'spread', 'word']",False
+"""856875184178909184""",36,0.3125,0.2,08:18,Tue,102,13,35,120661,"['@thismorning', '@theellenshow', 'thanks', 'let', 'beat', 'ellen', '#nuggsforcarter']",False
+"""856161622410133505""",3,0.0,0.0,09:03,Sun,26,4,35,120661,"['@thomasmememan', 'dad']",False
+"""856160981063393281""",2,-0.5,1.0,09:00,Sun,32,5,35,120661,"['@thomasmememan', 'bored', 'dad']",False
+"""856159861226168322""",1,0.0,0.0,08:56,Sun,36,6,35,120661,"['@thomasmememan', 'like']",False
+"""855936843249983488""",243,-0.6,0.95,18:10,Sat,59,8,35,120661,"['hey', '@kingjames', 'like', 'chicken', 'nuggets', '#nuggsforcarter']",False
+"""855866378716196864""",2159,0.0,0.0,13:30,Sat,65,13,35,120661,"['case', 'guys', 'want', 'see', 'going', 'beat', '@theellenshow']",True
+"""855802992288649216""",333,0.48333333333333334,0.35000000000000003,09:18,Sat,107,15,35,120661,"['good', 'luck', '@mc_driver', '@lfr', '#foodcity', 'weekend', 'thanks', 'supporting', '#nuggsforcarter']",True
+"""855469672665202688""",329,0.6103515625,0.2,11:13,Fri,73,12,35,120661,"['thanks', 'support', 'let', 'get', '@theellenshow']",True
+"""855262302681026561""",15,0.19999999999999998,0.3833333333333333,21:29,Thu,133,23,35,120661,"['@theprojecttv', '@sunriseon', 'thank', 'hope', 'aussies', 'able', 'get', 'nuggs', 'near', 'future', '#nuggsforcarter']",False
+"""854895640236638208""",2,0.0,0.0,21:12,Wed,23,4,35,120661,"['@billratchet', 'dad']",False
+"""854546189902950400""",51,0.0,0.0,22:04,Tue,25,3,35,120661,"['@sarahcolleenc', 'million']",False
+"""854446401798889472""",16,-0.5,0.9,15:27,Tue,54,7,35,120661,"['@wendys', '@carterjcw', '@theellenshow', '@dtfa', 'wrong', 'wendy']",False
+"""853786475246239744""",302,0.0,0.0,19:45,Sun,30,4,35,120661,"['@wendys', '@ogmigokash', 'million*']",False
+"""853628772993478656""",13,0.6,1.0,09:18,Sun,71,9,35,120661,"['@bigforeheadguy', '@theellenshow', 'proofread', 'before', 'nice', 'catch']",False
+"""853628232536424448""",1761,0.6,1.0,09:16,Sun,98,18,35,120661,"['@theellenshow', 'record', 'yet', 'own', 'emoji', '#nuggsforcarter']",False
+"""853485225589866496""",153,0.0,0.0,23:48,Sat,28,4,35,120661,"['@unistudios', '@wendys', 'fault']",False
+"""853351365480914944""",1,-1.0,1.0,14:56,Sat,43,8,35,120661,"['@amazingkyra', 'look', 'terrible', 'pic']",False
+"""853081728352608256""",259,0.0,0.0,21:05,Fri,116,21,35,120661,"['@theellenshow', 'think', 'can', 'beat', 'raccoon', 'friend', 'hungry', 'kid', 'just', 'tryin', 'rai']",True
+"""852602575358578688""",3409,-0.13181818181818183,0.42727272727272725,13:21,Thu,115,20,35,120661,"['@theellenshow', 'game', 'nugg', 'new', 'goal', '@wendys', 'will', 'give', 'adopted', 'kids', '@dtfa']",True
+"""852595640047554562""",11,0.7,0.6000000000000001,12:53,Thu,49,5,35,120661,"['@ezekielelliott', '@dallasmavs', '@tonyromo', 'lookin', 'good']",False
+"""852414777854894080""",1093,-0.3,0.475,00:54,Thu,92,16,35,120661,"['nevada', 'teen', 'request', 'lifetime', 'wendy', 'chicken', 'nuggets', 'set', 'twitter', 'record']",True
+"""852305504462295040""",2,0.0,0.25,17:40,Wed,87,13,35,120661,"['@invisyt', '@kay', '@evan_moore', 'actually', 'minden', 'bit', 'south', 'fairly', 'similar']",False
+"""851802207104020480""",515,0.2953125,0.225,08:20,Tue,64,6,35,120661,"['thanks', '@nevadawolfpack', 'supporting', '#nuggsforcarter', '#gopack']",True
+"""851652411860975616""",1,0.15,0.3,22:25,Mon,69,13,35,120661,"['@maximusmach', 'yes', 'plan', 'making', 'few', 'more', 'designs', 'choose']",False
+"""851651833466560512""",2,0.6,0.9,22:23,Mon,44,9,35,120661,"['@narebnsf', 'clue', 'totally', 'honest']",False
+"""851651599017533440""",122,0.25,0.25,22:22,Mon,138,27,35,120661,"['fyi', 'made', 'shirts', 'many', 'people', 'asked', 'locally', 'over', 'twitter', 'buy', 'like']",False
+"""851651414279442432""",432,-0.5,1.0,22:21,Mon,82,15,35,120661,"['confusion', 'profits', 'will', 'charities', 'sorry']",True
+"""851650381176119296""",3,-0.5,1.0,22:17,Mon,137,22,35,120661,"['@laundryu_uta', '@azwinkles', '@caotk', '@dtfa', 'sorry', 'looking', 'now', 'can', 'see', 'asked', 'probably', 'proofread']",False
+"""851630721160564736""",2,0.0,0.5,20:59,Mon,99,17,35,120661,"['@adhityamaniyan', 'planning', 'making', 'designs', 'will', 'let', 'guys', 'know', 'come', 'out']",False
+"""851630545029050368""",17,0.05,0.5,20:58,Mon,106,19,35,120661,"['@caotk', 'check', 'website', 'far', 'going', 'donate', 'local', 'breast', 'cancer', 'foundations', '@dtfa']",False
+"""851614740820377600""",4,-0.1,0.35,19:55,Mon,83,13,35,120661,"['@strikerhut', 'working', 'few', 'different', 'options', 'basic/first']",False
+"""851605456246120448""",7,0.09285714285714285,0.31785714285714284,19:18,Mon,116,21,35,120661,"['@jenreifu', 'right', 'now', 'planning', 'donation', 'moms', 'run', 'breast', 'cancer', 'center', 'also', 'conside']",True
+"""851600513959198721""",1117,0.0,0.0,18:59,Mon,74,10,35,120661,"['tshirts', 'coming', 'soon', 'profits', 'will', 'donated', 'charity', '#nuggsforcarter']",True
+"""850939852027592704""",851,0.0,0.0,23:14,Sat,52,9,35,120661,"['hey', '@verizon', 'anything', 'want', 'say', '@att', '@tmobile']",True
+"""850936712729460737""",754,0.0,0.0,23:01,Sat,36,7,35,120661,"['decimal', 'point', 'see']",True
+"""850936388698513409""",90,-0.6,0.95,23:00,Sat,63,9,35,120661,"['@therock', '@jimmyfallon', 'hey', 'dwayne', 'like', 'chicken', 'nuggets']",False
+"""850929936726609924""",11,0.0,0.0,22:34,Sat,17,3,35,120661,"['@deadmau', 'hey', 'dad']",False
+"""850925124614209537""",14,0.0,0.0,22:15,Sat,69,13,35,120661,"['@marshmellomusic', 'hey', 'mello', 'can', 'get', 'retweet', 'gang']",False
+"""850918218201944065""",322,0.0,0.0,21:48,Sat,28,6,35,120661,"['@wendys', 'bet', 'nuggets']",False
+"""850911943284084736""",69,0.0,0.0,21:23,Sat,16,1,35,120661,['@ezekielelliott'],False
+"""850908483557875713""",3,0.0,0.0,21:09,Sat,49,5,35,120661,"['@johnlegere', '@att', '@tmobile', '@wendys', '@chickenboysdad']",False
+"""850892525346799617""",10,0.0,0.0,20:06,Sat,40,4,35,120661,"['@kamaldeterville', '@wendys', 'idfw', 'mcdonald']",False
+"""850892315161903104""",1,0.0,0.0,20:05,Sat,38,4,35,120661,"['@whatshesaid_', '@uavehicle', '@wendys']",False
+"""850892089529319424""",3,-0.4375,0.8,20:04,Sat,71,12,35,120661,"['@jamjad_', '@wendys', '@nowthisnews', 'sorry', 'late', 'yes', 'course']",False
+"""850891841264168960""",1,0.0,0.0,20:03,Sat,23,2,35,120661,"['@_hernandezrocio', '#gloup']",False
+"""850891670212067328""",1,0.0,0.0,20:02,Sat,43,3,35,120661,"['@mugsysam', '@justinisbustin_', '@aparicio_moises']",False
+"""850885329938661377""",1,0.85,1.0,19:37,Sat,21,3,35,120661,"['@keemstar', 'beautiful']",False
+"""850882199561805824""",5,0.0,0.0,19:24,Sat,28,5,35,120661,"['@spurs', 'hey', 'name', 'carter']",False
+"""850822484446167040""",43,0.0,0.0,15:27,Sat,15,1,35,120661,['@rebelliousbass'],True
+"""850760377105240064""",15,0.0,0.0,11:20,Sat,116,16,35,120661,"['@lilianaespo', '@wffhq', '@dawnsweeney', '@kvpalooza', '@dposted', 'hey', 'liliana', 'carter', 'seen', 'retweeted']",True
+"""850591810359447553""",260,0.5,0.6,00:11,Sat,39,6,35,120661,"['@pewdiepie', 'love', 'daddy']",False
+"""850576435446075392""",2,0.7,0.6000000000000001,23:09,Fri,35,5,35,120661,"['@whodknee_', '@eandk_', 'damn', 'good', 'catch']",False
+"""850513744094310400""",306,0.44583333333333336,0.8166666666666668,19:00,Fri,120,21,35,120661,"['@aj', 'sounds', 'like', 'amazing', 'opportunity', 'need', 'all', 'chicken', 'nuggets', 'might', 'aswell', 'good', 'out']",False
+"""850508134690967552""",11,0.0,0.0,18:38,Fri,41,6,35,120661,"['@psuromeo', '@wendys', 'thank', 'support', '@psuromeo', '@wendys', 'thank', 'support']",False
+"""850494799601741824""",11,0.0,0.0,17:45,Fri,45,8,35,120661,"['@carterrlayne', 'course', 'ship']",False
+"""850492317895057408""",1,0.0,0.0,17:35,Fri,41,8,35,120661,"['@amandabee', 'told']",False
+"""850445156025225216""",83,0.0,0.0,14:28,Fri,34,5,35,120661,"['@burgerking', 'rather', 'wendys']",False
+"""850393206038470656""",23,0.0,0.0,11:01,Fri,16,3,35,120661,"['@wendys', 'shook']",False
+"""850391765324517376""",37,0.0,0.0,10:56,Fri,29,2,35,120661,"['@theellenshow', '#nuggsforcarter']",False
+"""850380433950785536""",2894,0.0,0.0,10:11,Fri,98,16,35,120661,"['million', 'baby', 'way', 'let', 'get', 'trending', '#nuggsforcarter', '@theellenshow']",False
+"""850330608530210816""",6,0.1,1.0,06:53,Fri,29,6,35,120661,"['@dreszt', 'far', 'gone']",False
+"""850184973596282880""",253,0.0,0.0,21:14,Thu,38,6,35,120661,"['@theellenshow', 'coming', 'ellen']",False
+"""850184867191037954""",27,0.0,0.0,21:14,Thu,115,9,35,120661,"['@redneckxice', '@wntyvn', '@rafficlassiy', '@tom_ruffin', '@conanobrien', '@jimmyfallon', '@theellenshow', '@meninisttweet', '@mcdonalds']",True
+"""850168666805067777""",10,0.0,0.0,20:09,Thu,40,6,35,120661,"['@hhproductions', 'can', 'retweet', 'father']",False
+"""850167050651566080""",328,0.0,0.0,20:03,Thu,15,1,35,120661,['#nuggsforcarter'],False
+"""850161924180291584""",1,0.0,0.0,19:42,Thu,32,5,35,120661,"['@ilaurenjohnson_', 'gold']",False
+"""850151839605571584""",3,0.0,0.0,19:02,Thu,15,3,35,120661,"['@jvime', 'omg', 'yes']",False
+"""850149241041305600""",6,0.0,0.0,18:52,Thu,52,10,35,120661,"['@twitter', 'gonna', 'get', 'trending', 'page']",False
+"""850148068896919553""",4574,0.3,0.43333333333333335,18:47,Thu,49,10,35,120661,"['next', 'time', 'eat', 'better', 'free', '@wendys']",True
+"""850143773124313088""",2202,0.0,0.0,18:30,Thu,55,4,35,120661,"['@conanobrien', '@jimmyfallon', '@theellenshow', '@meninisttweet']",False
+"""850143539535126528""",20,0.0,0.0,18:29,Thu,32,9,35,120661,"['btw', 'fund', 'joke']",False
+"""850140751023398913""",14,0.0,0.0,18:18,Thu,70,12,35,120661,"['@theellenshow', 'will', 'take', 'get', 'show']",False
+"""850129561236852736""",0,0.0,0.0,17:34,Thu,11,2,35,120661,['@phillyd'],False
+"""850100732502183937""",84,0.0,0.0,15:39,Thu,50,9,35,120661,"['@markpygas', '@wendys', '@hellxxn', 'nug']",False
+"""850070002254307328""",0,0.0,0.0,13:37,Thu,40,4,35,120661,"['@ronaldnieto', '@miakhalifa', 'ronnieeeee']",False
+"""850015216096092160""",302,0.0,0.0,09:59,Thu,14,3,35,120661,"['need', 'nuggets']",True
+"""850001285570977793""",122,0.0,0.0,09:04,Thu,17,2,35,120661,"['wyd', '@theellenshow']",False
+"""850000099107250176""",4,0.0,0.0,08:59,Thu,18,2,35,120661,"['@itslilkodatt', 'deal']",False
+"""849977678870437893""",2,0.4,0.8,07:30,Thu,42,6,35,120661,"['@angelxkisses', 'course', 'free', 'nuggets']",False
+"""849952596362227714""",30,0.037500000000000006,0.4875,05:51,Thu,113,21,35,120661,"['@wendys', 'came', 'negotiate', 'let', 'make', 'never', 'eat', 'other', 'fast', 'food', 'restaurants', 'ever', 'again']",False
+"""849949532846567424""",39,0.0,0.0,05:38,Thu,36,6,35,120661,"['@calvin_luu', 'elf', 'deal']",False
+"""849949186954940416""",408,0.0,0.0,05:37,Thu,49,7,35,120661,"['@tmbles', '@__legend', 'making', 'history', 'over']",False
+"""849869092659920896""",3,0.31111111111111117,0.4888888888888889,00:19,Thu,124,24,35,120661,"['@nohoesjesse', 'totally', 'honest', 'man', 'think', 'get', 'more', 'less', 'followers']",False
+"""849866937530175491""",0,0.0,0.0,00:10,Thu,19,3,35,120661,"['@_berniee_', 'trash']",False
+"""849866885298442241""",0,0.13636363636363635,0.5,00:10,Thu,37,7,35,120661,"['@kaybetooshort', 'live']",False
+"""849866468980252672""",18,0.0,0.0,00:08,Thu,32,6,35,120661,"['@torisaaangs', 'see']",False
+"""849862028109897729""",0,0.5,1.0,23:51,Wed,35,6,35,120661,"['@candaceleigh', 'glad', 'share']",False
+"""849859201027276800""",84,0.0,0.0,23:39,Wed,61,10,35,120661,"['@turtie', '@kingsharpyy', 'negotiate', 'mil', 'stretch']",False
+"""849854526202888192""",0,0.0,0.0,23:21,Wed,17,2,35,120661,"['@colvworld', 'smh']",False
+"""849854402429034497""",123,0.4,0.8,23:20,Wed,52,10,35,120661,"['@denlib', 'free', 'nuggs', 'year', 'hell', 'yea', 'share']",False
+"""849853029960499202""",128,0.8,0.75,23:15,Wed,31,6,35,120661,"['@kmarieg_', 'great', 'plan']",False
+"""849849718297346048""",2,0.0,0.0,23:02,Wed,34,7,35,120661,"['@szn_', 'got', 'elf', 'deal']",False
+"""849849142201401345""",4,0.25,0.3333333333333333,22:59,Wed,58,9,35,120661,"['@fulwiley_', 'first', 'everything', 'man', 'just', 'wait']",False
+"""849813577770778624""",3583724,0.0,0.0,20:38,Wed,37,8,35,120661,"['help', 'please', 'man', 'needs', 'nuggs']",True
+"""849812166693724160""",5718,0.0,0.0,20:33,Wed,24,4,35,120661,"['@wendys', 'consider', 'done']",False
+"""849811828766949376""",107145,0.10000000000000002,0.75,20:31,Wed,64,12,35,120661,"['@wendys', 'many', 'retweets', 'year', 'free', 'chicken', 'nuggets']",False
+"""842452121815408640""",6,0.0,0.0,13:06,Thu,12,1,35,120661,['astronomical'],False
+"""841449905973485569""",5,0.0,0.0,18:44,Mon,41,7,35,120661,"['@mcdonalds', 'fix', 'ice', 'cream', 'machines', 'bruh']",False
+"""840953005084033024""",5,0.0,0.0,09:49,Sun,18,3,35,120661,"['spring', 'break', 'wya']",False
+"""840449423431815168""",1,-0.5,0.4,23:28,Fri,48,10,35,120661,"['beat', 'tony', 'game', 'soccer', 'stars', '@miniclip']",True
+"""838512778474184704""",0,0.0,0.5,15:13,Sun,47,8,35,120661,"['alright', 'reno', 'enough', 'snow', 'winter']",False
+"""836223265131507712""",0,0.0,0.0,07:35,Mon,12,2,35,120661,['oscar'],False
+"""835262948842975234""",0,0.0,0.0,15:59,Fri,22,4,35,120661,"['people', 'spoken']",True
+"""834937992850481152""",3,0.2,0.4,18:28,Thu,52,9,35,120661,"['just', 'ate', 'whole', 'box', 'thinmints', 'bouta', 'get', 'diabetes']",False
+"""834903218580750337""",0,0.5,0.5,16:10,Thu,37,6,35,120661,"['all', 'better', 'choosing', 'nacho', 'cheese']",True
+"""834856719603888128""",1,0.0,0.0,13:05,Thu,15,2,35,120661,"['doritos', 'flavors']",False
+"""832962694781218818""",0,-0.1875,0.5,07:39,Sat,30,6,35,120661,"['little', 'things', 'life']",False
+"""832555878612021249""",0,0.0,0.0,04:42,Fri,24,5,35,120661,['guess'],False
+"""832435072808665089""",18,-0.5916666666666667,0.8166666666666668,20:42,Thu,130,18,35,120661,"['list', 'skills', 'going', 'sleep', 'waking', 'overthinking', 'dumb', 'saying', 'stupid', 'things', 'eating', 'chicken', 'nuggets']",False
+"""829886692689588228""",0,0.0,0.0,19:56,Thu,16,2,35,120661,"['@ok_kenna', 'spky']",False
+"""829850505224605696""",1,0.14285714285714285,0.29285714285714287,17:32,Thu,43,7,35,120661,"['right', 'outside', 'neighborhood', 'damn']",True
+"""828600130928467970""",2,0.8,0.75,06:44,Mon,46,10,35,120661,"['blessed', 'great', 'people', 'life']",False
+"""828088694032723973""",3,-0.16666666666666666,0.8333333333333334,20:51,Sat,83,13,35,120661,"['jalepe', 'chicken', 'fries', '@burgerking', 'good', '@wendys', 'nuggs']",False
+"""827617365714104320""",1,0.8,1.0,13:38,Fri,29,4,35,120661,"['happy', 'birthday', 'dad', '@qgwaltney']",False
+"""826291044430012416""",1,0.0,0.0,21:48,Mon,31,7,35,120661,"['just', 'prank', 'guys', 'chill']",False
+"""825566256279347201""",160,0.0,0.0,21:48,Sat,36,7,35,120661,"['retweet', 'delete', 'twitter']",False
+"""825507246524084224""",0,0.35,0.65,17:53,Sat,42,8,35,120661,"['kairos', 'cool', 'makeup', 'work']",False
+"""825447263614873600""",0,0.0,0.0,13:55,Sat,40,4,35,120661,"['beto', 'mexican', 'food', '&gt']",False
+"""825184787828768769""",1,0.0,0.0,20:32,Fri,23,4,35,120661,"['@car_parker_', '@spurs']",False
+"""824985193509380096""",0,0.7,0.6000000000000001,07:19,Fri,15,3,35,120661,"['life', 'good', 'man']",False
+"""823023510805057537""",6,0.0,0.0,21:24,Sat,0,1,35,120661,[],True
+"""821879061861441536""",141,-0.21999999999999997,0.7449999999999999,17:36,Wed,54,8,35,120661,"['highly', 'recommend', '@wendys', 'chicken', 'nuggets', 'everyone']",False
+"""821797941501231104""",46,0.0,0.0,12:14,Wed,0,1,35,120661,[],True
+"""820791317902954496""",3,0.375,0.5,17:34,Sun,69,8,35,120661,"['hey', '@ezekielelliott', 'run', 'looked', 'familiar', '@ohiostatefb', '@elguapo']",True
+"""819574350286241793""",0,0.0,0.0,08:58,Thu,51,10,35,120661,"['will', 'ever', 'school', 'world', 'never', 'know']",False
+"""815335281339416576""",10,0.0,0.0,16:14,Sat,25,3,35,120661,"['#gobucks', '#fiestabowl']",True
+"""815304219456507905""",0,0.0,0.0,14:10,Sat,8,1,35,120661,['#gobucks'],True
+"""814804402859085825""",0,0.0,0.0,05:04,Fri,80,13,35,120661,"['pan', 'pan', 'world', 'oldest', 'panda', 'died', 'strikes', 'again', '#rippanpan']",True
+"""814300790345048064""",0,-0.2,0.8,19:43,Wed,36,7,35,120661,"['@_gates', 'hell', 'shit', '@_gates', 'hell', 'shit']",False
+"""813459518155849729""",5,0.0,0.0,12:00,Mon,1,1,35,120661,[],False
+"""813172593524166656""",0,0.2,0.2,17:00,Sun,82,12,35,120661,"['@carterjwm', 'except', 'people', '@enterprise', 'thanks', 'giving', 'away', 'reservation']",False
+"""813152068269641728""",0,0.0,0.0,15:38,Sun,52,9,35,120661,"['shoutout', 'all', 'people', 'working', 'christmas', 'day']",False
+"""809215506892800000""",1,0.0,0.5,18:56,Wed,77,10,35,120661,"['@sarahcolleenc', '@lushcosmetics', 'can', '@chickfila', 'please', 'open', 'reno', 'already']",False
+"""808484978950451200""",0,0.0,0.0,18:33,Mon,20,2,35,120661,"['@sarahcolleenc', 'hahah']",False
+"""808484325943439360""",0,-0.4,0.6,18:30,Mon,41,6,35,120661,"['@sarahcolleenc', 'worse', 'harambe']",False
+"""808484287594917889""",0,0.0,0.0,18:30,Mon,19,2,35,120661,"['@sarahcolleenc', 'stop']",False
+"""808331880231673856""",17,-0.26357886904761907,0.37797619047619047,08:25,Mon,113,23,35,120661,"['worked', 'hard', 'all', 'semester', 'can', 'get', 'finals', 'going', 'bomb', 'every', 'single']",True
+"""807860938141417472""",13,0.0,0.0,01:13,Sun,7,1,35,120661,['harambe'],False
+"""805908989133209600""",0,0.0,0.0,15:57,Mon,8,1,35,120661,['#gobucks'],True
+"""800908823720361984""",0,0.5,0.8888888888888888,20:48,Mon,38,6,35,120661,"['@sarahcolleenc', '@bloop', 'close', 'sure']",False
+"""795358493037326336""",0,0.0,0.0,13:13,Sun,33,7,35,120661,"['roses', 'red', 'bees', 'like', 'sting']",True
+"""791141126975713280""",5,0.0,0.0,22:55,Tue,15,1,35,120661,['@bleacherreport'],True
+"""788893466923180032""",0,0.0,0.0,18:03,Wed,84,13,35,120661,"['answer', 'effect/affect', 'question', 'sponge', 'part', '#psat', '@ryanmillre']",False
+"""787008504129200128""",2,0.15,0.6499999999999999,13:13,Fri,46,8,35,120661,"['@_dylanroide', 'wake', 'normal', 'school', 'time']",False
+"""774076770869927936""",0,0.0,0.0,20:47,Thu,59,9,35,120661,"['@sarahcolleenc', '@dory', 'still', 'wishing', 'summer', 'back']",False
+"""772634485556850688""",1,0.0,0.0,21:16,Sun,35,6,35,120661,"['thank', 'lord', 'college', 'football']",False
+"""770329329385418752""",2,1.0,0.3,12:36,Mon,22,5,35,120661,"['john', 'rossi', 'best']",False
+"""767900853093019648""",0,0.0,0.0,19:46,Mon,35,5,35,120661,"['@marshmellomusic', 'come', 'reno']",False
+"""766457770157547520""",6,0.0,0.0,20:12,Thu,30,2,35,120661,"['@qgwaltney', '#dicksoutforharambe']",False
+"""766320391094542336""",1,0.2,0.2,11:06,Thu,43,6,35,120661,"['@turtletori', 'thanks', 'tori', '#we', 'needyouback']",False
+"""761385486061416448""",0,0.0,0.0,20:17,Thu,20,5,35,120661,"['can', 'sign']",True
+"""758718342307848192""",15,0.13636363636363635,0.45454545454545453,11:38,Thu,42,9,35,120661,"['mentioned', 'new', 'meme']",True
+"""757303207601201152""",0,0.0,0.0,13:55,Sun,37,7,35,120661,"['@sarahcolleenc', '@dory']",False
+"""756608728846053376""",0,0.21103896103896103,0.5178571428571428,15:55,Fri,72,13,35,120661,"['@thebestfwa', 'hold', 'live', 'minden', 'nevada', 'right']",False
+"""747873440808337409""",0,-0.1,0.55,13:24,Tue,59,9,35,120661,"['finally', 'got', 'permit', 'after', 'few', 'centuries', '#noroadissafe']",False
+"""747766924331737089""",0,0.0,0.0,06:21,Tue,17,2,35,120661,['@turtletori'],False
+"""747184900768309248""",0,0.2,0.65,15:48,Sun,107,20,35,120661,"['awkward', 'moment', 'power', 'goes', 'out', 'theater', 'best', 'part', 'movie', '@sarahcolleenc']",False
+"""746074153044705280""",0,0.8,0.4,14:15,Thu,90,14,35,120661,"['voted', '@kingjames', 'win', '#bestchampperformance', '@espys', 'visit', 'all', 'categories']",True
+"""744762432573210624""",1,0.0,0.0,23:22,Sun,3,1,35,120661,[],False
+"""743410788665298944""",0,0.0,0.0,05:51,Thu,60,13,35,120661,"['internet', 'days', 'feel', 'like', 'caveman']",False
+"""740354554508640256""",0,0.0,0.0,19:27,Tue,43,5,35,120661,"['@sarahcolleenc', '@kenndailjenner', 'fits']",False
+"""740248612886577152""",0,0.0,0.0,12:26,Tue,28,3,35,120661,"['@worldstar', '@sarahcolleenc']",False
+"""739901745766092800""",0,0.0,0.0,13:28,Mon,32,3,35,120661,"['@xmarcellarose', '@jvime', 'ghilieri*']",False
+"""737640005456171008""",1,0.8,0.75,07:40,Tue,32,7,35,120661,"['summer', 'going', 'great']",False
+"""732415127769612288""",1,0.0,0.0,21:39,Mon,59,7,35,120661,"['warriors', 'will', 'sweep', 'thunder', '#okcvsgsw']",True
+"""731979855990939648""",1,0.0,0.0,16:49,Sun,20,1,35,120661,['#getericatwitter'],False
+"""730916536399986688""",0,0.0,0.0,18:24,Thu,32,5,35,120661,"['@shanevaladez', 'smell', 'beef']",False
+"""729869333078278144""",0,0.25,0.3333333333333333,21:03,Mon,39,7,35,120661,"['nevada', 'trending', 'first']",False
+"""719332538179674112""",3,-0.4,0.4,19:13,Sun,86,18,35,120661,"['#sasvgsw', 'gotta', 'church', 'all', 'want', 'watch', 'spurs', 'game']",True
+"""694758790327984128""",0,0.5,0.5,22:46,Tue,27,5,35,120661,"['@jvime', 'get', 'better', 'soon', 'man']",False
+"""693818444081303552""",0,0.0,0.0,08:29,Sun,25,3,35,120661,"['@xmarcellarose', 'wait']",False
+"""683810857113923584""",1,0.0,0.0,17:43,Sun,21,4,35,120661,"['@jvime', 'white', 'girl']",False
+"""683132371571376128""",0,0.0,0.0,20:47,Fri,21,4,35,120661,"['@king_myles', 'cri']",False
+"""683055749744865280""",0,0.0,0.0,15:42,Fri,62,11,35,120661,"['thinks', 'osu', 'played', 'stanford', '#rosebowl']",False
+"""681637315978985472""",5,0.8,0.4,17:46,Mon,58,8,35,120661,"['#gospursgo', '#spursholidays', 'gonna', 'get', 'win', 'tonight', '@spurs']",True
+"""679390061511577600""",0,0.13636363636363635,0.45454545454545453,12:56,Tue,42,7,35,120661,"['@jvime', '@jauzofficial', 'new', 'remix']",False
+"""675863615170215936""",0,0.0,0.0,19:23,Sat,60,12,35,120661,"['eaten', 'cane', 'meals', 'row', '#canesisbae']",False
+"""670650115976105988""",0,0.0,0.0,10:07,Sat,24,3,35,120661,"['buckeyes', '#osuvsmich']",False
+"""668493550707838976""",1,0.0,0.125,11:17,Sun,19,2,35,120661,"['@sarahcolleenc', 'same']",True
+"""654470037122650112""",0,0.0,0.0,19:33,Wed,21,3,35,120661,"['@middlechild', 'idk']",False
+"""627665832550662148""",8,0.0,0.0,20:22,Sat,19,3,35,120661,[],True
+"""624825013548400640""",5,0.0,0.0,00:14,Sat,29,5,35,120661,['@thegeorgewb'],False
+"""620803020863856640""",0,0.0,1.0,21:52,Mon,47,8,35,120661,"['@xmarcellarose', 'only', 'coach', 'cass']",False
+"""620762063531479040""",0,0.0,0.0,19:09,Mon,35,3,35,120661,"['@xmarcellarose', '#chemhype', '#notreally']",False
+"""620758991392538624""",0,0.0,0.0,18:57,Mon,16,2,35,120661,"['classes', 'anyone']",True
+"""620758404273827840""",0,0.0,0.0,18:55,Mon,64,10,35,120661,"['@kat_simons', 'yassss', 'gio', 'decides', 'come', 'back', 'croatia']",False
+"""620758108080504832""",0,0.0,0.0,18:54,Mon,124,19,35,120661,"['@kat_simons', '@xmarcellarose', '@jandlangeles', 'gio', 'together', 'hyped', 'squadratic', 'equation', 'back', '@kat_simons', '@xmarcellarose', '@jandlangeles', 'gio', 'together', 'hyped', 'squadratic', 'equation', 'back']",False
+"""615386387777347584""",0,0.0,0.125,23:08,Sun,30,4,35,120661,"['@xmarcellarose', 'same', 'wait']",False
+"""605610934531260417""",3,0.0,0.0,23:44,Mon,19,1,35,120661,['#squadgoalsachieved'],True
+"""601250324322516992""",1,0.0,0.0,22:57,Wed,33,4,35,120661,"['@xmarcellarose', 'foley', 'struggle']",False
+"""597576342142472192""",0,0.0,0.0,19:37,Sun,13,1,35,120661,['@chiefcarter_'],True
+"""596121922414317568""",1,0.0,0.0,19:18,Wed,21,4,35,120661,['disney'],True
+"""584555009326481408""",0,0.0,0.0,21:15,Sat,28,5,35,120661,"['kentucky', 'let', '#bg']",False
+"""541353320497967104""",12,0.0,0.0,15:07,Sat,17,1,35,120661,['#dorisfromwendeys'],True
+"""530856712484294656""",0,0.0,0.0,15:57,Fri,61,11,35,120661,"['@dmatteoni', 'says', 'post']",False
+"""528020960826236933""",25,-0.3666666666666667,0.85,21:09,Thu,107,23,35,120661,"['@rkovlnes', 'dirty', 'thought', 'going', 'rko', 'vine', 'pretty', 'disappointed']",True
+"""496712718309924864""",0,-0.2,0.05,11:41,Tue,62,9,35,120661,"['call', 'fish', 'went', 'missing', 'nemo', '#gonefishing']",False
+"""493806101939253250""",0,0.0,0.0,11:12,Mon,53,11,35,120661,"['realized', 'birthday', 'monday', 'next', 'month', 'fml']",False
+"""488849910096076800""",0,0.2857142857142857,0.5357142857142857,18:57,Mon,53,9,35,120661,"['@dmatteoni', '@mrnbaallday', 'right', 'arm', 'got', 'cut', 'off']",False
+"""487659145776988160""",1,0.4,0.8,12:06,Fri,64,12,35,120661,"['today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees', 'today', 'know', 'means', 'free', 'slurpees']",False
