@@ -249,6 +249,7 @@ h6 a {
     color: inherit;
     text-decoration: none;
 }
+
 h2 {
     font-size: 1.85em;
     font-weight: 300;
@@ -703,7 +704,7 @@ input[type="radio"] + label:before {
     border: 0;
     display: inline-block;
     position: relative;
-    padding-bottom: 1em;
+    padding-bottom: 0em;
 }
 
 .image img {
