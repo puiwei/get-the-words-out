@@ -520,13 +520,14 @@ class twGraph():
         ax0, ax1 = ax.flatten()
         #ax0, ax1, ax2, ax3 = ax.flatten()
         fig.tight_layout()
+        fig.subplots_adjust(hspace=0.5, left=0.1, bottom=0.1)
 
         ax0.set_title('Histogram for ' + title, fontsize=14)
         ax0.set_xlabel('Retweet Count', fontsize=12)
         ax0.set_ylabel('Tweet Count', fontsize=12)
 
-        ax1.set_title('Histogram for ' + title, fontsize=14)
-        ax1.set_xlabel('Log(Retweet Count)', fontsize=12)
+        ax1.set_title('Log Transformation', fontsize=14)
+        ax1.set_xlabel('Log(Retweet Count+1)', fontsize=12)
         ax1.set_ylabel('Tweet Count', fontsize=12)
 
         #ax2.set_title('Histogram')
@@ -553,9 +554,9 @@ class twGraph():
         median = df['RetweetCt'].median()
         max = df['RetweetCt'].max()
 
-        fig = plt.gcf()
-        DPI = fig.get_dpi()
-        fig.set_size_inches(1024.0 / float(DPI), 968.0 / float(DPI))
+        #fig = plt.gcf()
+        #DPI = fig.get_dpi()
+        #fig.set_size_inches(1024.0 / float(DPI), 968.0 / float(DPI))
 
         plt.show()
 
