@@ -5,7 +5,8 @@ import itertools
 import pandas as pd
 import math
 from PIL import Image
-from wordcloud import WordCloud, STOPWORDS
+
+from packages.wordcloud.wordcloud import WordCloud, STOPWORDS
 
 class twGraph():
 
