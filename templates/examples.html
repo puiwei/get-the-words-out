@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+	<meta name="author" content="@gotoariel">
+	<!-- <link rel="icon" href="favicon.ico"> -->
+
+	<title>Get The Words Out</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/assets/css/style.css" />
+	<link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="">
+</head>
+
+<body>
+	<!-- Use jQuery script below to load header.html here -->
+	<div id="header"></div>
+	
+	<div class="container">	
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<section>
+					<div class="row">
+						<h1><strong>Twitter Analysis</strong></h1>
+						<br />
+					</div>
+					<div class="row">
+						<h2><strong>Retweet's distribution is very skewed</strong></h2>
+						<br />
+					</div>
+					<div class="row">
+						<img src="/static/images/figure_0 BarackObama3200T4.png" />
+						<br />
+					</div>
+					<div class="row">
+						<h3>Log base 10 is used for Retweet measures</h3>
+					</div>
+				</section>
+				<hr />
+				<section>
+					<div class="row">
+						<h2><strong>When is it best for tweets and retweets?</strong></h2>
+					</div>
+					<div class="row">
+						<img src="/static/images/TimeofDay ABCSharkTank3200T.png" />
+					</div>
+					<div class="row">
+						<h3><i>Show time is best for popcorn and not retweets</i></h3>
+					</div>
+					<div class="row">
+						<img src="/static/images/DayofWeek kickstarter3200T.png" />
+					</div>
+					<div class="row">
+						<h3><i>Weekends are good for business</i></h3>
+					</div>
+				</section>
+				<hr />
+				<section>
+					<div class="row">
+						<h2><strong>Are pictures worth a thousand words?</strong></h2>
+					</div>
+					<div class="row">
+						<img src="/static/images/TweetFeatures.png" />
+					</div>
+					<div class="row">
+						<h3><i>Yes, unless you are Barack Obama<br>
+						then your words get out regardless ...</i></h3>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+<!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
+<script>
+	$("#header").load("/static/header.html");
+</script>
+</html>

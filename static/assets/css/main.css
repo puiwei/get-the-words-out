@@ -414,6 +414,7 @@ article.wrapper article header {
         text-align: center;
     }
 }
+
 header p {
     color: #bbb;
     position: relative;
@@ -919,6 +920,13 @@ button:disabled,
 #header .logo strong {
     color: #ffffff;
     font-weight: 600;
+}
+
+#header .logo2 {
+    color: #black;
+}
+#header .logo2 strong {
+    color: #black;
 }
 #header a {
     -moz-transition: color 0.2s ease-in-out;

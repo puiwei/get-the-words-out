@@ -1,157 +1,86 @@
-<html>
-	<head>
-		<title>Get the Words Out</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
-		 <!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<a href="index.html" class="logo"><strong>Claudia (Kaye) Wu</strong></a>
-				<nav id="nav">
-					<a href="index.html">Home</a>
-				</nav>
-				<a href="#navPanel" class="navPanelToggle">
-					<span class="fa fa-bars"/>
-				</a>
-			</div>
-		</header>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <!-- <link rel="icon" href="favicon.ico"> -->
 
-		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">
-				<header>
-					<h1>Let's Get the Words Out</h1>
-				</header>
+    <title>Get The Words Out</title>
 
-				<div class="flex">
-					<div>
-						<span class="icon fa-user fa-2x"/>
-						<h3>User Search</h3>
-						<p style="border:1px; border-style:solid; padding:0.2em; width:13em; font-size:22; margin-top:1.2em">Enter Twitter username</p>
-					</div>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css" />
+    <link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="">
+</head>
 
-					<div>
-						<span class="icon fa-twitter fa-2x"/>
-						<h3>Twitter Search</h3>
-						<p style="border:1px; border-style:solid; padding:0.2em; width:13em; font-size:22; margin-top:1.2em">Enter search phrase</p>
-					</div>
-				</div>
-			</div>
-		</section>
+<body>
+<!-- Use jQuery script below to load header.html here -->
+<div id="header"></div>
 
+<div class="container" id="main">
 
-		<!-- Three -->
-		<section id="three" class="wrapper align-center">
-			<div class="articleinner">
-				<header>
-					<h2>Search Results</h2>
-				</header>
-				<div>
-                    <article>
-                        <header>
-							<h3>@BarackObama</h3>
-                        </header>
-						<div class="imagecloud">
-							<img src="images/BarackObamaCloud.png" alt="Pic 01" />
-						</div>
-						<header>
-							<h3>Keywords based on Retweets and Sentiment Context</h3>
-						</header>
-					</article>
-					
-				</div>
-			</div>
-		</section>
-        
-        <section class="graph align-center">
-			<div class="articleinner">
-				<header>
-					<h2>Twitter Analysis</h2>
-				</header>
-				<div>
-					<article>
-                        <header>
-							<h3>Retweet's distribution is very skewed</h3>
-                        </header><br/>
-						<div class="imagegraph">
-                            <img src="images/BarackObamaCloud.png" style="float:left; width:300px; margin: 180px 100px 0 -300px; border: solid 3px gray; " />
-                            <img src="images/figure_0 BarackObama3200T4.png" style="clear: left;" />                            
-						</div>
-						<header>
-							<h3>Log base 10 is used for Retweet measures</h3>
-						</header>
-					</article><br/><br/><br/>
-					<article>
-                        <header>
-							<h3>When is it best for tweets and retweets?</h3>
-                        </header>
-						<div class="imagegraph">
-							<img src="images/wc ABCSharkTank3200T.png" style="float:left; width:300px; margin: 250px 50px 0 -200px; border: solid 3px gray; " />
-                            <img src="images/TimeofDay ABCSharkTank3200T.png" style="clear: left;" />                            
-						</div>
-						<header>
-							<h3><i>Show time is best for popcorn and not retweets</i></h3>
-						</header>
-					</article>
-                    <article>
-						<div class="imagegraph">
-							<img src="images/wc kickstarter3200T.png" style="float:left; width:300px; margin: 200px 50px 0 -430px; border: solid 3px gray; " />
-                            <img src="images/DayofWeek kickstarter3200T.png"  style="clear: left;" />  
-						</div>
-						<header>
-							<h3><i>Weekends are good for business</i></h3>
-						</header>
-					</article><br/><br/><br/>
-                    <article>
-                        <header>
-							<h3>Are pictures worth a thousand words?</h3>
-                        </header>
-						<div class="imagegraph">
-							<img src="images/TweetFeatures.png" alt="Pic 01" />  
-						</div>
-						<header>
-							<h3><i>Yes, unless you are Barack Obama</i></h3>
-                            <h3><i>then your words get out regardless ...</i></h3>
-						</header>
-					</article>
-				</div>
-			</div>
-		</section>
-        
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<h3>Contact</h3>
+    <div class="row">
+        <section id="background">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1><strong>Let's Get the Words Out</strong></h1>
+                    <br />
+                </div>
+            </div>
+            <div class="row" id="search">
+                <div class="col-lg-6 text-center">
+                    <div class="row">
+                        <i class="fa fa-user fa-2x fa-color-blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="row">
+                        <h3>User Search</h3>
+                    </div>
+                    <div class="row">
+                        <!-- Get text submitted in the User Search and pass it to REST URL /user_search -->
+                        <form action="/user_search" method="POST">
+                            <input type="text" name="tw_user">
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="row">
+                        <i class="fa fa-twitter fa-2x fa-color-blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="row">
+                        <h3>Twitter Search</h3>
+                    </div>
+                    <div class="row">
+                        <!-- Get text submitted in the Twitter Search and pass it to REST URL /tw_search -->
+                        <form action="/tw_search" method="POST">
+                            <input type="text" name="search_phrase">
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    {{ value }}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
 
-				<form action="#" method="post">
-					<div class="field half first">
-						<label for="name">Name</label>
-						<input name="name" id="name" type="text" placeholder="Name" />
-					</div>
-					<div class="field half">
-						<label for="email">Email</label>
-						<input name="email" id="email" type="email" placeholder="Email" />
-					</div>
-					<div class="field">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-					</div>
-					<ul class="actions">
-						<li>
-							<input value="Send Message" class="button alt" type="submit" disabled />
-						</li>
-					</ul>
-				</form>
-			</div>
-		</footer>
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 
-		<!-- Scripts -->
-		<script src="/static/assets/js/jquery.min.js"/>
-		<script src="/static/assets/js/skel.min.js"/>
-		<script src="/static/assets/js/util.js"/>
-		<script src="/static/assets/js/main.js"/>
-	</body>
+<!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
+<script>
+  $("#header").load("/static/header.html");
+</script>
 </html>

@@ -1,0 +1,60 @@
+
+#background {
+	position: relative;	
+	background-image: url(../../images/banner.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#background:before {
+	content: '';
+	background: rgba(75, 75, 93, 0.85);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#search {
+	padding-bottom: 75px;
+}
+
+
+#main h1 {
+	color: #eeeeee;
+}
+
+#main h3 {
+	color: #eeeeee;
+}
+
+.fa-color-blue {
+	color: #00aced;
+}
+
+section {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+hr {
+	width: 80%;
+	border: 1px solid;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Overrides */
+
+.navbar {
+	margin-bottom: 0px !important;
+}
+
+.container {
+	margin: 0px !important;
+	padding: 0px !important;
+	width: 100% !important;
+}
