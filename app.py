@@ -24,14 +24,14 @@ def examples():
 # when /user_search REST URL is evoked, call analyzetwitter.py, and return Word Cloud and resulting graphs
 @app.route('/user_search', methods=['POST'])
 def user_search():
-    tw_user= request.form['tw_user']
+    tw_user = request.form['tw_user']
     analyze(tw_user, 1)
     return render_template('index.html', value=tw_user, scope=1)
 
 
 @app.route('/tw_search', methods=['POST'])
 def tw_search():
-    search_phrase= request.form['search_phrase']
+    search_phrase = request.form['search_phrase']
     analyze(search_phrase, 2)
     return render_template('index.html', value=search_phrase, scope=2)
 

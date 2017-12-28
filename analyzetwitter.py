@@ -16,13 +16,13 @@ import string
 import re
 import csv
 from textblob import TextBlob
-from difflib import SequenceMatcher
-
+import os
 
 def unique_list(l):
     ulist = []
     [ulist.append(x) for x in l if x not in ulist]
     return ulist
+
 
 def getTweetSentiment(tweet):
     analysis = TextBlob(tweet)
@@ -34,24 +34,27 @@ def getTweetSentiment(tweet):
 
 def analyze(user_input, scope):
     # Variables that contains the user credentials to access Twitter API
-    ACCESS_TOKEN = '857833880157429760-RlbPRm15HjQnILgswmSxfFfjBd3u5vx'
-    ACCESS_SECRET = 'v9796ixcaFdWfbAjDPBH2NuZMXdV0kPRAS84qmgPud5cx'
-    CONSUMER_KEY = 'KdAnszTrQFCyQ95yw7vJMZd7K'
-    CONSUMER_SECRET = 'yUREO2rQ72WIM9hY2mwJU9unRdCFprtgVT8nx4y7lIeuojvlY8'
+    with open('key') as f:
+        ACCESS_TOKEN = f.readline().replace('\n', '')
+        ACCESS_SECRET = f.readline().replace('\n', '')
+        CONSUMER_KEY = f.readline().replace('\n', '')
+        CONSUMER_SECRET = f.readline().replace('\n', '')
 
+    # Create output folder
+    OUTPUT_FOLDER = "outputs"
+    if not os.path.exists(OUTPUT_FOLDER):
+        os.makedirs(OUTPUT_FOLDER)
 
     # Get main twitter
     t = Twitter(auth=OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET))
 
-
     # Define variables for search
-    #scope = 1
-    user = "BarackObama"  # scope = 1 search user timeline
+    #user = "BarackObama"  # scope = 1 search user timeline
     #searchPhrase = '"Affordable Care Act" OR "Obamacare"' # scope = 2 search Twitter for popular results in the past 7 days
-    searchPhrase = '"American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
+    #searchPhrase = '"American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
 
     if (scope == 1):
-        totalTweetsToExtract = 3200 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
+        totalTweetsToExtract = 1200 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
         tweetsPerCall = 200  # max 200 tweets per call for user timeline
         user = user_input
     else:
@@ -99,7 +102,7 @@ def analyze(user_input, scope):
         # Process the result
         # print('Processing ' + str(len(tweetResults)) + ' tweets')
         for tweet in tweetResults:
-            if (scope == 1) and (tweet['user']['screen_name'] != user):  # for user search, skip any tweets NOT from user
+            if (scope == 1) and (tweet['user']['screen_name'].lower() != user.lower()):  # for user search, skip any tweets NOT from user
                 continue
 
             if (lastMaxID == 0):
