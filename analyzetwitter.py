@@ -68,7 +68,7 @@ def analyze(user_input, scope):
     printable = set(string.printable)
     wordCloudText = ""
     tweetData = []
-    api = 2
+    api = 1  # 1 = twitter api, 2 = http search
 
     # Load apostrophe words list from file
     ApostropheWordsFile = open('ApostropheWords.txt', 'r')
@@ -87,8 +87,8 @@ def analyze(user_input, scope):
         lastMaxID = 0
         for x in range(int(totalTweetsToExtract / tweetsPerCall)):
             if (scope == 1):
-                if (lastMaxID == 0): tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false")
-                else:                tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false", max_id=lastMaxID)
+                if (lastMaxID == 0): tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false", tweet_mode='extended')
+                else:                tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false", tweet_mode='extended', max_id=lastMaxID)
             elif (scope == 2):
                 if (lastMaxID == 0): tweetResults = t.search.tweets(q=searchPhrase + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, lang="en", tweet_mode='extended')['statuses']
                 else:                tweetResults = t.search.tweets(q=searchPhrase + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, max_id=lastMaxID, lang="en", tweet_mode='extended')['statuses'] #result_type="popular",
@@ -103,7 +103,7 @@ def analyze(user_input, scope):
                     lastMaxID = tweet['id'] - 1
 
             tweetData.extend(tweetResults)
-            #print(json.dumps(tweetResults))
+            print(json.dumps(tweetResults))
     # Run https search
     else:
         if (scope == 1):
