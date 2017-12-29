@@ -1,0 +1,2 @@
+[submodule "packages/oldtweets"]
+	url = https://github.com/Jefferson-Henrique/GetOldTweets-python
