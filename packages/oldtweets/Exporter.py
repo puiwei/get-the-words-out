@@ -76,7 +76,7 @@ def main(argv):
             data['user']['followers_count'] = -1
             data['user']['utc_offset'] = 0
 
-            data['text'] = t.text
+            data['full_text'] = t.text
             data['retweet_count'] = t.retweets
             data['id_str'] = t.id
             data['created_at'] = t.formatted_date

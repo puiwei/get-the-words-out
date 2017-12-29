@@ -68,7 +68,7 @@ def analyze(user_input, scope):
     printable = set(string.printable)
     wordCloudText = ""
     tweetData = []
-    api = 1
+    api = 2
 
     # Load apostrophe words list from file
     ApostropheWordsFile = open('ApostropheWords.txt', 'r')
