@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 import matplotlib.pyplot as plt; plt.rcdefaults()
+import mpld3
+from bokeh.plotting import figure, show, save, output_file
+from bokeh.embed import components
+from bokeh.mpl import to_bokeh
 import numpy as np
 import itertools
 import pandas as pd
@@ -575,4 +579,12 @@ class twGraph():
         # show
         plt.imshow(wc, interpolation='bilinear')
         plt.axis("off")
-        plt.show()
+        #plt.show()
+
+        # Use mpld3 library to construct a string of HTML and JavaScript from the wordcloud figure, to be embedded in index.html
+        mpld3.plugins.clear(plt.figure(1))
+        return mpld3.fig_to_html(plt.figure(1))
+
+        #output_file("bokeh.html")
+        #show(to_bokeh())
+

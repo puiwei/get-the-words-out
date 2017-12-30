@@ -58,3 +58,7 @@ hr {
 	padding: 0px !important;
 	width: 100% !important;
 }
+
+g.mpld3-xaxis, g.mpld3-yaxis {
+    display: none;
+}
