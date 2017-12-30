@@ -25,15 +25,15 @@ def examples():
 @app.route('/user_search', methods=['POST'])
 def user_search():
     tw_user = request.form['tw_user']
-    analyze(tw_user, 1)
-    return render_template('index.html', value=tw_user, scope=1)
+    script = analyze(tw_user, 1)
+    return render_template('index.html', value='Results for @'+tw_user, script=script)
 
 
 @app.route('/tw_search', methods=['POST'])
 def tw_search():
     search_phrase = request.form['search_phrase']
-    analyze(search_phrase, 2)
-    return render_template('index.html', value=search_phrase, scope=2)
+    script = analyze(search_phrase, 2)
+    return render_template('index.html', value='Results for '+search_phrase, script=script)
 
 
 # starts the web server, http://localhost:80 to view

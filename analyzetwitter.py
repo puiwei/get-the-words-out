@@ -55,11 +55,11 @@ def analyze(user_input, scope):
     #searchPhrase = '"American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
 
     if (scope == 1):
-        totalTweetsToExtract = 2000 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
+        totalTweetsToExtract = 1000 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
         tweetsPerCall = 200  # max 200 tweets per call for user timeline
         user = user_input
     else:
-        totalTweetsToExtract = 2000 # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
+        totalTweetsToExtract = 1000 # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
         tweetsPerCall = 100  # max 100 tweets per call for Twitter search
         searchPhrase = user_input
 
@@ -239,15 +239,16 @@ def analyze(user_input, scope):
     for wordCloudKey in retweetKeywordLib.values():
         wordCloudText += wordCloudKey.name + ":" + str(wordCloudKey.medianLogRetweet) + ":" + str(wordCloudKey.avgPolarSenti) + " "
 
-    graph.wordCloudGraph(wordCloudText, stopWords)
+    script = graph.wordCloudGraph(wordCloudText, stopWords)
 
     # Display graph 1 - Top Retweet Keywords by Retweet scores
-    graph.barGraph(retweetKeywordLib.values(), label)
+    #graph.barGraph(retweetKeywordLib.values(), label)
 
     # Display graph 2 - Top Retweet Keywords for each Sentiment category by Avg # of Retweets
-    graph.stackedBarGraphPolarity(retweetKeywordLib.values(), label)
+    #graph.stackedBarGraphPolarity(retweetKeywordLib.values(), label)
 
     # Display graph 3 - Top Retweet Keywords for each Sentiment category by Avg # of Retweets
-    graph.stackedBarGraphSubjectivity(retweetKeywordLib.values(), label)
+    #graph.stackedBarGraphSubjectivity(retweetKeywordLib.values(), label)
 
-
+    # Return HTML and JavaScript to app.py, for embedding in index.html
+    return script
