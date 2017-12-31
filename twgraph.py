@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import mpld3
 from bokeh.plotting import figure, show, save, output_file
