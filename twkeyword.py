@@ -45,7 +45,7 @@ class twKeyword():
         self.sentiSubjSum = self.sentiSubjSum + score.subjectivity
 
     # Print the keyword and its key attributes
-    def print(self):
+    def printkey(self):
         print('Key: ' + self.name + ' Count: ' + str(self.count) + ' RetweetSum: ' + str(self.retweetSum) + ' Average: ' + str(self.avgRetweet) + ' Median: ' + str(self.medianRetweet) + ' avgPolarSenti: ' + str(self.avgPolarSenti) + ' avgSubjSenti: ' + str(self.avgSubjSenti) + ' retweetHistory: ' + ', '.join(str(x) for x in self.retweetHistory))
         
         
