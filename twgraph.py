@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import mpld3
 from bokeh.plotting import figure, show, save, output_file
@@ -11,7 +13,6 @@ import math
 from PIL import Image
 from packages.wordcloud.wordcloud import WordCloud, STOPWORDS
 #from wordcloud import WordCloud, STOPWORDS
-
 class twGraph():
 
     def topSentiAvg(self, list, number, polarsubj):
