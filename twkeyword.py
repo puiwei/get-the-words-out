@@ -2,7 +2,6 @@
 
 import math
 import statistics
-import itertools
 
 class twKeyword():
     def __init__(self, name):
