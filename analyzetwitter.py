@@ -19,6 +19,14 @@ from textblob import TextBlob
 import os
 from packages.oldtweets.Exporter import main
 
+ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
+ACCESS_SECRET = os.environ['ACCESS_SECRET']
+CONSUMER_KEY = os.environ['CONSUMER_KEY']
+CONSUMER_SECRET = os.environ['CONSUMER_SECRET']
+
+
+#use a set if order doesn't matter
+#use a dict if order does matter as access key is order(1)
 def unique_list(l):
     ulist = []
     [ulist.append(x) for x in l if x not in ulist]
@@ -34,15 +42,10 @@ def getTweetSentiment(tweet):
 
 
 def analyze(user_input, scope):
-    # Variables that contains the user credentials to access Twitter API
-    with open('key') as f:
-        ACCESS_TOKEN = f.readline().replace('\n', '')
-        ACCESS_SECRET = f.readline().replace('\n', '')
-        CONSUMER_KEY = f.readline().replace('\n', '')
-        CONSUMER_SECRET = f.readline().replace('\n', '')
 
     # Create output folder
     OUTPUT_FOLDER = "outputs"
+
     if not os.path.exists(OUTPUT_FOLDER):
         os.makedirs(OUTPUT_FOLDER)
 
@@ -54,6 +57,7 @@ def analyze(user_input, scope):
     #searchPhrase = '"Affordable Care Act" OR "Obamacare"' # scope = 2 search Twitter for popular results in the past 7 days
     #searchPhrase = '"American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
 
+    #can move out as a separate function
     if (scope == 1):
         totalTweetsToExtract = 1000 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
         tweetsPerCall = 200  # max 200 tweets per call for user timeline
@@ -71,11 +75,12 @@ def analyze(user_input, scope):
     api = 1  # 1 = twitter api, 2 = http search
 
     # Load apostrophe words list from file
-    ApostropheWordsFile = open('ApostropheWords.txt', 'r')
-    ApostropheWords = ApostropheWordsFile.readlines()
+    # Can also make .py file with a python list, in a global folder, import it
+    with open('ApostropheWords.txt', 'r') as ApostropheWordsFile:
+        ApostropheWords = ApostropheWordsFile.readlines()
     ApostropheWords = [x.strip() for x in ApostropheWords]
-    ApostropheWordsFile.close()
 
+    # Can redo this simliarly as apostropke word
     # Load stop words list from file
     stopWordsFile = open('StopWords.txt', 'r')
     stopWords = stopWordsFile.readlines()
@@ -162,6 +167,11 @@ def analyze(user_input, scope):
 
         # Process the keywords
         keywords = text.split(' ')
+
+        #Look at CountVectorizor, can pass in StopWords
+        #in scikit-learn.featureextraction
+        #ML idea: bag of words - understand sentiment - often used as a classifier
+        #given a tweet, can train a classifer given a topic/name, and this model can predict how likely it gets retweet
 
         for key in keywords:
             # Exclude common words
