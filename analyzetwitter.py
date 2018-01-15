@@ -168,7 +168,7 @@ def analyze(user_input, scope):
         # Process the keywords
         keywords = text.split(' ')
 
-        #Look at CountVectorizor, can pass in StopWords
+        #Look at CountVectorizor, can pass in StopWords, a matrix
         #in scikit-learn.featureextraction
         #ML idea: bag of words - understand sentiment - often used as a classifier
         #given a tweet, can train a classifer given a topic/name, and this model can predict how likely it gets retweet
