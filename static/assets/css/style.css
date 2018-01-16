@@ -5,7 +5,7 @@
 	background-size: cover;
 	background-position: bottom;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: stretch;
 }
 
 #background:before {
@@ -18,10 +18,14 @@
 	left: 0;
 }
 
-#search {
-	padding-bottom: 75px;
+.h3-margins {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
+#search {
+	padding-bottom: 20px;
+}
 
 #main h1 {
 	color: #eeeeee;
@@ -36,6 +40,7 @@
 #main h3 {
 	color: #eeeeee;
     margin-top: 1px;
+    margin-bottom: 5px;
 }
 
 .fa-color-blue {
@@ -69,4 +74,3 @@ hr {
 g.mpld3-xaxis, g.mpld3-yaxis {
     display: none;
 }
-

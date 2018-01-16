@@ -11,7 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/assets/css/style.css" />
+    <link rel="stylesheet" href="/static/assets/css/style.css"/>
     <link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
     <link rel="shortcut icon" href="">
 </head>
@@ -20,118 +20,88 @@
 <!-- Use jQuery script below to load header.html here -->
 <div id="header"></div>
 
-<div class="container">
-
-    <div class="row" id="main">
-        <section id="background">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1><strong>Let's Get the Words Out</strong></h1>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <h2>Get Ideas</h2>
-                    <!--
-                    <h3> on what and when to tweet</h3>
-                    -->
-                    <br/>
-                </div>
+<div id="background">
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1><strong>Let's Get the Words Out</strong></h1>
+                <br/><br/><br/><br/>
+                <h2>Get Ideas</h2>
+                <br/>
             </div>
+        </div>
 
-            <form action="/search" method="POST">
-                <div class="row" id="search">
-
-                    <div class="col-lg-3">
-                    </div>
-                    <div class="col-lg-3 text-center">
-                        <div class="row">
+        <div class="row">
+            <div class="col-sm-12">
+                <form action="/search" method="POST">
+                    <div class="row" id="search">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-3 text-center">
                             <i class="fa fa-user fa-2x fa-color-blue" aria-hidden="true"></i>
-                        </div>
-                        <div class="row">
                             <h3>Twitter Username</h3>
-                        </div>
-
-                        <div class="row">
                             <!-- Get text submitted in the User Search and pass it to REST URL /user_search -->
-                            <!--<form action="/user_search" method="POST">-->
                             <input type="text" name="tw_user" value="michelleobama">
-                            <!--<input type="submit">
-                            </form>-->
                         </div>
-                    </div>
-                    <div class="col-lg-3 text-center">
-                        <div class="row">
+                        <div class="col-lg-3 text-center">
                             <i class="fa fa-twitter fa-2x fa-color-blue" aria-hidden="true"></i>
-                        </div>
-                        <div class="row">
                             <h3>Search Twitter</h3>
-                        </div>
-                        <div class="row">
                             <!-- Get text submitted in the Twitter Search and pass it to REST URL /tw_search -->
-                            <!--<form action="/tw_search" method="POST">-->
                             <input type="text" name="search_phrase" value="climate">
-                            <!--    <input type="submit">
-                            </form>-->
                         </div>
+                        <div class="col-lg-3"></div>
                     </div>
-                    <div class="col-lg-3">
-                    </div>
-
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <input type="submit">
                         </div>
+                    </div>
+                </form>
+                <br/><br/><br/>
+            </div>
+        </div>
 
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 text-center">
+                <h3 class="h3-margins">{{ Uvalue }}</h3>
+                {{ Uscript|safe }}
+            </div>
+            <div class="col-sm-5 text-center">
+                <h3 class="h3-margins">{{ Svalue }}</h3>
+                {{ Sscript|safe }}
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
 
-            </form>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br/>
+                <h2>Predict Retweets</h2>
+                <br/>
+            </div>
+        </div>
 
-            <div class="row">
-                <div class="col-lg-6 mx-auto">
-                    <h3>{{ Uvalue }}</h3>
-                    {{ Uscript|safe }}
-                </div>
-                <div class="col-lg-6 mx-auto">
-                    <h3>{{ Svalue }}</h3>
-                     <!-- curly braces are Jinja, not Django, Django is like Flask -->
-                    {{ Sscript|safe }}
-                </div>
+        <div class="row" id="search">
+            <div class="col-sm-12 text-center">
+                <i class="fa fa-retweet fa-2x fa-color-blue" aria-hidden="true"></i>
+                <h3>Your New Tweet</h3>
+                <!-- Get text submitted for retweet prediction and pass it to REST URL /retweet_predict -->
+                <form action="/predict" method="POST">
+                    <input type="text" name="rt_predict" size="140">
+                    <input type="submit">
+                </form>
             </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <br/>
-                    <h2>Predict Retweets</h2>
-                    <br/>
-                </div>
-            </div>
-            <div class="row" id="search">
-                <div class="col-lg-12 text-center">
-                    <div class="row">
-                        <i class="fa fa-retweet fa-2x fa-color-blue" aria-hidden="true"></i>
-                    </div>
-                    <div class="row">
-                        <h3>Your New Tweet</h3>
-                    </div>
-                    <div class="row">
-                        <!-- Get text submitted for retweet prediction and pass it to REST URL /retweet_predict -->
-                        <form action="/predict" method="POST">
-                            <input type="text" name="rt_predict" size="140">
-                            <input type="submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <!-- curly braces are Jinja, not Django, Django is like Flask -->
-                    <h3>{{ Pvalue }}</h3>
-                    <strong>{{ Pscript }}</strong>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <!-- curly braces are Jinja, not Django, Django is like Flask -->
+            <h3>{{ Pvalue }}</h3>
+            <strong>{{ Pscript }}</strong>
+        </div>
+    </div>
+</div>
 </div>
 
 <!-- Bootstrap core JavaScript -->
@@ -143,5 +113,24 @@
 <!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
 <script>
   $("#header").load("/static/header.html");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 </html>
