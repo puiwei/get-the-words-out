@@ -27,8 +27,15 @@
 	color: #eeeeee;
 }
 
+#main h2 {
+	color: #eeeeee;
+    padding: 0px;
+    margin: 0px;
+}
+
 #main h3 {
 	color: #eeeeee;
+    margin-top: 1px;
 }
 
 .fa-color-blue {
@@ -62,3 +69,4 @@ hr {
 g.mpld3-xaxis, g.mpld3-yaxis {
     display: none;
 }
+

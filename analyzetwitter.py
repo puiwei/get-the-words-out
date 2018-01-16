@@ -59,11 +59,11 @@ def analyze(user_input, scope):
 
     #can move out as a separate function
     if (scope == 1):
-        totalTweetsToExtract = 1000 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
+        totalTweetsToExtract = 200 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
         tweetsPerCall = 200  # max 200 tweets per call for user timeline
         user = user_input
     else:
-        totalTweetsToExtract = 1000 # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
+        totalTweetsToExtract = 100 # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
         tweetsPerCall = 100  # max 100 tweets per call for Twitter search
         searchPhrase = user_input
 
