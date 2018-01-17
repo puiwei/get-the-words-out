@@ -18,6 +18,8 @@ import csv
 from textblob import TextBlob
 import os
 from packages.oldtweets.Exporter import main
+from ediblepickle import checkpoint
+from pathlib import Path
 
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 ACCESS_SECRET = os.environ['ACCESS_SECRET']
@@ -41,62 +43,31 @@ def getTweetSentiment(tweet):
     return analysis.sentiment
 
 
-def analyze(user_input, scope):
+def cleanupCache(fileKeyword):
+    # go through and clean up old cache files
+        path_in_str = 'tweetcache\\' + fileKeyword + '.tweet'
+        if os.path.isfile(path_in_str):
+            mtime = os.path.getmtime(path_in_str)
+            last_modified_date = datetime.fromtimestamp(mtime)
+            delta = datetime.now() - last_modified_date
+            if delta.days > 7:
+                os.remove(path_in_str)
 
-    # Create output folder
-    OUTPUT_FOLDER = "outputs"
-
-    if not os.path.exists(OUTPUT_FOLDER):
-        os.makedirs(OUTPUT_FOLDER)
-
+@checkpoint(key=string.Template('{4}.tweet'), work_dir='tweetcache')
+def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm):
     # Get main twitter
     t = Twitter(auth=OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET))
 
-    # Define variables for search
-    #user = "BarackObama"  # scope = 1 search user timeline
-    #searchPhrase = '"Affordable Care Act" OR "Obamacare"' # scope = 2 search Twitter for popular results in the past 7 days
-    #searchPhrase = '"American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
-
-    #can move out as a separate function
-    if (scope == 1):
-        totalTweetsToExtract = 200 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
-        tweetsPerCall = 200  # max 200 tweets per call for user timeline
-        user = user_input
-    else:
-        totalTweetsToExtract = 100 # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
-        tweetsPerCall = 100  # max 100 tweets per call for Twitter search
-        searchPhrase = user_input
-
-    tweetList = []
-    keywordLib = {}
-    printable = set(string.printable)
-    wordCloudText = ""
     tweetData = []
-    api = 1  # 1 = twitter api, 2 = http search
-
-    # Load apostrophe words list from file
-    # Can also make .py file with a python list, in a global folder, import it
-    with open('ApostropheWords.txt', 'r') as ApostropheWordsFile:
-        ApostropheWords = ApostropheWordsFile.readlines()
-    ApostropheWords = [x.strip() for x in ApostropheWords]
-
-    # Can redo this simliarly as apostropke word
-    # Load stop words list from file
-    stopWordsFile = open('StopWords.txt', 'r')
-    stopWords = stopWordsFile.readlines()
-    stopWords = [x.strip() for x in stopWords]
-    stopWordsFile.close()
-
-    # Run API search
     if (api == 1):
         lastMaxID = 0
         for x in range(int(totalTweetsToExtract / tweetsPerCall)):
             if (scope == 1):
-                if (lastMaxID == 0): tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false", tweet_mode='extended')
-                else:                tweetResults = t.statuses.user_timeline(screen_name=user, count=tweetsPerCall, include_rts="false", tweet_mode='extended', max_id=lastMaxID)
+                if (lastMaxID == 0): tweetResults = t.statuses.user_timeline(screen_name=searchTerm, count=tweetsPerCall, include_rts="false", tweet_mode='extended')
+                else:                tweetResults = t.statuses.user_timeline(screen_name=searchTerm, count=tweetsPerCall, include_rts="false", tweet_mode='extended', max_id=lastMaxID)
             elif (scope == 2):
-                if (lastMaxID == 0): tweetResults = t.search.tweets(q=searchPhrase + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, lang="en", tweet_mode='extended')['statuses']
-                else:                tweetResults = t.search.tweets(q=searchPhrase + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, max_id=lastMaxID, lang="en", tweet_mode='extended')['statuses'] #result_type="popular",
+                if (lastMaxID == 0): tweetResults = t.search.tweets(q=searchTerm + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, lang="en", tweet_mode='extended')['statuses']
+                else:                tweetResults = t.search.tweets(q=searchTerm + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, max_id=lastMaxID, lang="en", tweet_mode='extended')['statuses'] #result_type="popular",
             else:
                 exit()  # not a Twitter nor a user search, placeholder for other searches
 
@@ -112,10 +83,57 @@ def analyze(user_input, scope):
     # Run https search
     else:
         if (scope == 1):
-            params = '--username=' + user + ' --maxtweets=2000'
+            params = '--username=' + searchTerm + ' --maxtweets=2000'
         else:
-            params = '--querysearch=' + searchPhrase + ' --maxtweets=2000 --since 2017-12-10 --until 2017-12-20'
+            params = '--querysearch=' + searchTerm + ' --maxtweets=2000 --since 2017-12-10 --until 2017-12-20'
         tweetData = main(params)
+
+    return tweetData
+
+def analyze(user_input, scope):
+    cleanupCache(user_input)
+
+    # Create output folder
+    OUTPUT_FOLDER = "outputs"
+
+    if not os.path.exists(OUTPUT_FOLDER):
+        os.makedirs(OUTPUT_FOLDER)
+
+    # Define variables for search
+    #user = "BarackObama"  # scope = 1 search user timeline
+    #searchPhrase = '"Affordable Care Act" OR "Obamacare"' # scope = 2 search Twitter for popular results in the past 7 days
+    #searchPhrase = '"American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
+
+    tweetList = []
+    keywordLib = {}
+    printable = set(string.printable)
+    wordCloudText = ""
+    api = 1  # 1 = twitter api, 2 = http search
+
+    #can move out as a separate function
+    if (scope == 1):
+        totalTweetsToExtract = 200 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
+        tweetsPerCall = 200  # max 200 tweets per call for user timeline
+        searchTerm = user_input
+    else:
+        totalTweetsToExtract = 100 # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
+        tweetsPerCall = 100  # max 100 tweets per call for Twitter search
+        searchTerm = user_input
+
+    # Load apostrophe words list from file
+    # Can also make .py file with a python list, in a global folder, import it
+    with open('ApostropheWords.txt', 'r') as ApostropheWordsFile:
+        ApostropheWords = ApostropheWordsFile.readlines()
+    ApostropheWords = [x.strip() for x in ApostropheWords]
+
+    # Can redo this simliarly as apostropke word
+    # Load stop words list from file
+    stopWordsFile = open('StopWords.txt', 'r')
+    stopWords = stopWordsFile.readlines()
+    stopWords = [x.strip() for x in stopWords]
+    stopWordsFile.close()
+
+    tweetData = retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm)
 
     # Process the result
     # print('Processing ' + str(len(tweetResults)) + ' tweets')
@@ -124,7 +142,7 @@ def analyze(user_input, scope):
     f.close()
 
     for tweet in tweetData:
-        if (scope == 1) and (tweet['user']['screen_name'].lower() != user.lower()):  # for user search, skip any tweets NOT from user
+        if (scope == 1) and (tweet['user']['screen_name'].lower() != searchTerm.lower()):  # for user search, skip any tweets NOT from user
             continue
 
         # Extract
@@ -202,10 +220,10 @@ def analyze(user_input, scope):
 
     # Print the tweets and their attributes to CSV
     if (scope == 1):
-        csvfile1 = "outputs/" + "tweetsInfo" + user + "T.csv"
-        csvfile2 = "outputs/" + "keywordInfo" + user + "T.csv"
+        csvfile1 = "outputs/" + "tweetsInfo" + searchTerm + "T.csv"
+        csvfile2 = "outputs/" + "keywordInfo" + searchTerm + "T.csv"
     elif (scope == 2):
-        searchPhraseName = searchPhrase.replace('"','')
+        searchPhraseName = searchTerm.replace('"','')
         csvfile1 = "outputs/" + "tweetsInfo" + searchPhraseName + "T.csv"
         csvfile2 = "outputs/" + "keywordInfo" + searchPhraseName + "T.csv"
 
@@ -232,9 +250,9 @@ def analyze(user_input, scope):
     graph = twGraph()
 
     if (scope == 1):
-        label = "@" + user
+        label = "@" + searchTerm
     elif (scope == 2):
-        label = "\"" + searchPhrase + "\""
+        label = "\"" + searchTerm + "\""
 
 
     # Histogram of Retweet Count

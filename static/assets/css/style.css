@@ -1,25 +1,28 @@
-
-#background {
-	position: relative;	
-	background-image: url(../../images/banner.jpg);
-	background-size: cover;
-	background-position: bottom;
-	background-attachment: fixed;
-	background-repeat: stretch;
+body {
+    background-color: white;
+    color: black;
 }
 
-#background:before {
-	content: '';
-	background: rgba(75, 75, 93, 0.85);
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
+#main {
+    background-color: #0084b4;
+    color: #ffffff;
+}
+
+.results {
+    background-color: #103E5C;
+    color: white;
+}
+
+.input-group-margin {
+    margin-bottom: 4px;
+}
+
+.input-hidden {
+    visibility: hidden;
 }
 
 .h3-margins {
-    margin-top: 0px !important;
+    margin-top: 20px !important;
     margin-bottom: 0px !important;
 }
 
@@ -45,18 +48,6 @@
 
 .fa-color-blue {
 	color: #00aced;
-}
-
-section {
-	padding-top: 35px;
-	padding-bottom: 35px;
-}
-
-hr {
-	width: 80%;
-	border: 1px solid;
-	margin-top: 0px;
-	margin-bottom: 0px;
 }
 
 /* Overrides */
