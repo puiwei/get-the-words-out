@@ -1,16 +1,26 @@
-body {
+svg {
+  display:inline-block;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.examples {
     background-color: white;
     color: black;
 }
 
-#main {
-    background-color: #0084b4;
-    color: #ffffff;
+body {
+    background-color: black;
+    color: white;
 }
 
-.results {
-    background-color: #103E5C;
-    color: white;
+/* Input */
+.panel {
+    margin-top: 95px;
+    margin-bottom: 20px;
+    max-width: 50%
 }
 
 .input-group-margin {
@@ -21,40 +31,82 @@ body {
     visibility: hidden;
 }
 
-.h3-margins {
-    margin-top: 20px !important;
-    margin-bottom: 0px !important;
-}
-
 #search {
 	padding-bottom: 20px;
-}
-
-#main h1 {
-	color: #eeeeee;
-}
-
-#main h2 {
-	color: #eeeeee;
-    padding: 0px;
-    margin: 0px;
-}
-
-#main h3 {
-	color: #eeeeee;
-    margin-top: 1px;
-    margin-bottom: 5px;
 }
 
 .fa-color-blue {
 	color: #00aced;
 }
 
-/* Overrides */
-
-.navbar {
-	margin-bottom: 0px !important;
+/* Results */
+.results {
+    background-color: black;
+    color: white;
+    max-width: 50%
 }
+
+.h3-margins {
+    margin-bottom: 0px !important;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Side bar */
+#sidebar-wrapper {
+    padding: 0px;
+}
+
+#sidebar {
+    min-height: 100vh;
+    height: 100%;
+    background: #7386D5;
+    color: #fff;
+    margins: 0px;
+    position: fixed;
+    display: block;
+}
+
+#sidebar .sidebar-header {
+    padding: 10px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 0px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: white;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+/* Overrides */
 
 .container {
 	margin: 0px !important;
@@ -64,4 +116,8 @@ body {
 
 g.mpld3-xaxis, g.mpld3-yaxis {
     display: none;
+}
+
+svg {
+    margin-left: 30px;
 }

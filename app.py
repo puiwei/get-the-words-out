@@ -18,6 +18,11 @@ app = MyFlask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/predict_page')
+def predict_page():
+    return render_template('predict.html')
+
+
 @app.route('/examples')
 def examples():
     return render_template('examples.html')
@@ -55,7 +60,7 @@ def predict():
         Pscript = predictRT(new_tweet)
     else:
         Pvalue, Pscript = '',''
-    return render_template('index.html', Pvalue=Pvalue, Pscript=Pscript)
+    return render_template('predict.html', Pvalue=Pvalue, Pscript=Pscript)
 
 # starts the web server, http://localhost:80 to view
 if __name__ == '__main__':

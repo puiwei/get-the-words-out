@@ -571,7 +571,7 @@ class twGraph():
         # text = open('alice.txt').read()
         mask = np.array(Image.open("twitter_mask.png"))
 
-        wc = WordCloud(background_color="#103E5C", max_words=200000, mask=mask, collocations=False, normalize_plurals=False)
+        wc = WordCloud(background_color="black", max_words=200000, mask=mask, collocations=False, normalize_plurals=False)
         wc.generate(text)
 
         # store to file
