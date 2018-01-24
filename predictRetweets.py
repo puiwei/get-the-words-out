@@ -4,6 +4,7 @@ from twitter import *
 import os
 from datetime import datetime
 from packages.twittercache.twitter_process import TwitterProcess
+from packages.twittercache.twitter_db import TwitterDB
 import pandas as pd
 
 def predictRT(new_user, new_tweet):
@@ -38,6 +39,8 @@ def predictRT(new_user, new_tweet):
         df = df[['tw_id', 'tw_search_text', 'tw_retweet', 'tw_text', 'user_followers_ct', 'user_friends_ct',
                  'user_favorites_ct', 'user_statuses_ct', 'user_created_at', 'tw_created_at', 'user_id', 'user_name',
                  'tw_keywords', 'tw_length', 'tw_pol', 'tw_subj', 'tw_wordct', 'tw_has_links']]
+
+        # Call the modal and pass in df
 
     return df
 

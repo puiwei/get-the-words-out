@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt; plt.rcdefaults()
 import mpld3
 from bokeh.plotting import figure, show, save, output_file
 from bokeh.embed import components
-from bokeh.mpl import to_bokeh
+# from bokeh.mpl import to_bokeh
 import numpy as np
 import itertools
 import pandas as pd

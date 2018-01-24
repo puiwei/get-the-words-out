@@ -1,13 +1,9 @@
 #!/usr/bin/env python
-import os
-import re
-
-from twitter import *
 from psycopg2 import extras
-from datetime import datetime, timedelta
-from textblob import TextBlob
-import spacy
+from datetime import datetime
 import psycopg2
+import pandas as pd
+import sqlalchemy
 
 class TwitterDB:
     def __init__(self):
@@ -17,6 +13,13 @@ class TwitterDB:
 
         except:
             print("I am unable to connect to the database")
+
+    def get_data_frame(self):
+        engine = sqlalchemy.create_engine('postgresql+psycopg2://postgres:postgres@localhost/postgres')
+        name_of_table = 'twitter'
+        df = pd.read_sql_query("SELECT * FROM %s limit 1000000;" % name_of_table, engine)
+        #df = pd.read_sql_table(name_of_table, engine)
+        return df
 
     def write_db(self, word, twitter_results, recent=True):
         # Process results
