@@ -55,13 +55,15 @@ def tw_search():
 @app.route('/predict', methods=['POST'])
 def predict():
     new_tweet = request.form['rt_predict']
+    new_user = request.form['rt_predict_user']
+
     if len(new_tweet.strip()) > 0:
         Pvalue = 'Estimated # of Retweets: '
-        Pscript = predictRT(new_tweet)
+        Pscript = predictRT(new_user, new_tweet)
     else:
         Pvalue, Pscript = '',''
     return render_template('predict.html', Pvalue=Pvalue, Pscript=Pscript)
 
 # starts the web server, http://localhost:80 to view
 if __name__ == '__main__':
-    app.run(port=80, debug=True)
+    app.run(host='0.0.0.0', port=80, debug=True)

@@ -25,8 +25,8 @@ class twTweet():
     # Convert the tweet created_at timestamp to local time of day and day of week
     def convertTime(self, createdAt, utc_offset):
         timestamp = mktime_tz(parsedate_tz(createdAt))
-        if (utc_offset is not None):
-            timestamp = timestamp + utc_offset
+        # if (utc_offset is not None):
+        #    timestamp = timestamp + utc_offset
         s = datetime.fromtimestamp(timestamp)
         day = s.strftime("%a")
         time = s.strftime("%H:%M")

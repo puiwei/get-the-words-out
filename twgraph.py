@@ -13,6 +13,9 @@ import math
 from PIL import Image
 from packages.wordcloud.wordcloud import WordCloud, STOPWORDS
 #from wordcloud import WordCloud, STOPWORDS
+from ediblepickle import checkpoint
+import string
+
 class twGraph():
 
     def topSentiAvg(self, list, number, polarsubj):
@@ -566,7 +569,8 @@ class twGraph():
 
         plt.show()
 
-    def wordCloudGraph(self, text, stopWords):
+    @checkpoint(key=string.Template('{3}-{4}.wcloud'), work_dir='tweetcache')
+    def wordCloudGraph(self, text, stopWords, searchTerm, tweetsPerCall):
         # read the mask image
         # text = open('alice.txt').read()
         mask = np.array(Image.open("twitter_mask.png"))

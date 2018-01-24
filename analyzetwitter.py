@@ -53,7 +53,7 @@ def cleanupCache(fileKeyword):
             if delta.days > 7:
                 os.remove(path_in_str)
 
-@checkpoint(key=string.Template('{4}.tweet'), work_dir='tweetcache')
+@checkpoint(key=string.Template('{4}-{2}.tweet'), work_dir='tweetcache')
 def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm):
     # Get main twitter
     t = Twitter(auth=OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET))
@@ -112,11 +112,11 @@ def analyze(user_input, scope):
 
     #can move out as a separate function
     if (scope == 1):
-        totalTweetsToExtract = 200 # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
+        totalTweetsToExtract = 3200  # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
         tweetsPerCall = 200  # max 200 tweets per call for user timeline
         searchTerm = user_input
     else:
-        totalTweetsToExtract = 100 # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
+        totalTweetsToExtract = 1000  # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
         tweetsPerCall = 100  # max 100 tweets per call for Twitter search
         searchTerm = user_input
 
@@ -267,7 +267,7 @@ def analyze(user_input, scope):
     for wordCloudKey in retweetKeywordLib.values():
         wordCloudText += wordCloudKey.name + ":" + str(wordCloudKey.medianLogRetweet) + ":" + str(wordCloudKey.avgPolarSenti) + " "
 
-    script = graph.wordCloudGraph(wordCloudText, stopWords)
+    script = graph.wordCloudGraph(wordCloudText, stopWords, searchTerm, totalTweetsToExtract)
 
     # Display graph 1 - Top Retweet Keywords by Retweet scores
     #graph.barGraph(retweetKeywordLib.values(), label)
