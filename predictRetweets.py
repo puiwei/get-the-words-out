@@ -7,6 +7,7 @@ from packages.twittercache.twitter_process import TwitterProcess
 from packages.twittercache.twitter_db import TwitterDB
 import pandas as pd
 
+
 def predictRT(new_user, new_tweet):
     twp = TwitterProcess()
 

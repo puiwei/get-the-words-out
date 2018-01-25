@@ -19,7 +19,13 @@ from textblob import TextBlob
 import os
 from packages.oldtweets.Exporter import main
 from ediblepickle import checkpoint
-from pathlib import Path
+import pandas as pd
+from bokeh.plotting import figure
+from bokeh.embed import components
+from bokeh.models import FuncTickFormatter, Range1d, LinearAxis
+from math import pi
+from statistics import median
+import numpy
 
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 ACCESS_SECRET = os.environ['ACCESS_SECRET']
@@ -53,8 +59,9 @@ def cleanupCache(fileKeyword):
             if delta.days > 7:
                 os.remove(path_in_str)
 
-@checkpoint(key=string.Template('{4}-{2}.tweet'), work_dir='tweetcache')
-def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm):
+
+@checkpoint(key=string.Template('{4}-{2}-{5}.tweet'), work_dir='tweetcache')
+def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm, result_type='mixed'):
     # Get main twitter
     t = Twitter(auth=OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET))
 
@@ -67,7 +74,7 @@ def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm):
                 else:                tweetResults = t.statuses.user_timeline(screen_name=searchTerm, count=tweetsPerCall, include_rts="false", tweet_mode='extended', max_id=lastMaxID)
             elif (scope == 2):
                 if (lastMaxID == 0): tweetResults = t.search.tweets(q=searchTerm + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, lang="en", tweet_mode='extended')['statuses']
-                else:                tweetResults = t.search.tweets(q=searchTerm + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, max_id=lastMaxID, lang="en", tweet_mode='extended')['statuses'] #result_type="popular",
+                else:                tweetResults = t.search.tweets(q=searchTerm + "' -filter:retweets AND -filter:replies", count=tweetsPerCall, max_id=lastMaxID, lang="en", tweet_mode='extended', result_type=result_type)['statuses']
             else:
                 exit()  # not a Twitter nor a user search, placeholder for other searches
 
@@ -90,6 +97,231 @@ def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm):
 
     return tweetData
 
+
+def retrieve_day_of_week(data):
+    dict = {'Sun': {'tweet_ct': [], 'retweet_ct': []},
+            'Mon': {'tweet_ct': [], 'retweet_ct': []},
+            'Tue': {'tweet_ct': [], 'retweet_ct': []},
+            'Wed': {'tweet_ct': [], 'retweet_ct': []},
+            'Thu': {'tweet_ct': [], 'retweet_ct': []},
+            'Fri': {'tweet_ct': [], 'retweet_ct': []},
+            'Sat': {'tweet_ct': [], 'retweet_ct': []},}
+    df_input = {}
+    bucket = {}
+
+    for tweet in data:
+        # Get day
+        day = tweet['created_at'].split(" ")[0]
+        parse = parsedate_tz(tweet['created_at'])
+        date = str(parse[1]) + "/" + str(parse[2]) + "/" + str(parse[0])
+        retweet = tweet['retweet_count']
+
+        if day + " " + date in bucket:
+            bucket[day + " " + date][0] += 1
+            bucket[day + " " + date][1] += retweet
+        else:
+            bucket[day + " " + date] = [1, retweet]
+
+    # Separate into day of the week bins
+    for key, value in bucket.items():
+        day = key.split(" ")[0]
+        if day in dict:
+            dict[day]['tweet_ct'].append(value[0])
+            dict[day]['retweet_ct'].append(value[1])
+
+    # Calculate
+    df_input['day'] = [label for label, value in dict.items()]
+    df_input['tweet_ct'] = [numpy.mean(dict[label]['tweet_ct']) for label, value in dict.items()]
+    df_input['retweet_ct'] = []
+    for label, value in dict.items():
+        if value['tweet_ct']:
+            df_input['retweet_ct'].append(sum(dict[label]['retweet_ct']) / sum(dict[label]['tweet_ct']))
+        else:
+            df_input['retweet_ct'].append(0)
+
+    inds1 = numpy.where(numpy.isnan(df_input['tweet_ct']))
+    inds2 = numpy.where(numpy.isnan(df_input['retweet_ct']))
+    for x in inds1[0]:
+        df_input['tweet_ct'][x] = 0
+    for x in inds2[0]:
+        df_input['retweet_ct'][x] = 0
+    # Create data frame
+    df = pd.DataFrame(df_input)
+
+    return df
+
+
+def retrieve_hour_of_day(data):
+    dict = {'0000': {'tweet_ct': [], 'retweet_ct': []},
+            '0100': {'tweet_ct': [], 'retweet_ct': []},
+            '0200': {'tweet_ct': [], 'retweet_ct': []},
+            '0300': {'tweet_ct': [], 'retweet_ct': []},
+            '0400': {'tweet_ct': [], 'retweet_ct': []},
+            '0500': {'tweet_ct': [], 'retweet_ct': []},
+            '0600': {'tweet_ct': [], 'retweet_ct': []},
+            '0700': {'tweet_ct': [], 'retweet_ct': []},
+            '0800': {'tweet_ct': [], 'retweet_ct': []},
+            '0900': {'tweet_ct': [], 'retweet_ct': []},
+            '1000': {'tweet_ct': [], 'retweet_ct': []},
+            '1100': {'tweet_ct': [], 'retweet_ct': []},
+            '1200': {'tweet_ct': [], 'retweet_ct': []},
+            '1300': {'tweet_ct': [], 'retweet_ct': []},
+            '1400': {'tweet_ct': [], 'retweet_ct': []},
+            '1500': {'tweet_ct': [], 'retweet_ct': []},
+            '1600': {'tweet_ct': [], 'retweet_ct': []},
+            '1700': {'tweet_ct': [], 'retweet_ct': []},
+            '1800': {'tweet_ct': [], 'retweet_ct': []},
+            '1900': {'tweet_ct': [], 'retweet_ct': []},
+            '2000': {'tweet_ct': [], 'retweet_ct': []},
+            '2100': {'tweet_ct': [], 'retweet_ct': []},
+            '2200': {'tweet_ct': [], 'retweet_ct': []},
+            '2300': {'tweet_ct': [], 'retweet_ct': []},
+            }
+    df_input = {}
+    bucket = {}
+
+    for tweet in data:
+        # Get hour
+        parse = parsedate_tz(tweet['created_at'])
+        timestamp = mktime_tz(parse)
+        s = datetime.fromtimestamp(timestamp)
+        date = s.strftime("%m/%d/%Y")
+        hour = s.strftime("%H")
+        hour += '0' * (4 - len(hour))
+        retweet = tweet['retweet_count']
+
+        if hour + " " + date in bucket:
+            bucket[hour + " " + date][0] += 1
+            bucket[hour + " " + date][1] += retweet
+        else:
+            bucket[hour + " " + date] = [1, retweet]
+
+    # Separate into hour of the day bins
+    for key, value in bucket.items():
+        hour = key.split(" ")[0]
+        if hour in dict:
+            dict[hour]['tweet_ct'].append(value[0])
+            dict[hour]['retweet_ct'].append(value[1])
+
+    # Calculate
+    df_input['hour'] = [label for label, value in dict.items()]
+    df_input['tweet_ct'] = [numpy.mean(dict[label]['tweet_ct']) for label, value in dict.items()]
+
+    df_input['retweet_ct'] = []
+    for label, value in dict.items():
+        if value['tweet_ct']:
+            df_input['retweet_ct'].append(sum(dict[label]['retweet_ct']) / sum(dict[label]['tweet_ct']))
+        else:
+            df_input['retweet_ct'].append(0)
+
+    inds1 = numpy.where(numpy.isnan(df_input['tweet_ct']))
+    inds2 = numpy.where(numpy.isnan(df_input['retweet_ct']))
+    for x in inds1[0]:
+        df_input['tweet_ct'][x] = 0
+    for x in inds2[0]:
+        df_input['retweet_ct'][x] = 0
+
+    # Adjust empty values to 1 so log does not fail
+    #for label, value in dict.items():
+    #    if not dict[label]['retweet_ct']:
+    #        dict[label]['retweet_ct'].append(1)
+    #df_input['retweet_ct'] = [median(numpy.log(dict[label]['retweet_ct'])) for label, value in dict.items()]
+
+    # Create data frame
+    df = pd.DataFrame(df_input)
+
+    return df
+
+
+@checkpoint(key=string.Template('{0}.bokeh'), work_dir='tweetcache')
+def generate_bokeh(user):
+    data = retrieveTweets(1, 1, 3200, 200, user, 'mixed')
+
+    # retrieve data frame
+    df = retrieve_day_of_week(data)
+    if not df.empty:
+        # Create plot
+        tickers = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        max_range = df['tweet_ct'].max() * 1.05
+        p1 = figure(plot_width=750, plot_height=500, title='Day of Week Activity for @' + data[0]['user']['screen_name'], y_range=(0, max_range))
+
+        # Y Axis
+        p1.yaxis.axis_label = "Tweet Count"
+        p1.yaxis.axis_label_text_color = 'blue'
+        p1.yaxis.axis_label_text_font_style = 'bold'
+
+        # X Axis
+        p1.xaxis.axis_label = "Day of Week"
+        p1.xaxis[0].ticker = [0, 1, 2, 3, 4, 5, 6]
+        p1.xaxis.axis_label_text_font_style = 'bold'
+        p1.xaxis.formatter = FuncTickFormatter(code=""" var labels = %s; return labels[tick]; """ % tickers)
+
+        # Y Axis Right
+        max_range_rt = df['retweet_ct'].max() * 1.05
+        p1.extra_y_ranges = {"p1": Range1d(start=0, end=max_range_rt)}
+        p1.add_layout(LinearAxis(y_range_name="p1", axis_label="Retweet Rate", axis_label_text_color='red', axis_label_text_font_style='bold'), 'right')
+
+        # Draw
+        for day, row in df.iterrows():
+            p1.vbar(tickers.index(row['day']), .4, row['tweet_ct'], legend='Average Tweet Count')
+
+        days_index = [tickers.index(x) for x in df['day'].tolist()]
+        retweets_index = df['retweet_ct'].tolist()
+        p1.line(days_index, retweets_index, line_width=2, y_range_name="p1", color='red', legend='Retweet Rate')
+        p1.circle(days_index, retweets_index, fill_alpha=1, fill_color="white", size=6, y_range_name="p1", color='red', legend='Retweet Rate')
+
+        # Legend
+        p1.legend.location = 'top_center'
+        p1.legend.border_line_width = 1
+        p1.legend.border_line_color = "gray"
+        p1.legend.click_policy = "hide"
+
+    df2 = retrieve_hour_of_day(data)
+    if not df2.empty:
+        # Create plot
+        tickers = dict = ['0000', '0100', '0200', '0300', '0400', '0500', '0600', '0700', '0800', '0900', '1000',
+                          '1100', '1200', '1300', '1400', '1500', '1600', '1700', '1800', '1900', '2000', '2100',
+                          '2200', '2300']
+        max_range = df2['tweet_ct'].max() * 1.05
+        p2 = figure(plot_width=1000, plot_height=500, title='Time of Day Activity for @' + data[0]['user']['screen_name'], y_range=(0, max_range))
+
+        # Y Axis
+        p2.yaxis.axis_label = "Average Tweet Count"
+        p2.yaxis.axis_label_text_color = 'blue'
+        p2.yaxis.axis_label_text_font_style = 'bold'
+
+        # X Axis
+        p2.xaxis.axis_label = "Time of Day"
+        p2.xaxis.axis_label_text_font_style = 'bold'
+        p2.xaxis.major_label_orientation = pi / 2
+        p2.xaxis[0].ticker = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+        p2.xaxis.formatter = FuncTickFormatter(code=""" var labels = %s; return labels[tick]; """ % tickers)
+
+        # Y Axis Right
+        max_range_rt = df2['retweet_ct'].max() * 1.05
+        p2.extra_y_ranges = {"p2": Range1d(start=0, end=max_range_rt)}
+        p2.add_layout(LinearAxis(y_range_name="p2", axis_label="Retweet Rate", axis_label_text_color='red', axis_label_text_font_style='bold'), 'right')
+
+        # Draw
+        for day, row in df2.iterrows():
+            p2.vbar(tickers.index(row['hour']), .4, row['tweet_ct'], legend='Average Tweet Count')
+
+        days_index = [tickers.index(x) for x in df2['hour'].tolist()]
+        retweets_index = df2['retweet_ct'].tolist()
+        p2.line(days_index, retweets_index, line_width=2, y_range_name="p2", color='red', legend='Retweet Rate')
+        p2.circle(days_index, retweets_index, fill_alpha=1, fill_color="white", size=6, y_range_name="p2", color='red', legend='Retweet Rate')
+
+        # Legend
+        p2.legend.location = 'top_center'
+        p2.legend.border_line_width = 1
+        p2.legend.border_line_color = "gray"
+        p2.legend.click_policy = "hide"
+
+    script1, div1 = components(p1)
+    script2, div2 = components(p2)
+    return script1, div1, script2, div2
+
+
 def analyze(user_input, scope):
     cleanupCache(user_input)
 
@@ -109,12 +341,14 @@ def analyze(user_input, scope):
     printable = set(string.printable)
     wordCloudText = ""
     api = 1  # 1 = twitter api, 2 = http search
+    result_type = 'mixed'
 
     #can move out as a separate function
     if (scope == 1):
         totalTweetsToExtract = 3200  # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
         tweetsPerCall = 200  # max 200 tweets per call for user timeline
         searchTerm = user_input
+
     else:
         totalTweetsToExtract = 1000  # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
         tweetsPerCall = 100  # max 100 tweets per call for Twitter search
@@ -133,7 +367,7 @@ def analyze(user_input, scope):
     stopWords = [x.strip() for x in stopWords]
     stopWordsFile.close()
 
-    tweetData = retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm)
+    tweetData = retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm, result_type)
 
     # Process the result
     # print('Processing ' + str(len(tweetResults)) + ' tweets')
