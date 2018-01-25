@@ -242,7 +242,7 @@ def generate_bokeh(user):
     if not df.empty:
         # Create plot
         tickers = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        max_range = df['tweet_ct'].max() * 1.05
+        max_range = df['tweet_ct'].max() * 1.2
         p1 = figure(plot_width=750, plot_height=500, title='Day of Week Activity for @' + data[0]['user']['screen_name'], y_range=(0, max_range))
 
         # Y Axis
@@ -257,7 +257,7 @@ def generate_bokeh(user):
         p1.xaxis.formatter = FuncTickFormatter(code=""" var labels = %s; return labels[tick]; """ % tickers)
 
         # Y Axis Right
-        max_range_rt = df['retweet_ct'].max() * 1.05
+        max_range_rt = df['retweet_ct'].max() * 1.2
         p1.extra_y_ranges = {"p1": Range1d(start=0, end=max_range_rt)}
         p1.add_layout(LinearAxis(y_range_name="p1", axis_label="Retweet Rate", axis_label_text_color='red', axis_label_text_font_style='bold'), 'right')
 
@@ -275,6 +275,10 @@ def generate_bokeh(user):
         p1.legend.border_line_width = 1
         p1.legend.border_line_color = "gray"
         p1.legend.click_policy = "hide"
+        p1.legend.label_text_font_size = "8pt"
+        p1.legend.spacing = 1
+        p1.legend.padding = 5
+        p1.legend.margin = 0
 
     df2 = retrieve_hour_of_day(data)
     if not df2.empty:
@@ -282,7 +286,7 @@ def generate_bokeh(user):
         tickers = dict = ['0000', '0100', '0200', '0300', '0400', '0500', '0600', '0700', '0800', '0900', '1000',
                           '1100', '1200', '1300', '1400', '1500', '1600', '1700', '1800', '1900', '2000', '2100',
                           '2200', '2300']
-        max_range = df2['tweet_ct'].max() * 1.05
+        max_range = df2['tweet_ct'].max() * 1.2
         p2 = figure(plot_width=1000, plot_height=500, title='Time of Day Activity for @' + data[0]['user']['screen_name'], y_range=(0, max_range))
 
         # Y Axis
@@ -298,7 +302,7 @@ def generate_bokeh(user):
         p2.xaxis.formatter = FuncTickFormatter(code=""" var labels = %s; return labels[tick]; """ % tickers)
 
         # Y Axis Right
-        max_range_rt = df2['retweet_ct'].max() * 1.05
+        max_range_rt = df2['retweet_ct'].max() * 1.2
         p2.extra_y_ranges = {"p2": Range1d(start=0, end=max_range_rt)}
         p2.add_layout(LinearAxis(y_range_name="p2", axis_label="Retweet Rate", axis_label_text_color='red', axis_label_text_font_style='bold'), 'right')
 
@@ -316,6 +320,10 @@ def generate_bokeh(user):
         p2.legend.border_line_width = 1
         p2.legend.border_line_color = "gray"
         p2.legend.click_policy = "hide"
+        p2.legend.label_text_font_size = "8pt"
+        p2.legend.spacing = 1
+        p2.legend.padding = 5
+        p2.legend.margin = 0
 
     script1, div1 = components(p1)
     script2, div2 = components(p2)
