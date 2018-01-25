@@ -246,7 +246,7 @@ def generate_bokeh(user):
         p1 = figure(plot_width=750, plot_height=500, title='Day of Week Activity for @' + data[0]['user']['screen_name'], y_range=(0, max_range))
 
         # Y Axis
-        p1.yaxis.axis_label = "Tweet Count"
+        p1.yaxis.axis_label = "Average Tweet Count"
         p1.yaxis.axis_label_text_color = 'blue'
         p1.yaxis.axis_label_text_font_style = 'bold'
 
