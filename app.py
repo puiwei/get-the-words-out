@@ -74,8 +74,8 @@ def predict():
 
     if len(new_tweet.strip()) > 0:
         Pvalue = 'Estimated # of Retweets: '
-        #Pscript = predictRT(new_user, new_tweet)
-        Pscript = '112'
+        Pscript = predictRT(new_user, new_tweet)
+        #Pscript = '112'
     else:
         Pvalue, Pscript = '',''
     return render_template('predict.html', Pvalue=Pvalue, Pscript=Pscript)
