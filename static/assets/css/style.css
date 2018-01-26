@@ -70,6 +70,7 @@ h3 {
     margins: 0px;
     position: fixed;
     display: block;
+    width: 200px !important;
 }
 
 #sidebar .sidebar-header {

@@ -123,15 +123,15 @@ def model(test_data):
             ('full', union),
             ('ensemble', EnsembleTransformer(
                 # linear_model.SGDRegressor(random_state=42),
-                #LinearSVR(random_state=0),
-                linear_model.Ridge(alpha = 0.7),
+                LinearSVR(random_state=0),
+                #linear_model.Ridge(alpha = 0.7),
                 #linear_model.LinearRegression(),
                 (neighbors.KNeighborsRegressor(n_neighbors=5),
                  ensemble.RandomForestRegressor(min_samples_leaf=20)))),
 
             #('blend', linear_model.LinearRegression())
-            ('blend', linear_model.Ridge(alpha = 0.7))
-            #('blend', LinearSVR(random_state=0))
+            #('blend', linear_model.Ridge(alpha = 0.7))
+            ('blend', LinearSVR(random_state=0))
         ])
 
         ensemble_pipe.fit(DB_df, Retweet_Ct)
@@ -146,7 +146,7 @@ def model(test_data):
     if a[0] < 0:
         return 0
     else:
-        return a[0]
+        return round(a[0],2)
 
 #prediction = model()
 #print (prediction)
