@@ -17,7 +17,7 @@ class TwitterDB:
     def get_data_frame(self):
         engine = sqlalchemy.create_engine('postgresql+psycopg2://postgres:postgres@localhost/postgres')
         name_of_table = 'twitter'
-        df = pd.read_sql_query("SELECT * FROM %s limit 200000;" % name_of_table, engine)
+        df = pd.read_sql_query("select * from %s tablesample system (20) repeatable(1) limit 200000;" % name_of_table, engine)
         #df = pd.read_sql_table(name_of_table, engine)
         return df
 
