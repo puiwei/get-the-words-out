@@ -16,19 +16,20 @@ def predictRT(new_user, new_tweet):
     user_info = getUserInfo(new_user)
     if user_info:
         d = {}
-        d['tweet_id'] = '000000000000000001'
-        d['tweet_search_term'] = 'predict'
+        # d['tweet_id'] = '000000000000000001'
+        # d['tweet_search_term'] = 'predict'
         d['tweet_retweet_ct'] = ''
-        d['tweet_text'] = new_tweet
+        # d['tweet_text'] = new_tweet
         d['user_followers_ct'] = user_info['followers_count']
-        d['user_friends_ct'] = user_info['friends_count']
-        d['user_favorites_ct'] = user_info['favourites_count']
+        # d['user_friends_ct'] = user_info['friends_count']
+        # d['user_favorites_ct'] = user_info['favourites_count']
         d['user_statuses_ct'] = user_info['statuses_count']
-        d['user_created_at'] = user_info['created_at']
-        d['tweet_created_at'] = str(datetime.now())
-        d['user_id'] = user_info['id_str']
-        d['user_name'] = user_info['screen_name']
-        tweet_process = twp.process_keywords([(d['tweet_id'], d['tweet_text'])])[0]
+        # d['user_created_at'] = user_info['created_at']
+        # d['tweet_created_at'] = str(datetime.now())
+        # d['user_id'] = user_info['id_str']
+        # d['user_name'] = user_info['screen_name']
+        # tweet_process = twp.process_keywords([(d['tweet_id'], d['tweet_text'])])[0]
+        tweet_process = twp.process_keywords([('000000000000000001', new_tweet)])[0]
         d['tweet_keywords'] = tweet_process[1]
         d['tweet_length'] = tweet_process[2]
         d['polarity'] = tweet_process[3]
@@ -38,9 +39,7 @@ def predictRT(new_user, new_tweet):
 
         # Create data frame
         df = pd.DataFrame([d])
-        df = df[['tweet_id', 'tweet_search_term', 'tweet_retweet_ct', 'tweet_text', 'user_followers_ct', 'user_friends_ct',
-                 'user_favorites_ct', 'user_statuses_ct', 'user_created_at', 'tweet_created_at', 'user_id', 'user_name',
-                 'tweet_keywords', 'tweet_length', 'polarity', 'subjectivity', 'tweet_word_ct', 'tweet_has_links']]
+        df = df[['tweet_retweet_ct', 'user_followers_ct', 'user_statuses_ct', 'tweet_keywords', 'tweet_length', 'polarity', 'subjectivity', 'tweet_word_ct', 'tweet_has_links']]
 
         # Call the modal and pass in df
         return str(model(df))

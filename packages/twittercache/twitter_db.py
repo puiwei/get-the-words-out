@@ -17,7 +17,7 @@ class TwitterDB:
     def get_data_frame(self):
         engine = sqlalchemy.create_engine('postgresql+psycopg2://postgres:postgres@localhost/postgres')
         name_of_table = 'twitter'
-        df = pd.read_sql_query("select * from %s tablesample system (20) repeatable(1) limit 200000;" % name_of_table, engine)
+        df = pd.read_sql_query("select tweet_retweet_ct, user_followers_ct, user_statuses_ct, tweet_keywords, tweet_length, tweet_word_ct, polarity, subjectivity, tweet_has_links from %s tablesample system (100) repeatable(1) limit 500000;" % name_of_table, engine)
         #df = pd.read_sql_table(name_of_table, engine)
         return df
 
@@ -100,7 +100,7 @@ class TwitterDB:
 
     def pull_keyword_entries_missing_fields(self):
         try:
-            self.cur.execute("""SELECT tweet_id, tweet_text from twitter2 WHERE tweet_has_links is NULL LIMIT 10000""")
+            self.cur.execute("""SELECT tweet_id, tweet_text from twitter2 WHERE tweet_has_links is NULL LIMIT 200""")
             row = self.cur.fetchall()
             if row:
                 return row
@@ -112,7 +112,7 @@ class TwitterDB:
     def write_calculations(self, db_data):
         try:
             print('Writing ' + str(len(db_data)) + ' records at ' + str(datetime.now().strftime('%m/%d/%Y %I:%M:%S%p')))
-            extras.execute_values(self.cur, """UPDATE twitter2 SET tweet_keywords=data.v1, tweet_length=data.v2, polarity=data.v3, subjectivity=data.v4 FROM (VALUES %s) AS data (id, v1, v2, v3, v4) WHERE twitter2.tweet_id=data.id""", db_data)
+            extras.execute_values(self.cur, """UPDATE twitter2 SET tweet_keywords=data.v1, tweet_length=data.v2, polarity=data.v3, subjectivity=data.v4, tweet_word_ct=data.v5, tweet_has_links=data.v6 FROM (VALUES %s) AS data (id, v1, v2, v3, v4, v5, v6) WHERE twitter2.tweet_id=data.id""", db_data)
             self.conn.commit()
         except Exception as e:
             print("DB Error:" + str(e))

@@ -131,7 +131,7 @@ class TwitterProcess:
 
     def run(self):
         while True:
-            data = self.db.pull_keyword_entries()
+            data = self.db.pull_keyword_entries_missing_fields()
             if not data:
                 break
 

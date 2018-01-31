@@ -331,7 +331,7 @@ def generate_bokeh(user):
 
 
 def analyze(user_input, scope):
-    cleanupCache(user_input)
+    # cleanupCache(user_input)
 
     # Create output folder
     OUTPUT_FOLDER = "outputs"

@@ -42,6 +42,20 @@
                     </form>
                 </div>
             </div>
+            {% if Uvalue or Svalue %}
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="well well-sm center-block legend">
+                        <center>
+                            Keyword Sentiments<br />
+                            <span><i class="glyphicon glyphicon-stop" style="color: #004c99"></i> Positive</span>
+                            <span><i class="glyphicon glyphicon-stop" style="color: #ffffff"></i> Neutral</span>
+                            <span><i class="glyphicon glyphicon-stop" style="color: #ff0000"></i> Negative</span>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
             <div class="row">
                 <div class="col-sm-6">
                     <div class="center-block d-inline-block text-center">
@@ -74,6 +88,9 @@
   $(window).on("load", function() {
     $("g.mpld3-baseaxes").removeAttr("transform");
   })
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from analyzetwitter import analyze, generate_bokeh
 from predictRetweets import predictRT
-
+from packages.twittercache.twitter_process import TwitterProcess
 
 # Embedding plot using Bokeh's components function instead of loading bgraph.html
 # Hence no need of this sub-classing solution (keep as comments for future reference):
@@ -83,4 +83,6 @@ def predict():
 
 # starts the web server, http://localhost:80 to view
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, debug=True)
+    process = TwitterProcess()
+    process.run()
+    # app.run(host='0.0.0.0', port=80, debug=True)
