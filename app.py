@@ -83,6 +83,6 @@ def predict():
 
 # starts the web server, http://localhost:80 to view
 if __name__ == '__main__':
-    process = TwitterProcess()
-    process.run()
-    # app.run(host='0.0.0.0', port=80, debug=True)
+    # process = TwitterProcess()
+    # process.run()
+    app.run(host='0.0.0.0', port=80, debug=True)
