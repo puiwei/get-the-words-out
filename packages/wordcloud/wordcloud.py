@@ -21,7 +21,8 @@ from PIL import ImageColor
 from PIL import ImageDraw
 from PIL import ImageFont
 
-from .query_integral_image import query_integral_image
+from wordcloud.wordcloud import query_integral_image
+#from .query_integral_image import query_integral_image
 from .tokenization import unigrams_and_bigrams, process_tokens
 
 item1 = itemgetter(1)
