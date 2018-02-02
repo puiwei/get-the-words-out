@@ -47,14 +47,15 @@
                     <div class="center-block d-inline-block text-center results">
                         <!-- Bootstrap alert -->
                         <div class="alert alert-info" role="alert">
+                            <!--
                             <h4 class="alert-heading">Analyzed <strong>{{ user }}</strong> (Up to 3200 tweets)</h4>
                             <p>Your <b>top</b> retweet count comes out to <b>{{ top }}</b> with the following text: <b>{{ top_text }}</b></p>
-                            <hr>
-                            <p>Your <b>median</b> retweet count comes out to <strong style="font-size: 18px">{{ avg_user }}</strong></p>
+                            <hr> -->
+                            <p>@{{ user }}'s <b>median</b> retweet count is <strong style="font-size: 18px">{{ avg_user }}</strong></p>
                         </div>
                         <div class="alert alert-success" role="alert">
-                            <p class="mb-0">Based on the text <b>{{ tweet }}</b></p>
-                            <p>Estimated number of retweets: <strong style="font-size: 18px">{{ retweets }}</strong></p>
+                            <p class="mb-0">Based on the new tweet <b>"{{ tweet }}"</b></p>
+                            <p>Estimated number of retweets is <strong style="font-size: 18px">{{ retweets }}</strong></p>
                         </div>
                     </div>
                 </div>
