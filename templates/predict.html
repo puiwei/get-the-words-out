@@ -25,30 +25,41 @@
             <div id="header"></div>
         </div>
         <div class="col-sm-10">
-            <div class="panel panel-default center-block">
+            <div class="panel panel-default center-block predict-panel">
                 <div class="panel-heading">Predict Retweets</div>
                 <div class="panel-body">
                     <form action="/predict" method="POST">
                         <div class="input-group input-group-margin">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input class="form-control" type="text" name="rt_predict_user" placeholder="Twitter Username" value="ABCSharkTank">
+                            <input class="form-control" type="text" name="rt_predict_user" placeholder="Twitter Username" value="{{ user }}">
                         </div>
                         <div class="input-group input-group-margin">
                             <span class="input-group-addon"><i class="fa fa-twitter fa-color-blue"></i></span>
-                            <input class="form-control" type="text" name="rt_predict" placeholder="Your New Tweet" value="Prove them wrong, #sidehustle startups are growing in #sanfrancisco!">
+                            <input class="form-control" type="text" name="rt_predict" placeholder="Your New Tweet" value="{{ tweet }}">
                         </div>
                         <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                     </form>
                 </div>
             </div>
+            {% if retweets %}
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="center-block d-inline-block text-center">
-                        <h3 class="h3-margins">{{ Pvalue }}</h3>
-                        <h3>{{ Pscript|safe }}</h3>
+                    <div class="center-block d-inline-block text-center results">
+                        <!-- Bootstrap alert -->
+                        <div class="alert alert-info" role="alert">
+                            <h4 class="alert-heading">Analyzed <strong>{{ user }}</strong> (Up to 3200 tweets)</h4>
+                            <p>Your <b>top</b> retweet count comes out to <b>{{ top }}</b> with the following text: <b>{{ top_text }}</b></p>
+                            <hr>
+                            <p>Your <b>median</b> retweet count comes out to <strong style="font-size: 18px">{{ avg_user }}</strong></p>
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            <p class="mb-0">Based on the text <b>{{ tweet }}</b></p>
+                            <p>Estimated number of retweets: <strong style="font-size: 18px">{{ retweets }}</strong></p>
+                        </div>
                     </div>
                 </div>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
@@ -67,6 +78,7 @@
   $(window).on("load", function() {
     $("g.mpld3-baseaxes").removeAttr("transform");
   })
+
 
 
 

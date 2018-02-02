@@ -46,7 +46,7 @@ def examples():
 def time():
     tw_user = request.form['tw_user']
     Tscript1, Tvalue1, Tscript2, Tvalue2 = generate_bokeh(tw_user)
-    return render_template('timetweet.html', Tscript1=Tscript1, Tvalue1=Tvalue1, Tscript2=Tscript2, Tvalue2=Tvalue2)
+    return render_template('timetweet.html', Tscript1=Tscript1, Tvalue1=Tvalue1, Tscript2=Tscript2, Tvalue2=Tvalue2, user=tw_user)
 
 
 # when /user_search REST URL is evoked, call analyzetwitter.py, and return Word Cloud and resulting graphs
@@ -64,7 +64,7 @@ def search():
         Svalue='Results for "'+search_phrase+'"'
     else:
         Svalue, Sscript = '',''
-    return render_template('ideas.html', Uvalue=Uvalue, Uscript=Uscript, Svalue=Svalue, Sscript=Sscript)
+    return render_template('ideas.html', Uvalue=Uvalue, Uscript=Uscript, Svalue=Svalue, Sscript=Sscript, user=tw_user, search=search_phrase)
 
 
 @app.route('/predict', methods=['POST'])
@@ -73,12 +73,10 @@ def predict():
     new_user = request.form['rt_predict_user']
 
     if len(new_tweet.strip()) > 0:
-        Pvalue = 'Estimated # of Retweets: '
-        Pscript = predictRT(new_user, new_tweet)
-        #Pscript = '112'
+        prediction, avgUserRetweet, top, top_text = predictRT(new_user, new_tweet)
     else:
-        Pvalue, Pscript = '',''
-    return render_template('predict.html', Pvalue=Pvalue, Pscript=Pscript)
+        prediction = '',''
+    return render_template('predict.html', retweets=prediction, avg_user=avgUserRetweet, tweet=new_tweet, user=new_user, top=top, top_text=top_text)
 
 
 # starts the web server, http://localhost:80 to view

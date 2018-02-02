@@ -20,6 +20,12 @@ body {
     max-width: 50%
 }
 
+.predict-panel {
+    margin-top: 95px;
+    margin-bottom: 20px;
+    max-width: 60% !important;
+}
+
 .input-group-margin {
     margin-bottom: 4px;
 }
@@ -38,8 +44,8 @@ body {
 
 /* Results */
 .results {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     max-width: 50%
 }
 
