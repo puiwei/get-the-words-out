@@ -25,3 +25,4 @@ ediblepickle==1.1.3
 spacy==2.0.5
 sqlalchemy==1.2.1
 sklearn==0.0
+scipy==1.0.0
