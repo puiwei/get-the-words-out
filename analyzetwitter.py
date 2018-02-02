@@ -17,7 +17,7 @@ import re
 import csv
 from textblob import TextBlob
 import os
-from packages.oldtweets.Exporter import main
+#from packages.oldtweets.Exporter import main
 from ediblepickle import checkpoint
 import pandas as pd
 from bokeh.plotting import figure
