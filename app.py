@@ -5,16 +5,17 @@ from packages.twittercache.twitter_process import TwitterProcess
 import json
 from threading import Thread
 import time
-
+import threading
 
 class ThreadAgent(Thread):
-    def __init__(self, text, type):
+    def __init__(self, text, type, lock):
         Thread.__init__(self)
         self.text = text
         self.type = type
+        self.lock = lock
 
     def run(self):
-        self.Uscript = analyze(self.text, self.type)
+        self.Uscript = analyze(self.text, self.type, self.lock)
 
 # Embedding plot using Bokeh's components function instead of loading bgraph.html
 # Hence no need of this sub-classing solution (keep as comments for future reference):
@@ -67,10 +68,12 @@ def timetweet():
 def search():
     tw_user = request.form['tw_user']
     search_phrase = request.form['search_phrase']
+
+    lock = threading.Lock()
     if len(tw_user.strip()) > 0:
         Uvalue='Results for @'+tw_user
         #Uscript = analyze(tw_user, 1)
-        t1 = ThreadAgent(tw_user, 1)
+        t1 = ThreadAgent(tw_user, 1, lock)
         t1.start()
     else:
         Uvalue, Uscript = '',''
@@ -78,7 +81,7 @@ def search():
     if len(search_phrase.strip()) > 0:
         #Sscript = analyze(search_phrase, 2)
         Svalue='Results for "'+search_phrase+'"'
-        t2 = ThreadAgent(search_phrase, 2)
+        t2 = ThreadAgent(search_phrase, 2, lock)
         t2.start()
     else:
         Svalue, Sscript = '',''

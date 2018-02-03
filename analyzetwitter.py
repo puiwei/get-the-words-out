@@ -336,7 +336,7 @@ def generate_bokeh(user):
     return script1, div1, script2, div2
 
 
-def analyze(user_input, scope):
+def analyze(user_input, scope, lock):
     # cleanupCache(user_input)
 
     # Create output folder
@@ -514,15 +514,16 @@ def analyze(user_input, scope):
     # Create text for word cloud
     print("WordCloud: " + str(time.time()))
 
-    retweetKeywordLib = {}
-    for graphKey, graphValue in keywordLib.items():
-        if graphValue.medianLogRetweet > 0:
-            retweetKeywordLib[graphKey] = graphValue
+    with lock:
+        retweetKeywordLib = {}
+        for graphKey, graphValue in keywordLib.items():
+            if graphValue.medianLogRetweet > 0:
+                retweetKeywordLib[graphKey] = graphValue
 
-    for wordCloudKey in retweetKeywordLib.values():
-        wordCloudText += wordCloudKey.name + ":" + str(wordCloudKey.medianLogRetweet) + ":" + str(wordCloudKey.avgPolarSenti) + " "
+        for wordCloudKey in retweetKeywordLib.values():
+            wordCloudText += wordCloudKey.name + ":" + str(wordCloudKey.medianLogRetweet) + ":" + str(wordCloudKey.avgPolarSenti) + " "
 
-    script = graph.wordCloudGraph(wordCloudText, stopWords, searchTerm, totalTweetsToExtract)
+        script = graph.wordCloudGraph(wordCloudText, stopWords, searchTerm, totalTweetsToExtract)
 
     print("Done in AnalyzeTwitter: " + str(time.time()))
 
