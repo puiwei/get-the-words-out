@@ -83,10 +83,14 @@ def searchIdeas():
     if len(tw_user.strip()) > 0:
         t1 = ThreadAgent(tw_user, 1, lock)
         t1.start()
+    else:
+        t1 = ThreadAgent(tw_user, 1, lock)
 
     if len(search_phrase.strip()) > 0:
         t2 = ThreadAgent(search_phrase, 2, lock)
         t2.start()
+    else:
+        t2 = ThreadAgent(search_phrase, 2, lock)
 
     if len(tw_user.strip()) > 0:
         t1.join()

@@ -117,11 +117,22 @@
             success: function(response) {
                 $('#wait').hide();
                 $('#legend').show();
+
+                // Clear out results
+                $('#userLabel1').html('');
+                $('#userCloud1').html('');
+                $('#userLabel2').html('');
+                $('#userCloud2').html('');
+
                 var json = JSON.parse(response);
-                $('#userLabel1').html(json['userLabel1']);
-                $('#userCloud1').html(json['userCloud1']);
-                $('#userLabel2').html(json['userLabel2']);
-                $('#userCloud2').html(json['userCloud2']);
+                if (json['userCloud1'] != '') {
+                  $('#userLabel1').html(json['userLabel1']);
+                  $('#userCloud1').html(json['userCloud1']);
+                }
+                if (json['userCloud2'] != '') {
+                    $('#userLabel2').html(json['userLabel2']);
+                    $('#userCloud2').html(json['userCloud2']);
+                }
             },
             error: function(error) {
                 console.log(error);
