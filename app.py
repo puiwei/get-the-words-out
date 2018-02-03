@@ -2,6 +2,19 @@ from flask import Flask, render_template, request, redirect
 from analyzetwitter import analyze, generate_bokeh
 from predictRetweets import predictRT
 from packages.twittercache.twitter_process import TwitterProcess
+import json
+from threading import Thread
+import time
+
+
+class ThreadAgent(Thread):
+    def __init__(self, text, type):
+        Thread.__init__(self)
+        self.text = text
+        self.type = type
+
+    def run(self):
+        self.Uscript = analyze(self.text, self.type)
 
 # Embedding plot using Bokeh's components function instead of loading bgraph.html
 # Hence no need of this sub-classing solution (keep as comments for future reference):
@@ -12,8 +25,8 @@ class MyFlask(Flask):
         return 1
 
 
-app = MyFlask(__name__)
-# app = Flask(__name__)
+#app = MyFlask(__name__)
+app = Flask(__name__)
 
 
 # default home page
@@ -43,7 +56,7 @@ def examples():
 
 
 @app.route('/time', methods=['POST'])
-def time():
+def timetweet():
     tw_user = request.form['tw_user']
     Tscript1, Tvalue1, Tscript2, Tvalue2 = generate_bokeh(tw_user)
     return render_template('timetweet.html', Tscript1=Tscript1, Tvalue1=Tvalue1, Tscript2=Tscript2, Tvalue2=Tvalue2, user=tw_user)
@@ -56,15 +69,23 @@ def search():
     search_phrase = request.form['search_phrase']
     if len(tw_user.strip()) > 0:
         Uvalue='Results for @'+tw_user
-        Uscript = analyze(tw_user, 1)
+        #Uscript = analyze(tw_user, 1)
+        t1 = ThreadAgent(tw_user, 1)
+        t1.start()
     else:
         Uvalue, Uscript = '',''
+
     if len(search_phrase.strip()) > 0:
-        Sscript = analyze(search_phrase, 2)
+        #Sscript = analyze(search_phrase, 2)
         Svalue='Results for "'+search_phrase+'"'
+        t2 = ThreadAgent(search_phrase, 2)
+        t2.start()
     else:
         Svalue, Sscript = '',''
-    return render_template('ideas.html', Uvalue=Uvalue, Uscript=Uscript, Svalue=Svalue, Sscript=Sscript, user=tw_user, search=search_phrase)
+
+    t1.join()
+    t2.join()
+    return render_template('ideas.html', Uvalue=Uvalue, Uscript=t1.Uscript, Svalue=Svalue, Sscript=t2.Uscript, user=tw_user, search=search_phrase)
 
 
 @app.route('/predict', methods=['POST'])

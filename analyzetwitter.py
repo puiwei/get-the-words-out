@@ -27,6 +27,7 @@ from math import pi
 from statistics import median
 import numpy
 import time
+import threading
 
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 ACCESS_SECRET = os.environ['ACCESS_SECRET']
@@ -89,6 +90,8 @@ def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm, 
                     lastMaxID = tweet['id'] - 1
 
             tweetData.extend(tweetResults)
+            #print(json.dumps(tweetResults))
+            #print(threading.currentThread().getName(), 'Starting')
             #print(json.dumps(tweetResults))
     # Run https search
     else:
@@ -382,9 +385,9 @@ def analyze(user_input, scope):
 
     # Process the result
     # print('Processing ' + str(len(tweetResults)) + ' tweets')
-    with open('outputs/json_raw', 'w') as f:
+    '''with open('outputs/json_raw', 'w') as f:
         f.write(json.dumps(tweetData))
-    f.close()
+    f.close()'''
 
     print("process tweets: " + str(time.time()))
 
@@ -478,11 +481,11 @@ def analyze(user_input, scope):
         csvfile2 = "outputs/" + "keywordInfo" + searchPhraseName + "T.csv"
 
 
-    with open(csvfile1, "w", newline='') as fp1:
+    '''with open(csvfile1, "w", newline='') as fp1:
         wr1 = csv.writer(fp1, delimiter=',')
         wr1.writerow(('ID', 'RetweetCt', 'Polarity', 'Subjectivity', 'CreatedTime', 'CreatedDay', 'TextLength', 'WordCt', 'AccountAgeMo', 'UserFollowersCt', 'Keywords', 'HasLinks'))
         for t in tweetList:
-            wr1.writerow(('"' + t.id + '"', t.retweetCount, t.sentiPolarity, t.sentiSubjectivity, t.createdTime, t.createdDay, t.textLength, t.wordCount, t.userAcctAgeMonths, t.userFollowersCt, t.keyWords, t.linkpic))
+            wr1.writerow(('"' + t.id + '"', t.retweetCount, t.sentiPolarity, t.sentiSubjectivity, t.createdTime, t.createdDay, t.textLength, t.wordCount, t.userAcctAgeMonths, t.userFollowersCt, t.keyWords, t.linkpic))'''
 
     # Calculate retweet score
     for x in keywordLib.values():
@@ -491,11 +494,11 @@ def analyze(user_input, scope):
         # x.print()  # print the keywords and their key attributes
 
 
-    with open(csvfile2, "w", newline='') as fp2:
+    '''with open(csvfile2, "w", newline='') as fp2:
         wr2 = csv.writer(fp2, delimiter=',')
         wr2.writerow(('Name', 'Count', 'avgRetweet', 'medianRetweet', 'avgLogRetweet', 'medianLogRetweet', 'avgPolarSenti', 'avgSubjSenti'))
         for k in keywordLib.values():
-            wr2.writerow((k.name, k.count, k.avgRetweet, k.medianRetweet, k.avgLogRetweet, k.medianLogRetweet, k.avgPolarSenti, k.avgSubjSenti))
+            wr2.writerow((k.name, k.count, k.avgRetweet, k.medianRetweet, k.avgLogRetweet, k.medianLogRetweet, k.avgPolarSenti, k.avgSubjSenti))'''
 
     graph = twGraph()
 
