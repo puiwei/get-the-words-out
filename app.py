@@ -94,6 +94,7 @@ def searchIdeas():
     if len(search_phrase.strip()) > 0:
         t2.join()
 
+    # Return json instead of render_template for AJAX
     return json.dumps(
         {'status': 'OK',
          'userLabel1': 'Results for @' + tw_user,

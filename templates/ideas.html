@@ -67,6 +67,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="center-block d-inline-block text-center">
+                        <!-- No longer using jinja2 template engine, now referenced by id for ajax -->
                         <h3 id="userLabel1" class="h3-margins"></h3>
                         <div id="userCloud1"></div>
                     </div>
@@ -90,6 +91,8 @@
 
 <!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
 <script>
+
+  // Using jQuery to load side bar
   $("#header").load("/static/header.html");
 
   // Remove spacing for word cloud graph
@@ -97,10 +100,13 @@
     $("g.mpld3-baseaxes").removeAttr("transform");
   })
 
+  // Source Reference: https://codehandbook.org/python-flask-jquery-ajax-post/
+  // After page load, use jQuery for AJAX (Asynchronous call)
   $(function() {
     $('#legend').hide();
     $('#wait').hide();
 
+    // Button event for <button> tag
     $('button').click(function() {
         $('#wait').show();
         $('#legend').hide();
