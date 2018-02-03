@@ -15,6 +15,7 @@ from packages.wordcloud.wordcloud import WordCloud, STOPWORDS
 #from wordcloud import WordCloud, STOPWORDS
 from ediblepickle import checkpoint
 import string
+import time
 
 class twGraph():
 
@@ -573,9 +574,11 @@ class twGraph():
     def wordCloudGraph(self, text, stopWords, searchTerm, tweetsPerCall):
         # read the mask image
         # text = open('alice.txt').read()
+        print("Start wordCloudGraph fcn: " + str(time.time()))
+
         mask = np.array(Image.open("twitter_mask.png"))
 
-        wc = WordCloud(background_color="white", max_words=100000, mask=mask, collocations=False, normalize_plurals=False)
+        wc = WordCloud(background_color="white", max_words=300, mask=mask, collocations=False, normalize_plurals=False)
         wc.generate(text)
 
         # store to file
@@ -586,6 +589,7 @@ class twGraph():
         plt.axis("off")
         #plt.show()
 
+        print("Start mpld3: " + str(time.time()))
         # Use mpld3 library to construct a string of HTML and JavaScript from the wordcloud figure, to be embedded in index.html
         mpld3.plugins.clear(plt.figure(1))
         return mpld3.fig_to_html(plt.figure(1))

@@ -26,7 +26,7 @@ def predictRT(new_user, new_tweet):
     twp = TwitterProcess()
 
     sentiment = getTweetSentiment(new_tweet)
-    user_info = getUserInfo(new_user, 3200)
+    user_info = getUserInfo(new_user, 2000)
     avgRetweet, top, top_text = getRetweetInfo(user_info)
 
     if user_info:
@@ -61,7 +61,7 @@ def predictRT(new_user, new_tweet):
     return 'Need Valid Twitter Username', 0, 0, 0
 
 @checkpoint(key=string.Template('{0}-{1}-mixed.tweet'), work_dir='tweetcache')
-def getUserInfo(user, totalTweetsToExtract = 3200):
+def getUserInfo(user, totalTweetsToExtract = 2000):
     ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
     ACCESS_SECRET = os.environ['ACCESS_SECRET']
     CONSUMER_KEY = os.environ['CONSUMER_KEY']

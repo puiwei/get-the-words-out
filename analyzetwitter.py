@@ -26,6 +26,7 @@ from bokeh.models import FuncTickFormatter, Range1d, LinearAxis
 from math import pi
 from statistics import median
 import numpy
+import time
 
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 ACCESS_SECRET = os.environ['ACCESS_SECRET']
@@ -63,6 +64,8 @@ def cleanupCache(fileKeyword):
 @checkpoint(key=string.Template('{4}-{2}-{5}.tweet'), work_dir='tweetcache')
 def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm, result_type='mixed'):
     # Get main twitter
+    print("retrieve tweets: " + str(time.time()))
+
     t = Twitter(auth=OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET))
 
     tweetData = []
@@ -86,7 +89,7 @@ def retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm, 
                     lastMaxID = tweet['id'] - 1
 
             tweetData.extend(tweetResults)
-            print(json.dumps(tweetResults))
+            #print(json.dumps(tweetResults))
     # Run https search
     else:
         if (scope == 1):
@@ -235,7 +238,7 @@ def retrieve_hour_of_day(data):
 
 @checkpoint(key=string.Template('{0}.bokeh'), work_dir='tweetcache')
 def generate_bokeh(user):
-    data = retrieveTweets(1, 1, 3200, 200, user, 'mixed')
+    data = retrieveTweets(1, 1, 2000, 200, user, 'mixed')
 
     # retrieve data frame
     df = retrieve_day_of_week(data)
@@ -353,7 +356,7 @@ def analyze(user_input, scope):
 
     #can move out as a separate function
     if (scope == 1):
-        totalTweetsToExtract = 3200  # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
+        totalTweetsToExtract = 2000  # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
         tweetsPerCall = 200  # max 200 tweets per call for user timeline
         searchTerm = user_input
 
@@ -382,6 +385,8 @@ def analyze(user_input, scope):
     with open('outputs/json_raw', 'w') as f:
         f.write(json.dumps(tweetData))
     f.close()
+
+    print("process tweets: " + str(time.time()))
 
     for tweet in tweetData:
         if (scope == 1) and (tweet['user']['screen_name'].lower() != searchTerm.lower()):  # for user search, skip any tweets NOT from user
@@ -426,6 +431,7 @@ def analyze(user_input, scope):
         text = ''.join([i if ord(i) < 128 else ' ' for i in text])  # Replace unicode with space
 
         # Process the keywords
+
         keywords = text.split(' ')
 
         #Look at CountVectorizor, can pass in StopWords, a matrix
@@ -461,6 +467,8 @@ def analyze(user_input, scope):
 
 
     # Print the tweets and their attributes to CSV
+    print("write to csv: " + str(time.time()))
+
     if (scope == 1):
         csvfile1 = "outputs/" + "tweetsInfo" + searchTerm + "T.csv"
         csvfile2 = "outputs/" + "keywordInfo" + searchTerm + "T.csv"
@@ -501,6 +509,8 @@ def analyze(user_input, scope):
     #graph.histogram(csvfile1, label)
 
     # Create text for word cloud
+    print("WordCloud: " + str(time.time()))
+
     retweetKeywordLib = {}
     for graphKey, graphValue in keywordLib.items():
         if graphValue.medianLogRetweet > 0:
@@ -510,6 +520,8 @@ def analyze(user_input, scope):
         wordCloudText += wordCloudKey.name + ":" + str(wordCloudKey.medianLogRetweet) + ":" + str(wordCloudKey.avgPolarSenti) + " "
 
     script = graph.wordCloudGraph(wordCloudText, stopWords, searchTerm, totalTweetsToExtract)
+
+    print("Done in AnalyzeTwitter: " + str(time.time()))
 
     # Display graph 1 - Top Retweet Keywords by Retweet scores
     #graph.barGraph(retweetKeywordLib.values(), label)
