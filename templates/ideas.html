@@ -10,7 +10,7 @@
     <title>Get The Words Out</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/assets/css/style.css"/>
     <link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
     <link rel="shortcut icon" href="">
@@ -31,23 +31,22 @@
                     <form action="/search" method="POST">
                         <div class="input-group input-group-margin">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input class="form-control" type="text" name="tw_user" placeholder="Twitter Username" value="{{ user }}">
+                            <input class="form-control" type="text" id="tw_user" name="tw_user" placeholder="Twitter Username">
                         </div>
                         <div class="input-group input-group-margin">
                             <span class="input-group-addon"><i class="fa fa-twitter fa-color-blue"></i></span>
-                            <input class="form-control" type="text" name="search_phrase" placeholder="Search Term" value="{{ search }}">
+                            <input class="form-control" type="text" id="search_phrase" name="search_phrase" placeholder="Search Term">
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                        <button type="button" class="btn btn-primary btn-sm">Submit</button>
                     </form>
                 </div>
             </div>
-            {% if Uvalue or Svalue %}
-            <div class="row">
+            <div id="legend" class="row">
                 <div class="col-sm-12">
                     <div class="well well-sm center-block legend">
                         <center>
-                            Keyword Sentiments<br />
+                            Keyword Sentiments<br/>
                             <span><i class="glyphicon glyphicon-stop" style="color: #004c99"></i> Positive</span>
                             <span><i class="glyphicon glyphicon-stop" style="color: #800080"></i> Neutral</span>
                             <span><i class="glyphicon glyphicon-stop" style="color: #ff0000"></i> Negative</span>
@@ -55,18 +54,27 @@
                     </div>
                 </div>
             </div>
-            {% endif %}
+            <div id="wait" class="row">
+                <div class="col-sm-12">
+                    <center>
+                        Asking the little birds...
+                        <div class="progress center-block legend">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                        </div>
+                    </center>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="center-block d-inline-block text-center">
-                        <h3 class="h3-margins">{{ Uvalue }}</h3>
-                        {{ Uscript|safe }}
+                        <h3 id="userLabel1" class="h3-margins"></h3>
+                        <div id="userCloud1"></div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="center-block d-inline-block text-center">
-                        <h3 class="h3-margins">{{ Svalue }}</h3>
-                        {{ Sscript|safe }}
+                        <h3 id="userLabel2" class="h3-margins"></h3>
+                        <div id="userCloud2"></div>
                     </div>
                 </div>
             </div>
@@ -77,7 +85,7 @@
 <!-- Bootstrap core JavaScript -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 <!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
@@ -88,5 +96,32 @@
   $(window).on("load", function() {
     $("g.mpld3-baseaxes").removeAttr("transform");
   })
+
+  $(function() {
+    $('#legend').hide();
+    $('#wait').hide();
+
+    $('button').click(function() {
+        $('#wait').show();
+        $('#legend').hide();
+        $.ajax({
+            url: '/searchIdeas',
+            data: $('form').serialize(),
+            type: 'POST',
+            success: function(response) {
+                $('#wait').hide();
+                $('#legend').show();
+                var json = JSON.parse(response);
+                $('#userLabel1').html(json['userLabel1']);
+                $('#userCloud1').html(json['userCloud1']);
+                $('#userLabel2').html(json['userLabel2']);
+                $('#userCloud2').html(json['userCloud2']);
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    });
+  });
 </script>
 </html>

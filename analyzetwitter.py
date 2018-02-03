@@ -339,47 +339,37 @@ def generate_bokeh(user):
 def analyze(user_input, scope, lock):
     # cleanupCache(user_input)
 
-    # Create output folder
-    OUTPUT_FOLDER = "outputs"
+    with lock:
+        tweetList = []
+        keywordLib = {}
+        printable = set(string.printable)
+        wordCloudText = ""
+        api = 1  # 1 = twitter api, 2 = http search
+        result_type = 'mixed'
 
-    if not os.path.exists(OUTPUT_FOLDER):
-        os.makedirs(OUTPUT_FOLDER)
+        #can move out as a separate function
+        if (scope == 1):
+            totalTweetsToExtract = 2000  # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
+            tweetsPerCall = 200  # max 200 tweets per call for user timeline
+            searchTerm = user_input
 
-    # Define variables for search
-    #user = "BarackObama"  # scope = 1 search user timeline
-    #searchPhrase = '"Affordable Care Act" OR "Obamacare"' # scope = 2 search Twitter for popular results in the past 7 days
-    #searchPhrase = '"American Health Care Act" OR "Trumpcare"' # scope = 2 search Twitter for popular results in the past 7 days
+        else:
+            totalTweetsToExtract = 1000  # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
+            tweetsPerCall = 100  # max 100 tweets per call for Twitter search
+            searchTerm = user_input
 
-    tweetList = []
-    keywordLib = {}
-    printable = set(string.printable)
-    wordCloudText = ""
-    api = 1  # 1 = twitter api, 2 = http search
-    result_type = 'mixed'
+        # Load apostrophe words list from file
+        # Can also make .py file with a python list, in a global folder, import it
+        with open('ApostropheWords.txt', 'r') as ApostropheWordsFile:
+            ApostropheWords = ApostropheWordsFile.readlines()
+        ApostropheWords = [x.strip() for x in ApostropheWords]
 
-    #can move out as a separate function
-    if (scope == 1):
-        totalTweetsToExtract = 2000  # max 3200 total tweets for user timeline search, and max 180 API calls per 15 mins
-        tweetsPerCall = 200  # max 200 tweets per call for user timeline
-        searchTerm = user_input
-
-    else:
-        totalTweetsToExtract = 1000  # max 180 API calls per 15 mins, so can max extract 18K tweets per 15 mins for twitter search
-        tweetsPerCall = 100  # max 100 tweets per call for Twitter search
-        searchTerm = user_input
-
-    # Load apostrophe words list from file
-    # Can also make .py file with a python list, in a global folder, import it
-    with open('ApostropheWords.txt', 'r') as ApostropheWordsFile:
-        ApostropheWords = ApostropheWordsFile.readlines()
-    ApostropheWords = [x.strip() for x in ApostropheWords]
-
-    # Can redo this simliarly as apostropke word
-    # Load stop words list from file
-    stopWordsFile = open('StopWords.txt', 'r')
-    stopWords = stopWordsFile.readlines()
-    stopWords = [x.strip() for x in stopWords]
-    stopWordsFile.close()
+        # Can redo this simliarly as apostropke word
+        # Load stop words list from file
+        stopWordsFile = open('StopWords.txt', 'r')
+        stopWords = stopWordsFile.readlines()
+        stopWords = [x.strip() for x in stopWords]
+        stopWordsFile.close()
 
     tweetData = retrieveTweets(api, scope, totalTweetsToExtract, tweetsPerCall, searchTerm, result_type)
 
@@ -391,94 +381,94 @@ def analyze(user_input, scope, lock):
 
     print("process tweets: " + str(time.time()))
 
-    for tweet in tweetData:
-        if (scope == 1) and (tweet['user']['screen_name'].lower() != searchTerm.lower()):  # for user search, skip any tweets NOT from user
-            continue
-
-        # Extract
-        text = tweet['full_text']
-        retweetCt = tweet['retweet_count']
-
-        # Remove links
-        text = re.sub(r"http\S+", "", text)
-
-        # Retrieve tweet sentiment
-        sentiScore = getTweetSentiment(text)
-
-        # Populate the tweet class
-        tweetClass = twTweet()
-        tweetClass.id = tweet['id_str']
-        tweetClass.retweetCount = tweet['retweet_count']
-        tweetClass.userAcctAgeMonths = tweetClass.acctAge(tweet['user']['created_at'])
-        tweetClass.userFollowersCt = tweet['user']['followers_count']
-        tweetClass.sentiPolarity = sentiScore.polarity
-        tweetClass.sentiSubjectivity = sentiScore.subjectivity
-        tweetClass.createdTime = (tweetClass.convertTime(tweet['created_at'], tweet['user']['utc_offset']))[1]
-        tweetClass.createdDay = (tweetClass.convertTime(tweet['created_at'], tweet['user']['utc_offset']))[0]
-        tweetClass.textLength = len(text.lstrip(' ').rstrip(' '))
-        tweetClass.wordCount = len(text.lstrip(' ').rstrip(' ').split(' '))
-        tweetClass.linkpic = "http" in text
-        tweetList.append(tweetClass)
-
-        # Exclude common apostrophe words
-        for apos in ApostropheWords:
-            text = text.lower().replace(apos, "")
-
-        # Remove punctuation
-        text = text.translate(text.maketrans('[]&*,?!:;."()\'', '              '))  # Replace punctuation with space
-        text = text.translate(text.maketrans('-', '0'))  # Remove hyphens
-
-        # Remove unnecessary characters
-        text = ' '.join(unique_list(text.split()))  # Remove duplicate keywords within one tweet
-        text = ''.join([i for i in text if not i.isdigit()])  # Remove numbers
-        text = ''.join([i if ord(i) < 128 else ' ' for i in text])  # Replace unicode with space
-
-        # Process the keywords
-
-        keywords = text.split(' ')
-
-        #Look at CountVectorizor, can pass in StopWords, a matrix
-        #in scikit-learn.featureextraction
-        #ML idea: bag of words - understand sentiment - often used as a classifier
-        #given a tweet, can train a classifer given a topic/name, and this model can predict how likely it gets retweet
-
-        for key in keywords:
-            # Exclude common words
-            if key.lower() in stopWords:
+    with lock:
+        for tweet in tweetData:
+            if (scope == 1) and (tweet['user']['screen_name'].lower() != searchTerm.lower()):  # for user search, skip any tweets NOT from user
                 continue
 
-            if (key == ''):
-                continue
+            # Extract
+            text = tweet['full_text']
+            retweetCt = tweet['retweet_count']
 
-            if (len(key) <= 2):
-                continue
+            # Remove links
+            text = re.sub(r"http\S+", "", text)
 
-            if ("w/" in key):
-                key = key.replace("w/", "  ").strip()
+            # Retrieve tweet sentiment
+            sentiScore = getTweetSentiment(text)
 
-            # Add keyword to tweet class keyword list
-            tweetClass.addKeyword(key)
+            # Populate the tweet class
+            tweetClass = twTweet()
+            tweetClass.id = tweet['id_str']
+            tweetClass.retweetCount = tweet['retweet_count']
+            tweetClass.userAcctAgeMonths = tweetClass.acctAge(tweet['user']['created_at'])
+            tweetClass.userFollowersCt = tweet['user']['followers_count']
+            tweetClass.sentiPolarity = sentiScore.polarity
+            tweetClass.sentiSubjectivity = sentiScore.subjectivity
+            tweetClass.createdTime = (tweetClass.convertTime(tweet['created_at'], tweet['user']['utc_offset']))[1]
+            tweetClass.createdDay = (tweetClass.convertTime(tweet['created_at'], tweet['user']['utc_offset']))[0]
+            tweetClass.textLength = len(text.lstrip(' ').rstrip(' '))
+            tweetClass.wordCount = len(text.lstrip(' ').rstrip(' ').split(' '))
+            tweetClass.linkpic = "http" in text
+            tweetList.append(tweetClass)
 
-            if key not in keywordLib:
-                keyClass = twKeyword(key)
-                keywordLib[key] = keyClass
-            else:
-                keyClass = keywordLib.get(key)
+            # Exclude common apostrophe words
+            for apos in ApostropheWords:
+                text = text.lower().replace(apos, "")
 
-            keyClass.addRetweet(retweetCt)
-            keyClass.addSentiScore(sentiScore)
+            # Remove punctuation
+            text = text.translate(text.maketrans('[]&*,?!:;."()\'', '              '))  # Replace punctuation with space
+            text = text.translate(text.maketrans('-', '0'))  # Remove hyphens
 
+            # Remove unnecessary characters
+            text = ' '.join(unique_list(text.split()))  # Remove duplicate keywords within one tweet
+            text = ''.join([i for i in text if not i.isdigit()])  # Remove numbers
+            text = ''.join([i if ord(i) < 128 else ' ' for i in text])  # Replace unicode with space
+
+            # Process the keywords
+
+            keywords = text.split(' ')
+
+            #Look at CountVectorizor, can pass in StopWords, a matrix
+            #in scikit-learn.featureextraction
+            #ML idea: bag of words - understand sentiment - often used as a classifier
+            #given a tweet, can train a classifer given a topic/name, and this model can predict how likely it gets retweet
+
+            for key in keywords:
+                # Exclude common words
+                if key.lower() in stopWords:
+                    continue
+
+                if (key == ''):
+                    continue
+
+                if (len(key) <= 2):
+                    continue
+
+                if ("w/" in key):
+                    key = key.replace("w/", "  ").strip()
+
+                # Add keyword to tweet class keyword list
+                tweetClass.addKeyword(key)
+
+                if key not in keywordLib:
+                    keyClass = twKeyword(key)
+                    keywordLib[key] = keyClass
+                else:
+                    keyClass = keywordLib.get(key)
+
+                keyClass.addRetweet(retweetCt)
+                keyClass.addSentiScore(sentiScore)
 
     # Print the tweets and their attributes to CSV
     print("write to csv: " + str(time.time()))
 
-    if (scope == 1):
+    '''if (scope == 1):
         csvfile1 = "outputs/" + "tweetsInfo" + searchTerm + "T.csv"
         csvfile2 = "outputs/" + "keywordInfo" + searchTerm + "T.csv"
     elif (scope == 2):
         searchPhraseName = searchTerm.replace('"','')
         csvfile1 = "outputs/" + "tweetsInfo" + searchPhraseName + "T.csv"
-        csvfile2 = "outputs/" + "keywordInfo" + searchPhraseName + "T.csv"
+        csvfile2 = "outputs/" + "keywordInfo" + searchPhraseName + "T.csv"'''
 
 
     '''with open(csvfile1, "w", newline='') as fp1:
@@ -488,10 +478,11 @@ def analyze(user_input, scope, lock):
             wr1.writerow(('"' + t.id + '"', t.retweetCount, t.sentiPolarity, t.sentiSubjectivity, t.createdTime, t.createdDay, t.textLength, t.wordCount, t.userAcctAgeMonths, t.userFollowersCt, t.keyWords, t.linkpic))'''
 
     # Calculate retweet score
-    for x in keywordLib.values():
-        x.calcAvg()
-        x.calcMedian()
-        # x.print()  # print the keywords and their key attributes
+    with lock:
+        for x in keywordLib.values():
+            x.calcAvg()
+            x.calcMedian()
+            # x.print()  # print the keywords and their key attributes
 
 
     '''with open(csvfile2, "w", newline='') as fp2:
@@ -501,12 +492,6 @@ def analyze(user_input, scope, lock):
             wr2.writerow((k.name, k.count, k.avgRetweet, k.medianRetweet, k.avgLogRetweet, k.medianLogRetweet, k.avgPolarSenti, k.avgSubjSenti))'''
 
     graph = twGraph()
-
-    if (scope == 1):
-        label = "@" + searchTerm
-    elif (scope == 2):
-        label = "\"" + searchTerm + "\""
-
 
     # Histogram of Retweet Count
     #graph.histogram(csvfile1, label)
@@ -523,7 +508,7 @@ def analyze(user_input, scope, lock):
         for wordCloudKey in retweetKeywordLib.values():
             wordCloudText += wordCloudKey.name + ":" + str(wordCloudKey.medianLogRetweet) + ":" + str(wordCloudKey.avgPolarSenti) + " "
 
-        script = graph.wordCloudGraph(wordCloudText, stopWords, searchTerm, totalTweetsToExtract)
+    script = graph.wordCloudGraph(wordCloudText, stopWords, searchTerm, totalTweetsToExtract)
 
     print("Done in AnalyzeTwitter: " + str(time.time()))
 

@@ -10,7 +10,7 @@
     <title>Get The Words Out</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/assets/css/style.css"/>
     <link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
     <link rel="shortcut icon" href="">
@@ -31,36 +31,42 @@
                     <form action="/predict" method="POST">
                         <div class="input-group input-group-margin">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input class="form-control" type="text" name="rt_predict_user" placeholder="Twitter Username" value="{{ user }}">
+                            <input class="form-control" type="text" id="rt_predict_user" name="rt_predict_user" placeholder="Twitter Username">
                         </div>
                         <div class="input-group input-group-margin">
                             <span class="input-group-addon"><i class="fa fa-twitter fa-color-blue"></i></span>
-                            <input class="form-control" type="text" name="rt_predict" placeholder="Your New Tweet" value="{{ tweet }}">
+                            <input class="form-control" type="text" id="rt_predict" name="rt_predict" placeholder="Your New Tweet">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                        <button type="button" class="btn btn-primary btn-sm">Submit</button>
                     </form>
                 </div>
             </div>
-            {% if retweets %}
-            <div class="row">
+            <div id="wait" class="row">
                 <div class="col-sm-12">
-                    <div class="center-block d-inline-block text-center results">
-                        <!-- Bootstrap alert -->
-                        <div class="alert alert-info" role="alert">
-                            <!--
-                            <h4 class="alert-heading">Analyzed <strong>{{ user }}</strong> (Up to 3200 tweets)</h4>
-                            <p>Your <b>top</b> retweet count comes out to <b>{{ top }}</b> with the following text: <b>{{ top_text }}</b></p>
-                            <hr> -->
-                            <p>@{{ user }}'s <b>median</b> retweet count is <strong style="font-size: 18px">{{ avg_user }}</strong></p>
+                    <center>
+                        Asking the little birds...
+                        <div class="progress center-block legend">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                         </div>
-                        <div class="alert alert-success" role="alert">
-                            <p class="mb-0">Based on the new tweet <b>"{{ tweet }}"</b></p>
-                            <p>Estimated number of retweets is <strong style="font-size: 18px">{{ retweets }}</strong></p>
-                        </div>
+                    </center>
+                </div>
+            </div>
+            <div id="results-display" class="row">
+                <div class="center-block d-inline-block text-center results">
+                    <!-- Bootstrap alert -->
+                    <div class="alert alert-info" role="alert">
+                        <!--
+                        <h4 class="alert-heading">Analyzed <strong>{{ user }}</strong> (Up to 3200 tweets)</h4>
+                        <p>Your <b>top</b> retweet count comes out to <b>{{ top }}</b> with the following text: <b>{{ top_text }}</b></p>
+                        <hr> -->
+                        <p><div class="d-inline" id="user"></div>'s <b>median</b> retweet count is <strong id="avg_user" style="font-size: 18px"></strong></p>
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        <p class="mb-0">Based on the new tweet "<b id="text"></b>"</p>
+                        <p>Estimated number of retweets is <strong id="retweets" style="font-size: 18px"></strong></p>
                     </div>
                 </div>
             </div>
-            {% endif %}
         </div>
     </div>
 </div>
@@ -68,7 +74,7 @@
 <!-- Bootstrap core JavaScript -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 <!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
@@ -80,9 +86,33 @@
     $("g.mpld3-baseaxes").removeAttr("transform");
   })
 
-
-
-
+  $(function() {
+    $('#wait').hide();
+    $('#results-display').hide();
+    $('button').click(function() {
+        $('#results-display').hide();
+        $('#wait').show();
+        $.ajax({
+            url: '/predict',
+            data: $('form').serialize(),
+            type: 'POST',
+            success: function(response) {
+                var user = $('#rt_predict_user').val();
+                var text = $('#rt_predict').val();
+                $('#wait').hide();
+                var json = JSON.parse(response);
+                $('#retweets').html(json['retweets']);
+                $('#avg_user').html(json['avg_user']);
+                $('#user').html('@' + user);
+                $('#text').html(text);
+                $('#results-display').show();
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    });
+  });
 
 
 </script>
