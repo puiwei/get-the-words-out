@@ -28,14 +28,20 @@
             <div class="panel panel-default center-block predict-panel">
                 <div class="panel-heading">Predict Retweets</div>
                 <div class="panel-body">
-                    <form action="/predict" method="POST">
-                        <div class="input-group input-group-margin">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input class="form-control" type="text" id="rt_predict_user" name="rt_predict_user" placeholder="Twitter Username">
+                    <form id="form" action="/predict" method="POST" data-toggle="validator">
+                        <div id="form-group1" class="form-group">
+                            <div class="input-group input-group-margin">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input class="form-control" type="text" id="rt_predict_user" name="rt_predict_user" placeholder="Twitter Username" required>
+                            </div>
+                            <div class="help-block with-errors"></div>
                         </div>
-                        <div class="input-group input-group-margin">
-                            <span class="input-group-addon"><i class="fa fa-twitter fa-color-blue"></i></span>
-                            <input class="form-control" type="text" id="rt_predict" name="rt_predict" placeholder="Your New Tweet">
+                        <div id="form-group2" class="form-group">
+                            <div class="input-group input-group-margin">
+                                <span class="input-group-addon"><i class="fa fa-twitter fa-color-blue"></i></span>
+                                <input class="form-control" type="text" id="rt_predict" name="rt_predict" placeholder="Your New Tweet" required>
+                            </div>
+                            <div class="help-block with-errors"></div>
                         </div>
                         <button type="button" class="btn btn-primary btn-sm">Submit</button>
                     </form>
@@ -59,7 +65,9 @@
                         <h4 class="alert-heading">Analyzed <strong>{{ user }}</strong> (Up to 3200 tweets)</h4>
                         <p>Your <b>top</b> retweet count comes out to <b>{{ top }}</b> with the following text: <b>{{ top_text }}</b></p>
                         <hr> -->
-                        <p><div style="display: inline" id="user"></div>'s <b>median</b> retweet count is <strong id="avg_user" style="font-size: 18px"></strong></p>
+                        <p>
+                        <div style="display: inline" id="user"></div>
+                        's <b>median</b> retweet count is <strong id="avg_user" style="font-size: 18px"></strong></p>
                     </div>
                     <div class="alert alert-success" role="alert">
                         <p class="mb-0">Based on the new tweet "<b id="text"></b>"</p>
@@ -75,6 +83,7 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 </body>
 
 <!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
@@ -88,31 +97,53 @@
     $("g.mpld3-baseaxes").removeAttr("transform");
   })
 
-  $(function() {
-    $('button').click(function() {
-        $('#results-display').hide();
-        $('#wait').show();
-        $.ajax({
-            url: '/predict',
-            data: $('form').serialize(),
-            type: 'POST',
-            success: function(response) {
-                var user = $('#rt_predict_user').val();
-                var text = $('#rt_predict').val();
-                $('#wait').hide();
-                var json = JSON.parse(response);
-                $('#retweets').html(json['retweets']);
-                $('#avg_user').html(json['avg_user']);
-                $('#user').html('@' + user);
-                $('#text').html(text);
-                $('#results-display').show();
-            },
-            error: function(error) {
-                console.log(error);
-            }
-        });
+    $('#rt_predict_user').keypress(function (e) {
+     var key = e.which;
+     if(key == 13)  // the enter key code
+      {
+        $('button').click();
+        return false;
+      }
     });
+
+    $('#rt_predict').keypress(function (e) {
+     var key = e.which;
+     if(key == 13)  // the enter key code
+      {
+        $('button').click();
+        return false;
+      }
+    });
+
+  $('button').click(function() {
+        $('form').validator('validate');
+        if ($('#form-group1').hasClass('has-error') || $('#form-group2').hasClass('has-error') ) {}
+        else {
+            $('#results-display').hide();
+            $('#wait').show();
+            $.ajax({
+                url: '/predict',
+                data: $('form').serialize(),
+                type: 'POST',
+                success: function(response) {
+                    var user = $('#rt_predict_user').val();
+                    var text = $('#rt_predict').val();
+                    $('#wait').hide();
+                    var json = JSON.parse(response);
+                    $('#retweets').html(json['retweets']);
+                    $('#avg_user').html(json['avg_user']);
+                    $('#user').html('@' + user);
+                    $('#text').html(text);
+                    $('#results-display').show();
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        }
   });
+
+
 
 
 </script>
