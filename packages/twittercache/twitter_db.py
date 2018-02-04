@@ -17,7 +17,7 @@ class TwitterDB:
     def get_data_frame(self):
         engine = sqlalchemy.create_engine('postgresql+psycopg2://postgres:postgres@localhost/postgres')
         name_of_table = 'twitter'
-        df = pd.read_sql_query("select tweet_retweet_ct, user_followers_ct, user_statuses_ct, tweet_keywords, tweet_length, tweet_word_ct, polarity, subjectivity, tweet_has_links from %s tablesample system (100) repeatable(1) limit 500000;" % name_of_table, engine)
+        df = pd.read_sql_query("select tweet_retweet_ct, user_followers_ct, user_statuses_ct, tweet_keywords, tweet_length, tweet_word_ct, polarity, subjectivity, tweet_has_links from %s tablesample system (50) repeatable(1) limit 900000;" % name_of_table, engine)
         #df = pd.read_sql_table(name_of_table, engine)
         return df
 

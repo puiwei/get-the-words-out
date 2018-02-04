@@ -74,6 +74,7 @@
 
 <!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
 <script>
+  $('#wait').hide();
   $("#header").load("/static/header.html");
 
   // Remove spacing for word cloud graph
@@ -82,8 +83,6 @@
   });
 
   $(function() {
-    $('#wait').hide();
-
     $('button').click(function() {
         $('#wait').show();
         $.ajax({

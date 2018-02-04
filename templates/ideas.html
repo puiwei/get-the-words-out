@@ -92,6 +92,8 @@
 
 <!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
 <script>
+  $('#legend').hide();
+  $('#wait').hide();
 
   // Using jQuery to load side bar
   $("#header").load("/static/header.html");
@@ -104,9 +106,6 @@
   // Source Reference: https://codehandbook.org/python-flask-jquery-ajax-post/
   // After page load, use jQuery for AJAX (Asynchronous call)
   $(function() {
-    $('#legend').hide();
-    $('#wait').hide();
-
     // Button event for <button> tag
     $('button').click(function() {
         $('#wait').show();
