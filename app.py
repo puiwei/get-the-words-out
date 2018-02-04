@@ -30,8 +30,8 @@ class MyFlask(Flask):
         return Flask.get_send_file_max_age(self, filename)
 
 
-app = MyFlask(__name__)
-#app = Flask(__name__)
+#app = MyFlask(__name__)
+app = Flask(__name__)
 
 
 # default home page
