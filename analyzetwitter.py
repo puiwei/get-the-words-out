@@ -508,7 +508,7 @@ def analyze(user_input, scope, lock):
         for wordCloudKey in retweetKeywordLib.values():
             wordCloudText += wordCloudKey.name + ":" + str(wordCloudKey.medianLogRetweet) + ":" + str(wordCloudKey.avgPolarSenti) + " "
 
-    script = graph.wordCloudGraph(wordCloudText, stopWords, searchTerm, totalTweetsToExtract)
+        script = graph.wordCloudGraph(wordCloudText, stopWords, searchTerm, totalTweetsToExtract)
 
     print("Done in AnalyzeTwitter: " + str(time.time()))
 
