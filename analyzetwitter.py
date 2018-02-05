@@ -460,7 +460,7 @@ def analyze(user_input, scope, lock):
                 keyClass.addSentiScore(sentiScore)
 
     # Print the tweets and their attributes to CSV
-    print("write to csv: " + str(time.time()))
+    #print("write to csv: " + str(time.time()))
 
     '''if (scope == 1):
         csvfile1 = "outputs/" + "tweetsInfo" + searchTerm + "T.csv"

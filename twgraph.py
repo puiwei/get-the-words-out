@@ -578,7 +578,7 @@ class twGraph():
 
         mask = np.array(Image.open("twitter_mask.png"))
 
-        wc = WordCloud(background_color="white", max_words=150, mask=mask, collocations=False, normalize_plurals=False)
+        wc = WordCloud(background_color="white", max_words=100, mask=mask, collocations=False, normalize_plurals=False)
         wc.generate(text)
 
         # store to file
