@@ -3,11 +3,13 @@ from packages.twittercache.twitter_db import TwitterDB
 import numpy as np
 from sklearn import linear_model, ensemble, model_selection, base, neighbors
 from sklearn.feature_extraction import DictVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer, HashingVectorizer, CountVectorizer
 from sklearn.base import BaseEstimator, RegressorMixin, TransformerMixin
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.svm import LinearSVR
 import os.path
 import dill
+from spacy.lang.en.stop_words import STOP_WORDS
 
 class ColumnSelectTransformer(base.BaseEstimator, base.TransformerMixin):
 
@@ -48,6 +50,18 @@ class DictEncoder(base.BaseEstimator, base.TransformerMixin):
             listokwdicts.append(kwdict)
 
         return listokwdicts
+
+
+
+class DocEncoder(base.BaseEstimator, base.TransformerMixin):
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        # Return a list of strings
+        listostrings = [i[0] for i in X]
+        return listostrings
 
 
 class EstimatorTransformer(base.BaseEstimator, base.TransformerMixin):
@@ -100,9 +114,13 @@ def model(test_data):
             ('ColSelectTransformer', ColumnSelectTransformer(['tweet_keywords'])),
             ('DictEncoder', DictEncoder()),         #write DocEncoder for tdidf
             ('DictVectorizer', DictVectorizer()),  #consider HashingVectorizer or TfidfVectorizer
+            #('DocEncoder', DocEncoder()),
+            #('HashVec', HashingVectorizer()),
+            #('CountVec', CountVectorizer()),
+            #('tdidfVectorizer', TfidfVectorizer(min_df=2, stop_words=STOP_WORDS)),
             #('SGDR', linear_model.SGDRegressor(random_state=42))
             #('SVR', LinearSVR(random_state=0))
-            ('Ridge', linear_model.Ridge(alpha = 0.7))
+            ('Ridge', linear_model.Ridge(alpha=0.7))  #alpha = 0.7
         ])
 
 
@@ -110,8 +128,26 @@ def model(test_data):
             ('ColSelectTransformer', ColumnSelectTransformer(['user_followers_ct','user_statuses_ct','tweet_length','polarity','subjectivity','tweet_has_links'])),
             #('SGDR', linear_model.SGDRegressor(random_state=42))    #can normalize user_followers_ct, user_statuses_ct, and tweet length in ColSelect in the future
             ('SVR', LinearSVR(random_state=0))
+            #('LinReg',linear_model.LinearRegression())
             #('Ridge', linear_model.Ridge(alpha = 0.7))
         ])
+        '''
+
+        numfeatures_pipe = Pipeline([
+            ('ColSelectTransformer', ColumnSelectTransformer(['user_followers_ct', 'user_statuses_ct', 'tweet_length', 'polarity', 'subjectivity', 'tweet_has_links'])),
+            ('ensemble', EnsembleTransformer(
+                # linear_model.SGDRegressor(random_state=42),
+                LinearSVR(random_state=0),
+                #linear_model.Ridge(alpha = 0.7),
+                #linear_model.LinearRegression(),
+                (neighbors.KNeighborsRegressor(n_neighbors=5),
+                 ensemble.RandomForestRegressor(min_samples_leaf=20)))),
+
+            #('blend', linear_model.LinearRegression())
+            #('blend', linear_model.Ridge(alpha = 0.7))
+            ('blend', LinearSVR(random_state=0))
+        ])
+        '''
 
         union = FeatureUnion([
             # FeatureUnions use the same syntax as Pipelines
@@ -139,8 +175,8 @@ def model(test_data):
         final_pipe = Pipeline([
             ('full', union),
             #('LinReg', linear_model.LinearRegression())
-            #('SVR', LinearSVR(random_state=0))
-            ('Ridge', linear_model.Ridge(alpha=0.7))
+            ('SVR', LinearSVR(random_state=0))
+            #('Ridge', linear_model.Ridge(alpha=0.7))
         ])
         '''
 

@@ -30,8 +30,8 @@ class MyFlask(Flask):
         return Flask.get_send_file_max_age(self, filename)
 
 
-#app = MyFlask(__name__)
-app = Flask(__name__)
+app = MyFlask(__name__)
+#app = Flask(__name__)
 
 
 # default home page
@@ -114,11 +114,12 @@ def predict():
     prediction = ''
 
     if len(new_tweet.strip()) > 0:
-        prediction, avgUserRetweet, top, top_text = predictRT(new_user, new_tweet)
+        prediction, medUserRetweet, avgUserRetweet = predictRT(new_user, new_tweet)
 
     return json.dumps(
         {'status': 'OK',
          'retweets': prediction,
+         'med_user': medUserRetweet,
          'avg_user': avgUserRetweet,
          });
     #return render_template('predict.html', retweets=prediction, avg_user=avgUserRetweet, tweet=new_tweet, user=new_user, top=top, top_text=top_text)

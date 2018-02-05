@@ -11,15 +11,16 @@ import statistics
 
 def getRetweetInfo(data):
     tw_list = []
-    top = 0
-    top_text = None
+    #top = 0
+    #top_text = None
     for x in data:
-        if x['retweet_count'] > top:
-            top = x['retweet_count']
-            top_text = x['full_text']
+        #if x['retweet_count'] > top:
+        #    top = x['retweet_count']
+        #    top_text = x['full_text']
         tw_list.append(x['retweet_count'])
 
-    return statistics.median(tw_list), top, top_text
+    return statistics.median(tw_list), round(statistics.mean(tw_list),1)
+
 
 
 def predictRT(new_user, new_tweet):
@@ -27,7 +28,8 @@ def predictRT(new_user, new_tweet):
 
     sentiment = getTweetSentiment(new_tweet)
     user_info = getUserInfo(new_user, 2000)
-    avgRetweet, top, top_text = getRetweetInfo(user_info)
+    #avgRetweet, top, top_text = getRetweetInfo(user_info)
+    medRetweet, avgRetweet = getRetweetInfo(user_info)
 
     if user_info:
         d = {}
@@ -57,7 +59,7 @@ def predictRT(new_user, new_tweet):
         df = df[['tweet_retweet_ct', 'user_followers_ct', 'user_statuses_ct', 'tweet_keywords', 'tweet_length', 'polarity', 'subjectivity', 'tweet_word_ct', 'tweet_has_links']]
 
         # Call the modal and pass in df
-        return str(model(df)), avgRetweet, top, top_text
+        return str(model(df)), medRetweet, avgRetweet
     return 'Need Valid Twitter Username', 0, 0, 0
 
 @checkpoint(key=string.Template('{0}-{1}-mixed.tweet'), work_dir='tweetcache')
