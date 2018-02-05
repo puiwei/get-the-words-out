@@ -25,13 +25,10 @@ class ThreadAgent(Thread):
 # To work around this, sub-classing the Flask main class to set cache timeout time to 1 sec for bgraph.html so that it would load a new page
 class MyFlask(Flask):
     def get_send_file_max_age(self, filename):
-        if 'cloud' in filename:
-            return 1
-        return Flask.get_send_file_max_age(self, filename)
-
+        return 1
 
 app = MyFlask(__name__)
-#app = Flask(__name__)
+# app = Flask(__name__)
 
 
 # default home page
@@ -58,6 +55,11 @@ def predict_page():
 @app.route('/examples')
 def examples():
     return render_template('examples.html')
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 @app.route('/timeTweet', methods=['POST'])

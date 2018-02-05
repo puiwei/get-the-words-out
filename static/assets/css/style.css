@@ -17,7 +17,13 @@ body {
 .panel {
     margin-top: 95px;
     margin-bottom: 20px;
-    max-width: 50%
+    max-width: 50%;
+}
+
+.panel-about {
+    margin-top: 95px;
+    margin-bottom: 20px;
+    max-width: 80% !important;
 }
 
 .predict-panel {

@@ -35,7 +35,7 @@
             <div class="panel panel-default center-block">
                 <div class="panel-heading">Find your Best Time to tweet</div>
                 <div class="panel-body">
-                    <form action="/time" method="POST">
+                    <form method="POST">
                         <div class="input-group input-group-margin">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input class="form-control" type="text" id="tw_user" name="tw_user" placeholder="Twitter Username">
@@ -82,8 +82,18 @@
     $("g.mpld3-baseaxes").removeAttr("transform");
   });
 
+    $('#tw_user').keypress(function (e) {
+     var key = e.which;
+     if(key == 13)  // the enter key code
+      {
+        $('button').click();
+        return false;
+      }
+    });
+
   $(function() {
     $('button').click(function() {
+        if ($('#tw_user').val().length == 0) { return; }
         $('#wait').show();
         $.ajax({
             url: '/timeTweet',

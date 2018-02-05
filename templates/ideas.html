@@ -103,11 +103,31 @@
     $("g.mpld3-baseaxes").removeAttr("transform");
   })
 
+    $('#tw_user').keypress(function (e) {
+     var key = e.which;
+     if(key == 13)  // the enter key code
+      {
+        $('button').click();
+        return false;
+      }
+    });
+
+    $('#search_phrase').keypress(function (e) {
+     var key = e.which;
+     if(key == 13)  // the enter key code
+      {
+        $('button').click();
+        return false;
+      }
+    });
+
   // Source Reference: https://codehandbook.org/python-flask-jquery-ajax-post/
   // After page load, use jQuery for AJAX (Asynchronous call)
   $(function() {
     // Button event for <button> tag
     $('button').click(function() {
+        if ($('#tw_user').val().length == 0 && $('#search_phrase').val().length == 0) { return; }
+
         $('#wait').show();
         $('#legend').hide();
         $.ajax({

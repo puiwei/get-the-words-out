@@ -105,6 +105,7 @@
         $('button').click();
         return false;
       }
+    });
 
     $('#rt_predict').keypress(function (e) {
      var key = e.which;
@@ -113,32 +114,6 @@
         $('button').click();
         return false;
       }
-    });
-
-  $(function() {
-    $('button').click(function() {
-        $('#results-display').hide();
-        $('#wait').show();
-        $.ajax({
-            url: '/predict',
-            data: $('form').serialize(),
-            type: 'POST',
-            success: function(response) {
-                var user = $('#rt_predict_user').val();
-                var text = $('#rt_predict').val();
-                $('#wait').hide();
-                var json = JSON.parse(response);
-                $('#retweets').html(json['retweets']);
-                $('#avg_user').html(json['avg_user']);
-                $('#med_user').html(json['med_user']);
-                $('#user').html('@' + user);
-                $('#text').html(text);
-                $('#results-display').show();
-            },
-            error: function(error) {
-                console.log(error);
-            }
-        });
     });
 
   $('button').click(function() {
@@ -158,6 +133,7 @@
                     var json = JSON.parse(response);
                     $('#retweets').html(json['retweets']);
                     $('#avg_user').html(json['avg_user']);
+                    $('#med_user').html(json['med_user']);
                     $('#user').html('@' + user);
                     $('#text').html(text);
                     $('#results-display').show();
@@ -168,9 +144,5 @@
             });
         }
   });
-
-
-
-
 </script>
 </html>
