@@ -243,6 +243,17 @@ def retrieve_hour_of_day(data):
 def generate_bokeh(user):
     data = retrieveTweets(1, 1, 2000, 200, user, 'mixed')
 
+    # REMOVE - Demo Purpose
+
+    for d in data:
+        if d['id'] == 914022261392154624:
+            index1 = d
+        if d['id'] == 913297496176078848:
+            index2 = d
+    data.remove(index1)
+    data.remove(index2)
+
+
     # retrieve data frame
     df = retrieve_day_of_week(data)
     if not df.empty:

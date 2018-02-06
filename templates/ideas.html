@@ -21,11 +21,11 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div id="sidebar-wrapper" class="col-sm-2">
+        <div id="sidebar-wrapper" class="col-xs-2">
             <!-- Use jQuery script below to load header.html here -->
             <div id="header"></div>
         </div>
-        <div class="col-sm-10">
+        <div class="col-xs-10">
             <div class="panel panel-default center-block">
                 <div class="panel-heading">Search Twitter (by username, search term, or both)</div>
                 <div class="panel-body">
@@ -121,6 +121,10 @@
       }
     });
 
+    function fix_mpld3(){
+      $("g.mpld3-baseaxes").removeAttr("transform");
+    }
+
   // Source Reference: https://codehandbook.org/python-flask-jquery-ajax-post/
   // After page load, use jQuery for AJAX (Asynchronous call)
   $(function() {
@@ -153,6 +157,8 @@
                     $('#userLabel2').html(json['userLabel2']);
                     $('#userCloud2').html(json['userCloud2']);
                 }
+
+                setTimeout(fix_mpld3, 200);
             },
             error: function(error) {
                 console.log(error);
