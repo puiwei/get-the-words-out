@@ -57,6 +57,11 @@ def examples():
     return render_template('examples.html')
 
 
+@app.route('/techniques')
+def techniques():
+    return render_template('techniques.html')
+
+
 @app.route('/about')
 def about():
     return render_template('about.html')
@@ -105,7 +110,7 @@ def searchIdeas():
         {'status': 'OK',
          'userLabel1': 'Results for @' + tw_user,
          'userCloud1': t1.Uscript,
-         'userLabel2': 'Results for @' + search_phrase,
+         'userLabel2': 'Results for "' + search_phrase + '"',
          'userCloud2': t2.Uscript,
         });
 

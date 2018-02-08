@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Get The Words Out</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css"/>
+    <link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="">
+</head>
+
+<body class="examples">
+<div class="container-fluid">
+    <div class="row">
+        <div id="sidebar-wrapper" class="col-sm-2">
+            <!-- Use jQuery script below to load header.html here -->
+            <div id="header"></div>
+        </div>
+        <div class="col-sm-10">
+
+            <h2 id="howitworks">How It Works</h2>
+
+            <h3 id="dataextractionprocessing">Data Extraction &amp; Processing</h3>
+
+            <ul>
+                <li>Python Twitter API</li>
+
+                <li>Parse keywords
+
+
+                    <ul>
+                        <li>punctuations</li>
+
+                        <li>special characters</li>
+
+                        <li>links</li>
+
+                        <li>Stop Words</li></ul>
+                </li>
+            </ul>
+
+            <h3 id="machinelearningmodel">Machine Learning Model</h3>
+
+            <p>Feature Union of Keywords Model and Meta-Information Model
+                Linear Support Vector Regression</p>
+
+            <p>Keywords Model:</p>
+
+            <ul>
+                <li>One-hot encoding</li>
+
+                <li>Term frequency</li>
+
+                <li>Stop Words</li>
+
+                <li>Ridge</li>
+            </ul>
+
+            <p>Meta-Information Model:</p>
+
+            <ul>
+                <li>User account attributes</li>
+
+                <li>New tweet attributes</li>
+
+                <li>Linear Support Vector Regression</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+<!-- jQuery script to load header.html into div id="header" by calling REST URL /header -->
+<script>
+	$("#header").load("/static/header.html");
+
+
+
+</script>
+</html>

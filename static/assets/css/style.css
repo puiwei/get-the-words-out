@@ -25,6 +25,7 @@ body {
     margin-top: 95px;
     margin-bottom: 20px;
     max-width: 80% !important;
+    font-size: 1.02em;
 }
 
 .predict-panel {

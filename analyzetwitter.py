@@ -248,10 +248,10 @@ def generate_bokeh(user):
     for d in data:
         if d['id'] == 914022261392154624:
             index1 = d
+            data.remove(index1)
         if d['id'] == 913297496176078848:
             index2 = d
-    data.remove(index1)
-    data.remove(index2)
+            data.remove(index2)
 
 
     # retrieve data frame
