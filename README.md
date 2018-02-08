@@ -10,21 +10,11 @@ GTWO is a marketing tool that helps users enhance brand recognition and social m
 GTWO uses a Python Twitter API to extract tweets from a user's timeline and search results of a search term. The tweets are then processed for meta-information like the user's account attributes, tweet attributes, and sentiment analysis scores calculated using the TextBlob library. Then, the tweets are parsed to remove punctuations, special characters, numbers, links, duplicate words, and stop words, and then split into individual keywords.
 
 ### Machine Learning Model
-The retweet prediction model consists of the feature union of 
+The Retweet Prediction Model is comprised of a feature union of the Keywords Model and the Meta-Information Model, fitted with linear support vector regression. This model is trained with 900,000 tweets that are downloaded from the Twitter Search API results for the Top 10 most common English words (i.e. "the", "be", "to", etc) as a proxy for random tweets.
 
-Feature Union of Keywords Model and Meta-Information Model
-Linear Support Vector Regression
+The Keywords Model is constructed by doing one-hot encoding based on term frequency of parsed keywords in the tweets, and then fitting with linear ridge regression.
 
-Keywords Model:
-- One-hot encoding
-- Term frequency
-- Stop Words
-- Ridge
-
-Meta-Information Model:
-- User account attributes
-- New tweet attributes
-- Linear Support Vector Regression
+The Meta-Information Model involves user's account attributes (i.e. followers count, number of past tweets) and tweet attributes (i.e. tweet length, whether there are links or pictures, sentiment polarity score, sentiment subjectivity score), fitted with linear support vector regression.
 
 
 
