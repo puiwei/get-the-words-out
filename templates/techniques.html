@@ -19,59 +19,30 @@
 <body class="examples">
 <div class="container-fluid">
     <div class="row">
-        <div id="sidebar-wrapper" class="col-sm-2">
+        <div id="sidebar-wrapper" class="col-sm-3">
             <!-- Use jQuery script below to load header.html here -->
             <div id="header"></div>
         </div>
-        <div class="col-sm-10">
+        <div class="col-sm-8">
+            <div class="techniques">
 
-            <h2 id="howitworks">How It Works</h2>
+                <h2 id="howitworks">How It Works</h2>
+                </br>
+                <h3 class="h3-tech" id="dataextractionprocessing">Data Extraction &amp; Processing</h3>
 
-            <h3 id="dataextractionprocessing">Data Extraction &amp; Processing</h3>
+                <p>This app uses a Python Twitter API to extract tweets from a user's timeline and search results of a search term. The tweets are then processed for meta-information like the user account attributes, tweet attributes, and sentiment analysis scores calculated using the TextBlob library. Then, the tweets are parsed to remove punctuations, special characters, numbers, links, duplicate words, and stop words, and then split into individual keywords.</p>
 
-            <ul>
-                <li>Python Twitter API</li>
+                <p>The WordCloud visualization from "Get Ideas" are generated from a modified Python WordCloud library, with the size of each keyword based on their associated log-median retweets, and the color of each keyword based on their sentiment polarity score (range from shades of red to purple to blue).</p>
+                </br>
+                <h3 class="h3-tech" id="machinelearningmodel">Machine Learning Model</h3>
 
-                <li>Parse keywords
+                <p>The Retweet Prediction Model is comprised of a feature union of the Keywords Model and the Meta-Information Model, fitted with linear support vector regression. This model is trained with 900,000 tweets that are downloaded from the Twitter Search API results for the Top 10 most common English words (i.e. "the", "be", "to", etc) as a proxy for random tweets.</p>
 
+                <p>The Keywords Model is constructed by doing one-hot encoding based on term frequency of parsed keywords in the tweets, and then fitting with linear ridge regression.</p>
 
-                    <ul>
-                        <li>punctuations</li>
-
-                        <li>special characters</li>
-
-                        <li>links</li>
-
-                        <li>Stop Words</li></ul>
-                </li>
-            </ul>
-
-            <h3 id="machinelearningmodel">Machine Learning Model</h3>
-
-            <p>Feature Union of Keywords Model and Meta-Information Model
-                Linear Support Vector Regression</p>
-
-            <p>Keywords Model:</p>
-
-            <ul>
-                <li>One-hot encoding</li>
-
-                <li>Term frequency</li>
-
-                <li>Stop Words</li>
-
-                <li>Ridge</li>
-            </ul>
-
-            <p>Meta-Information Model:</p>
-
-            <ul>
-                <li>User account attributes</li>
-
-                <li>New tweet attributes</li>
-
-                <li>Linear Support Vector Regression</li>
-            </ul>
+                <p>The Meta-Information Model involves user account attributes (i.e. followers count, number of past tweets) and tweet attributes (i.e. tweet length, whether there are links or pictures, sentiment polarity score, sentiment subjectivity score), fitted with linear support vector regression.</p>
+                </br></br></br></br>
+            </div>
         </div>
     </div>
 </div>

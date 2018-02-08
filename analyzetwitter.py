@@ -243,7 +243,7 @@ def retrieve_hour_of_day(data):
 def generate_bokeh(user):
     data = retrieveTweets(1, 1, 2000, 200, user, 'mixed')
 
-    # REMOVE - Demo Purpose
+    # REMOVE OUTLIERS - Demo Purpose
 
     for d in data:
         if d['id'] == 914022261392154624:

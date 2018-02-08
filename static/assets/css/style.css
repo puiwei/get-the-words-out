@@ -15,6 +15,11 @@ body {
 }
 
 /* Input */
+
+.techniques {
+    margin-top: 95px;
+}
+
 .panel {
     margin-top: 95px;
     margin-bottom: 20px;
@@ -65,6 +70,10 @@ body {
 
 .h3-margins {
     margin-bottom: 0px !important;
+}
+
+.h3-tech {
+    margin-bottom: 12px !important;
 }
 
 h3 {
