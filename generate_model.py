@@ -3,13 +3,13 @@ from packages.twittercache.twitter_db import TwitterDB
 import numpy as np
 from sklearn import linear_model, ensemble, model_selection, base, neighbors
 from sklearn.feature_extraction import DictVectorizer
-from sklearn.feature_extraction.text import TfidfVectorizer, HashingVectorizer, CountVectorizer
+#from sklearn.feature_extraction.text import TfidfVectorizer, HashingVectorizer, CountVectorizer
 from sklearn.base import BaseEstimator, RegressorMixin, TransformerMixin
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.svm import LinearSVR
 import os.path
 import dill
-from spacy.lang.en.stop_words import STOP_WORDS
+#from spacy.lang.en.stop_words import STOP_WORDS
 
 class ColumnSelectTransformer(base.BaseEstimator, base.TransformerMixin):
 
