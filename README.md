@@ -1,6 +1,8 @@
 # Get The Words Out (GTWO)
 GTWO is a marketing tool that helps users enhance brand recognition and social media exposure, by optimzing tweets to generate more retweets.
 
+It is developed with Python, Twitter API, Natural Language Processing, Machine Learning models, Flask, HTML/CSS, Matplotlib and Bokeh visualizations, and deployed on Heroku.
+
 ## Web App URL
 [https://get-the-words-out.herokuapp.com/](https://get-the-words-out.herokuapp.com/)
 
