@@ -19,7 +19,7 @@ Pillow==5.0.0
 Flask==0.12.2
 wordcloud==1.3.1
 urllib3==1.22
-nltk==3.2.5
+nltk==3.4.5
 ediblepickle==1.1.3
 sqlalchemy==1.2.1
 sklearn==0.0
